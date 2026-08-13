@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'lab2_inverter layout lab2_inverter_layout':
+  info: Assign pin label "vin_u24ev057" at (0.1500, 5.0000) to layer `M1term'.
+  info: Assign pin label "gnd_u24ev057" at (5.0000, 0.1500) to layer `M1term'.
+  info: Assign pin label "vdd_u24ev057" at (5.0000, 9.8500) to layer `M1term'.
+  info: Assign pin label "vout_u24ev057" at (9.8500, 5.0000) to layer `M1term'.
+
+***** End of Label Report *****
+

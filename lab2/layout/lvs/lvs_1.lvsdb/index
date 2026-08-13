@@ -1,0 +1,9 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 statistics extraction device net pin parameter rewire total
+stat extr dev net pin param rewire total 
+none matched expanded errors param_err pin_err empty_sch empty_lay not_run 
+00000001
+41 lab2_inverter layout lab2_inverter_layout 1 0 0 0 1 135 1 156 1 178 1 198 1 221 1 241 1 263 1 282 1 301 1 320 1 339 1 358 1 377 1 397 1 418 1 439 1 463 1 485 1 503 1 520 1 537 1 555 1 576 1 596 1 619 1 639 1 662 1 680 1 700 1 720 1 740 1 760 1 780
+41 lab2_inverter layout lab2_inverter_layout 1 44 lab2_inverter schematic lab2_inverter_layout 1 0
