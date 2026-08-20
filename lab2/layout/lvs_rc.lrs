@@ -1,6 +1,6 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on vlsilab-client44.eced.svnit.ac.in at Tue Aug 18 15:40:20 2026
+run on vlsilab-client44.eced.svnit.ac.in at Thu Aug 20 13:42:54 2026
 
 Schematic                                | Layout                                | Status
 -------------------------------------------------------------------------------------------

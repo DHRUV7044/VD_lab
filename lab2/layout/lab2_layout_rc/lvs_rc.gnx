@@ -1,11 +1,11 @@
 # 4
-nmos(MOS): nmos(MOS)
+pmos(MOS): pmos(MOS)
 = D D B
 = G G B
 = S S B
 = B B B
 # 4
-pmos(MOS): pmos(MOS)
+nmos(MOS): nmos(MOS)
 = D D B
 = G G B
 = S S B

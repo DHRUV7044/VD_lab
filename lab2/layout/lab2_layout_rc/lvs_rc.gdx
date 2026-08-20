@@ -1,8 +1,8 @@
 # 0
-nmos(MOS): nmos(MOS)
-# 0
 pmos(MOS): pmos(MOS)
+# 0
+nmos(MOS): nmos(MOS)
 # 2
 inverter schematic lab2_inveter_layout_rc: inverter layout lab2_inveter_layout_rc
-D PM0 avD27_1
 D NM0 avD21_1
+D PM0 avD27_1

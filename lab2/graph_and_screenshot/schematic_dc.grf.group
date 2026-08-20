@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--StateFileType saveLoadState-->
+<topLevel>
+    <SimpleProp Name="stateFileVersion" Value="@(#)$CDS: virtuoso version 6.1.8-64b 11/15/2022 19:45 (cpgbld01) $" Type="string" />
+    <SimpleProp Name="currentContext" Value="/home/u24ev057/simulation/inverter/ams/config/psf" Type="stringValue" />
+    <IndexedProp Name="resultsDirMappingList">
+        <SimpleProp Name="__resDirStr_0" Value="/home/u24ev057/simulation/inverter/ams/config/psf" Type="stringValue" />
+    </IndexedProp>
+    <IndexedProp Name="graphFileList">
+        <SimpleProp Value="schematic_dc_0.grf" Type="stringValue" />
+    </IndexedProp>
+</topLevel>
