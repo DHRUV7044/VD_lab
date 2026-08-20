@@ -1,0 +1,1226 @@
+
+            Assura (R) Physical Verification Version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25
+            Release 4.1_USR6_EHF13
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:28 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Aug 18 14:31:14 2026
+
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/aveng /home/u24ev057/VD_lab/lab20/layout/drc_rc_2.rsf -restart -cdslib /home/u24ev057/cds.lib
+@(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Aug 18 14:31:14 2026
+
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+ Summary Report: drc_rc_2.sum
+ RSF           : /home/u24ev057/VD_lab/lab20/layout/drc_rc_2.rsf
+ Library Name  : inverter_layout_rc
+ CDSLIB Path   : "/home/u24ev057/cds.lib"
+ Cell Name     : inverter
+ View Name     : layout
+ Rules File    : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/drc.rul
+ Options       : -restart -cdslib /home/u24ev057/cds.lib 
+ Work Directory: /home/u24ev057/VD_lab/lab20/layout
+ Operating Mode: Legacy Mode is Off
+
+Checking out license for Assura_DRC
+2026/08/18 14:31:14 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 14:31:14 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+*WARNING* Failed to obtain license for Assura_DRC
+No Assura license available.
+Checking out license for Phys_Ver_Sys_DRC_XL
+Restarting with VDB Build 2 
+
+Building the VDB part 2 in background mode.
+2026/08/18 14:31:16 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 14:31:16 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+Executing: bulk = cellBoundary(root)
+
+Building the VDB part 3 in background mode.
+2026/08/18 14:31:16 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 14:31:16 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+
+Running in restart mode.
+
+
+Finished building the VDB. VDB build times for main process:
+cpu: 0.05  elap: 2  pf: 0  in: 6464  out: 40  virt: 160M  phys: 831M
+
+Running the Task Processor, 1 cells, 1379 steps...
+
+Top Cell is 'inverter layout inverter_layout_rc'
+
+Executing: Metal1 = geomOr(Metal1_d Metal1_f)
+
+Executing: Metal2 = geomOr(Metal2_d Metal2_f)
+
+Executing: Metal3 = geomOr(Metal3_d Metal3_f)
+
+Executing: Metal4 = geomOr(Metal4_d Metal4_f)
+
+Executing: Metal5 = geomOr(Metal5_d Metal5_f)
+
+Executing: Metal6 = geomOr(Metal6_d Metal6_f)
+
+Executing: offGrid(BJTdum 0.005 "off grid polygon on layer BJTdum")
+
+Executing: offGrid(Bondpad 0.005 "off grid polygon on layer Bondpad")
+
+Executing: offGrid(CapMetal 0.005 "off grid polygon on layer CapMetal")
+
+Executing: offGrid(Cont 0.005 "off grid polygon on layer Cont")
+
+Executing: offGrid(IND2dummy 0.005 "off grid polygon on layer IND2dummy")
+
+Executing: offGrid(IND3dummy 0.005 "off grid polygon on layer IND3dummy")
+
+Executing: offGrid(INDdummy 0.005 "off grid polygon on layer INDdummy")
+
+Executing: offGrid(JVAR1dummy 0.005 "off grid polygon on layer JVAR1dummy")
+
+Executing: offGrid(JVAR2dummy 0.005 "off grid polygon on layer JVAR2dummy")
+
+Executing: offGrid(JVAR3dummy 0.005 "off grid polygon on layer JVAR3dummy")
+
+Executing: offGrid(M1dummy 0.005 "off grid polygon on layer M1dummy")
+
+Executing: offGrid(M2dummy 0.005 "off grid polygon on layer M2dummy")
+
+Executing: offGrid(M3dummy 0.005 "off grid polygon on layer M3dummy")
+
+Executing: offGrid(M4dummy 0.005 "off grid polygon on layer M4dummy")
+
+Executing: offGrid(M5dummy 0.005 "off grid polygon on layer M5dummy")
+
+Executing: offGrid(M6dummy 0.005 "off grid polygon on layer M6dummy")
+
+Executing: offGrid(Metal1 0.005 "off grid polygon on layer Metal1")
+
+Executing: offGrid(Metal2 0.005 "off grid polygon on layer Metal2")
+
+Executing: offGrid(Metal3 0.005 "off grid polygon on layer Metal3")
+
+Executing: offGrid(Metal4 0.005 "off grid polygon on layer Metal4")
+
+Executing: offGrid(Metal5 0.005 "off grid polygon on layer Metal5")
+
+Executing: offGrid(Metal6 0.005 "off grid polygon on layer Metal6")
+
+Executing: offGrid(NPNdummy 0.005 "off grid polygon on layer NPNdummy")
+
+Executing: offGrid(Nburied 0.005 "off grid polygon on layer Nburied")
+
+Executing: offGrid(Nimp 0.005 "off grid polygon on layer Nimp")
+
+Executing: offGrid(Nwell 0.005 "off grid polygon on layer Nwell")
+
+Executing: offGrid(Oxide 0.005 "off grid polygon on layer Oxide")
+
+Executing: offGrid(PNPdummy 0.005 "off grid polygon on layer PNPdummy")
+
+Executing: offGrid(Pimp 0.005 "off grid polygon on layer Pimp")
+
+Executing: offGrid(Poly 0.005 "off grid polygon on layer Poly")
+
+Executing: offGrid(Pwell 0.005 "off grid polygon on layer Pwell")
+
+Executing: offGrid(ResWdum 0.005 "off grid polygon on layer ResWdum")
+
+Executing: offGrid(Resdum 0.005 "off grid polygon on layer Resdum")
+
+Executing: offGrid(ThickOxide 0.005 "off grid polygon on layer ThickOxide")
+
+Executing: offGrid(Via1 0.005 "off grid polygon on layer Via1")
+
+Executing: offGrid(Via2 0.005 "off grid polygon on layer Via2")
+
+Executing: offGrid(Via3 0.005 "off grid polygon on layer Via3")
+
+Executing: offGrid(Via4 0.005 "off grid polygon on layer Via4")
+
+Executing: offGrid(Via5 0.005 "off grid polygon on layer Via5")
+
+Executing: errorLayer(geomGetNon45(BJTdum) "non45 degree polygon on layer BJTdum")
+
+Executing: errorLayer(geomGetNon45(Bondpad) "non45 degree polygon on layer Bondpad")
+
+Executing: errorLayer(geomGetNon45(CapMetal) "non45 degree polygon on layer CapMetal")
+
+Executing: errorLayer(geomGetNon45(Cont) "non45 degree polygon on layer Cont")
+
+Executing: errorLayer(geomGetNon45(IND2dummy) "non45 degree polygon on layer IND2dummy")
+
+Executing: errorLayer(geomGetNon45(IND3dummy) "non45 degree polygon on layer IND3dummy")
+
+Executing: errorLayer(geomGetNon45(INDdummy) "non45 degree polygon on layer INDdummy")
+
+Executing: errorLayer(geomGetNon45(JVAR1dummy) "non45 degree polygon on layer JVAR1dummy")
+
+Executing: errorLayer(geomGetNon45(JVAR2dummy) "non45 degree polygon on layer JVAR2dummy")
+
+Executing: errorLayer(geomGetNon45(JVAR3dummy) "non45 degree polygon on layer JVAR3dummy")
+
+Executing: errorLayer(geomGetNon45(M1dummy) "non45 degree polygon on layer M1dummy")
+
+Executing: errorLayer(geomGetNon45(M2dummy) "non45 degree polygon on layer M2dummy")
+
+Executing: errorLayer(geomGetNon45(M3dummy) "non45 degree polygon on layer M3dummy")
+
+Executing: errorLayer(geomGetNon45(M4dummy) "non45 degree polygon on layer M4dummy")
+
+Executing: errorLayer(geomGetNon45(M5dummy) "non45 degree polygon on layer M5dummy")
+
+Executing: errorLayer(geomGetNon45(M6dummy) "non45 degree polygon on layer M6dummy")
+
+Executing: errorLayer(geomGetNon45(Metal1) "non45 degree polygon on layer Metal1")
+
+Executing: errorLayer(geomGetNon45(Metal2) "non45 degree polygon on layer Metal2")
+
+Executing: errorLayer(geomGetNon45(Metal3) "non45 degree polygon on layer Metal3")
+
+Executing: errorLayer(geomGetNon45(Metal4) "non45 degree polygon on layer Metal4")
+
+Executing: errorLayer(geomGetNon45(Metal5) "non45 degree polygon on layer Metal5")
+
+Executing: errorLayer(geomGetNon45(Metal6) "non45 degree polygon on layer Metal6")
+
+Executing: errorLayer(geomGetNon45(NPNdummy) "non45 degree polygon on layer NPNdummy")
+
+Executing: errorLayer(geomGetNon45(Nburied) "non45 degree polygon on layer Nburied")
+
+Executing: errorLayer(geomGetNon45(Nimp) "non45 degree polygon on layer Nimp")
+
+Executing: errorLayer(geomGetNon45(Nwell) "non45 degree polygon on layer Nwell")
+
+Executing: errorLayer(geomGetNon45(Oxide) "non45 degree polygon on layer Oxide")
+
+Executing: errorLayer(geomGetNon45(PNPdummy) "non45 degree polygon on layer PNPdummy")
+
+Executing: errorLayer(geomGetNon45(Pimp) "non45 degree polygon on layer Pimp")
+
+Executing: errorLayer(geomGetNon45(Poly) "non45 degree polygon on layer Poly")
+
+Executing: errorLayer(geomGetNon45(Pwell) "non45 degree polygon on layer Pwell")
+
+Executing: errorLayer(geomGetNon45(ResWdum) "non45 degree polygon on layer ResWdum")
+
+Executing: errorLayer(geomGetNon45(Resdum) "non45 degree polygon on layer Resdum")
+
+Executing: errorLayer(geomGetNon45(ThickOxide) "non45 degree polygon on layer ThickOxide")
+
+Executing: errorLayer(geomGetNon45(Via1) "non45 degree polygon on layer Via1")
+
+Executing: errorLayer(geomGetNon45(Via2) "non45 degree polygon on layer Via2")
+
+Executing: errorLayer(geomGetNon45(Via3) "non45 degree polygon on layer Via3")
+
+Executing: errorLayer(geomGetNon45(Via4) "non45 degree polygon on layer Via4")
+
+Executing: errorLayer(geomGetNon45(Via5) "non45 degree polygon on layer Via5")
+
+Executing: drc(BJTdum (width < 0.01) "acute angle on layer BJTdum")
+
+Executing: drc(IND2dummy (width < 0.01) "acute angle on layer IND2dummy")
+
+Executing: drc(IND3dummy (width < 0.01) "acute angle on layer IND3dummy")
+
+Executing: drc(INDdummy (width < 0.01) "acute angle on layer INDdummy")
+
+Executing: drc(JVAR1dummy (width < 0.01) "acute angle on layer JVAR1dummy")
+
+Executing: drc(JVAR2dummy (width < 0.01) "acute angle on layer JVAR2dummy")
+
+Executing: drc(JVAR3dummy (width < 0.01) "acute angle on layer JVAR3dummy")
+
+Executing: drc(M1dummy (width < 0.01) "acute angle on layer M1dummy")
+
+Executing: drc(M2dummy (width < 0.01) "acute angle on layer M2dummy")
+
+Executing: drc(M3dummy (width < 0.01) "acute angle on layer M3dummy")
+
+Executing: drc(M4dummy (width < 0.01) "acute angle on layer M4dummy")
+
+Executing: drc(M5dummy (width < 0.01) "acute angle on layer M5dummy")
+
+Executing: drc(M6dummy (width < 0.01) "acute angle on layer M6dummy")
+
+Executing: drc(NPNdummy (width < 0.01) "acute angle on layer NPNdummy")
+
+Executing: drc(PNPdummy (width < 0.01) "acute angle on layer PNPdummy")
+
+Executing: drc(ResWdum (width < 0.01) "acute angle on layer ResWdum")
+
+Executing: drc(Resdum (width < 0.01) "acute angle on layer Resdum")
+
+Executing: INDterm1 = geomAnd(IND2dummy INDdummy)
+
+Executing: INDterm2 = geomAnd(IND3dummy INDdummy)
+
+Executing: M1term = geomAndNot(Metal1 M1dummy)
+
+Executing: M2term = geomAndNot(Metal2 M2dummy)
+
+Executing: M3term = geomAndNot(Metal3 M3dummy)
+
+Executing: M4term = geomAndNot(Metal4 M4dummy)
+
+Executing: M5term = geomAndNot(Metal5 M5dummy)
+
+Executing: M6term = geomAndNot(Metal6 M6dummy)
+
+Executing: NPLUS = geomAnd(Nimp Oxide)
+
+Executing: NSD = geomAndNot(NPLUS Poly)
+
+Executing: NSDcont = geomAnd(Cont NPLUS)
+
+Executing: NSDterm = geomAndNot(NSD Resdum)
+
+Executing: NWELLterm = geomAndNot(Nwell ResWdum)
+
+Executing: NBVIA = geomAnd(NWELLterm Nburied)
+
+Executing: NWVIA = geomAnd(NSDterm NWELLterm)
+
+Executing: POLYcont = geomAnd(Cont Poly)
+
+Executing: POLYterm = geomAndNot(Poly Resdum)
+
+Executing: PPLUS = geomAnd(Oxide Pimp)
+
+Executing: PSD = geomAndNot(PPLUS Poly)
+
+Executing: PSDcont = geomAnd(Cont PPLUS)
+
+Executing: PSDterm = geomAndNot(PSD Resdum)
+
+Executing: Via2Cap = geomAnd(CapMetal Via2)
+
+Executing: L41497 = geomAnd(INDdummy Metal2)
+
+Executing: INDterm1Cont = geomAnd(IND2dummy L41497)
+
+Executing: INDterm2Cont = geomAnd(IND3dummy L41497)
+
+Executing: L74850 = geomOr(JVAR1dummy JVAR2dummy)
+
+Executing: JVARanode = geomAndNot(L74850 NSDterm)
+
+Executing: L61090 = geomStraddle(NPLUS Poly)
+
+Executing: NSDarea = geomAndNot(L61090 Poly)
+
+Executing: L34080 = geomStraddle(PPLUS Poly)
+
+Executing: PSDarea = geomAndNot(L34080 Poly)
+
+Executing: L33566 = geomAnd(PSDterm Pwell)
+
+Executing: PWVIA = geomAndNot(L33566 Nwell)
+
+Executing: L40384 = geomAnd(L74850 PSDterm)
+
+Executing: JVARterm = geomAnd(JVAR3dummy L40384)
+
+Executing: L98704 = geomAnd(Metal2 Via2)
+
+Executing: L47735 = geomOr(CapMetal INDdummy)
+
+Executing: Via2NoCapInd = geomAndNot(L98704 L47735)
+
+Executing: L43094 = geomOr(Nburied Nwell)
+
+Executing: L15547 = geomOr(L43094 Pwell)
+
+Executing: L71054 = geomAndNot(bulk L15547)
+
+Executing: PSUB = geomOr(BJTdum L71054)
+
+Executing: L6892 = geomAnd(PSDterm PSUB)
+
+Executing: L56122 = geomAndNot(L6892 Nburied)
+
+Executing: SUBVIA = geomAndNot(L56122 Nwell)
+
+Executing: geomHoles(Nwell)
+
+Executing: L90545 = geomAndNot(L85630 Nwell)
+
+Executing: L50707 = geomEnclose(Nburied L90545)
+
+Executing: L9133 = geomAnd(L50707 L90545)
+
+Executing: ISOPWELL = geomAndNot(L9133 Pwell)
+
+Executing: PWNBVIA = geomAnd(ISOPWELL PSDterm)
+
+Executing: geomConnect((via Via5 M6term M5term) (via Via4 M5term M4term) (via Via3 M4ter...
+
+Executing: geomStamp(NWVIA NSDterm multStamp floating)
+
+Executing: geomStamp(NWELLterm NWVIA multStamp floating)
+
+Executing: geomStamp(JVARterm PSDterm multStamp floating)
+
+Executing: geomStamp(JVARanode JVARterm multStamp floating)
+
+Executing: geomStamp(PWVIA PSDterm multStamp floating)
+
+Executing: geomStamp(Pwell PWVIA multStamp floating)
+
+Executing: geomStamp(PWNBVIA PSDterm multStamp floating)
+
+Executing: geomStamp(ISOPWELL PWNBVIA multStamp floating)
+
+Executing: geomStamp(SUBVIA PSDterm multStamp floating)
+
+Executing: geomStamp(PSUB SUBVIA multStamp floating)
+
+Executing: geomStamp(NBVIA NWELLterm multStamp floating)
+
+Executing: geomStamp(Nburied NBVIA multStamp floating)
+
+Executing: L43256 = drc(Nburied (width < 1.0))
+	   errorLayer(L43256 "0A: Nburied width must be >= 1.0 um")
+
+Executing: L90492 = drc(Nburied (sepNotch < 1.0))
+	   errorLayer(L90492 "0B: Nburied to Nburied spacing must be >= 1.0 um")
+
+Executing: L51235 = drc(Nwell (width < 1.0))
+	   errorLayer(L51235 "1A: Nwell width must be >= 1.0 um")
+
+Executing: L94017 = drc(Nwell (sepNotch < 1.0))
+	   errorLayer(L94017 "1B: Nwell to Nwell spacing must be >= 1.0 um")
+
+Executing: L91414 = drc(Nburied Nwell (enc < 0.3))
+	   errorLayer(L91414 "1C: Nburied to Nwell enclosure must be >= 0.3 um")
+
+Executing: L82881 = drc(Pwell (width < 1.0))
+	   errorLayer(L82881 "1D: Pwell width must be >= 1.0 um")
+
+Executing: L49725 = drc(Pwell (sepNotch < 1.0))
+	   errorLayer(L49725 "1E: Pwell to Pwell spacing must be >= 1.0 um")
+
+Executing: L66025 = geomStraddle(Pwell Nburied)
+
+Executing: L7227 = geomAndNot(L66025 Nburied)
+	   errorLayer(L7227 "1F: Nburied to Pwell enclosure must be >= 0.3 um")
+
+Executing: L25836 = drc(Nburied Pwell (enc < 0.3))
+	   errorLayer(L25836 "1F: Nburied to Pwell enclosure must be >= 0.3 um")
+
+Executing: L49723 = drc(Oxide (width < 0.4))
+	   errorLayer(L49723 "2A: Oxide width must be >= 0.4 um")
+
+Executing: L30364 = drc(Oxide (sepNotch < 0.3))
+	   errorLayer(L30364 "2B: Oxide to Oxide spacing must be >= 0.3 um")
+
+Executing: L92079 = geomStraddle(Oxide Nwell)
+
+Executing: L94544 = geomAndNot(L92079 Nwell)
+	   errorLayer(L94544 "2C: Nwell to Oxide enclosure must be >= 0.5 um")
+
+Executing: L95670 = drc(Nwell Oxide (enc < 0.5))
+	   errorLayer(L95670 "2C: Nwell to Oxide enclosure must be >= 0.5 um")
+
+Executing: L16915 = geomStraddle(Oxide Pwell)
+
+Executing: L83153 = geomAndNot(L16915 Pwell)
+	   errorLayer(L83153 "2C: Pwell to Oxide enclosure must be >= 0.5 um")
+
+Executing: L44120 = drc(Pwell Oxide (enc < 0.5))
+	   errorLayer(L44120 "2C: Pwell to Oxide enclosure must be >= 0.5 um")
+
+Executing: L51985 = geomStraddle(Nwell Oxide)
+
+Executing: L60919 = geomAnd(L51985 L92079)
+	   errorLayer(L60919 "2D: Nwell to Oxide spacing must be >= 0.5 um")
+
+Executing: L74330 = drc(Nwell Oxide (sep < 0.5))
+	   errorLayer(L74330 "2D: Nwell to Oxide spacing must be >= 0.5 um")
+
+Executing: L86547 = geomStraddle(Pwell Oxide)
+
+Executing: L75276 = geomAnd(L16915 L86547)
+	   errorLayer(L75276 "2D: Pwell to Oxide spacing must be >= 0.5 um")
+
+Executing: L19004 = drc(Oxide Pwell (sep < 0.5))
+	   errorLayer(L19004 "2D: Pwell to Oxide spacing must be >= 0.5 um")
+
+Executing: L71151 = drc(ThickOxide (width < 0.5))
+	   errorLayer(L71151 "2.5A: ThickOxide width must be >= 0.5 um")
+
+Executing: L9068 = drc(ThickOxide (sepNotch < 0.4))
+	   errorLayer(L9068 "2.5B: ThickOxide to ThickOxide spacing must be >= 0.4 um")
+
+Executing: L41568 = drc(Oxide ThickOxide (sep < 0.25))
+	   errorLayer(L41568 "2.5D: ThickOxide to Oxide spacing must be >= 0.25 um")
+
+Executing: L50103 = geomGetEdge(Poly inside Oxide)
+
+Executing: L35487 = geomGetEdge(ThickOxide inside Oxide)
+
+Executing: L93599 = geomSize(L50103 -0.005 edges)
+
+Executing: L51289 = geomSize(L35487 -0.005 edges)
+
+Executing: L9682 = geomAnd(L51289 L93599)
+	   errorLayer(L9682 "2.5E: ThickOxide to Poly spacing must be >= 0.4 um")
+
+Executing: L75860 = drc(L50103 L35487 (sep < 0.4))
+	   errorLayer(L75860 "2.5E: ThickOxide to Poly spacing must be >= 0.4 um")
+
+Executing: L73228 = geomSize(L35487 0.005 edges)
+
+Executing: L62697 = geomAnd(L73228 L93599)
+	   errorLayer(L62697 "2.5F: ThickOxide to Poly enclosure must be >= 0.4 um")
+
+Executing: L71424 = drc(L35487 L50103 (enc < 0.4))
+	   errorLayer(L71424 "2.5F: ThickOxide to Poly enclosure must be >= 0.4 um")
+
+Executing: L7458 = drc(ThickOxide Oxide (enc < 0.25))
+	   errorLayer(L7458 "2.5C: ThickOxide to Oxide enclosure must be >= 0.25 um")
+
+Executing: L60984 = drc(Nimp (width < 0.4))
+	   errorLayer(L60984 "3A: Nimp width must be >= 0.4 um")
+
+Executing: L80794 = drc(Nimp (sepNotch < 0.4))
+	   errorLayer(L80794 "3B: Nimp to Nimp spacing must be >= 0.4 um")
+
+Executing: L82011 = drc(Nimp Oxide (enc < 0.2))
+	   errorLayer(L82011 "3C: Nimp to Oxide enclosure must be >= 0.2 um")
+
+Executing: L86745 = drc(Nburied Nimp (enc < 0.6))
+	   errorLayer(L86745 "3D: Nburied to Nimp enclosure must be >= 0.6 um")
+
+Executing: L97306 = drc(Pimp (width < 0.4))
+	   errorLayer(L97306 "4A: Pimp width must be >= 0.4 um")
+
+Executing: L41796 = drc(Pimp (sepNotch < 0.4))
+	   errorLayer(L41796 "4B: Pimp to Pimp spacing must be >= 0.4 um")
+
+Executing: L41543 = drc(Pimp Oxide (enc < 0.2))
+	   errorLayer(L41543 "4C: Pimp to Oxide enclosure must be >= 0.2 um")
+
+Executing: L19269 = drc(Nburied Pimp (enc < 0.6))
+	   errorLayer(L19269 "4D: Nburied to Pimp enclosure must be >= 0.6 um")
+
+Executing: L85453 = drc(Poly (width < 0.18))
+	   errorLayer(L85453 "5A: Poly width must be >= 0.18 um")
+
+Executing: L63925 = drc(Poly (sepNotch < 0.3))
+	   errorLayer(L63925 "5B: Poly to Poly spacing must be >= 0.3 um")
+
+Executing: L92023 = drc(Poly Oxide (enc < 0.2))
+	   errorLayer(L92023 "5C: Poly to Oxide enclosure must be >= 0.2 um")
+
+Executing: L84361 = drc(Oxide Poly (enc < 0.4))
+	   errorLayer(L84361 "5D: Oxide to Poly enclosure must be >= 0.4 um")
+
+Executing: L4213 = drc(Oxide Poly (sep < 0.2))
+	   errorLayer(L4213 "5E: Oxide to Poly spacing must be >= 0.2 um")
+
+Executing: L9788 = drc(Cont (sepNotch < 0.2))
+	   errorLayer(L9788 "6B: Cont to Cont spacing must be >= 0.2 um")
+
+Executing: L63235 = geomContactCheck(Cont (width == 0.2) (length == 0.2) ignore)
+	   errorLayer(L63235 "6A: Cont shapes must be 0.2x0.2 rectangles")
+
+Executing: L47091 = geomStraddle(Cont Oxide)
+
+Executing: L99745 = geomAndNot(L47091 Oxide)
+	   errorLayer(L99745 "6C: Oxide to Cont enclosure must be >= 0.2 um")
+
+Executing: L80525 = drc(Oxide Cont (enc < 0.2))
+	   errorLayer(L80525 "6C: Oxide to Cont enclosure must be >= 0.2 um")
+
+Executing: L99721 = geomAnd(Cont Oxide)
+
+Executing: L11458 = geomSize(L99721 -0.005 edges)
+
+Executing: L13970 = geomAnd(L11458 L93599)
+	   errorLayer(L13970 "6E: Poly to Cont spacing must be >= 0.2 um")
+
+Executing: L28899 = drc(L99721 L50103 (sep < 0.2))
+	   errorLayer(L28899 "6E: Poly to Cont spacing must be >= 0.2 um")
+
+Executing: L23744 = geomStraddle(Cont Nimp)
+
+Executing: L89317 = geomAndNot(L23744 Nimp)
+	   errorLayer(L89317 "6G: Nimp to Cont enclosure must be >= 0.1 um")
+
+Executing: L31017 = drc(Nimp Cont (enc < 0.1))
+	   errorLayer(L31017 "6G: Nimp to Cont enclosure must be >= 0.1 um")
+
+Executing: L49719 = geomGetEdge(Oxide inside Poly)
+
+Executing: L1138 = geomSize(POLYcont -0.005 edges)
+
+Executing: L94658 = geomSize(L49719 -0.005 edges)
+
+Executing: L21275 = geomAnd(L1138 L94658)
+	   errorLayer(L21275 "6H: Oxide to Cont spacing must be >= 0.2 um")
+
+Executing: L59786 = drc(POLYcont L49719 (sep < 0.2))
+	   errorLayer(L59786 "6H: Oxide to Cont spacing must be >= 0.2 um")
+
+Executing: L48850 = geomStraddle(Cont Poly)
+
+Executing: L47376 = geomAndNot(L48850 Poly)
+	   errorLayer(L47376 "6D: Poly to Cont enclosure must be >= 0.2 um")
+
+Executing: L13764 = drc(Poly Cont (enc < 0.2))
+	   errorLayer(L13764 "6D: Poly to Cont enclosure must be >= 0.2 um")
+
+Executing: L70786 = geomStraddle(Cont Pimp)
+
+Executing: L98515 = geomAndNot(L70786 Pimp)
+	   errorLayer(L98515 "6F: Pimp to Cont enclosure must be >= 0.1 um")
+
+Executing: L91573 = drc(Pimp Cont (enc < 0.1))
+	   errorLayer(L91573 "6F: Pimp to Cont enclosure must be >= 0.1 um")
+
+Executing: L74957 = drc(Metal1 (width < 0.3))
+	   errorLayer(L74957 "7A: Metal1 width must be >= 0.3 um")
+
+Executing: L15085 = drc(Metal1 (sepNotch < 0.3))
+	   errorLayer(L15085 "7B: Metal1 to Metal1 spacing must be >= 0.3 um")
+
+Executing: L34708 = geomStraddle(Cont Metal1)
+
+Executing: L97057 = geomAndNot(L34708 Metal1)
+	   errorLayer(L97057 "7C: Metal1 to Cont enclosure must be >= 0.1 um")
+
+Executing: L65277 = drc(Metal1 Cont (enc < 0.1))
+	   errorLayer(L65277 "7C: Metal1 to Cont enclosure must be >= 0.1 um")
+
+Executing: L57676 = drc(Metal2 (width < 0.3))
+	   errorLayer(L57676 "9A: Metal2 width must be >= 0.3 um")
+
+Executing: L36724 = drc(Metal2 (sepNotch < 0.3))
+	   errorLayer(L36724 "9B: Metal2 to Metal2 spacing must be >= 0.3 um")
+
+Executing: L85668 = geomStraddle(Via1 Metal2)
+
+Executing: L35101 = geomAndNot(L85668 Metal2)
+	   errorLayer(L35101 "9C: Metal2 to Via1 enclosure must be >= 0.1 um")
+
+Executing: L34515 = drc(Metal2 Via1 (enc < 0.1))
+	   errorLayer(L34515 "9C: Metal2 to Via1 enclosure must be >= 0.1 um")
+
+Executing: L40395 = drc(Metal3 (width < 0.3))
+	   errorLayer(L40395 "11A: Metal3 width must be >= 0.3 um")
+
+Executing: L88533 = drc(Metal3 (sepNotch < 0.3))
+	   errorLayer(L88533 "11B: Metal3 to Metal3 spacing must be >= 0.3 um")
+
+Executing: L81998 = geomStraddle(Via2NoCapInd Metal3)
+
+Executing: L23040 = geomAndNot(L81998 Metal3)
+	   errorLayer(L23040 "11C: Metal3 to Via2NoCapInd enclosure must be >= 0.1 um")
+
+Executing: L14245 = drc(Metal3 Via2NoCapInd (enc < 0.1))
+	   errorLayer(L14245 "11C: Metal3 to Via2NoCapInd enclosure must be >= 0.1 um")
+
+Executing: L23114 = drc(Metal4 (width < 0.3))
+	   errorLayer(L23114 "15A: Metal4 width must be >= 0.3 um")
+
+Executing: L26954 = drc(Metal4 (sepNotch < 0.3))
+	   errorLayer(L26954 "15B: Metal4 to Metal4 spacing must be >= 0.3 um")
+
+Executing: L44100 = geomStraddle(Via3 Metal4)
+
+Executing: L34225 = geomAndNot(L44100 Metal4)
+	   errorLayer(L34225 "15C: Metal4 to Via3 enclosure must be >= 0.1 um")
+
+Executing: L56173 = drc(Metal4 Via3 (enc < 0.1))
+	   errorLayer(L56173 "15C: Metal4 to Via3 enclosure must be >= 0.1 um")
+
+Executing: L5833 = drc(Metal5 (width < 0.3))
+	   errorLayer(L5833 "17A: Metal5 width must be >= 0.3 um")
+
+Executing: L24855 = drc(Metal5 (sepNotch < 0.3))
+	   errorLayer(L24855 "17B: Metal5 to Metal5 spacing must be >= 0.3 um")
+
+Executing: L89668 = geomStraddle(Via4 Metal5)
+
+Executing: L66070 = geomAndNot(L89668 Metal5)
+	   errorLayer(L66070 "17C: Metal5 to Via4 enclosure must be >= 0.1 um")
+
+Executing: L82131 = drc(Metal5 Via4 (enc < 0.1))
+	   errorLayer(L82131 "17C: Metal5 to Via4 enclosure must be >= 0.1 um")
+
+Executing: L88552 = drc(Metal6 (width < 0.3))
+	   errorLayer(L88552 "19A: Metal6 width must be >= 0.3 um")
+
+Executing: L90632 = drc(Metal6 (sepNotch < 0.3))
+	   errorLayer(L90632 "19B: Metal6 to Metal6 spacing must be >= 0.3 um")
+
+Executing: L64764 = geomStraddle(Via5 Metal6)
+
+Executing: L57717 = geomAndNot(L64764 Metal6)
+	   errorLayer(L57717 "19C: Metal6 to Via5 enclosure must be >= 0.1 um")
+
+Executing: L20435 = drc(Metal6 Via5 (enc < 0.1))
+	   errorLayer(L20435 "19C: Metal6 to Via5 enclosure must be >= 0.1 um")
+
+Executing: L34316 = drc(Via1 (sepNotch < 0.3))
+	   errorLayer(L34316 "8B: Via1 to Via1 spacing must be >= 0.3 um")
+
+Executing: L81812 = geomContactCheck(Via1 (width == 0.2) (length == 0.2) ignore)
+	   errorLayer(L81812 "8A: Via1 shapes must be 0.2x0.2 rectangles")
+
+Executing: L85637 = geomStraddle(Via1 Metal1)
+
+Executing: L37248 = geomAndNot(L85637 Metal1)
+	   errorLayer(L37248 "8C: Metal1 to Via1 enclosure must be >= 0.1 um")
+
+Executing: L17294 = drc(Metal1 Via1 (enc < 0.1))
+	   errorLayer(L17294 "8C: Metal1 to Via1 enclosure must be >= 0.1 um")
+
+Executing: L81171 = drc(Via2 (sepNotch < 0.3))
+	   errorLayer(L81171 "10B: Via2 to Via2 spacing must be >= 0.3 um")
+
+Executing: L85653 = geomContactCheck(Via2 (width == 0.2) (length == 0.2) ignore)
+	   errorLayer(L85653 "10A: Via2 shapes must be 0.2x0.2 rectangles")
+
+Executing: L68795 = geomStraddle(Via2 Metal2)
+
+Executing: L6509 = geomAndNot(L68795 Metal2)
+	   errorLayer(L6509 "10C: Metal2 to Via2 enclosure must be >= 0.1 um")
+
+Executing: L21010 = drc(Metal2 Via2 (enc < 0.1))
+	   errorLayer(L21010 "10C: Metal2 to Via2 enclosure must be >= 0.1 um")
+
+Executing: L29362 = drc(Via3 (sepNotch < 0.3))
+	   errorLayer(L29362 "14B: Via3 to Via3 spacing must be >= 0.3 um")
+
+Executing: L77802 = geomContactCheck(Via3 (width == 0.2) (length == 0.2) ignore)
+	   errorLayer(L77802 "14A: Via3 shapes must be 0.2x0.2 rectangles")
+
+Executing: L44069 = geomStraddle(Via3 Metal3)
+
+Executing: L83540 = geomAndNot(L44069 Metal3)
+	   errorLayer(L83540 "14C: Metal3 to Via3 enclosure must be >= 0.1 um")
+
+Executing: L59314 = drc(Metal3 Via3 (enc < 0.1))
+	   errorLayer(L59314 "14C: Metal3 to Via3 enclosure must be >= 0.1 um")
+
+Executing: L22447 = drc(Via4 (sepNotch < 0.3))
+	   errorLayer(L22447 "16B: Via4 to Via4 spacing must be >= 0.3 um")
+
+Executing: L26039 = geomContactCheck(Via4 (width == 0.2) (length == 0.2) ignore)
+	   errorLayer(L26039 "16A: Via4 shapes must be 0.2x0.2 rectangles")
+
+Executing: L89637 = geomStraddle(Via4 Metal4)
+
+Executing: L6279 = geomAndNot(L89637 Metal4)
+	   errorLayer(L6279 "16C: Metal4 to Via4 enclosure must be >= 0.1 um")
+
+Executing: L69678 = drc(Metal4 Via4 (enc < 0.1))
+	   errorLayer(L69678 "16C: Metal4 to Via4 enclosure must be >= 0.1 um")
+
+Executing: L93040 = drc(Via5 (sepNotch < 0.3))
+	   errorLayer(L93040 "18B: Via5 to Via5 spacing must be >= 0.3 um")
+
+Executing: L37416 = geomContactCheck(Via5 (width == 0.2) (length == 0.2) ignore)
+	   errorLayer(L37416 "18A: Via5 shapes must be 0.2x0.2 rectangles")
+
+Executing: L64795 = geomStraddle(Via5 Metal5)
+
+Executing: L37292 = geomAndNot(L64795 Metal5)
+	   errorLayer(L37292 "18C: Metal5 to Via5 enclosure must be >= 0.1 um")
+
+Executing: L68626 = drc(Metal5 Via5 (enc < 0.1))
+	   errorLayer(L68626 "18C: Metal5 to Via5 enclosure must be >= 0.1 um")
+
+Executing: L7634 = drc(CapMetal Metal3 (enc < 0.3))
+	   errorLayer(L7634 "12D: CapMetal to Metal3 enclosure must be >= 0.3 um")
+
+Executing: L82528 = drc(CapMetal (width < 0.5))
+	   errorLayer(L82528 "12A: CapMetal width must be >= 0.5 um")
+
+Executing: L10185 = geomStraddle(Via2Cap Metal2)
+
+Executing: L33455 = geomAndNot(L10185 Metal2)
+	   errorLayer(L33455 "12B: Metal2 to Via2Cap enclosure must be >= 0.1 um")
+
+Executing: L75191 = drc(Metal2 Via2Cap (enc < 0.4))
+	   errorLayer(L75191 "12B: Metal2 to Via2Cap enclosure must be >= 0.1 um")
+
+Executing: L44801 = geomStraddle(Via2Cap CapMetal)
+
+Executing: L13935 = geomAndNot(L44801 CapMetal)
+	   errorLayer(L13935 "12C: CapMetal to Via2Cap enclosure must be >= 0.2 um")
+
+Executing: L45631 = drc(CapMetal Via2Cap (enc < 0.2))
+	   errorLayer(L45631 "12C: CapMetal to Via2Cap enclosure must be >= 0.2 um")
+
+Executing: L10216 = geomStraddle(Via2Cap Metal3)
+
+Executing: L22585 = geomAndNot(L10216 Metal3)
+	   errorLayer(L22585 "11D: Metal3 to Via2Cap enclosure must be >= 0.1 um")
+
+Executing: L47637 = drc(Metal3 Via2Cap (enc < 0.1))
+	   errorLayer(L47637 "11D: Metal3 to Via2Cap enclosure must be >= 0.1 um")
+
+Executing: L74700 = geomStraddle(Bondpad Metal1)
+
+Executing: L18845 = geomAndNot(L74700 Metal1)
+	   errorLayer(L18845 "20C: Metal1 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L81847 = drc(Metal1 Bondpad (enc < 3.0))
+	   errorLayer(L81847 "20C: Metal1 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L74731 = geomStraddle(Bondpad Metal2)
+
+Executing: L76102 = geomAndNot(L74731 Metal2)
+	   errorLayer(L76102 "20D: Metal2 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L13096 = drc(Metal2 Bondpad (enc < 3.0))
+	   errorLayer(L13096 "20D: Metal2 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L74762 = geomStraddle(Bondpad Metal3)
+
+Executing: L96247 = geomAndNot(L74762 Metal3)
+	   errorLayer(L96247 "20E: Metal3 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L40743 = drc(Metal3 Bondpad (enc < 3.0))
+	   errorLayer(L40743 "20E: Metal3 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L74793 = geomStraddle(Bondpad Metal4)
+
+Executing: L98700 = geomAndNot(L74793 Metal4)
+	   errorLayer(L98700 "20F: Metal4 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L31610 = drc(Metal4 Bondpad (enc < 3.0))
+	   errorLayer(L31610 "20F: Metal4 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L74824 = geomStraddle(Bondpad Metal5)
+
+Executing: L57340 = geomAndNot(L74824 Metal5)
+	   errorLayer(L57340 "20G: Metal5 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L3963 = drc(Metal5 Bondpad (enc < 3.0))
+	   errorLayer(L3963 "20G: Metal5 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L74855 = geomStraddle(Bondpad Metal6)
+
+Executing: L37607 = geomAndNot(L74855 Metal6)
+	   errorLayer(L37607 "20H: Metal6 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L90980 = drc(Metal6 Bondpad (enc < 3.0))
+	   errorLayer(L90980 "20H: Metal6 to Bondpad enclosure must be == 3.0 um")
+
+Executing: L37197 = drc(Bondpad (width < 45.0))
+	   errorLayer(L37197 "20A: Minimum Pad width = 45.0")
+
+Executing: L54281 = drc(Bondpad (sepNotch < 10.0))
+	   errorLayer(L54281 "20B: Minimum Pad spacing to Pad = 10.0")
+
+Executing: L83221 = geomAnd(NWVIA Nwell)
+
+Executing: L26508 = geomAnd(Nwell PSDarea)
+
+Executing: geomSizeAnd(L83221 Nwell 0.7 10.0)
+
+Executing: geomSizeAnd(L83221 Nwell 0.7 10.0)
+
+Executing: geomSizeAnd(L83221 Nwell 0.7 10.0)
+
+Executing: geomSizeAnd(L83221 Nwell 0.7 10.0)
+
+Executing: L89973 = geomSizeAnd(L83221 Nwell 0.7 10.0)
+
+Executing: L44802 = geomAndNot(L26508 L89973)
+	   errorLayer(L44802 "13A1: P+SD to NW tap spacing must be <= 10.0 um")
+
+Executing: L17580 = geomAnd(Nburied PWNBVIA)
+
+Executing: L96236 = geomAndNot(Nburied NPNdummy)
+
+Executing: L11215 = geomAndNot(L96236 PNPdummy)
+
+Executing: L91270 = geomAnd(L11215 NSDarea)
+
+Executing: geomSizeAnd(L17580 Nburied 0.7 10.0)
+
+Executing: geomSizeAnd(L17580 Nburied 0.7 10.0)
+
+Executing: geomSizeAnd(L17580 Nburied 0.7 10.0)
+
+Executing: geomSizeAnd(L17580 Nburied 0.7 10.0)
+
+Executing: L74657 = geomSizeAnd(L17580 Nburied 0.7 10.0)
+
+Executing: L75985 = geomAndNot(L91270 L74657)
+	   errorLayer(L75985 "13A2: N+SD to Iso Psub tap spacing must be <= 10.0 um")
+
+Executing: L56692 = geomAndNot(SUBVIA Nburied)
+
+Executing: L93757 = geomAndNot(NSDarea L15547)
+
+Executing: L10915 = geomNot(Nburied)
+
+Executing: geomSizeAnd(L56692 L10915 0.7 10.0)
+
+Executing: geomSizeAnd(L56692 L10915 0.7 10.0)
+
+Executing: geomSizeAnd(L56692 L10915 0.7 10.0)
+
+Executing: geomSizeAnd(L56692 L10915 0.7 10.0)
+
+Executing: L44963 = geomSizeAnd(L56692 L10915 0.7 10.0)
+
+Executing: L69634 = geomAndNot(L93757 L44963)
+	   errorLayer(L69634 "13A3: N+SD to Psub tap spacing must be <= 10.0 um")
+
+Executing: L77275 = geomAndNot(PWVIA Nburied)
+
+Executing: L92895 = geomAndNot(Pwell Nwell)
+
+Executing: L19789 = geomAndNot(L92895 Nburied)
+
+Executing: L30836 = geomAnd(L19789 NSDarea)
+
+Executing: geomSizeAnd(L77275 L10915 0.7 10.0)
+
+Executing: geomSizeAnd(L77275 L10915 0.7 10.0)
+
+Executing: geomSizeAnd(L77275 L10915 0.7 10.0)
+
+Executing: geomSizeAnd(L77275 L10915 0.7 10.0)
+
+Executing: L93119 = geomSizeAnd(L77275 L10915 0.7 10.0)
+
+Executing: L18376 = geomAndNot(L30836 L93119)
+	   errorLayer(L18376 "13A3: N+SD to PW tap spacing must be <= 10.0 um")
+
+Finished running rules. Task processor time in main process:
+cpu: 0.06  elap: 1  pf: 0  in: 0  out: 312  virt: 189M  phys: 916M
+
+Started output post-processing ...
+
+Nothing to postprocess: No grid cells in the design
+
+Finished output post-processing
+cpu: 0.04  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1012M
+
+Finished building the persistent database.
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6416  virt: 238M  phys: 1025M
+
+
+*****  aveng terminated normally  *****
+
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/aveng
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avrpt /home/u24ev057/VD_lab/lab20/layout/drc_rc_2.rsf
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+@(#)$CDS: avrpt_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Aug 18 14:31:17 2026
+
+
+   Creating Error Database 'drc_rc_2'...
+
+   Reading VDB ...
+2026/08/18 14:31:17 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 14:31:17 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+--------------------------------------------------------------------------------
+Rule      Message                                    FlatCount     RealCount
+--------------------------------------------------------------------------------
+(    1)  dataAuditErrors                                     0            0
+(    2)  non45Errors                                         0            0
+(    3)  offGridErrors                                       0            0
+(    4)  offGridShapeErrors: off grid polygon on             0            0
+(    5)  offGridShapeErrors: off grid polygon on             0            0
+(    6)  offGridShapeErrors: off grid polygon on             0            0
+(    7)  offGridShapeErrors: off grid polygon on             0            0
+(    8)  offGridShapeErrors: off grid polygon on             0            0
+(    9)  offGridShapeErrors: off grid polygon on             0            0
+(   10)  offGridShapeErrors: off grid polygon on             0            0
+(   11)  offGridShapeErrors: off grid polygon on             0            0
+(   12)  offGridShapeErrors: off grid polygon on             0            0
+(   13)  offGridShapeErrors: off grid polygon on             0            0
+(   14)  offGridShapeErrors: off grid polygon on             0            0
+(   15)  offGridShapeErrors: off grid polygon on             0            0
+(   16)  offGridShapeErrors: off grid polygon on             0            0
+(   17)  offGridShapeErrors: off grid polygon on             0            0
+(   18)  offGridShapeErrors: off grid polygon on             0            0
+(   19)  offGridShapeErrors: off grid polygon on             0            0
+(   20)  offGridShapeErrors: off grid polygon on             0            0
+(   21)  offGridShapeErrors: off grid polygon on             0            0
+(   22)  offGridShapeErrors: off grid polygon on             0            0
+(   23)  offGridShapeErrors: off grid polygon on             0            0
+(   24)  offGridShapeErrors: off grid polygon on             0            0
+(   25)  offGridShapeErrors: off grid polygon on             0            0
+(   26)  offGridShapeErrors: off grid polygon on             0            0
+(   27)  offGridShapeErrors: off grid polygon on             0            0
+(   28)  offGridShapeErrors: off grid polygon on             0            0
+(   29)  offGridShapeErrors: off grid polygon on             0            0
+(   30)  offGridShapeErrors: off grid polygon on             0            0
+(   31)  offGridShapeErrors: off grid polygon on             0            0
+(   32)  offGridShapeErrors: off grid polygon on             0            0
+(   33)  offGridShapeErrors: off grid polygon on             0            0
+(   34)  offGridShapeErrors: off grid polygon on             0            0
+(   35)  offGridShapeErrors: off grid polygon on             0            0
+(   36)  offGridShapeErrors: off grid polygon on             0            0
+(   37)  offGridShapeErrors: off grid polygon on             0            0
+(   38)  offGridShapeErrors: off grid polygon on             0            0
+(   39)  offGridShapeErrors: off grid polygon on             0            0
+(   40)  offGridShapeErrors: off grid polygon on             0            0
+(   41)  offGridShapeErrors: off grid polygon on             0            0
+(   42)  offGridShapeErrors: off grid polygon on             0            0
+(   43)  non45 degree polygon on layer BJTdum                0            0
+(   44)  non45 degree polygon on layer Bondpad               0            0
+(   45)  non45 degree polygon on layer CapMetal              0            0
+(   46)  non45 degree polygon on layer Cont                  0            0
+(   47)  non45 degree polygon on layer IND2dummy             0            0
+(   48)  non45 degree polygon on layer IND3dummy             0            0
+(   49)  non45 degree polygon on layer INDdummy              0            0
+(   50)  non45 degree polygon on layer JVAR1dummy            0            0
+(   51)  non45 degree polygon on layer JVAR2dummy            0            0
+(   52)  non45 degree polygon on layer JVAR3dummy            0            0
+(   53)  non45 degree polygon on layer M1dummy               0            0
+(   54)  non45 degree polygon on layer M2dummy               0            0
+(   55)  non45 degree polygon on layer M3dummy               0            0
+(   56)  non45 degree polygon on layer M4dummy               0            0
+(   57)  non45 degree polygon on layer M5dummy               0            0
+(   58)  non45 degree polygon on layer M6dummy               0            0
+(   59)  non45 degree polygon on layer Metal1                0            0
+(   60)  non45 degree polygon on layer Metal2                0            0
+(   61)  non45 degree polygon on layer Metal3                0            0
+(   62)  non45 degree polygon on layer Metal4                0            0
+(   63)  non45 degree polygon on layer Metal5                0            0
+(   64)  non45 degree polygon on layer Metal6                0            0
+(   65)  non45 degree polygon on layer NPNdummy              0            0
+(   66)  non45 degree polygon on layer Nburied               0            0
+(   67)  non45 degree polygon on layer Nimp                  0            0
+(   68)  non45 degree polygon on layer Nwell                 0            0
+(   69)  non45 degree polygon on layer Oxide                 0            0
+(   70)  non45 degree polygon on layer PNPdummy              0            0
+(   71)  non45 degree polygon on layer Pimp                  0            0
+(   72)  non45 degree polygon on layer Poly                  0            0
+(   73)  non45 degree polygon on layer Pwell                 0            0
+(   74)  non45 degree polygon on layer ResWdum               0            0
+(   75)  non45 degree polygon on layer Resdum                0            0
+(   76)  non45 degree polygon on layer ThickOxide            0            0
+(   77)  non45 degree polygon on layer Via1                  0            0
+(   78)  non45 degree polygon on layer Via2                  0            0
+(   79)  non45 degree polygon on layer Via3                  0            0
+(   80)  non45 degree polygon on layer Via4                  0            0
+(   81)  non45 degree polygon on layer Via5                  0            0
+(   82)  acute angle on layer BJTdum                         0            0
+(   83)  acute angle on layer IND2dummy                      0            0
+(   84)  acute angle on layer IND3dummy                      0            0
+(   85)  acute angle on layer INDdummy                       0            0
+(   86)  acute angle on layer JVAR1dummy                     0            0
+(   87)  acute angle on layer JVAR2dummy                     0            0
+(   88)  acute angle on layer JVAR3dummy                     0            0
+(   89)  acute angle on layer M1dummy                        0            0
+(   90)  acute angle on layer M2dummy                        0            0
+(   91)  acute angle on layer M3dummy                        0            0
+(   92)  acute angle on layer M4dummy                        0            0
+(   93)  acute angle on layer M5dummy                        0            0
+(   94)  acute angle on layer M6dummy                        0            0
+(   95)  acute angle on layer NPNdummy                       0            0
+(   96)  acute angle on layer PNPdummy                       0            0
+(   97)  acute angle on layer ResWdum                        0            0
+(   98)  acute angle on layer Resdum                         0            0
+(   99)  NWVIA_StampErrorFloat                               0            0
+(  100)  NWVIA_StampErrorMult                                0            0
+(  101)  NWELLterm_StampErrorFloat                           0            0
+(  102)  NWELLterm_StampErrorMult                            0            0
+(  103)  JVARterm_StampErrorFloat                            0            0
+(  104)  JVARterm_StampErrorMult                             0            0
+(  105)  JVARanode_StampErrorFloat                           0            0
+(  106)  JVARanode_StampErrorMult                            0            0
+(  107)  PWVIA_StampErrorFloat                               0            0
+(  108)  PWVIA_StampErrorMult                                0            0
+(  109)  Pwell_StampErrorFloat                               0            0
+(  110)  Pwell_StampErrorMult                                0            0
+(  111)  PWNBVIA_StampErrorFloat                             0            0
+(  112)  PWNBVIA_StampErrorMult                              0            0
+(  113)  ISOPWELL_StampErrorFloat                            0            0
+(  114)  ISOPWELL_StampErrorMult                             0            0
+(  115)  SUBVIA_StampErrorFloat                              0            0
+(  116)  SUBVIA_StampErrorMult                               0            0
+(  117)  PSUB_StampErrorFloat                                0            0
+(  118)  PSUB_StampErrorMult                                 0            0
+(  119)  NBVIA_StampErrorFloat                               0            0
+(  120)  NBVIA_StampErrorMult                                0            0
+(  121)  Nburied_StampErrorFloat                             0            0
+(  122)  Nburied_StampErrorMult                              0            0
+(  123)  0A: Nburied width must be >= 1.0 um                 0            0
+(  124)  0B: Nburied to Nburied spacing must be >            0            0
+(  125)  1A: Nwell width must be >= 1.0 um                   0            0
+(  126)  1B: Nwell to Nwell spacing must be >= 1.            0            0
+(  127)  1C: Nburied to Nwell enclosure must be >            0            0
+(  128)  1D: Pwell width must be >= 1.0 um                   0            0
+(  129)  1E: Pwell to Pwell spacing must be >= 1.            0            0
+(  130)  1F: Nburied to Pwell enclosure must be >            0            0
+(  131)  1F: Nburied to Pwell enclosure must be >            0            0
+(  132)  2A: Oxide width must be >= 0.4 um                   0            0
+(  133)  2B: Oxide to Oxide spacing must be >= 0.            0            0
+(  134)  2C: Nwell to Oxide enclosure must be >=             0            0
+(  135)  2C: Nwell to Oxide enclosure must be >=             0            0
+(  136)  2C: Pwell to Oxide enclosure must be >=             0            0
+(  137)  2C: Pwell to Oxide enclosure must be >=             0            0
+(  138)  2D: Nwell to Oxide spacing must be >= 0.            0            0
+(  139)  2D: Nwell to Oxide spacing must be >= 0.            0            0
+(  140)  2D: Pwell to Oxide spacing must be >= 0.            0            0
+(  141)  2D: Pwell to Oxide spacing must be >= 0.            0            0
+(  142)  2.5A: ThickOxide width must be >= 0.5 um            0            0
+(  143)  2.5B: ThickOxide to ThickOxide spacing m            0            0
+(  144)  2.5D: ThickOxide to Oxide spacing must b            0            0
+(  145)  2.5E: ThickOxide to Poly spacing must be            0            0
+(  146)  2.5E: ThickOxide to Poly spacing must be            0            0
+(  147)  2.5F: ThickOxide to Poly enclosure must             0            0
+(  148)  2.5F: ThickOxide to Poly enclosure must             0            0
+(  149)  2.5C: ThickOxide to Oxide enclosure must            0            0
+(  150)  3A: Nimp width must be >= 0.4 um                    0            0
+(  151)  3B: Nimp to Nimp spacing must be >= 0.4             0            0
+(  152)  3C: Nimp to Oxide enclosure must be >= 0            0            0
+(  153)  3D: Nburied to Nimp enclosure must be >=            0            0
+(  154)  4A: Pimp width must be >= 0.4 um                    0            0
+(  155)  4B: Pimp to Pimp spacing must be >= 0.4             0            0
+(  156)  4C: Pimp to Oxide enclosure must be >= 0            0            0
+(  157)  4D: Nburied to Pimp enclosure must be >=            0            0
+(  158)  5A: Poly width must be >= 0.18 um                   0            0
+(  159)  5B: Poly to Poly spacing must be >= 0.3             0            0
+(  160)  5C: Poly to Oxide enclosure must be >= 0            0            0
+(  161)  5D: Oxide to Poly enclosure must be >= 0            0            0
+(  162)  5E: Oxide to Poly spacing must be >= 0.2            0            0
+(  163)  6B: Cont to Cont spacing must be >= 0.2             0            0
+(  164)  6A: Cont shapes must be 0.2x0.2 rectangl            0            0
+(  165)  6C: Oxide to Cont enclosure must be >= 0            0            0
+(  166)  6C: Oxide to Cont enclosure must be >= 0            0            0
+(  167)  6E: Poly to Cont spacing must be >= 0.2             0            0
+(  168)  6E: Poly to Cont spacing must be >= 0.2             0            0
+(  169)  6G: Nimp to Cont enclosure must be >= 0.            0            0
+(  170)  6G: Nimp to Cont enclosure must be >= 0.            0            0
+(  171)  6H: Oxide to Cont spacing must be >= 0.2            0            0
+(  172)  6H: Oxide to Cont spacing must be >= 0.2            0            0
+(  173)  6D: Poly to Cont enclosure must be >= 0.            0            0
+(  174)  6D: Poly to Cont enclosure must be >= 0.            0            0
+(  175)  6F: Pimp to Cont enclosure must be >= 0.            0            0
+(  176)  6F: Pimp to Cont enclosure must be >= 0.            0            0
+(  177)  7A: Metal1 width must be >= 0.3 um                  0            0
+(  178)  7B: Metal1 to Metal1 spacing must be >=             0            0
+(  179)  7C: Metal1 to Cont enclosure must be >=             0            0
+(  180)  7C: Metal1 to Cont enclosure must be >=             0            0
+(  181)  9A: Metal2 width must be >= 0.3 um                  0            0
+(  182)  9B: Metal2 to Metal2 spacing must be >=             0            0
+(  183)  9C: Metal2 to Via1 enclosure must be >=             0            0
+(  184)  9C: Metal2 to Via1 enclosure must be >=             0            0
+(  185)  11A: Metal3 width must be >= 0.3 um                 0            0
+(  186)  11B: Metal3 to Metal3 spacing must be >=            0            0
+(  187)  11C: Metal3 to Via2NoCapInd enclosure mu            0            0
+(  188)  11C: Metal3 to Via2NoCapInd enclosure mu            0            0
+(  189)  15A: Metal4 width must be >= 0.3 um                 0            0
+(  190)  15B: Metal4 to Metal4 spacing must be >=            0            0
+(  191)  15C: Metal4 to Via3 enclosure must be >=            0            0
+(  192)  15C: Metal4 to Via3 enclosure must be >=            0            0
+(  193)  17A: Metal5 width must be >= 0.3 um                 0            0
+(  194)  17B: Metal5 to Metal5 spacing must be >=            0            0
+(  195)  17C: Metal5 to Via4 enclosure must be >=            0            0
+(  196)  17C: Metal5 to Via4 enclosure must be >=            0            0
+(  197)  19A: Metal6 width must be >= 0.3 um                 0            0
+(  198)  19B: Metal6 to Metal6 spacing must be >=            0            0
+(  199)  19C: Metal6 to Via5 enclosure must be >=            0            0
+(  200)  19C: Metal6 to Via5 enclosure must be >=            0            0
+(  201)  8B: Via1 to Via1 spacing must be >= 0.3             0            0
+(  202)  8A: Via1 shapes must be 0.2x0.2 rectangl            0            0
+(  203)  8C: Metal1 to Via1 enclosure must be >=             0            0
+(  204)  8C: Metal1 to Via1 enclosure must be >=             0            0
+(  205)  10B: Via2 to Via2 spacing must be >= 0.3            0            0
+(  206)  10A: Via2 shapes must be 0.2x0.2 rectang            0            0
+(  207)  10C: Metal2 to Via2 enclosure must be >=            0            0
+(  208)  10C: Metal2 to Via2 enclosure must be >=            0            0
+(  209)  14B: Via3 to Via3 spacing must be >= 0.3            0            0
+(  210)  14A: Via3 shapes must be 0.2x0.2 rectang            0            0
+(  211)  14C: Metal3 to Via3 enclosure must be >=            0            0
+(  212)  14C: Metal3 to Via3 enclosure must be >=            0            0
+(  213)  16B: Via4 to Via4 spacing must be >= 0.3            0            0
+(  214)  16A: Via4 shapes must be 0.2x0.2 rectang            0            0
+(  215)  16C: Metal4 to Via4 enclosure must be >=            0            0
+(  216)  16C: Metal4 to Via4 enclosure must be >=            0            0
+(  217)  18B: Via5 to Via5 spacing must be >= 0.3            0            0
+(  218)  18A: Via5 shapes must be 0.2x0.2 rectang            0            0
+(  219)  18C: Metal5 to Via5 enclosure must be >=            0            0
+(  220)  18C: Metal5 to Via5 enclosure must be >=            0            0
+(  221)  12D: CapMetal to Metal3 enclosure must b            0            0
+(  222)  12A: CapMetal width must be >= 0.5 um               0            0
+(  223)  12B: Metal2 to Via2Cap enclosure must be            0            0
+(  224)  12B: Metal2 to Via2Cap enclosure must be            0            0
+(  225)  12C: CapMetal to Via2Cap enclosure must             0            0
+(  226)  12C: CapMetal to Via2Cap enclosure must             0            0
+(  227)  11D: Metal3 to Via2Cap enclosure must be            0            0
+(  228)  11D: Metal3 to Via2Cap enclosure must be            0            0
+(  229)  20C: Metal1 to Bondpad enclosure must be            0            0
+(  230)  20C: Metal1 to Bondpad enclosure must be            0            0
+(  231)  20D: Metal2 to Bondpad enclosure must be            0            0
+(  232)  20D: Metal2 to Bondpad enclosure must be            0            0
+(  233)  20E: Metal3 to Bondpad enclosure must be            0            0
+(  234)  20E: Metal3 to Bondpad enclosure must be            0            0
+(  235)  20F: Metal4 to Bondpad enclosure must be            0            0
+(  236)  20F: Metal4 to Bondpad enclosure must be            0            0
+(  237)  20G: Metal5 to Bondpad enclosure must be            0            0
+(  238)  20G: Metal5 to Bondpad enclosure must be            0            0
+(  239)  20H: Metal6 to Bondpad enclosure must be            0            0
+(  240)  20H: Metal6 to Bondpad enclosure must be            0            0
+(  241)  20A: Minimum Pad width = 45.0                       0            0
+(  242)  20B: Minimum Pad spacing to Pad = 10.0              0            0
+(  243)  13A1: P+SD to NW tap spacing must be <=             0            0
+(  244)  13A2: N+SD to Iso Psub tap spacing must             0            0
+(  245)  13A3: N+SD to Psub tap spacing must be <            0            0
+(  246)  13A3: N+SD to PW tap spacing must be <=             0            0
+--------------------------------------------------------------------------------
+Total  errors:                                               0            0
+--------------------------------------------------------------------------------
+
+   Finished creating Error Database ...
+
+   Writing Report into /home/u24ev057/VD_lab/lab20/layout/drc_rc_2.err ...
+
+avrpt cpu sec:    0.05  elapsed:     0  virtual:    93M
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avrpt
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc /home/u24ev057/VD_lab/lab20/layout/drc_rc_2.rsf -restart -cdslib /home/u24ev057/cds.lib
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc
+
+
+Run ended: Tue Aug 18 14:31:17 2026
+
+*****  Assura terminated normally  *****
+

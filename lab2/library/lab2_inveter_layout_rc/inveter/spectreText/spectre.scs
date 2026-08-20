@@ -1,0 +1,8 @@
+// "spectre" description for "lab2_inveter_layout_rc", "inveter", "spectreText" 
+
+
+simulator lang=spectre
+
+subckt inveter
+
+ends inveter

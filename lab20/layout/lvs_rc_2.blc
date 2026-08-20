@@ -1,0 +1,4 @@
+"pmos(MOS)" "pmos(MOS)"
+"nmos(MOS)" "nmos(MOS)"
+"inverter layout inverter_layout_rc" "inverter schematic inverter_layout_rc" "nmos(MOS)" "pmos(MOS)"
+Devices filtered from layout

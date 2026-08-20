@@ -1,0 +1,8 @@
+// "spectre" description for "lab2_inveter_layout_rc", "inverter", "spectreText" 
+
+
+simulator lang=spectre
+
+subckt inverter
+
+ends inverter

@@ -1,0 +1,19 @@
+sub PSUB
+mt2 mt2
+mt3 mt3
+mt4 mt4
+mt5 mt5
+mt6 mt6
+diff np_rNSDterm p_rNSDterm np_rPSDterm p_rPSDterm
+M1term np_rM1term p_rM1term
+POLYterm np_rPOLYterm p_rPOLYterm
+PSDterm np_rPSDterm p_rPSDterm
+NSDterm np_rNSDterm p_rNSDterm
+PSUB PSUB
+POLYcont np_rPOLYcont p_rPOLYcont
+PSDcont PSDcont
+NSDcont NSDcont
+NWELLterm_NWVIA_ovia NWELLterm_NWVIA_ovia
+NWELLterm np_rNWELLterm p_rNWELLterm
+NWVIA np_rNWVIA p_rNWVIA
+SUBVIA np_rSUBVIA p_rSUBVIA

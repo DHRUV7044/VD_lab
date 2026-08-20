@@ -1,0 +1,151 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/22 00:04 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura 3.2 LVS saved state
+;----------------------------------------------------------------------------
+
+
+
+vuiLVSFormTable = '(
+	schematicSource  "DFII"
+	layoutSource  "DFII"
+	runName  "lvs_1"
+	runDir  "/home/u24ev057/VD_lab/lab2/layout/lvs"
+	machineLoc  "local"
+	viewRules  t
+	technologyField  "gpdk180"
+	runsetField  "default"
+	extract  "/tools/cadence/FOUNDRY/analog/180nm/pv/assura/extract.rul"
+	compare  "/tools/cadence/FOUNDRY/analog/180nm/pv/assura/compare.rul"
+	switches  ""
+	bind  ""
+	rsfInclude  ""
+	varTag  "None"
+	varVal  ""
+	varDefVal  ""
+	varDesc  ""
+	avView  nil
+	avCompareView  nil
+	additionalFunctionsButton  nil
+	schLibrary  "lab2_inverter_layout"
+	schCell  "lab2_inverter"
+	schView  "schematic"
+	existingSchNetlist  nil
+	useVerilogTopCell  nil
+	layLibrary  "lab2_inverter_layout"
+	layCell  "lab2_inverter"
+	layView  "layout"
+	layUseExistingNL  nil
+	extractButton  nil
+	compareButton  nil
+	bindButton  nil
+	rsfIncludeButton  nil
+)
+
+
+
+
+vuiLVSFormVarTable = '(
+)
+
+
+additionalFunctionsFieldsTable = '(
+	AFflattenCellFlag  nil
+	AFjoinableNetsFlag  nil
+	AFoutFileFlag  nil
+	AFchangeLabelFlag  nil
+	AFmustJoinNetFlag  nil
+	AFdeleteCellTextFlag  nil
+)
+
+
+vuiLVSFormAdditionalFunctionsTable = '(
+     flattenCell  nil
+     joinableNets nil
+     changeLabel  nil
+     mustJoinNet  nil
+     outFile      nil
+     deleteCellText nil
+)
+
+
+
+vuiLVSschNLoptionFormTable = '(
+	templateFileOverride  nil
+	templateFile  ""
+	viewList  "auLvs schematic symbol"
+	stopList  "auLvs"
+	deviceInformation  ""
+	avSimName  ""
+	avMFactorPropName  ""
+	avVerilogRefLibName  ""
+	avCdlGlobalModeCyclic  "floating"
+	ignoreNamePrefix  (nil)
+	avErrorOnMissingMaster  (nil)
+	avUseModelPropOnInstance  (nil)
+	disableWildCardPG  (nil)
+	verilogBusMapIEEE  (t)
+	netlistCyclic  "CDL"
+	netlistFileHolding  ""
+	netlistLib  ""
+	netlistFile  nil
+	deviceInformationButton  nil
+)
+
+
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/22 00:04 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura 3.2 Template Version 1
+;----------------------------------------------------------------------------
+
+vuiLVSOptions = '(
+)
+
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/22 00:04 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura 3.2 Template Version 1
+;----------------------------------------------------------------------------
+
+vuiAVCGenOptions = '(
+)
+
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/22 00:04 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura 3.2 Template Version 1
+;----------------------------------------------------------------------------
+
+vuiAVCLayOptions = '(
+)
+
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/22 00:04 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura 3.2 Template Version 1
+;----------------------------------------------------------------------------
+
+vuiAVCSchOptions = '(
+)
+

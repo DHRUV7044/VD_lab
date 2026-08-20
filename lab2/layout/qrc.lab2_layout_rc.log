@@ -1,0 +1,990 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+21.2.2-p045 Fri Sep 23 10:56:50 PDT 2022
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2022 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXOPT-243) : For Assura inputs, if the "output_setup -directory_name" option was not
+specified, it is automatically set to the input directory.
+INFO (LBRCXU-108): Starting
+
+ /tools/cadence/ASSURA41/tools.lnx86/assura/bin/rcxToDfII /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/__qrc.rcx_cmd -t -f /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/extview.tmp -w /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc -cdslib /home/u24ev057/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.24s.
+@(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:37 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/rcxToDfII on Tue Aug 18 15:31:29 2026
+
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+Loading gpdk180/libInit.il ...
+	Loading gpdk180/loadCxt.ile ... done!
+	Loading context 'gpdk180' from library 'gpdk180' ... done!
+	Loading context 'pdkUtils' from library 'gpdk180' ... done!
+	Loading gpdk180/.cdsenv ... *WARNING* Master env file /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre/.cdsenv is not readable
+done!
+	Loading gpdk180/libInitCustomExit.il ... 
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 180nm PDK                      *           
+  *                        (gpdk180)                          *           
+  *                                                           *           
+  *                       Version 3.2                         *           
+  *                                                           *           
+  *************************************************************           
+done!
+Loaded gpdk180/libInit.il successfully!
+*WARNING* Cannot find /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/hspiceD directory to load environment variables
+INFO (LBRCXU-114): Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/rcxToDfII
+
+INFO (LBRCXU-108): Starting
+
+ /tools/cadence/ASSURA41/tools.lnx86/assura/bin/avRCXxref /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/__qrc.rcx_cmd -useRunName
+@(#)$CDS: avRCXxref_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:28 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+run on vlsilab-client44.eced.svnit.ac.in at Tue Aug 18 15:31:30 2026
+Reading rsf
+INFO (LBRCXU-114): Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/avRCXxref
+
+INFO (LBRCXM-642): Constructing the RCX run script
+
+Forking:  capgen -techdir /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -inc /home/u24ev057/VD_lab/lab2/layout/lvs_rc.elf -lvs /home/u24ev057/VD_lab/lab2/layout/lvs_rc.xcn -lvsvia -p2lvs /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/p2lvsfile -reseqn -blocking MIMCAP:0.001,mt2,mt3 -exclude_gate_res -blocking JVARNF:1,sub,diff,mt1 -blocking JVARW40:1,sub,diff,mt1 -p poly,allGate,diff -canonical_res_caps -length_units meters /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus Extraction Techgen -trans VERSION 21.2.2 Linux 64 bit - (Fri Sep 23 10:27:37 PDT 2022)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc
+
+WARNING (CAPGEN-41474): Contact layer 'POLYcont_res' specified in the p2lvsfile is not found in the lvsfile.
+
+WARNING (CAPGEN-41475): Via layer 'POLYcont_res' resistance value is <= 0.
+Ignoring via definition in p2lvsfile, via will be shorted
+
+WARNING (CAPGEN-41474): Contact layer 'PSDcont_res' specified in the p2lvsfile is not found in the lvsfile.
+
+WARNING (CAPGEN-41475): Via layer 'PSDcont_res' resistance value is <= 0.
+Ignoring via definition in p2lvsfile, via will be shorted
+
+WARNING (CAPGEN-41474): Contact layer 'NSDcont_res' specified in the p2lvsfile is not found in the lvsfile.
+
+WARNING (CAPGEN-41475): Via layer 'NSDcont_res' resistance value is <= 0.
+Ignoring via definition in p2lvsfile, via will be shorted
+
+INFO (CAPGEN-41737): Lvs connect layers CapMetal INDterm1 INDterm2 are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by JVARterm layers JVARanode are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by NWVIA layers NWELLterm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by PSDterm layers JVARterm are not mapped in layer_setup file
+
+INFO (CAPGEN-41809):  Lvs connect via Via5 Via4 Via3 Via2NoCapInd Via2Cap Via1 INDterm1Cont INDterm2Cont POLYcont PSDcont NSDcont are not mapped in layer_setup file.
+
+WARNING (RCXSPIC-27104): p2lvsfile in tech directory does not have resistance 
+ temperature coefficients (TC1, TC2). ?temperature is ignored 
+
+WARNING (RCXSPIC-221203): /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/cap_coeff.dat doesn't have the latest cap models.
+
+WARNING (RCXSPIC-221204): Re-run capgen -S_rcxfs_off will make it current.
+
+WARNING (RCXSPIC-221205): RCX is now running in compatibility mode.
+
+rcxspice took  0.12 user, 0.17 sys, 0.00 elapsed, 13868.0 kbytes
+
+Successfully created RCX script '/home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/rcx.sh'
+WARNING (LBRCXM-617): Unable to obtain 1 license(s) of QTS100 21.20
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 21.20
+
+INFO (LBRCXM-608): Executing command
+   /bin/ksh  /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/rcx.sh
+
+##=======================================================
+##ADD_EXPLICIT_VIAS=N
+##ADD_BULK_TERMINAL=N
+##AGDS_FILE=/dev/null
+##AGDS_LAYER_MAP_FILE=/dev/null
+##HCCI_DEV_PROP_FILE=/dev/null
+##AGDS_SPICE_FILE=/dev/null
+##AGDS_TEXT_LAYERS=
+##ARRAY_VIAS_SPACING=
+##ASSURA_RUN_DIR=/home/u24ev057/VD_lab/lab2/layout
+##ASSURA_RUN_NAME=lvs_rc
+##BLACK_BOX_CELLS=/dev/null
+##BREAK_WIDTH=
+##CAP_COUPLING_FACTOR=1.0
+##CAP_EXTRACT_MODE=decoupled
+##CAP_GROUND=gnd_u24ev057
+##CAP_MODELS=no
+##DANGLINGR=N
+##DENSITY_CHECK_METHOD=P
+##DELETE_OUTPUT_FILE=N
+##DEVICE_FINGER_DELIMITER='@'
+##DF2=Y
+##DRACULA_RUN_DIR=
+##DRACULA_RUN_NAME=
+##ENABLESENSITIVITYEXTRACTION=N
+##EXCLUDE_FLOAT_LIMIT=
+##EXCLUDE_FLOAT_DECOPULING_FACTOR=
+##EXCLUDE_FLOATING_NETS=N
+##EXCLUDE_NETS_REDUCERC=/dev/null
+##EXCLUDE_SELF_CAPS=N
+##IGNORE_GATE_DIFFUSION_FRINGING_CAP=Y
+##EXTRACT=both
+##EXTRACT_MOS_DIFFUSION_AP=N
+##EXTRACT_MOS_DIFFUSION_HIGH=
+##EXTRACT_MOS_DIFFUSION_RES=N
+##FILTER_SIZE=2.0
+##FIXED_NETS_FILE=/dev/null
+##FMAX=
+##FRACTURE_LENGTH_UNITS=MICRONS
+##FREQUENCY_FILE=/dev/null
+##GROUND_NETS=
+##GROUND_NETS_FILE=/dev/null
+##GROUND_SUBSTRATE_FLOATING_NETS=N
+##HCCI_DEV_PROP=7
+##HCCI_INST_PROP=6
+##HCCI_NET_PROP=5
+##HCCI_RULE_FILE=
+##HCCI_RUN_DIR=
+##HCCI_RUN_NAME=
+##HEADER_FILE=/dev/null
+##HIERARCHY_DELIMITER='/'
+##OUTPUT_HIERARCHY_DELIMITER='/'
+##HRCX_CELLS_FILE=/dev/null
+##IMPORT_GLOBALS=Y
+##LADDER_NETWORK=N
+##LVS_SOURCE=assura
+##M_FACTORR=
+##M_FACTORW=N
+##MACRO_CELL=Y
+##MAX_FRACTURE_LENGTH=infinite
+##MAX_SIGNALS=
+##MERGE_PARALLEL_R=N
+##MERGE_PARALLEL_VIA=N
+##MINC=
+##MINC_BY_PERCENTAGE=
+##MINR=0.001
+##NET_NAME_SPACE=schematic
+##NETS_FILE=/dev/null
+##OUTPUT=/home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/extview.tmp
+##OUTPUT_NET_NAME_SPACE=layout
+##PARASITIC_BLOCKING_DEVICE_CELLS_TYPE=gray
+##PARASITIC_CAP_MODELS=no
+##PARASITIC_RES_MODELS=comment
+##PARASITIC_RES_LENGTH=N
+##PARASITIC_RES_WIDTH=Y
+##PARASITIC_RES_WIDTH_DRAWN=N
+##PARASITIC_RES_UNIT=N
+##PARTIAL_CAP_BLOCKING=N
+##PEEC=N
+##PIN_ORDER_FILE=/dev/null
+##PIPE_ADVGEN=
+##PIPE_SPICE2DB=
+##POWER_NETS=
+##POWER_NETS_FILE=/dev/null
+##RC_FREQUENCY=
+##RCXDIR=/home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc
+##RCXFS_HIGH=N
+##RCXFS_NETS_FILE=
+##RCXFS_TYPE=none
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_VIA_OFF=N
+##REDUCERC=N
+##REGION_LIMIT=
+##RES_MODELS=no
+##RISE_TIME=
+##SAVE_FILL_SHAPES=N
+##SINGLE_CAP_EDSPF=N
+##SHOW_DIODES=N
+##SKIN_FREQUENCY=
+##SPEF=N
+##SPEF_UNITS=
+##SPLIT_PINS=N
+##FORCE_SUBCELL_PIN_ORDERS=N
+##SPLIT_PINS_DISTANCE=
+##SUB_NODE_CHAR='#'
+##SUBSTRATE_PROFILE=/dev/null
+##SUBSTRATE_STAMPING_OFF=N
+##TEMPDIR=/home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/rcx_temp
+##TEMPERATURE=25.0
+##TYPE=full
+##USER_REGION=/dev/null
+##VARIANT_CELL_FILE=/dev/null
+##VIA_EFFECT_OFF=N
+##VIRTUAL_FILL=
+##XREF=/home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/lvs_rc.gnx,/home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/lvs_rc.gdx
+##XY_COORDINATES=c,r
+##=======================================================
+
+CASE_SENSITIVE=TRUE
+export CASE_SENSITIVE
+QRC_MOS_LW_PRECISION=y
+export QRC_MOS_LW_PRECISION
+TEMPDIR=`setTempDir /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/rcx_temp`
+setTempDir /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/rcx_temp
+export TEMPDIR
+DEVICE_FINGER_DELIMITER='@'
+HIERARCHY_DELIMITER='/'
+OUTPUT_HIERARCHY_DELIMITER='/'
+cd /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc
+cat <<ENDCAT> caps2dversion
+* caps2d version: 9
+ENDCAT
+cat <<ENDCAT> flattransUnit.info
+meters
+ENDCAT
+QRC=Y
+export QRC
+cat <<ENDCAT> topcellxcn.info
+/home/u24ev057/VD_lab/lab2/layout/lvs_rc.xcn
+ENDCAT
+
+#==========================================================#
+# Generate RCX input data from Assura LVS database
+#==========================================================#
+
+GOALIE2DIR=/tools/cadence/QUANTUS212/tools/extraction/bin
+export GOALIE2DIR
+vdbToRcx /home/u24ev057/VD_lab/lab2/layout lvs_rc -unit meters -- -V1 -H \
+	satfile -r /home/u24ev057/VD_lab/lab2/layout/lvs_rc.xcn -df2 -xgl
+@(#)$CDS: vdbToRcx_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:38 (sjfhw885) $
+20.1.2 Linux 64 bit - (Tue Mar 22 09:20:33 PDT 2022)
+Opening LVS data for lvs_rc in /home/u24ev057/VD_lab/lab2/layout
+Open time is 0.0 sec.
+Build pins/attributes took 0.0 sec.
+Processing Metal1_pintext                        4 shapes 0.0 sec.
+create satfile took  0.01 user, 0.01 sys, 0.00 elapsed, 136512.0 kbytes
+write edge Metal1_pintext took  0.00 user, 0.00 sys, 0.00 elapsed, 136512.0 kbytes
+Building net map file.		0.0 sec.
+create netmap file took 0.00 user, 0.00 sys, 0.00 elapsed, 136512.0 kbytes
+create net file took 0.00 user, 0.00 sys, 0.00 elapsed, 136512.0 kbytes
+WARNING (LBCLV-5663): No bipolar models provided. Can't create bipolar files
+
+WARNING (LBCLV-5660): No resistor models provided. Can't create resistor files
+
+WARNING (LBCLV-5654): No capacitor models provided. Can't create capacitor file
+
+WARNING (LBCLV-5657): No diode models provided. Can't create diode files
+
+WARNING (LBCLV-5706): no generic models in rule file
+
+Device creation took 0.0 sec
+Processing PSDcont                               5 shapes 0.0 sec.
+write edge PSDcont took  0.00 user, 0.00 sys, 0.00 elapsed, 137144.0 kbytes
+Processing NSDcont                               5 shapes 0.0 sec.
+write edge NSDcont took  0.00 user, 0.00 sys, 0.00 elapsed, 137144.0 kbytes
+Processing POLYcont                              1 shapes 0.0 sec.
+write edge POLYcont took  0.00 user, 0.00 sys, 0.00 elapsed, 137408.0 kbytes
+write edge PMOS_MOS_27 took  0.00 user, 0.00 sys, 0.00 elapsed, 137672.0 kbytes
+write edge NMOS_MOS_21 took  0.00 user, 0.00 sys, 0.00 elapsed, 137672.0 kbytes
+Processing PMOS_MOS_27                           1 shapes 0.0 sec.
+Processing NMOS_MOS_21                           1 shapes 0.0 sec.
+Processing SUBVIA                                1 shapes 0.0 sec.
+write edge SUBVIA took  0.00 user, 0.00 sys, 0.00 elapsed, 137936.0 kbytes
+Processing PSUB                                  1 shapes 0.0 sec.
+write edge PSUB took  0.00 user, 0.00 sys, 0.00 elapsed, 137936.0 kbytes
+Processing PSDterm                               3 shapes 0.0 sec.
+write edge PSDterm took  0.00 user, 0.00 sys, 0.00 elapsed, 138200.0 kbytes
+Processing POLYterm                              1 shapes 0.0 sec.
+write edge POLYterm took  0.00 user, 0.00 sys, 0.00 elapsed, 138200.0 kbytes
+Processing NWVIA                                 1 shapes 0.0 sec.
+write edge NWVIA took  0.00 user, 0.01 sys, 0.00 elapsed, 138464.0 kbytes
+Processing NWELLterm                             1 shapes 0.0 sec.
+write edge NWELLterm took  0.00 user, 0.00 sys, 0.00 elapsed, 138728.0 kbytes
+Processing NSDterm                               3 shapes 0.0 sec.
+write edge NSDterm took  0.00 user, 0.00 sys, 0.00 elapsed, 138728.0 kbytes
+Processing M1term                                4 shapes 0.0 sec.
+write edge M1term took  0.00 user, 0.00 sys, 0.00 elapsed, 138992.0 kbytes
+sort edges took  0.02 user, 0.09 sys, 1.00 elapsed, 4384.0 kbytes
+sort edges and labels took  0.12 user, 0.21 sys, 1.00 elapsed, 138992.0 kbytes
+
+	vdbToRcx System Usage:
+	Elapsed:     1 seconds.
+	CPU:         0.1 seconds
+	Memory      20 Meg
+GOALIE2DIR=/tools/cadence/QUANTUS212/tools/extraction/bin/64bit/
+export GOALIE2DIR
+/bin/cp NMOS_MOS_21 NMOS_MOS_21_orig
+geom NMOS_MOS_21 NSDterm - NMOS_MOS_21,10,i,1
+/bin/cp PMOS_MOS_27 PMOS_MOS_27_orig
+geom PMOS_MOS_27 PSDterm - PMOS_MOS_27,10,i,1
+
+#==========================================================#
+# Generate power list
+#==========================================================#
+
+cat global.net > power_list
+
+#==========================================================#
+# Ensure vias do not extend beyond routing
+#==========================================================#
+
+geom -V POLYcont M1term POLYterm - POLYcont,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6340.0 kbytes
+geom -V PSDcont M1term PSDterm - PSDcont,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6320.0 kbytes
+geom -V NSDcont M1term NSDterm - NSDcont,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6300.0 kbytes
+geom -V NWELLterm NWVIA - NWELLterm_NWVIA_ovia,11,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6428.0 kbytes
+#==========================================================#
+# Flatten net file, routing, via and device layers
+#==========================================================#
+
+SAVEDIR=`beginFlattenInputs`
+beginFlattenInputs
+export SAVEDIR
+/bin/mv -f NET h_NET
+flatnet -V -li -h '/' h_NET NET
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 14400.0 kbytes
+netprint -V -N1 power_list:power_list_nums NET
+flattenTransistorData NMOS_MOS_21 meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 7340.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 14364.0 kbytes
+flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 5504.0 kbytes
+flattenTransistorData PMOS_MOS_27 meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 7356.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 14568.0 kbytes
+flattrans took 0.00 user, 0.01 sys, 0.00 elapsed, 5324.0 kbytes
+flattenLayers -m M1term POLYterm PSDterm NSDterm PSUB POLYcont PSDcont \
+	NSDcont NWELLterm_NWVIA_ovia NWELLterm NWVIA SUBVIA NMOS_MOS_21_orig \
+	PMOS_MOS_27_orig
+flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 7660.0 kbytes
+endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+cat <<ENDCAT> sch_cap_ground
+gnd_u24ev057
+ENDCAT
+sch2lay -a -r /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/lvs_rc.gnx -rd /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/lvs_rc.gdx sch_cap_ground lay_cap_ground
+CAP_GROUND=`findCapGround -gfn lay_cap_ground NET`
+findCapGround -gfn lay_cap_ground NET
+echo "CAP_GROUND=" ${CAP_GROUND}
+CAP_GROUND= 1
+export CAP_GROUND
+echo ${CAP_GROUND} > cgnetfile
+netprint -n cgnetfile:gn_summary.log NET
+reconnect -cgnd ${CAP_GROUND} -float floatlvsnetsfile -tf \
+	NMOS_MOS_21,PMOS_MOS_27 -probe \
+	Metal1_pintext:M1term:Metal1_pintext_fvia
+iprint -count floatlvsnetsfile > floatlvsnetsfile.txt
+geom NMOS_MOS_21,PMOS_MOS_27 - qrcgate,1,i,1
+iprint -count floatlvsnetsfile > input_nets_summary.log
+iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2
+mv power_list_nums power_list_nums_orig
+cp power_list_nums2 power_list_nums 
+
+#==========================================================#
+# Segregate interconnect into resistive and non-resistive
+#==========================================================#
+
+selectNetsByNumber power_list_nums M1term p_rM1term np_rM1term
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5376.0 kbytes
+selectNetsByNumber power_list_nums NSDterm p_rNSDterm np_rNSDterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5456.0 kbytes
+selectNetsByNumber power_list_nums NWELLterm p_rNWELLterm np_rNWELLterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5568.0 kbytes
+selectNetsByNumber power_list_nums POLYterm p_rPOLYterm np_rPOLYterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+selectNetsByNumber power_list_nums PSDterm p_rPSDterm np_rPSDterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5416.0 kbytes
+selectNetsByNumber power_list_nums NWVIA p_rNWVIA np_rNWVIA
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5404.0 kbytes
+selectNetsByNumber power_list_nums SUBVIA p_rSUBVIA np_rSUBVIA
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+selectNetsByNumber power_list_nums PSUB p_rPSUB np_rPSUB
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5520.0 kbytes
+selectNetsByNumber power_list_nums POLYcont p_rPOLYcont np_rPOLYcont
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+mv power_list_nums_orig power_list_nums
+
+#==========================================================#
+# Create resistor cut regions between resistive
+# interconnect levels
+#==========================================================#
+
+mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
+	np_rPOLYcont rPOLYcont - np_rM1term np_rPOLYterm
+mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 21816.0 kbytes
+cp rPOLYcont rPOLYcont_orig
+
+#==========================================================#
+# Create resistive interconnect MOSFET terminals
+#==========================================================#
+
+createNRMosfetGateTerminal NMOS_MOS_21 np_rPOLYterm NMOS_MOS_21_mgvia
+createNRMosfetGateTerminal PMOS_MOS_27 np_rPOLYterm PMOS_MOS_27_mgvia
+
+#==========================================================#
+# Assign net numbers to cut regions
+#==========================================================#
+
+connect -V -relocate NET np_rPSDterm:np_rPSDterm.conn \
+	np_rNSDterm:np_rNSDterm.conn np_rNWELLterm:np_rNWELLterm.conn \
+	rPOLYcont NMOS_MOS_21_mgvia PMOS_MOS_27_mgvia - -
+
+connect took  0.01 user, 0.00 sys, 0.00 elapsed, 273924.0 kbytes
+#==========================================================#
+# Assign net numbers to resistor vias
+#==========================================================#
+
+geom -V NSDcont np_rNSDterm.conn - tmp_rNSDcont,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5928.0 kbytes
+mergevia -V -i -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF \
+	-cnt tmp_rNSDcont rNSDcont - np_rM1term np_rNSDterm
+mergevia took 0.08 user, 0.08 sys, 0.00 elapsed, 21912.0 kbytes
+cp rNSDcont rNSDcont_orig
+/bin/rm -f tmp_rNSDcont
+geom -V PSDcont np_rPSDterm.conn - tmp_rPSDcont,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5956.0 kbytes
+mergevia -V -i -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF \
+	-cnt tmp_rPSDcont rPSDcont - np_rM1term np_rPSDterm
+mergevia took 0.09 user, 0.07 sys, 1.00 elapsed, 21896.0 kbytes
+cp rPSDcont rPSDcont_orig
+/bin/rm -f tmp_rPSDcont
+
+#==========================================================#
+# Assign net numbers to nonresistive layers
+#==========================================================#
+
+epick -V -reo -e rNSDcont -e rPSDcont np_rPSDterm.conn tmp_PSDterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5472.0 kbytes
+epick -V -reo -e tmp_PSDterm -c np_rPSDterm.conn tmp1_PSDterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 3492.0 kbytes
+geom -V tmp1_PSDterm np_rPSDterm - tmp1_PSDterm,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6004.0 kbytes
+geom -V tmp_PSDterm,tmp1_PSDterm - np_rPSDterm,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5972.0 kbytes
+/bin/rm -f tmp_PSDterm tmp1_PSDterm
+epick -V -reo -e rNSDcont -e rPSDcont np_rNSDterm.conn tmp_NSDterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5520.0 kbytes
+epick -V -reo -e tmp_NSDterm -c np_rNSDterm.conn tmp1_NSDterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 3404.0 kbytes
+geom -V tmp1_NSDterm np_rNSDterm - tmp1_NSDterm,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6068.0 kbytes
+geom -V tmp_NSDterm,tmp1_NSDterm - np_rNSDterm,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5948.0 kbytes
+/bin/rm -f tmp_NSDterm tmp1_NSDterm
+epick -V -reo -e rNSDcont -e rPSDcont np_rNWELLterm.conn tmp_NWELLterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 3452.0 kbytes
+epick -V -reo -e tmp_NWELLterm -c np_rNWELLterm.conn tmp1_NWELLterm
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5512.0 kbytes
+geom -V tmp1_NWELLterm np_rNWELLterm - tmp1_NWELLterm,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5904.0 kbytes
+geom -V tmp_NWELLterm,tmp1_NWELLterm - np_rNWELLterm,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6032.0 kbytes
+/bin/rm -f tmp_NWELLterm tmp1_NWELLterm
+
+#==========================================================#
+# Process text layers
+#==========================================================#
+
+flatlabel -V  -tc -F -l flatlabel.info Metal1_pintext L1T0
+INFO (FLTLBL-89003): exec labsort -V L1T0
+
+# 1 np_rPOLYterm
+# 2 np_rM1term
+
+#==========================================================#
+# Parasitic R extraction with default precision
+#==========================================================#
+
+rex -V -m -pd -I'#' -tech \
+	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map \
+	p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod \
+	np_rPOLYterm::poly_cut np_rM1term::mt1_cut - rNSDcont,2,t \
+	rPOLYcont,1,2,t rPSDcont,2,t NMOS_MOS_21_mgvia,1,z \
+	PMOS_MOS_27_mgvia,1,z - L1T0,2,I
+
+Exception catched in Cti from Cti_Tech constuctor for file '/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile'.
+Unable to open (mode = "r") the file "/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile":
+System error code (errno) is 2 (ENOENT):
+  No such file or directory
+The file is probably corrupted and can not be used.
+
+INFO (REX-163462):  exec rex -g -V -m -pd -I# -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod np_rPOLYterm::poly_cut np_rM1term::mt1_cut - rNSDcont,2,t rPOLYcont,1,2,t rPSDcont,2,t NMOS_MOS_21_mgvia,1,z PMOS_MOS_27_mgvia,1,z - L1T0,2,I
+
+Exception catched in Cti from Cti_Tech constuctor for file '/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile'.
+Unable to open (mode = "r") the file "/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile":
+System error code (errno) is 2 (ENOENT):
+  No such file or directory
+The file is probably corrupted and can not be used.
+
+rex took  0.00 user, 0.00 sys, 0.00 elapsed, 23632.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 14 closed
+
+INFO (REX-163511): Forked command: REX 1
+
+  Exception catched in Cti from Cti_Tech constuctor for file '/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile'.
+  Unable to open (mode = "r") the file "/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile":
+  System error code (errno) is 2 (ENOENT):
+    No such file or directory
+  The file is probably corrupted and can not be used.
+  
+  rex (np_rM1term) took  0.01 user, 0.03 sys, 0.00 elapsed, 25928.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 14 closed
+
+INFO (REX-163511): Forked command: REX 2
+
+  Exception catched in Cti from Cti_Tech constuctor for file '/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile'.
+  Unable to open (mode = "r") the file "/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/qrcTechFile":
+  System error code (errno) is 2 (ENOENT):
+    No such file or directory
+  The file is probably corrupted and can not be used.
+  
+  rex (np_rPOLYterm) took  0.01 user, 0.02 sys, 0.00 elapsed, 25920.0 kbytes
+INFO (REX-163511): Forked command: REX 3
+
+  rexmerge took  0.00 user, 0.00 sys, 0.00 elapsed, 4852.0 kbytes
+rex took  0.05 user, 0.09 sys, 0.00 elapsed, 23744.0 kbytes
+#==========================================================#
+# Form resistive via layers
+#==========================================================#
+
+stamp -V -i2 np_rM1term rPOLYcont np_rPOLYcont
+stamp took  0.08 user, 0.06 sys, 0.00 elapsed, 274808.0 kbytes
+geom -V np_rPOLYcont,p_rPOLYcont - rPOLYcont,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5980.0 kbytes
+stamp -V -B -i np_rM1term NSDcont
+stamp took  0.09 user, 0.05 sys, 0.00 elapsed, 274960.0 kbytes
+/bin/cp -f NSDcont rNSDcont
+stamp -V -B -i np_rM1term PSDcont
+stamp took  0.08 user, 0.06 sys, 1.00 elapsed, 274952.0 kbytes
+/bin/cp -f PSDcont rPSDcont
+
+#==========================================================#
+# Perform stamp operations
+#==========================================================#
+
+stamp -V -cntr -i -B np_rNSDterm np_rNWVIA
+stamp took  0.09 user, 0.05 sys, 0.00 elapsed, 274804.0 kbytes
+stamp -V -cntr -i -B np_rPSDterm np_rSUBVIA
+stamp took  0.10 user, 0.05 sys, 0.00 elapsed, 274780.0 kbytes
+stamp -V -maxnet -i -mV -B np_rSUBVIA np_rPSUB
+
+stamp took  0.08 user, 0.06 sys, 0.00 elapsed, 274952.0 kbytes
+#==========================================================#
+# Combine power non-power
+#==========================================================#
+
+/bin/rm -f NSDterm
+geom np_rNSDterm,p_rNSDterm - NSDterm,1,i,1
+epick -c -f floatlvsnetsfile NSDterm NSDterm
+/bin/rm -f NWELLterm
+geom np_rNWELLterm,p_rNWELLterm - NWELLterm,1,i,1
+epick -c -f floatlvsnetsfile NWELLterm NWELLterm
+/bin/rm -f POLYterm
+geom np_rPOLYterm,p_rPOLYterm - POLYterm,1,i,1
+epick -c -f floatlvsnetsfile POLYterm POLYterm
+/bin/rm -f PSDterm
+geom np_rPSDterm,p_rPSDterm - PSDterm,1,i,1
+epick -c -f floatlvsnetsfile PSDterm PSDterm
+/bin/rm -f PSUB
+emerge np_rPSUB p_rPSUB  PSUB
+epick -c -f floatlvsnetsfile PSUB PSUB
+
+#==========================================================#
+# Reconnect MOSFET devices
+#==========================================================#
+
+reconnect -V -mbg -n NET -se2 mwires.res -t \
+	NMOS_MOS_21.trans:NMOS_MOS_21.transr NMOS_MOS_21 \
+	NSDterm,NMOS_MOS_21_mgvia,PSUB -t \
+	PMOS_MOS_27.trans:PMOS_MOS_27.transr PMOS_MOS_27 \
+	PSDterm,PMOS_MOS_27_mgvia,NWELLterm
+reconnect took 0.09 user, 0.07 sys, 1.00 elapsed, 291316.0 kbytes
+changeTransFileNameAP NMOS_MOS_21.trans NMOS_MOS_21.transr
+changeTransFileNameAP PMOS_MOS_27.trans PMOS_MOS_27.transr
+netprint -max NET > original_maxnetfile
+
+#==========================================================#
+# Form capacitance layers for resistive process layers
+#==========================================================#
+
+#4 
+ geom -V -i p_rPOLYterm,np_rPOLYterm - so_poly,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6048.0 kbytes
+geom -V p_rPOLYterm,np_rPOLYterm - poly,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6048.0 kbytes
+#4 
+ geom -V -i p_rM1term,np_rM1term - so_mt1,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5904.0 kbytes
+geom -V p_rM1term,np_rM1term - mt1,1,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6068.0 kbytes
+#==========================================================#
+# Form capacitance layers for non-resistive process layers
+#==========================================================#
+
+grow -V .001 PSDterm mask
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5652.0 kbytes
+geom -V NSDterm mask - NSDterm,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5956.0 kbytes
+geom -V PSDterm,NSDterm - diff,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5940.0 kbytes
+createEmptyLayer mt6
+createEmptyLayer mt5
+createEmptyLayer mt4
+createEmptyLayer mt3
+createEmptyLayer mt2
+
+#==========================================================#
+# Form substrate
+#==========================================================#
+
+geom -V p_rPSUB,np_rPSUB - PSUB,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5836.0 kbytes
+/bin/cp -f PSUB PSUB.df2
+geom -V PSUB - sub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6052.0 kbytes
+xytoebbox -V -g 30.002 -e mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,PSUB xg_sub
+grow -V 0.001 sub g_sub
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5752.0 kbytes
+geom -V xg_sub g_sub - tmp_sub,10
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5904.0 kbytes
+epick -V -reo -D ${CAP_GROUND} tmp_sub pick_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 3404.0 kbytes
+grow -V -m 0.002 pick_sub g_pick_sub
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5708.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5940.0 kbytes
+stamp -i sub g_pick_sub
+grow -V -m -0.002 g_pick_sub pick_sub
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5664.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 5856.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5836.0 kbytes
+emerge -V pick_sub sub tmp1_sub
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 3468.0 kbytes
+geom -V tmp1_sub - sub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5840.0 kbytes
+/bin/rm -f g_pick_sub xg_sub tmp_sub tmp1_sub
+geom -V sub diff - sub,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5928.0 kbytes
+geom NMOS_MOS_21,PMOS_MOS_27 - qrcgate,1,i,1
+
+#==========================================================#
+# Create sip/sw3d/cn3d capacitance data files
+#==========================================================#
+
+cat <<ENDCAT> sip.cmd
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly,mt1 -n 6 -i 0,6.001 -b \
+	mt1,poly,diff,sub -t mt3,mt4,mt5,mt6 -j 0.3 -Maxw 4.5 -p mt2,key 0,6 \
+	- mt2.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt1,mt2 -n 6 -i 0,6.001 -b \
+	mt2,mt1,poly,diff,sub -t mt4,mt5,mt6 -j 0.3 -Maxw 4.5 -p mt3,key 0,6 \
+	- mt3.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt2,mt3 -n 6 -i 0,6.001 -b \
+	mt3,mt2,mt1,poly,diff,sub -t mt5,mt6 -j 0.3 -Maxw 4.5 -p mt4,key 0,6 \
+	- mt4.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt3,mt4 -n 7.5 -i 0,7.501 -b \
+	mt4,mt3,mt2,mt1,poly,diff,sub -t mt6 -j 0.3 -Maxw 4.5 -p mt5,key \
+	0,7.5 - mt5.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt4,mt5 -n 15 -i 0,15.001 -b \
+	mt5,mt4,mt3,mt2,mt1,poly,diff,sub -j 0.44 -Maxw 5.28 -p mt6,key 0,15 \
+	- mt6.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly,allGate,diff -n 3 -i 0,3.001 \
+	-b diff,sub -t mt1,mt2,mt3,mt4,mt5,mt6 -j 0.18 -Maxw 2.7 -p poly,key \
+	0,3 - poly.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly -n 6 -i 0,6.001 -b \
+	poly,diff,sub -t mt2,mt3,mt4,mt5,mt6 -j 0.3 -Maxw 4.5 -p mt1,key 0,6 \
+	- mt1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b mt4,mt3,mt2,mt1,poly,diff,sub \
+	-Maxw 5.28 -p mt5,key,mt6,key 0,15,0 - mt5_mt6.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt6 -b \
+	mt3,mt2,mt1,poly,diff,sub -Maxw 5.28 -p mt4,key,mt6,key 0,15,0 - \
+	mt4_mt6.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt3,mt2,mt1,poly,diff,sub -t mt6 \
+	-Maxw 4.5 -p mt4,key,mt5,key 0,7.5,0 - mt4_mt5.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt5 -b mt2,mt1,poly,diff,sub \
+	-t mt6 -Maxw 4.5 -p mt3,key,mt5,key 0,7.5,0 - mt3_mt5.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt2,mt1,poly,diff,sub -t mt5,mt6 \
+	-Maxw 4.5 -p mt3,key,mt4,key 0,6,0 - mt3_mt4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt4 -b mt1,poly,diff,sub -t \
+	mt5,mt6 -Maxw 4.5 -p mt2,key,mt4,key 0,6,0 - mt2_mt4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt1,poly,diff,sub -t mt4,mt5,mt6 \
+	-Maxw 4.5 -p mt2,key,mt3,key 0,6,0 - mt2_mt3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt3 -b poly,diff,sub -t \
+	mt4,mt5,mt6 -Maxw 4.5 -p mt1:mt1_cut,key,mt3,key 0,6,0 - mt1_mt3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly,diff,sub -t mt3,mt4,mt5,mt6 \
+	-Maxw 4.5 -p mt1:mt1_cut,key,mt2,key 0,6,0 - mt1_mt2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt2 -b diff,sub -t \
+	mt3,mt4,mt5,mt6 -k mt1:0.6 -Maxw 4.5 -p poly:poly_cut,key,mt2,key \
+	0,6,0 - poly_mt2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R mt1,poly -b diff,sub -t \
+	mt2,mt3,mt4,mt5,mt6 -Maxw 4.5 -p poly:poly_cut,key,mt1:mt1_cut,key \
+	0,6,0 - poly_mt1.sip
+ENDCAT
+
+#==========================================================#
+# Prepare gate capacitance blocking layers
+#==========================================================#
+
+emerge -V NMOS_MOS_21 PMOS_MOS_27 allGate
+
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 3416.0 kbytes
+#==========================================================#
+# Run pax16 to generate capfile
+#==========================================================#
+
+pax16 -V -lee_off -gnd ${CAP_GROUND} -ignore_cf_table -scf sip.cmd -cgnd \
+	${CAP_GROUND},1.0 -rcxlvs rcxtolvsmapfile -M_perim_off -c \
+	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/cap_coeff.dat -f \
+	sub diff poly:poly_cut mt1:mt1_cut mt2 mt3 mt4 mt5 mt6 allGate - \
+	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/paxfile_coeff - \
+	- NET - capfile
+
+WARNING (PAXSXTN-221203): /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/cap_coeff.dat doesn't have the latest cap models.
+
+WARNING (PAXSXTN-221204): Re-run capgen -S_rcxfs_off will make it current.
+
+WARNING (PAXSXTN-221205): RCX is now running in compatibility mode.
+
+3d sip took 0.00 user, 0.00 sys, 0.00 elapsed, 17164.0 kbytes
+3d sip took 0.00 user, 0.00 sys, 0.00 elapsed, 17060.0 kbytes
+3d sip took 0.00 user, 0.00 sys, 0.00 elapsed, 16892.0 kbytes
+3d sip took 0.00 user, 0.00 sys, 0.00 elapsed, 17212.0 kbytes
+3d sip took 0.00 user, 0.00 sys, 0.00 elapsed, 17144.0 kbytes
+3d sip took  0.06 user, 0.09 sys, 1.00 elapsed, 18652.0 kbytes
+3d sip took  0.06 user, 0.09 sys, 0.00 elapsed, 18392.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17308.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17028.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17116.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17004.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17208.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17064.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17180.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 16952.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17004.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17040.0 kbytes
+3d sip took  0.00 user, 0.00 sys, 0.00 elapsed, 17644.0 kbytes
+pax16 took  0.27 user, 0.35 sys, 1.00 elapsed, 25792.0 kbytes
+#==========================================================#
+# Generate netlister data files
+#==========================================================#
+
+
+#==========================================================#
+# Perform RC reduction
+#==========================================================#
+
+xreduce -V -mergecap -n NET -tech \
+	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -d1 -e \
+	mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sub,np_rPSDterm,np_rNSDterm,np_rPSUB,rPOLYcont \
+	-decoupled -sr -minR 0.001 -rPvia \
+	rPOLYcont.res,rPSDcont.res,rNSDcont.res -rP \
+	np_rPOLYterm.res,np_rM1term.res,mwires.res -cap capfile L1T0 \
+	NMOS_MOS_21.transr PMOS_MOS_27.transr
+
+INFO (XREDUCE-199107): Total number of resistors is 14
+
+INFO (XREDUCE-199108): d1 option renamed 0 nets
+
+INFO (XREDUCE-199108): d1 option renamed 0 nets
+
+INFO (XREDUCE-199109): minR option removed 0 resistors (0%)
+
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 16
+
+INFO (XREDUCE-199052): mergecap required for 0 (0%) of 115 nets
+
+xreduce took 0.06 user, 0.18 sys, 1.00 elapsed, 17008.0 kbytes
+#==========================================================#
+# Generate HSPICE file
+#==========================================================#
+
+advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -cgnd ${CAP_GROUND},1.0 -sc \
+	caps2dversion -mx capfile mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sub -rPmw \
+	res.mod np_rM1term.res,Rnp_rM1term.dev2 \
+	np_rPOLYterm.res,Rnp_rPOLYterm.dev2 rPOLYcont.res,RrPOLYcont.dev2 \
+	rPSDcont.res,RrPSDcont.dev2 rNSDcont.res,RrNSDcont.dev2 -rPmw \
+	mwires.mod mwires.res,mwires.dev2 -ta lvsmos.mod,NMOS_MOS_21.net \
+	NMOS_MOS_21.transr -ta lvsmos.mod,PMOS_MOS_27.net PMOS_MOS_27.transr \
+	- NET - /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/extview.tmp
+
+advgen took:  0.25 user, 0.37 sys, 1.00 elapsed, 21704.0 kbytes
+#==========================================================#
+# Create _save_layers file for Assura extracted view
+#==========================================================#
+
+geom mt1 np_rM1term - np_rM1term,11,i,1
+geom poly np_rPOLYterm - np_rPOLYterm,11,i,1
+stamp -i2 np_rM1term rPOLYcont np_rPOLYcont
+ereduce  rNSDcont rNSDcont.reduce
+stamp -i  np_rM1term rNSDcont.reduce
+stamp -i  rNSDcont.reduce rNSDcont
+stamp -i  rNSDcont NSDcont
+/bin/rm -f rNSDcont.reduce
+ereduce  rPSDcont rPSDcont.reduce
+stamp -i  np_rM1term rPSDcont.reduce
+stamp -i  rPSDcont.reduce rPSDcont
+stamp -i  rPSDcont PSDcont
+/bin/rm -f rPSDcont.reduce
+cat <<ENDCAT> _save_layers
+sub PSUB
+mt2 mt2
+mt3 mt3
+mt4 mt4
+mt5 mt5
+mt6 mt6
+diff np_rNSDterm p_rNSDterm np_rPSDterm p_rPSDterm
+M1term np_rM1term p_rM1term
+POLYterm np_rPOLYterm p_rPOLYterm
+PSDterm np_rPSDterm p_rPSDterm
+NSDterm np_rNSDterm p_rNSDterm
+PSUB PSUB
+POLYcont np_rPOLYcont p_rPOLYcont
+PSDcont PSDcont
+NSDcont NSDcont
+NWELLterm_NWVIA_ovia NWELLterm_NWVIA_ovia
+NWELLterm np_rNWELLterm p_rNWELLterm
+NWVIA np_rNWVIA p_rNWVIA
+SUBVIA np_rSUBVIA p_rSUBVIA
+ENDCAT
+INFO (LBRCXM-610): Extraction finished.
+
+INFO (LBRCXU-108): Starting
+
+ /tools/cadence/ASSURA41/tools.lnx86/assura/bin/rcxToDfII /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/__qrc.rcx_cmd -f /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc/extview.tmp -w /home/u24ev057/VD_lab/lab2/layout/lab2_layout_rc -cdslib /home/u24ev057/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.84s.
+@(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:37 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/rcxToDfII on Tue Aug 18 15:31:43 2026
+
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+Loading gpdk180/libInit.il ...
+	Loading gpdk180/loadCxt.ile ... done!
+	Loading context 'gpdk180' from library 'gpdk180' ... done!
+	Loading context 'pdkUtils' from library 'gpdk180' ... done!
+	Loading gpdk180/.cdsenv ... *WARNING* Master env file /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre/.cdsenv is not readable
+done!
+	Loading gpdk180/libInitCustomExit.il ... 
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 180nm PDK                      *           
+  *                        (gpdk180)                          *           
+  *                                                           *           
+  *                       Version 3.2                         *           
+  *                                                           *           
+  *************************************************************           
+done!
+Loaded gpdk180/libInit.il successfully!
+*WARNING* Cannot find /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/hspiceD directory to load environment variables
+
+Creating extracted view for lab2_inveter_layout_rc inverter layout
+
+Schematic cell -  inverter schematic lab2_inveter_layout_rc
+Copying layer Nburied
+Layer Nburied has 0 shapes.
+Copying layer ISOPWELL
+Layer ISOPWELL has 0 shapes.
+Copying layer Pwell
+Layer Pwell has 0 shapes.
+Copying layer JVARanode
+Layer JVARanode has 0 shapes.
+Copying layer POLYterm
+Layer POLYterm has 4 shapes.
+Copying layer INDterm2
+Layer INDterm2 has 0 shapes.
+Copying layer INDterm1
+Layer INDterm1 has 0 shapes.
+Copying layer CapMetal
+Layer CapMetal has 0 shapes.
+Copying layer NWELLterm
+Layer NWELLterm has 1 shapes.
+Copying layer PSDterm
+Layer PSDterm has 3 shapes.
+Copying layer NSDterm
+Layer NSDterm has 3 shapes.
+Copying layer M1term
+Layer M1term has 14 shapes.
+Copying layer M2term
+Layer M2term has 0 shapes.
+Copying layer M3term
+Layer M3term has 0 shapes.
+Copying layer M4term
+Layer M4term has 0 shapes.
+Copying layer M5term
+Layer M5term has 0 shapes.
+Copying layer M6term
+Layer M6term has 0 shapes.
+Loading techComp.cxt 
+
+
+Summary for lab2_inveter_layout_rc/inverter/av_extracted
+
+instance count totals:
+
+    lib              cell             view                    total
+    analogLib        pcapacitor       symbol                     13
+    analogLib        presistor        symbol                     13
+    gpdk180          nmos             ivpcell                     1
+    gpdk180          pmos             ivpcell                     1
+
+extracted view creation completed
+cpu: 0.09  elap: 0  pf: 2  in: 192  out: 120  virt: 475M  phys: 932M
+INFO (LBRCXU-114): Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/rcxToDfII
+
+INFO (LBRCXM-582): Checking in license of QTS300 21.20
+
+INFO (LBRCXM-985): Summary:
+ Number of CPUs requested:		1
+ Techfile(s):
+ License(s) used:	QTS300 (x1)
+ Design data:
+    global nets:                  0
+    LVS nets:                     4
+    signal nets:                  4
+    floating nets:                0
+    ground net name:              gnd_u24ev057
+ Reduction statistics:
+    Dangling Rs removed:          0
+    Merged Parallel Rs:           0
+    Rs shorted by min_res option: 0
+    Merged Parallel Self Caps:    0
+    CCs filtered by minC option:  0
+    Shorted Incomplete Nets:      0
+ Output statistics:
+    R: 13
+    C: 13
+    L: 0
+
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    vlsilab-client44.eced.svnit.ac.in
+ Peak memory used:             381 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-982): Floating net statistics in the design:
+
+   Total floating nets =  0
+     Total signal nets =  4
+         Total LVS net = 4
+
+INFO (LBRCXM-702): Run ended: Tue Aug 18 15:31:43 2026
+
+
+INFO (LBRCXM-805): Quantus run took:  10s user, 20s sys, 27s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

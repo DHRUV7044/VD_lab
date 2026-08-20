@@ -1,0 +1,29 @@
+text Metal6_text attach M6term
+text Metal5_text attach M5term
+text Metal4_text attach M4term
+text Metal3_text attach M3term
+text Metal2_text attach M2term
+text Metal1_text attach M1term
+connect M6term M5term by Via5
+connect M5term M4term by Via4
+connect M4term M3term by Via3
+connect M3term M2term by Via2NoCapInd
+connect M3term CapMetal by Via2Cap
+connect M2term M1term by Via1
+connect M2term INDterm1 by INDterm1Cont
+connect M2term INDterm2 by INDterm2Cont
+connect M1term POLYterm by POLYcont
+connect M1term PSDterm by PSDcont
+connect M1term NSDterm by NSDcont
+stamp NWVIA by NSDterm
+stamp NWELLterm by NWVIA
+stamp JVARterm by PSDterm
+stamp JVARanode by JVARterm
+stamp PWVIA by PSDterm
+stamp Pwell by PWVIA
+stamp PWNBVIA by PSDterm
+stamp ISOPWELL by PWNBVIA
+stamp SUBVIA by PSDterm
+stamp PSUB by SUBVIA
+stamp NBVIA by NWELLterm
+stamp Nburied by NBVIA

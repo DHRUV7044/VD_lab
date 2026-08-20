@@ -1,0 +1,28 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/22 00:04 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "lab2_inveter_layout_rc" )
+  ?cellName "inverter"
+  ?viewName "layout"
+  ?runName "drc_rc"
+  ?workingDirectory "./VD_lab/lab2/layout"
+  ?technology "gpdk180"
+  ?techLib "/tools/cadence/FOUNDRY/analog/180nm/assura_tech.lib"
+  ?avrpt t
+  ?dbuPerUU 2000.0
+  ?flagNon45 t
+  ?flagOffGrid (0.005 1.0)
+  ?joinPins top
+  ?overwrite t
+  ?textPriOnly nil
+  ?userUnits "micron"
+)

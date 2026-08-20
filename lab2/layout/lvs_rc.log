@@ -1,0 +1,1192 @@
+
+            Assura (R) Physical Verification Version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25
+            Release 4.1_USR6_EHF13
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:28 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Aug 18 15:39:40 2026
+
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/aveng /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -exec1 -LVS -cdslib /home/u24ev057/cds.lib
+@(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Aug 18 15:39:41 2026
+
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+ Summary Report: lvs_rc.sum
+ RSF           : /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf
+ Library Name  : lab2_inveter_layout_rc
+ CDSLIB Path   : "/home/u24ev057/cds.lib"
+ Cell Name     : inverter
+ View Name     : layout
+ Rules File    : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/extract.rul
+ Options       : -exec1 -LVS -cdslib /home/u24ev057/cds.lib 
+ Work Directory: /home/u24ev057/VD_lab/lab2/layout
+ Operating Mode: Legacy Mode is Off
+
+2026/08/18 15:39:41 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 15:39:41 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+Starting dfIIToVdb...
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.49s.
+@(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Aug 18 15:39:54 2026
+
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+Loading gpdk180/libInit.il ...
+	Loading gpdk180/loadCxt.ile ... done!
+	Loading context 'gpdk180' from library 'gpdk180' ... done!
+	Loading context 'pdkUtils' from library 'gpdk180' ... done!
+	Loading gpdk180/.cdsenv ... *WARNING* Master env file /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre/.cdsenv is not readable
+done!
+	Loading gpdk180/libInitCustomExit.il ... 
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 180nm PDK                      *           
+  *                        (gpdk180)                          *           
+  *                                                           *           
+  *                       Version 3.2                         *           
+  *                                                           *           
+  *************************************************************           
+done!
+Loaded gpdk180/libInit.il successfully!
+*WARNING* Cannot find /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/hspiceD directory to load environment variables
+Compiling rules...
+
+WARNING LVS Run detected.
+Non-legacy mode has been disabled for this LVS run
+2026/08/18 15:39:54 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 15:39:54 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Checking out license for Assura_LVS
+*WARNING* Failed to obtain license for Assura_LVS
+No Assura license available.
+Checking out license for Phys_Ver_Sys_LVS_XL
+
+Reading the design data...
+
+
+
+Finished dfIIToVdb.
+
+Building the VDB part 2 in background mode.
+2026/08/18 15:39:57 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 15:39:57 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+Building tables for LVS Preprocessing in background mode.
+
+
+Starting /tools/cadence/ASSURA41/tools.lnx86/assura/bin/vdbToCells /home/u24ev057/VD_lab/lab2/layout lvs_rc
+
+Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/vdbToCells
+
+Starting Nvn PreExtraction...
+
+Starting /tools/cadence/ASSURA41/tools.lnx86/assura/bin/nvn /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -preExtract -exec1 -cdslib /home/u24ev057/cds.lib
+Checking out license for Assura_LVS
+Checking out license for Phys_Ver_Sys_LVS_XL
+@(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+run on vlsilab-client44.eced.svnit.ac.in at Tue Aug 18 15:39:59 2026
+  
+*************************************************************** 
+  
+ GENERIC PDK Assura Compare Rules file version 2.3
+  Cadence Design Systems, Inc. 
+  PDK Technology Center, Melbourne, FL 
+  Aug 2005 
+  Use with GENERIC PDK Process version 2.3
+  
+ Reference Documents: 
+  Library Specification No. GPDK, Version 2.3 
+  
+ NOTICE: 
+  Cadence Design Systems shall not be liable for the accuracy 
+  of this LVS rule file or its ability to capture errors.     
+  The user is responsible for thoroughly testing and          
+  implementing its features.                                  
+ 
+*************************************************************** 
+ 
+Reading schematic network
+ running dfIIToVldb -cdslib /home/u24ev057/cds.lib /home/u24ev057/VD_lab/lab2/layout/lvs_rc.vlr /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.85s.
+@(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:35 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue Aug 18 15:40:01 2026
+
+  
+*************************************************************** 
+  
+ GENERIC PDK Assura Compare Rules file version 2.3
+  Cadence Design Systems, Inc. 
+  PDK Technology Center, Melbourne, FL 
+  Aug 2005 
+  Use with GENERIC PDK Process version 2.3
+  
+ Reference Documents: 
+  Library Specification No. GPDK, Version 2.3 
+  
+ NOTICE: 
+  Cadence Design Systems shall not be liable for the accuracy 
+  of this LVS rule file or its ability to capture errors.     
+  The user is responsible for thoroughly testing and          
+  implementing its features.                                  
+ 
+*************************************************************** 
+ 
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+Top Cell Library: "lab2_inveter_layout_rc"
+Top Cell Name: "inverter"
+Top Cell View: "schematic"
+Output Data Base Name: "/home/u24ev057/VD_lab/lab2/layout/lvs_rc.sdb"
+Simulator Name: "auLvs"
+ERROR (LMF-02005): License call failed for feature Assura_LVS, version 4.100 and quantity 1. The license server search path is defined as 5280@14.139.1.126:1717@14.139.1.126. The FLEXnet error message is as follows,
+    FLEXnet ERROR(-5, 0, 0): No such feature exists.
+
+Run 'lic_error LMF-02005' for more information.
+Failed to obtain license for "Assura_LVS". 
+Checking out license for Phys_Ver_Sys_LVS_XL
+View List: "auLvs schematic symbol"
+Stop List: "auLvs"
+Loading gpdk180/libInit.il ...
+	Loading gpdk180/loadCxt.ile ... done!
+	Loading context 'gpdk180' from library 'gpdk180' ... done!
+	Loading context 'pdkUtils' from library 'gpdk180' ... done!
+	Loading gpdk180/.cdsenv ... *WARNING* Master env file /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre/.cdsenv is not readable
+done!
+	Loading gpdk180/libInitCustomExit.il ... 
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 180nm PDK                      *           
+  *                        (gpdk180)                          *           
+  *                                                           *           
+  *                       Version 3.2                         *           
+  *                                                           *           
+  *************************************************************           
+done!
+Loaded gpdk180/libInit.il successfully!
+*WARNING* Cannot find /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/hspiceD directory to load environment variables
+Net Listing Mode is Analog
+writing /home/u24ev057/VD_lab/lab2/layout/lvs_rc.sdb
+ inputting /home/u24ev057/VD_lab/lab2/layout/lvs_rc.sdb
+Reading layout network
+ inputting network ./VD_lab/lab2/layout/lvs_rc.ldb
+Preprocessing schematic network phase 1
+Preprocessing layout network phase 1
+Preprocessing schematic network phase 2
+Preprocessing layout network phase 2
+cpu=0.00m  wall=0.08m  mem=109.66mb
+
+Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/nvn
+
+Executing: bulk = cellBoundary(root)
+
+Building the VDB part 3 in background mode.
+2026/08/18 15:40:03 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 15:40:03 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+Finished building the VDB. VDB build times for main process:
+cpu: 0.05  elap: 22  pf: 0  in: 48  out: 144  virt: 98M  phys: 592M
+
+Running the Task Processor, 1 cells, 1610 steps...
+
+Top Cell is 'inverter layout lab2_inveter_layout_rc'
+
+Executing: CapMetal = geomOr(CapMetal CapMetal_pin)
+
+Executing: INDdummy = geomOr(INDdummy INDdummy_pin)
+
+Executing: JVAR1dummy = geomOr(JVAR1dummy JVAR1dummy_pin)
+
+Executing: Metal1 = geomOr(Metal1_d Metal1_f)
+
+Executing: Metal2 = geomOr(Metal2_d Metal2_f)
+
+Executing: Metal3 = geomOr(Metal3_d Metal3_f)
+
+Executing: Metal4 = geomOr(Metal4_d Metal4_f)
+
+Executing: Metal5 = geomOr(Metal5_d Metal5_f)
+
+Executing: Metal6 = geomOr(Metal6_d Metal6_f)
+
+Executing: Metal1 = geomOr(Metal1 Metal1_pin)
+
+Executing: Metal2 = geomOr(Metal2 Metal2_pin)
+
+Executing: Metal3 = geomOr(Metal3 Metal3_pin)
+
+Executing: Metal4 = geomOr(Metal4 Metal4_pin)
+
+Executing: Metal5 = geomOr(Metal5 Metal5_pin)
+
+Executing: Metal6 = geomOr(Metal6 Metal6_pin)
+
+Executing: Nburied = geomOr(Nburied Nburied_pin)
+
+Executing: Nimp = geomOr(Nimp Nimp_pin)
+
+Executing: Nwell = geomOr(Nwell Nwell_pin)
+
+Executing: Pimp = geomOr(Pimp Pimp_pin)
+
+Executing: Poly = geomOr(Poly Poly_pin)
+
+Executing: Pwell = geomOr(Pwell Pwell_pin)
+
+Executing: INDterm1 = geomAnd(IND2dummy INDdummy)
+
+Executing: INDterm2 = geomAnd(IND3dummy INDdummy)
+
+Executing: JVARNF = geomAnd(JVAR1dummy Nwell)
+
+Executing: JVARW40 = geomAnd(JVAR2dummy Nwell)
+
+Executing: M1res = geomAnd(M1dummy Metal1)
+
+Executing: M1term = geomAndNot(Metal1 M1dummy)
+
+Executing: M2res = geomAnd(M2dummy Metal2)
+
+Executing: M2term = geomAndNot(Metal2 M2dummy)
+
+Executing: M3res = geomAnd(M3dummy Metal3)
+
+Executing: M3term = geomAndNot(Metal3 M3dummy)
+
+Executing: M4res = geomAnd(M4dummy Metal4)
+
+Executing: M4term = geomAndNot(Metal4 M4dummy)
+
+Executing: M5res = geomAnd(M5dummy Metal5)
+
+Executing: M5term = geomAndNot(Metal5 M5dummy)
+
+Executing: M6res = geomAnd(M6dummy Metal6)
+
+Executing: M6term = geomAndNot(Metal6 M6dummy)
+
+Executing: NPLUS = geomAnd(Nimp Oxide)
+
+Executing: NSD = geomAndNot(NPLUS Poly)
+
+Executing: NSDcont = geomAnd(Cont NPLUS)
+
+Executing: NSDterm = geomAndNot(NSD Resdum)
+
+Executing: NWELLRES = geomAnd(Nwell ResWdum)
+
+Executing: NWELLterm = geomAndNot(Nwell ResWdum)
+
+Executing: NBVIA = geomAnd(NWELLterm Nburied)
+
+Executing: NWVIA = geomAnd(NSDterm NWELLterm)
+
+Executing: POLYcont = geomAnd(Cont Poly)
+
+Executing: POLYterm = geomAndNot(Poly Resdum)
+
+Executing: PPLUS = geomAnd(Oxide Pimp)
+
+Executing: PSD = geomAndNot(PPLUS Poly)
+
+Executing: PSDcont = geomAnd(Cont PPLUS)
+
+Executing: PSDterm = geomAndNot(PSD Resdum)
+
+Executing: Via2Cap = geomAnd(CapMetal Via2)
+
+Executing: L41497 = geomAnd(INDdummy Metal2)
+
+Executing: INDterm1Cont = geomAnd(IND2dummy L41497)
+
+Executing: INDterm2Cont = geomAnd(IND3dummy L41497)
+
+Executing: L29658 = geomAnd(NSD Resdum)
+
+Executing: ISONSDRES = geomAnd(L29658 Nburied)
+
+Executing: L74850 = geomOr(JVAR1dummy JVAR2dummy)
+
+Executing: JVARanode = geomAndNot(L74850 NSDterm)
+
+Executing: L62925 = geomAnd(CapMetal Metal2)
+
+Executing: MIMCAP = geomAnd(Capdum L62925)
+
+Executing: L83619 = geomAndNot(NSDterm Nwell)
+
+Executing: NDIODE = geomAnd(DIOdummy L83619)
+
+Executing: NSDRES = geomAndNot(L29658 Nburied)
+
+Executing: L33580 = geomAnd(DIOdummy PSDterm)
+
+Executing: PDIODE = geomAnd(L33580 Nwell)
+
+Executing: L99065 = geomAnd(Poly Resdum)
+
+Executing: POLYHRES = geomAnd(L99065 SiProt)
+
+Executing: POLYRES = geomAndNot(L99065 SiProt)
+
+Executing: L77701 = geomAnd(PPLUS Resdum)
+
+Executing: PSDRES = geomAnd(L77701 Nwell)
+
+Executing: L33566 = geomAnd(PSDterm Pwell)
+
+Executing: PWVIA = geomAndNot(L33566 Nwell)
+
+Executing: L32940 = geomOr(IND2dummy Metal3)
+
+Executing: L19763 = geomOr(IND3dummy L32940)
+
+Executing: INDUCTOR = geomAnd(INDdummy L19763)
+
+Executing: L40384 = geomAnd(L74850 PSDterm)
+
+Executing: JVARterm = geomAnd(JVAR3dummy L40384)
+
+Executing: L77885 = geomAnd(NPNdummy Pwell)
+
+Executing: L63415 = geomAnd(L77885 Nburied)
+
+Executing: NPN = geomAnd(L63415 NSDterm)
+
+Executing: L8539 = geomAnd(Nwell POLYterm)
+
+Executing: L93040 = geomAnd(L8539 PPLUS)
+
+Executing: PMOSCAP = geomAnd(Capdum L93040)
+
+Executing: L98704 = geomAnd(Metal2 Via2)
+
+Executing: L47735 = geomOr(CapMetal INDdummy)
+
+Executing: Via2NoCapInd = geomAndNot(L98704 L47735)
+
+Executing: L26152 = geomAndNot(POLYterm Nwell)
+
+Executing: L2255 = geomAnd(L26152 NPLUS)
+
+Executing: L68673 = geomAnd(Capdum L2255)
+
+Executing: ISONMOSCAP = geomAnd(L68673 Nburied)
+
+Executing: NMOSCAP = geomAndNot(L68673 Nburied)
+
+Executing: L56230 = geomAndNot(L93040 ThickOxide)
+
+Executing: PMOS = geomAndNot(L56230 Capdum)
+
+Executing: L99549 = geomAnd(Nwell PNPdummy)
+
+Executing: L64651 = geomAnd(L99549 Pwell)
+
+Executing: L49368 = geomAnd(L64651 Nburied)
+
+Executing: PNP = geomAnd(L49368 PSDterm)
+
+Executing: L43094 = geomOr(Nburied Nwell)
+
+Executing: L15547 = geomOr(L43094 Pwell)
+
+Executing: L71054 = geomAndNot(bulk L15547)
+
+Executing: PSUB = geomOr(BJTdum L71054)
+
+Executing: L6892 = geomAnd(PSDterm PSUB)
+
+Executing: L56122 = geomAndNot(L6892 Nburied)
+
+Executing: SUBVIA = geomAndNot(L56122 Nwell)
+
+Executing: L53692 = geomAndNot(L2255 ThickOxide)
+
+Executing: L70081 = geomAndNot(L53692 Capdum)
+
+Executing: ISONMOS = geomAnd(L70081 Nburied)
+
+Executing: geomHoles(Nwell)
+
+Executing: L90545 = geomAndNot(L85630 Nwell)
+
+Executing: L50707 = geomEnclose(Nburied L90545)
+
+Executing: L9133 = geomAnd(L50707 L90545)
+
+Executing: ISOPWELL = geomAndNot(L9133 Pwell)
+
+Executing: PWNBVIA = geomAnd(ISOPWELL PSDterm)
+
+Executing: NMOS = geomAndNot(L70081 Nburied)
+
+Executing: L68469 = geomAnd(L93040 ThickOxide)
+
+Executing: L24157 = geomAndNot(L68469 Capdum)
+
+Executing: PMOSHV = geomAndNot(L24157 RFdummy)
+
+Executing: PMOSRF = geomAnd(L24157 RFdummy)
+
+Executing: L28865 = geomAnd(L2255 ThickOxide)
+
+Executing: L34783 = geomAndNot(L28865 Capdum)
+
+Executing: L93445 = geomAnd(L34783 Nburied)
+
+Executing: ISONMOSHV = geomAndNot(L93445 RFdummy)
+
+Executing: ISONMOSRF = geomAnd(L93445 RFdummy)
+
+Executing: L21312 = geomAndNot(L34783 Nburied)
+
+Executing: NMOSHV = geomAndNot(L21312 RFdummy)
+
+Executing: NMOSRF = geomAnd(L21312 RFdummy)
+
+Executing: L22688 = geomAnd(Nwell PSDterm)
+
+Executing: geomHoles(PSDterm)
+
+Executing: L40992 = geomAndNot(L98291 PSDterm)
+
+Executing: geomHoles(NSDterm)
+
+Executing: L66370 = geomAndNot(L48335 NSDterm)
+
+Executing: L20204 = geomButtOrOver(L40992 L66370)
+
+Executing: L80937 = geomAvoiding(L20204 Poly)
+
+Executing: L48389 = geomButtOrOver(L22688 L80937)
+
+Executing: VPNP = geomAnd(BJTdum L48389)
+
+Executing: geomConnect((via Via5 M6term M5term) (via Via4 M5term M4term) (via Via3 M4ter...
+ See the label report in "lvs_rc.erc" file for details.
+
+
+Executing: geomStamp(NWVIA NSDterm error)
+
+Executing: geomStamp(NWELLterm NWVIA error)
+
+Executing: geomStamp(JVARterm PSDterm error)
+
+Executing: geomStamp(JVARanode JVARterm error)
+
+Executing: geomStamp(PWVIA PSDterm error)
+
+Executing: geomStamp(Pwell PWVIA error)
+
+Executing: geomStamp(PWNBVIA PSDterm error)
+
+Executing: geomStamp(ISOPWELL PWNBVIA error)
+
+Executing: geomStamp(SUBVIA PSDterm error)
+
+Executing: geomStamp(PSUB SUBVIA error)
+
+Executing: geomStamp(NBVIA NWELLterm error)
+
+Executing: geomStamp(Nburied NBVIA error)
+
+Executing: (saveInterconnect (M6term "Metal6"))
+
+Executing: (saveInterconnect (M5term "Metal5"))
+
+Executing: (saveInterconnect (M4term "Metal4"))
+
+Executing: (saveInterconnect (M3term "Metal3"))
+
+Executing: (saveInterconnect (M2term "Metal2"))
+
+Executing: (saveInterconnect (M1term "Metal1"))
+
+Executing: (saveInterconnect (NSDterm "Nimp"))
+
+Executing: (saveInterconnect (PSDterm "Pimp"))
+
+Executing: (saveInterconnect (NWELLterm "Nwell"))
+
+Executing: (saveInterconnect (CapMetal "CapMetal"))
+
+Executing: (saveInterconnect (INDterm1 "INDdummy"))
+
+Executing: (saveInterconnect (INDterm2 "INDdummy"))
+
+Executing: (saveInterconnect (POLYterm "Poly"))
+
+Executing: (saveInterconnect (JVARanode "JVAR1dummy"))
+
+Executing: (saveInterconnect (Pwell "Pwell"))
+
+Executing: (saveInterconnect (ISOPWELL "Nburied"))
+
+Executing: (saveInterconnect (Nburied "Nburied"))
+
+Executing: extractRES("polyres" POLYRES (POLYterm "PLUS" "MINUS") (cellView "polyres ivp...
+
+Executing: attachParameter(w "w" POLYRES)
+
+Executing: attachParameter(l "l" POLYRES)
+
+Executing: attachParameter(sl "sl" POLYRES)
+
+Executing: attachParameter(effL "effL" POLYRES)
+
+Executing: attachParameter(r "r" POLYRES)
+
+Executing: extractRES("polyhres" POLYHRES (POLYterm "PLUS" "MINUS") (cellView "polyhres ...
+
+Executing: attachParameter(w "w" POLYHRES)
+
+Executing: attachParameter(l "l" POLYHRES)
+
+Executing: attachParameter(sl "sl" POLYHRES)
+
+Executing: attachParameter(effL "effL" POLYHRES)
+
+Executing: attachParameter(r "r" POLYHRES)
+
+Executing: extractRES("nplusres" NSDRES (NSDterm "PLUS" "MINUS") (PSUB "B") (cellView "n...
+
+Executing: attachParameter(w "w" NSDRES)
+
+Executing: attachParameter(l "l" NSDRES)
+
+Executing: attachParameter(sl "sl" NSDRES)
+
+Executing: attachParameter(effL "effL" NSDRES)
+
+Executing: attachParameter(r "r" NSDRES)
+
+Executing: extractRES("nplusres" ISONSDRES (NSDterm "PLUS" "MINUS") (ISOPWELL "B") (cell...
+
+Executing: attachParameter(w "w" ISONSDRES)
+
+Executing: attachParameter(l "l" ISONSDRES)
+
+Executing: attachParameter(sl "sl" ISONSDRES)
+
+Executing: attachParameter(effL "effL" ISONSDRES)
+
+Executing: attachParameter(r "r" ISONSDRES)
+
+Executing: extractRES("pplusres" PSDRES (PSDterm "PLUS" "MINUS") (NWELLterm "B") (cellVi...
+
+Executing: attachParameter(w "w" PSDRES)
+
+Executing: attachParameter(l "l" PSDRES)
+
+Executing: attachParameter(sl "sl" PSDRES)
+
+Executing: attachParameter(effL "effL" PSDRES)
+
+Executing: attachParameter(r "r" PSDRES)
+
+Executing: extractRES("nwellres" NWELLRES (NWELLterm "PLUS" "MINUS") (cellView "nwellres...
+
+Executing: attachParameter(w "w" NWELLRES)
+
+Executing: attachParameter(l "l" NWELLRES)
+
+Executing: attachParameter(sl "sl" NWELLRES)
+
+Executing: attachParameter(effL "effL" NWELLRES)
+
+Executing: attachParameter(r "r" NWELLRES)
+
+Executing: extractRES("m1res" M1res (M1term "PLUS" "MINUS") (cellView "m1res ivpcell gpd...
+
+Executing: attachParameter(w "w" M1res)
+
+Executing: attachParameter(l "l" M1res)
+
+Executing: attachParameter(sl "sl" M1res)
+
+Executing: attachParameter(effL "effL" M1res)
+
+Executing: attachParameter(r "r" M1res)
+
+Executing: extractRES("m2res" M2res (M2term "PLUS" "MINUS") (cellView "m2res ivpcell gpd...
+
+Executing: attachParameter(w "w" M2res)
+
+Executing: attachParameter(l "l" M2res)
+
+Executing: attachParameter(sl "sl" M2res)
+
+Executing: attachParameter(effL "effL" M2res)
+
+Executing: attachParameter(r "r" M2res)
+
+Executing: extractRES("m3res" M3res (M3term "PLUS" "MINUS") (cellView "m3res ivpcell gpd...
+
+Executing: attachParameter(w "w" M3res)
+
+Executing: attachParameter(l "l" M3res)
+
+Executing: attachParameter(sl "sl" M3res)
+
+Executing: attachParameter(effL "effL" M3res)
+
+Executing: attachParameter(r "r" M3res)
+
+Executing: extractRES("m4res" M4res (M4term "PLUS" "MINUS") (cellView "m4res ivpcell gpd...
+
+Executing: attachParameter(w "w" M4res)
+
+Executing: attachParameter(l "l" M4res)
+
+Executing: attachParameter(sl "sl" M4res)
+
+Executing: attachParameter(effL "effL" M4res)
+
+Executing: attachParameter(r "r" M4res)
+
+Executing: extractRES("m5res" M5res (M5term "PLUS" "MINUS") (cellView "m5res ivpcell gpd...
+
+Executing: attachParameter(w "w" M5res)
+
+Executing: attachParameter(l "l" M5res)
+
+Executing: attachParameter(sl "sl" M5res)
+
+Executing: attachParameter(effL "effL" M5res)
+
+Executing: attachParameter(r "r" M5res)
+
+Executing: extractRES("m6res" M6res (M6term "PLUS" "MINUS") (cellView "m6res ivpcell gpd...
+
+Executing: attachParameter(w "w" M6res)
+
+Executing: attachParameter(l "l" M6res)
+
+Executing: attachParameter(sl "sl" M6res)
+
+Executing: attachParameter(effL "effL" M6res)
+
+Executing: attachParameter(r "r" M6res)
+
+Executing: extractCAP("mimcap" MIMCAP (CapMetal "PLUS") (M2term "MINUS") (cellView "mimc...
+
+Executing: attachParameter(w "w" MIMCAP)
+
+Executing: attachParameter(l "l" MIMCAP)
+
+Executing: attachParameter(c "c" MIMCAP)
+
+Executing: attachParameter(area "area" MIMCAP)
+
+Executing: attachParameter(perim "perim" MIMCAP)
+
+Executing: extractMOS("pmoscap" PMOSCAP (POLYterm "G") (PSDterm "S" "D") (NWELLterm "B")...
+
+Executing: attachParameter(w "w" PMOSCAP)
+
+Executing: attachParameter(fw "fw" PMOSCAP)
+
+Executing: attachParameter(simW "simW" PMOSCAP)
+
+Executing: attachParameter(l "l" PMOSCAP)
+
+Executing: extractMOS("nmoscap" NMOSCAP (POLYterm "G") (NSDterm "S" "D") (PSUB "B") (cel...
+
+Executing: attachParameter(w "w" NMOSCAP)
+
+Executing: attachParameter(fw "fw" NMOSCAP)
+
+Executing: attachParameter(simW "simW" NMOSCAP)
+
+Executing: attachParameter(l "l" NMOSCAP)
+
+Executing: extractMOS("nmoscap" ISONMOSCAP (POLYterm "G") (NSDterm "S" "D") (ISOPWELL "B...
+
+Executing: attachParameter(w "w" ISONMOSCAP)
+
+Executing: attachParameter(fw "fw" ISONMOSCAP)
+
+Executing: attachParameter(simW "simW" ISONMOSCAP)
+
+Executing: attachParameter(l "l" ISONMOSCAP)
+
+Executing: extractDevice("ind" INDUCTOR (INDterm1 "PLUS") (INDterm2 "MINUS") (cellView "...
+
+Executing: extractBJT("vpnp" VPNP (PSUB "C") (NWELLterm "B") (PSDterm "E") (cellView "vp...
+
+Executing: attachParameter(area "area" VPNP)
+
+Executing: extractBJT("pnp" PNP (Pwell "C") (NWELLterm "B") (PSDterm "E") (cellView "pnp...
+
+Executing: attachParameter(area "area" PNP)
+
+Executing: extractBJT("npn" NPN (Nburied "C") (Pwell "B") (NSDterm "E") (cellView "npn i...
+
+Executing: attachParameter(area "area" NPN)
+
+Executing: extractMOS("nmos" NMOS (POLYterm "G") (NSDterm "S" "D") (PSUB "B") (cellView ...
+         1 'nmos' created in cell 'inverter layout lab2_inveter_layout_rc'.
+
+Executing: attachParameter(w "w" NMOS)
+
+Executing: attachParameter(fw "fw" NMOS)
+
+Executing: attachParameter(simW "simW" NMOS)
+
+Executing: attachParameter(l "l" NMOS)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") NMOS shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") NMOS shared)
+
+Executing: extractMOS("nmos" ISONMOS (POLYterm "G") (NSDterm "S" "D") (ISOPWELL "B") (ce...
+
+Executing: attachParameter(w "w" ISONMOS)
+
+Executing: attachParameter(fw "fw" ISONMOS)
+
+Executing: attachParameter(simW "simW" ISONMOS)
+
+Executing: attachParameter(l "l" ISONMOS)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") ISONMOS shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") ISONMOS shared)
+
+Executing: extractMOS("nmoshv" NMOSHV (POLYterm "G") (NSDterm "S" "D") (PSUB "B") (cellV...
+
+Executing: attachParameter(w "w" NMOSHV)
+
+Executing: attachParameter(fw "fw" NMOSHV)
+
+Executing: attachParameter(simW "simW" NMOSHV)
+
+Executing: attachParameter(l "l" NMOSHV)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") NMOSHV shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") NMOSHV shared)
+
+Executing: extractMOS("nmoshv" ISONMOSHV (POLYterm "G") (NSDterm "S" "D") (ISOPWELL "B")...
+
+Executing: attachParameter(w "w" ISONMOSHV)
+
+Executing: attachParameter(fw "fw" ISONMOSHV)
+
+Executing: attachParameter(simW "simW" ISONMOSHV)
+
+Executing: attachParameter(l "l" ISONMOSHV)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") ISONMOSHV shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") ISONMOSHV shared)
+
+Executing: extractMOS("nmosrf" NMOSRF (POLYterm "G") (NSDterm "S" "D") (PSUB "B") (cellV...
+
+Executing: attachParameter(w "w" NMOSRF)
+
+Executing: attachParameter(fw "fw" NMOSRF)
+
+Executing: attachParameter(simW "simW" NMOSRF)
+
+Executing: attachParameter(l "l" NMOSRF)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") NMOSRF shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") NMOSRF shared)
+
+Executing: extractMOS("nmosrf" ISONMOSRF (POLYterm "G") (NSDterm "S" "D") (ISOPWELL "B")...
+
+Executing: attachParameter(w "w" ISONMOSRF)
+
+Executing: attachParameter(fw "fw" ISONMOSRF)
+
+Executing: attachParameter(simW "simW" ISONMOSRF)
+
+Executing: attachParameter(l "l" ISONMOSRF)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") ISONMOSRF shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") ISONMOSRF shared)
+
+Executing: extractMOS("pmos" PMOS (POLYterm "G") (PSDterm "S" "D") (NWELLterm "B") (cell...
+         1 'pmos' created in cell 'inverter layout lab2_inveter_layout_rc'.
+
+Executing: attachParameter(w "w" PMOS)
+
+Executing: attachParameter(fw "fw" PMOS)
+
+Executing: attachParameter(simW "simW" PMOS)
+
+Executing: attachParameter(l "l" PMOS)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") PMOS shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") PMOS shared)
+
+Executing: extractMOS("pmoshv" PMOSHV (POLYterm "G") (PSDterm "S" "D") (NWELLterm "B") (...
+
+Executing: attachParameter(w "w" PMOSHV)
+
+Executing: attachParameter(fw "fw" PMOSHV)
+
+Executing: attachParameter(simW "simW" PMOSHV)
+
+Executing: attachParameter(l "l" PMOSHV)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") PMOSHV shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") PMOSHV shared)
+
+Executing: extractMOS("pmosrf" PMOSRF (POLYterm "G") (PSDterm "S" "D") (NWELLterm "B") (...
+
+Executing: attachParameter(w "w" PMOSRF)
+
+Executing: attachParameter(fw "fw" PMOSRF)
+
+Executing: attachParameter(simW "simW" PMOSRF)
+
+Executing: attachParameter(l "l" PMOSRF)
+
+Executing: attachParameter(sdarea ("as" "S") ("ad" "D") PMOSRF shared)
+
+Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") PMOSRF shared)
+
+Executing: extractDIODE("ndio" NDIODE (PSUB "PLUS") (NSDterm "MINUS") (cellView "ndio iv...
+
+Executing: attachParameter(area "area" NDIODE)
+
+Executing: extractDIODE("pdio" PDIODE (PSDterm "PLUS") (NWELLterm "MINUS") (cellView "pd...
+
+Executing: attachParameter(area "area" PDIODE)
+
+Executing: extractDIODE("xjvar_w40" JVARNF (JVARanode "ANODE") (NWELLterm "CATHODE") (PS...
+
+Executing: attachParameter(nf "nf" JVARNF)
+
+Executing: extractDIODE("xjvar_nf36" JVARW40 (JVARanode "ANODE") (NWELLterm "CATHODE") (...
+
+Executing: attachParameter(w "w" JVARW40)
+
+Finished running rules. Task processor time in main process:
+cpu: 0.09  elap: 0  pf: 0  in: 0  out: 392  virt: 140M  phys: 714M
+
+No output post-processing: This is not a DRC run
+
+Finished building the persistent database.
+cpu: 0.01  elap: 1  pf: 0  in: 0  out: 6424  virt: 145M  phys: 726M
+
+
+*****  aveng terminated normally  *****
+
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/aveng
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avrpt /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -exec1
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+@(#)$CDS: avrpt_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Aug 18 15:40:04 2026
+
+
+   Creating Error Database 'lvs_rc'...
+
+   Reading VDB ...
+2026/08/18 15:40:04 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 15:40:04 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+--------------------------------------------------------------------------------
+Rule      Message                                    FlatCount     RealCount
+--------------------------------------------------------------------------------
+(    1)  dataAuditErrors                                     0            0
+(    2)  NWVIA_StampErrorFloat                               0            0
+(    3)  NWVIA_StampErrorMult                                0            0
+(    4)  NWVIA_StampErrorConnect                             0            0
+(    5)  NWELLterm_StampErrorFloat                           0            0
+(    6)  NWELLterm_StampErrorMult                            0            0
+(    7)  NWELLterm_StampErrorConnect                         0            0
+(    8)  JVARterm_StampErrorFloat                            0            0
+(    9)  JVARterm_StampErrorMult                             0            0
+(   10)  JVARterm_StampErrorConnect                          0            0
+(   11)  JVARanode_StampErrorFloat                           0            0
+(   12)  JVARanode_StampErrorMult                            0            0
+(   13)  JVARanode_StampErrorConnect                         0            0
+(   14)  PWVIA_StampErrorFloat                               0            0
+(   15)  PWVIA_StampErrorMult                                0            0
+(   16)  PWVIA_StampErrorConnect                             0            0
+(   17)  Pwell_StampErrorFloat                               0            0
+(   18)  Pwell_StampErrorMult                                0            0
+(   19)  Pwell_StampErrorConnect                             0            0
+(   20)  PWNBVIA_StampErrorFloat                             0            0
+(   21)  PWNBVIA_StampErrorMult                              0            0
+(   22)  PWNBVIA_StampErrorConnect                           0            0
+(   23)  ISOPWELL_StampErrorFloat                            0            0
+(   24)  ISOPWELL_StampErrorMult                             0            0
+(   25)  ISOPWELL_StampErrorConnect                          0            0
+(   26)  SUBVIA_StampErrorFloat                              0            0
+(   27)  SUBVIA_StampErrorMult                               0            0
+(   28)  SUBVIA_StampErrorConnect                            0            0
+(   29)  PSUB_StampErrorFloat                                0            0
+(   30)  PSUB_StampErrorMult                                 0            0
+(   31)  PSUB_StampErrorConnect                              0            0
+(   32)  NBVIA_StampErrorFloat                               0            0
+(   33)  NBVIA_StampErrorMult                                0            0
+(   34)  NBVIA_StampErrorConnect                             0            0
+(   35)  Nburied_StampErrorFloat                             0            0
+(   36)  Nburied_StampErrorMult                              0            0
+(   37)  Nburied_StampErrorConnect                           0            0
+(   38)  malformed device POLYRES                            0            0
+(   39)  malformed device POLYHRES                           0            0
+(   40)  malformed device NSDRES                             0            0
+(   41)  malformed device ISONSDRES                          0            0
+(   42)  malformed device PSDRES                             0            0
+(   43)  malformed device NWELLRES                           0            0
+(   44)  malformed device M1res                              0            0
+(   45)  malformed device M2res                              0            0
+(   46)  malformed device M3res                              0            0
+(   47)  malformed device M4res                              0            0
+(   48)  malformed device M5res                              0            0
+(   49)  malformed device M6res                              0            0
+(   50)  malformed device MIMCAP                             0            0
+(   51)  malformed device PMOSCAP                            0            0
+(   52)  malformed device NMOSCAP                            0            0
+(   53)  malformed device ISONMOSCAP                         0            0
+(   54)  malformed device INDUCTOR                           0            0
+(   55)  malformed device VPNP                               0            0
+(   56)  malformed device PNP                                0            0
+(   57)  malformed device NPN                                0            0
+(   58)  malformed device NMOS                               0            0
+(   59)  malformed device ISONMOS                            0            0
+(   60)  malformed device NMOSHV                             0            0
+(   61)  malformed device ISONMOSHV                          0            0
+(   62)  malformed device NMOSRF                             0            0
+(   63)  malformed device ISONMOSRF                          0            0
+(   64)  malformed device PMOS                               0            0
+(   65)  malformed device PMOSHV                             0            0
+(   66)  malformed device PMOSRF                             0            0
+(   67)  malformed device NDIODE                             0            0
+(   68)  malformed device PDIODE                             0            0
+(   69)  malformed device JVARNF                             0            0
+(   70)  malformed device JVARW40                            0            0
+(   71)  unstable device for JVARW40_DIODE_33                0            0
+(   73)  unstable device for JVARNF_DIODE_32                 0            0
+(   75)  unstable device for PDIODE_DIODE_31                 0            0
+(   77)  unstable device for NDIODE_DIODE_30                 0            0
+(   79)  unstable device for PMOSRF_MOS_29                   0            0
+(   81)  unstable device for PMOSHV_MOS_28                   0            0
+(   83)  unstable device for PMOS_MOS_27                     0            0
+(   85)  unstable device for ISONMOSRF_MOS_26                0            0
+(   87)  unstable device for NMOSRF_MOS_25                   0            0
+(   89)  unstable device for ISONMOSHV_MOS_24                0            0
+(   91)  unstable device for NMOSHV_MOS_23                   0            0
+(   93)  unstable device for ISONMOS_MOS_22                  0            0
+(   95)  unstable device for NMOS_MOS_21                     0            0
+(   97)  unstable device for NPN_BJT_20                      0            0
+(   99)  unstable device for PNP_BJT_19                      0            0
+(  101)  unstable device for VPNP_BJT_18                     0            0
+(  103)  unstable device for INDUCTOR_Device_17              0            0
+(  105)  unstable device for ISONMOSCAP_MOS_16               0            0
+(  107)  unstable device for NMOSCAP_MOS_15                  0            0
+(  109)  unstable device for PMOSCAP_MOS_14                  0            0
+(  111)  unstable device for MIMCAP_CAP_13                   0            0
+(  113)  unstable device for M6res_RES_12                    0            0
+(  115)  unstable device for M5res_RES_11                    0            0
+(  117)  unstable device for M4res_RES_10                    0            0
+(  119)  unstable device for M3res_RES_9                     0            0
+(  121)  unstable device for M2res_RES_8                     0            0
+(  123)  unstable device for M1res_RES_7                     0            0
+(  125)  unstable device for NWELLRES_RES_6                  0            0
+(  127)  unstable device for PSDRES_RES_5                    0            0
+(  129)  unstable device for ISONSDRES_RES_4                 0            0
+(  131)  unstable device for NSDRES_RES_3                    0            0
+(  133)  unstable device for POLYHRES_RES_2                  0            0
+(  135)  unstable device for POLYRES_RES_1                   0            0
+--------------------------------------------------------------------------------
+Total  errors:                                               0            0
+--------------------------------------------------------------------------------
+
+   Finished creating Error Database ...
+
+   Writing Report into /home/u24ev057/VD_lab/lab2/layout/lvs_rc.err ...
+
+avrpt cpu sec:    0.04  elapsed:     0  virtual:    93M
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avrpt
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -exec1 -LVS -cdslib /home/u24ev057/cds.lib
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avnx /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -exec1 -LVS -cdslib /home/u24ev057/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.71s.
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+Checking out license for Assura_LVS
+Checking out license for Phys_Ver_Sys_LVS_XL
+*WARNING* Failed to obtain license for Assura_LVS
+@(#)$CDS: avnx_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Tue Aug 18 15:40:18 2026
+
+avnx started...
+2026/08/18 15:40:18 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/08/18 15:40:18 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+cpu: 0.05  elap: 0  pf: 0  in: 0  out: 16  virt: 564M  phys: 941M
+
+Run time =  2.00 seconds
+CPU time =  0.06 seconds
+
+                  End of Summary Report
+
+************************************************************************
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 12928  virt: 496M  phys: 942M
+***** avnx terminated normally ***** 
+
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avnx
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/nvn /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -postExtract -exec1 -cdslib /home/u24ev057/cds.lib
+Checking out license for Assura_LVS
+Checking out license for Phys_Ver_Sys_LVS_XL
+@(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+run on vlsilab-client44.eced.svnit.ac.in at Tue Aug 18 15:40:20 2026
+  
+*************************************************************** 
+  
+ GENERIC PDK Assura Compare Rules file version 2.3
+  Cadence Design Systems, Inc. 
+  PDK Technology Center, Melbourne, FL 
+  Aug 2005 
+  Use with GENERIC PDK Process version 2.3
+  
+ Reference Documents: 
+  Library Specification No. GPDK, Version 2.3 
+  
+ NOTICE: 
+  Cadence Design Systems shall not be liable for the accuracy 
+  of this LVS rule file or its ability to capture errors.     
+  The user is responsible for thoroughly testing and          
+  implementing its features.                                  
+ 
+*************************************************************** 
+ 
+Reading schematic network
+Reading layout network
+ inputting network ./VD_lab/lab2/layout/lvs_rc.ldb
+Preprocessing schematic network phase 1
+Preprocessing layout network phase 1
+Preprocessing schematic network phase 2
+Preprocessing layout network phase 2
+Top cell  inverter schematic lab2_inveter_layout_rc vs inverter layout lab2_inveter_layout_rc
+Schematic and Layout Match
+cpu=0.00m  wall=0.03m  mem=109.74mb
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/nvn
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/vldbToRpa lvs_rc.snn lvs_rc.tre lvs_rc.cel
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/vldbToRpa
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/vldbToRpa lvs_rc.lnn lvs_rc.tre2 lvs_rc.cel2
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/vldbToRpa
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/ercChk /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 10.84s.
+WARNING License '111' took more than 5.00 seconds (actual time was 10.84 seconds) to check out.
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+Loading gpdk180/libInit.il ...
+	Loading gpdk180/loadCxt.ile ... done!
+	Loading context 'gpdk180' from library 'gpdk180' ... done!
+	Loading context 'pdkUtils' from library 'gpdk180' ... done!
+	Loading gpdk180/.cdsenv ... *WARNING* Master env file /tools/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre/.cdsenv is not readable
+done!
+	Loading gpdk180/libInitCustomExit.il ... 
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 180nm PDK                      *           
+  *                        (gpdk180)                          *           
+  *                                                           *           
+  *                       Version 3.2                         *           
+  *                                                           *           
+  *************************************************************           
+done!
+Loaded gpdk180/libInit.il successfully!
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/ercChk
+
+Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc /home/u24ev057/VD_lab/lab2/layout/lvs_rc.rsf -trp -exec1
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
+
+Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc
+
+
+Assura LVS terminated normally.
+
+
+
+Run ended: Tue Aug 18 15:40:32 2026
+
+*****  Assura terminated normally  *****
+
