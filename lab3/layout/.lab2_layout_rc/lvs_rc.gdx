@@ -1,0 +1,10 @@
+# 0
+pmos(MOS): pmos(MOS)
+# 0
+nmos(MOS): nmos(MOS)
+# 4
+nand schematic lab3_static_nand: nand layout lab3_static_nand
+S NM1 avD21_1
+S NM0 avD21_2
+D PM1 avD27_2
+D PM0 avD27_1
