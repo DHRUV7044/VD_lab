@@ -1,0 +1,4 @@
+"pmos(MOS)" "pmos(MOS)"
+"nmos(MOS)" "nmos(MOS)"
+"inv layout lab4_dyna_inv" "inv schematic lab4_dyna_inv" "nmos(MOS)" "pmos(MOS)"
+Devices filtered from layout
