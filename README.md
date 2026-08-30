@@ -1,33 +1,15 @@
-# VLSI Design Laboratory - Cadence Virtuoso CAD Flow
+# VLSI Design Lab Synchronizer
 
-Academic lab records for VLSI Design using Cadence custom IC design tools. This repository documents schematic capture, layout design, physical verification (DRC & LVS), and parasitic extraction.
+This repository is used for syncing Cadence Virtuoso designs and project databases from the VLSI Design (VD) laboratory workstation to a local laptop. It contains academic practical files, layout runs, and verification logs.
 
-## VLSI Cell Catalog
-- **Lab 1: Inverter Simulation**: Basic schematic entry and DC/transient simulation of a CMOS inverter cell (`lab1_inverter_sim`).
-- **Lab 2 & Lab 2.2: Static Inverter Layout**:
-  - CMOS Inverter layout design matching DRC rules.
-  - LVS verification mapping schematic ports against layout contacts.
-  - Quantus QRC parasitic extraction comparing post-layout RC parasitics vs. ideal schematic waveforms.
-- **Lab 3: CMOS Static NAND Gate**: Two-input static NAND gate schematic design, layout, and DRC/LVS physical verification.
-- **Lab 4: Dynamic Inverter**: Design and transient timing analysis of a dynamic logic inverter.
-- **Lab 4_v2: Dynamic NAND Gate**: Dynamic two-input NAND logic circuit implementation.
-- **Lab 5: D Flip-Flop (D-FF)**: Schematic and layout design of a standard memory cell (D-type Flip-Flop).
-- **Lab 20: Transistor Layout**: Detailed layout, DRC, and LVS validation of single NMOS/PMOS transistor layouts.
+## Academic Contents
+- **lab1**: Schematic entry and DC/transient simulation of a CMOS inverter cell.
+- **lab2 & lab2.2**: Static inverter layouts with Assura/PVS DRC & LVS runs, and Quantus QRC parasitic extraction logs.
+- **lab3**: 2-input CMOS static NAND gate schematic and layout physical verification.
+- **lab4 & lab4_v2**: Dynamic inverter and dynamic NAND gate schematics.
+- **lab5**: D Flip-Flop schematic and layout.
+- **lab20**: Transistor layouts (NMOS/PMOS) with DRC/LVS checkouts.
 
-## Directory Structure
-```text
-VD_lab/
-├── labX/                       # Academic Lab directories
-│   ├── library/                # Cadence Virtuoso cell library folder
-│   ├── workspace/              # Cadence run workspaces
-│   ├── layout/                 # Assura / PVS DRC and LVS run databases
-│   └── graph_and_screenshot/   # Waveforms and layout screenshots
-├── Makefile                    # Utility to create lab template folders
-└── cds.lib                     # Link to Cadence library definitions configuration
-```
-
-## CAD Tool Stack
-- **Schematic & Layout Capture**: Cadence Virtuoso (IC617 or newer)
-- **Physical Verification**: Assura LVS / PVS (Physical Verification System)
-- **Parasitic Extraction**: Cadence Quantus QRC
-- **Simulation engine**: Cadence Spectre (Analog Design Environment - ADE)\n
+## Setup Reference
+- `cds.lib`: Links Cadence library paths.
+- `Makefile`: Script utility used on lab workstations to instantiate standardized cell views and directory structures.
