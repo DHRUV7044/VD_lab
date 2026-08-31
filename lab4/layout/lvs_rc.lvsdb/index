@@ -5,5 +5,5 @@
 stat extr dev net pin param rewire total 
 none matched expanded errors param_err pin_err empty_sch empty_lay not_run 
 00000001
-24 inv layout lab4_dyna_inv 1 0 0 0 1 135 1 156 1 178 1 198 1 221 1 241 1 263 1 282 1 301 1 320 1 339 1 358 1 377 1 397 1 418 1 439 1 463 1 485 1 503 1 520 1 537 1 555 1 576 1 596 1 619 1 639 1 662 1 680 1 700 1 720 1 740 1 760 1 780
-24 inv layout lab4_dyna_inv 1 27 inv schematic lab4_dyna_inv 1 0
+28 nand layout lab3_static_nand 1 0 0 0 1 135 1 156 1 178 1 198 1 221 1 241 1 263 1 282 1 301 1 320 1 339 1 358 1 377 1 397 1 418 1 439 1 463 1 485 1 503 1 520 1 537 1 555 1 576 1 596 1 619 1 639 1 662 1 680 1 700 1 720 1 740 1 760 1 780
+28 nand layout lab3_static_nand 1 31 nand schematic lab3_static_nand 1 0

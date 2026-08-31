@@ -1,5 +1,5 @@
 #!/bin/ksh
-# This script was generated Tue Aug 25 20:00:47 2026 by:
+# This script was generated Mon Aug 31 16:33:09 2026 by:
 #
 # Program: /tools/cadence/QUANTUS212/tools/extraction/bin/64bit//RCXspice
 # Version: 21.2.2-p045

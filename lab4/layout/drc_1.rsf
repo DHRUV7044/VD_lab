@@ -10,8 +10,8 @@
 ;----------------------------------------------------------------------------
 
 avParameters(
-  ?inputLayout ( "df2" "lab4_dyna_inv" )
-  ?cellName "inv"
+  ?inputLayout ( "df2" "lab3_static_nand" )
+  ?cellName "nand"
   ?viewName "layout"
   ?runName "drc_1"
   ?workingDirectory "./VD_lab/lab4/layout"

@@ -1,7 +1,7 @@
 *
 *
 *
-*                       LINUX           Thu Aug 20 18:44:03 2026
+*                       LINUX           Tue Aug 25 20:01:18 2026
 *
 *
 *
@@ -19,7 +19,7 @@
 *
 
 *
-.SUBCKT nand gnd_u24ev057 vdd_u24ev057 vin1_u24ev057 vin2_u24ev057 vout_u24ev057
+.SUBCKT inv gnd_u24ev057 vdd_u24ev057 vin_u24ev057 vout_u24ev057
 *
 *
 *  caps2d version: 9
@@ -28,130 +28,63 @@
 *       TRANSISTOR CARDS
 *
 *
-MavD21_1	avC6#2	vin1_u24ev057#4	gnd_u24ev057#7	gnd_u24ev057#8
-+ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
+MavD21_1	vout_u24ev057#2	vin_u24ev057#4	gnd_u24ev057#2
++ gnd_u24ev057#3	nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
 + AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
-MavD21_2	vout_u24ev057#3	vin2_u24ev057#4	avC6
-+ gnd_u24ev057#5	nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
-+ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
-MavD27_1	vout_u24ev057#2	vin1_u24ev057#1	vdd_u24ev057#8
-+ vdd_u24ev057	pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
-+ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
-MavD27_2	vout_u24ev057#4	vin2_u24ev057#1	vdd_u24ev057#6
+MavD27_1	vout_u24ev057#3	vin_u24ev057#1	vdd_u24ev057#2
 + vdd_u24ev057	pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
 + AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
 *
 *
 *       RESISTOR AND CAP/DIODE CARDS
 *
-Rf1	vin1_u24ev057	vin1_u24ev057#3	5.886667	$mt1
-+ $W=3e-07	$X=1.975 $Y=12.15
-Rf2	vin2_u24ev057	vin2_u24ev057#3	7.567833	$mt1
-+ $W=3e-07	$X=5.5775 $Y=7.85
-Rf3	avC6	avC6#2	15.193500	$mt1	$W=4e-07
-+ $X=10.0905 $Y=5.2
-Rf4	vout_u24ev057	vout_u24ev057#1	1.199405	$mt1
-+ $W=3e-07	$X=17.365 $Y=10
-Rf5	vout_u24ev057#1	vout_u24ev057#2	10.042183	$mt1
-+ $W=3e-07	$X=10.63 $Y=10
-Rf6	vout_u24ev057#1	vout_u24ev057#3	7.836696	$mt1
-+ $W=4e-07	$X=14.68 $Y=7.625
-Rf7	vout_u24ev057#1	vout_u24ev057#4	7.906696	$mt1
-+ $W=4e-07	$X=14.68 $Y=12.575
-Rf8	gnd_u24ev057#1	gnd_u24ev057#2	1.363629	$mt1	$W=3e-07
-+ $X=17.4405 $Y=0.15
-Rf9	gnd_u24ev057#2	gnd_u24ev057	0.939079	$mt1	$W=3e-07
-+ $X=11.6505 $Y=0.15
-Rf10	gnd_u24ev057	gnd_u24ev057#3	1.046025	$mt1	$W=3e-07
-+ $X=7.85 $Y=0.15
-Rf11	gnd_u24ev057#3	gnd_u24ev057#4	1.279358	$mt1	$W=3e-07
-+ $X=2.65 $Y=0.15
-Rf12	gnd_u24ev057#2	gnd_u24ev057#5	2.500602	$mt1	$W=1.58e-06
-+ $X=14.09 $Y=2.0875
-Rf13	gnd_u24ev057#3	gnd_u24ev057#6	0.658033	$mt1	$W=4e-07
-+ $X=5.5 $Y=2.0875
-Rf14	gnd_u24ev057#6	gnd_u24ev057#7	7.194196	$mt1	$W=4e-07
-+ $X=5.5 $Y=4.6375
-Rf15	gnd_u24ev057#6	gnd_u24ev057#8	2.407947	$mt1	$W=4e-07
-+ $X=5.795 $Y=4.075
-Rf16	vdd_u24ev057#1	vdd_u24ev057#2	1.512575	$mt1	$W=3e-07
-+ $X=16.8505 $Y=19.85
-Rf17	vdd_u24ev057#2	vdd_u24ev057	0.812692	$mt1	$W=3e-07
-+ $X=11.6505 $Y=19.85
-Rf18	vdd_u24ev057	vdd_u24ev057#3	1.046025	$mt1	$W=3e-07
-+ $X=7.85 $Y=19.85
-Rf19	vdd_u24ev057#3	vdd_u24ev057#4	1.279358	$mt1	$W=3e-07
-+ $X=2.65 $Y=19.85
-Rf20	vdd_u24ev057#2	vdd_u24ev057#5	0.588033	$mt1	$W=4e-07
-+ $X=13.5 $Y=18.1125
-Rf21	vdd_u24ev057#5	vdd_u24ev057#6	7.194196	$mt1	$W=4e-07
-+ $X=13.5 $Y=15.7625
-Rf22	vdd_u24ev057#3	vdd_u24ev057#7	0.588033	$mt1	$W=4e-07
-+ $X=5.5 $Y=18.1125
-Rf23	vdd_u24ev057#7	vdd_u24ev057#8	7.194196	$mt1	$W=4e-07
-+ $X=5.5 $Y=15.7625
-Rf24	vdd_u24ev057#5	vdd_u24ev057#9	2.407947	$mt1	$W=4e-07
-+ $X=13.795 $Y=16.325
-Rf25	vdd_u24ev057#7	vdd_u24ev057#10	2.407947	$mt1
-+ $W=4e-07	$X=5.795 $Y=16.325
-Rg1	vin1_u24ev057#1	vin1_u24ev057#2	117.590065	$poly
-+ $W=1.8e-07	$X=6.09 $Y=13.7255
-Rg2	vin1_u24ev057#2	vin1_u24ev057#3	24.194750	$poly
-+ $W=6e-07	$X=5.15 $Y=12.15
-Rg3	vin1_u24ev057#2	vin1_u24ev057#4	280.090057	$poly
-+ $W=1.8e-07	$X=6.09 $Y=8.625
-Rg4	vin2_u24ev057#1	vin2_u24ev057#2	296.756744	$poly
-+ $W=1.8e-07	$X=14.09 $Y=11.5755
-Rg5	vin2_u24ev057#2	vin2_u24ev057#3	34.132252	$poly
-+ $W=6e-07	$X=12.7525 $Y=7.85
-Rg6	vin2_u24ev057#2	vin2_u24ev057#4	100.923393	$poly
-+ $W=1.8e-07	$X=14.09 $Y=6.475
+Rf1	vin_u24ev057	vin_u24ev057#3	5.886667	$mt1	$W=3e-07
++ $X=1.975 $Y=7.5
+Rf2	vout_u24ev057	vout_u24ev057#1	1.522759	$mt1
++ $W=3e-07	$X=11.615 $Y=7.5
+Rf3	vout_u24ev057#1	vout_u24ev057#2	7.575749	$mt1
++ $W=4e-07	$X=8.18 $Y=5.875
+Rf4	vout_u24ev057#1	vout_u24ev057#3	7.645749	$mt1
++ $W=4e-07	$X=8.18 $Y=9.325
+Rf5	vdd_u24ev057	vdd_u24ev057#1	0.610247	$mt1	$W=3e-07
++ $X=7 $Y=13.7625
+Rf6	vdd_u24ev057#1	vdd_u24ev057#2	7.194196	$mt1	$W=4e-07
++ $X=7 $Y=11.7625
+Rf7	vdd_u24ev057#1	vdd_u24ev057#3	2.407947	$mt1	$W=4e-07
++ $X=7.295 $Y=12.325
+Rf8	gnd_u24ev057	gnd_u24ev057#1	0.680247	$mt1	$W=3e-07
++ $X=7 $Y=1.4375
+Rf9	gnd_u24ev057#1	gnd_u24ev057#2	7.194196	$mt1	$W=4e-07
++ $X=7 $Y=3.6375
+Rf10	gnd_u24ev057#1	gnd_u24ev057#3	2.407947	$mt1	$W=4e-07
++ $X=7.295 $Y=3.075
+Rg1	vin_u24ev057#1	vin_u24ev057#2	144.673401	$poly	$W=1.8e-07
++ $X=7.59 $Y=9.4005
+Rg2	vin_u24ev057#2	vin_u24ev057#3	42.944748	$poly	$W=6e-07
++ $X=5.9 $Y=7.5
+Rg3	vin_u24ev057#2	vin_u24ev057#4	128.006729	$poly	$W=1.8e-07
++ $X=7.59 $Y=5.8
 *
 *       CAPACITOR CARDS
 *
 *
-C1	vdd_u24ev057	gnd_u24ev057	3.4995e-16	$X=9.75 $Y=9.9995
-C2	vin1_u24ev057	gnd_u24ev057	2.1927e-16	$X=3.983 $Y=8.046
-C3	vin2_u24ev057	gnd_u24ev057	5.53932e-16	$X=6.9285 $Y=3.2695
-C4	vout_u24ev057	gnd_u24ev057	2.87334e-16	$X=15.0245 $Y=5.9665
-C5	avC6	gnd_u24ev057	3.86635e-16	$X=10.861 $Y=2.0535
-C6	vin2_u24ev057#1	gnd_u24ev057	4.57083e-16
-+ $X=12.3765 $Y=8.3155
-C7	vin1_u24ev057#1	gnd_u24ev057	2.0238e-16
-+ $X=6.9605 $Y=11.247
-C8	vin2_u24ev057#4	gnd_u24ev057	1.81334e-16
-+ $X=13.137 $Y=4.392
-C9	vin1_u24ev057#4	gnd_u24ev057	4.29547e-16
-+ $X=7.491 $Y=4.1665
-C10	vin2_u24ev057#3	gnd_u24ev057	8.53874e-16
-+ $X=9.837 $Y=2.324
-C11	vin1_u24ev057#3	gnd_u24ev057	4.37932e-16
-+ $X=7.193 $Y=5.1835
-C12	vdd_u24ev057#9	gnd_u24ev057	3.46412e-17	$X=11.6755 $Y=7.1285
-C13	vout_u24ev057#3	gnd_u24ev057	3.11715e-16
-+ $X=11.8865 $Y=2.579
-C14	vdd_u24ev057#10	gnd_u24ev057	4.28366e-17
-+ $X=8.2235 $Y=7.1285
-C15	avC6#2	gnd_u24ev057	3.78068e-16	$X=8.895 $Y=2.053
-C16	vout_u24ev057#4	gnd_u24ev057	3.34015e-16
-+ $X=11.8235 $Y=6.225
-C17	vdd_u24ev057#6	gnd_u24ev057	6.88036e-17	$X=12.0175 $Y=9.306
-C18	vout_u24ev057#2	gnd_u24ev057	7.71816e-16
-+ $X=8.799 $Y=4.3755
-C19	vdd_u24ev057#8	gnd_u24ev057	7.67505e-17	$X=7.179 $Y=9.306
-C20	vout_u24ev057#1	gnd_u24ev057	1.37039e-15
-+ $X=10.0655 $Y=2.103
-C21	vdd_u24ev057#4	gnd_u24ev057	2.88808e-16	$X=4.7865 $Y=11.7545
-C22	vdd_u24ev057#1	gnd_u24ev057	3.34733e-16	$X=14.4935 $Y=10.922
-C23	vdd_u24ev057#2	gnd_u24ev057	6.07635e-16	$X=11.032 $Y=6.6135
-C24	vdd_u24ev057#3	gnd_u24ev057	6.04921e-16	$X=8.2965 $Y=6.614
-C25	vdd_u24ev057#5	gnd_u24ev057	1.69369e-16	$X=11.7685 $Y=9.1885
-C26	vdd_u24ev057#7	gnd_u24ev057	1.6924e-16	$X=7.461 $Y=9.1885
-C27	vin1_u24ev057#2	gnd_u24ev057	6.62827e-16
-+ $X=8.1245 $Y=5.045
-C28	vin2_u24ev057#2	gnd_u24ev057	7.61881e-16
-+ $X=11.513 $Y=3.7555
+C1	vdd_u24ev057	gnd_u24ev057	1.52844e-15	$X=6.999 $Y=7.605
+C2	vin_u24ev057	gnd_u24ev057	2.25997e-16	$X=1.6285 $Y=6.775
+C3	vout_u24ev057	gnd_u24ev057	3.5647e-16	$X=12.234 $Y=6.346
+C4	vin_u24ev057#1	gnd_u24ev057	2.4238e-16	$X=7.5435 $Y=9.7925
+C5	vin_u24ev057#4	gnd_u24ev057	2.12413e-16	$X=7.5475 $Y=4.4605
+C6	vin_u24ev057#3	gnd_u24ev057	5.83993e-16	$X=4.7595 $Y=5.53
+C7	vdd_u24ev057#3	gnd_u24ev057	3.73529e-17	$X=7.547 $Y=9.6245
+C8	vout_u24ev057#2	gnd_u24ev057	2.17135e-16
++ $X=7.9505 $Y=3.822
+C9	vout_u24ev057#3	gnd_u24ev057	2.46119e-16
++ $X=7.9385 $Y=8.7275
+C10	vdd_u24ev057#2	gnd_u24ev057	9.07752e-17	$X=6.999 $Y=9.908
+C11	vout_u24ev057#1	gnd_u24ev057	6.85946e-16
++ $X=7.7995 $Y=5.3855
+C12	vdd_u24ev057#1	gnd_u24ev057	1.37567e-16	$X=6.9995 $Y=11.021
+C13	vin_u24ev057#2	gnd_u24ev057	6.31456e-16	$X=7.4445 $Y=5.914
 *
 *
-.ENDS nand
+.ENDS inv
 *

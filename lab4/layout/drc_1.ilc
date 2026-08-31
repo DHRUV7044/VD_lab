@@ -1,3 +1,3 @@
 gpdk180 nmos layout 217
 gpdk180 pmos layout 227
-lab4_dyna_inv inv layout 1177
+lab3_static_nand nand layout 3744

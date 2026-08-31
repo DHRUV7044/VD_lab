@@ -10,11 +10,9 @@ nmos(MOS): nmos(MOS)
 = G G B
 = S S B
 = B B B
-# 6
-nand schematic lab3_static_nand: nand layout lab3_static_nand
-= net1 avC6
+# 4
+inv schematic lab2_v2_static_inv: inv layout lab2_v2_static_inv
 = gnd_u24ev057 gnd_u24ev057 I
 = vdd_u24ev057 vdd_u24ev057 I
-= vin1_u24ev057 vin1_u24ev057 I
-= vin2_u24ev057 vin2_u24ev057 I
+= vin_u24ev057 vin_u24ev057 I
 = vout_u24ev057 vout_u24ev057 O

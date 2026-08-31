@@ -1,2 +1,2 @@
-!<alc> v1 24
-0    3    0 inv layout lab4_dyna_inv
+!<alc> v1 28
+0    3    0 nand layout lab3_static_nand
