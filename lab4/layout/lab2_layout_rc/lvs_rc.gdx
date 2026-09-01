@@ -1,0 +1,9 @@
+# 0
+pmos(MOS): pmos(MOS)
+# 0
+nmos(MOS): nmos(MOS)
+# 3
+inv schematic lab4_dyna_inv: inv layout lab4_dyna_inv
+D NM1 avD21_1
+D NM0 avD21_2
+D PM0 avD27_1

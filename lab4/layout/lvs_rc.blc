@@ -1,4 +1,4 @@
 "pmos(MOS)" "pmos(MOS)"
 "nmos(MOS)" "nmos(MOS)"
-"nand layout lab3_static_nand" "nand schematic lab3_static_nand" "nmos(MOS)" "pmos(MOS)"
+"inv layout lab4_dyna_inv" "inv schematic lab4_dyna_inv" "nmos(MOS)" "pmos(MOS)"
 Devices filtered from layout

@@ -9,8 +9,8 @@
 avSimName = "auLvs"
 avDisableWildcardPG = nil
 avVerilogBusMapIEEE = t
-avLibName  = "lab3_static_nand"
-avCellName = "nand"
+avLibName  = "lab4_dyna_inv"
+avCellName = "inv"
 avViewName = "schematic"
 avViewList = "auLvs schematic symbol"
 avStopList = "auLvs"
