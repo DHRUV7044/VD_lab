@@ -1,5 +1,5 @@
 #!/bin/ksh
-# This script was generated Tue Sep  1 14:16:24 2026 by:
+# This script was generated Wed Sep  2 18:34:24 2026 by:
 #
 # Program: /tools/cadence/QUANTUS212/tools/extraction/bin/64bit//RCXspice
 # Version: 21.2.2-p045
@@ -20,8 +20,8 @@
 #	-max_fracture_length infinite -macro_cell -lvs_source assura \
 #	-ignore_gate_diffusion_fringing_cap -hierarchy_delimiter / \
 #	-fracture_length_units MICRONS -extract both -df2 -cap_models no \
-#	-cap_ground gnd_u24ev057 -cap_extract_mode decoupled \
-#	-cap_coupling_factor 1.0 -array_vias_spacing auto -xref \
+#	-cap_ground gnd -cap_extract_mode decoupled -cap_coupling_factor 1.0 \
+#	-array_vias_spacing auto -xref \
 #	/home/u24ev057/VD_lab/lab4/layout/lab2_layout_rc/lvs_rc.gnx,/home/u24ev057/VD_lab/lab4/layout/lab2_layout_rc/lvs_rc.gdx
 set -e
 set -v
@@ -40,7 +40,7 @@ set -v
 ##BREAK_WIDTH=
 ##CAP_COUPLING_FACTOR=1.0
 ##CAP_EXTRACT_MODE=decoupled
-##CAP_GROUND=gnd_u24ev057
+##CAP_GROUND=gnd
 ##CAP_MODELS=no
 ##DANGLINGR=N
 ##DENSITY_CHECK_METHOD=P
@@ -220,7 +220,7 @@ endFlattenInputs
 #==========================================================#
 
 cat <<ENDCAT> sch_cap_ground
-gnd_u24ev057
+gnd
 ENDCAT
 sch2lay -a -r /home/u24ev057/VD_lab/lab4/layout/lab2_layout_rc/lvs_rc.gnx -rd /home/u24ev057/VD_lab/lab4/layout/lab2_layout_rc/lvs_rc.gdx sch_cap_ground lay_cap_ground
 CAP_GROUND=`findCapGround -gfn lay_cap_ground NET`

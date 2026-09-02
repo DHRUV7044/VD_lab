@@ -10,11 +10,13 @@ nmos(MOS): nmos(MOS)
 = G G B
 = S S B
 = B B B
-# 6
-inv schematic lab4_dyna_inv: inv layout lab4_dyna_inv
-= net1 avC6
-= clk_u24ev057 clk_u24ev057 I
-= gnd_u24ev057 gnd_u24ev057 I
-= vdd_u24ev057 vdd_u24ev057 I
-= vin_u24ev057 vin_u24ev057 I
-= vout_u24ev057 vout_u24ev057 O
+# 8
+dyna_nand schematic lab4_v2_dyna_nand: dyna_nand layout lab4_v2_dyna_nand
+= net2 avC7
+= net1 avC8
+= vdd vdd I
+= gnd gnd I
+= clk clk I
+= vin1 vin1 I
+= vin2 vin2 I
+= vout vout O

@@ -1,4 +1,4 @@
-//Revision 10
+//Revision 12
 //NOTE
 // Default template for spectre
 // Note:
@@ -12,6 +12,7 @@ liblist myLib;
 
 viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf;
 stoplist spectre;
+
 
 
 endconfig

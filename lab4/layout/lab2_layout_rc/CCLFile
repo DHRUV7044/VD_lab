@@ -3,7 +3,7 @@
 #
 capacitance \
 	 -decoupling_factor 1.0 \
-	 -ground_net "gnd_u24ev057"
+	 -ground_net "gnd"
 extract \
 	 -selection "all" \
 	 -type "rc_decoupled"
@@ -19,7 +19,7 @@ filter_res \
 	 -merge_parallel_res false \
 	 -min_res 0.001
 input_db -type assura \
-	 -design_cell_name "inv layout lab4_dyna_inv" \
+	 -design_cell_name "dyna_nand layout lab4_v2_dyna_nand" \
 	 -directory_name "/home/u24ev057/VD_lab/lab4/layout" \
 	 -format "DFII" \
 	 -library_definitions_file "/home/u24ev057/cds.lib" \

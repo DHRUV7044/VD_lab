@@ -1,5 +1,5 @@
-Schematic                      | Layout                       | Status
--------------------------------------------------------------------------------
-inv schematic lab4_dyna_inv    | inv layout lab4_dyna_inv     | matched     
+Schematic                            | Layout                            | Status
+-----------------------------------------------------------------------------------
+dyna_nand schematic lab4_v2_dyna_nand| dyna_nand layout lab4_v2_dyna_nand| matched
 
 Schematic and Layout Match

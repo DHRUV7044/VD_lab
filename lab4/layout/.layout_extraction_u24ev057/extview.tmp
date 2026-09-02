@@ -1,0 +1,114 @@
+*
+*
+*
+*                       LINUX           Wed Sep  2 19:17:19 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT inv clk_u24ev057 gnd_u24ev057 vdd_u24ev057 vin_u24ev057 vout_u24ev057
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	avC6#2	clk_u24ev057#4	gnd_u24ev057#7	gnd_u24ev057#8
++ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD21_2	vout_u24ev057#3	vin_u24ev057#1	avC6	gnd_u24ev057#5
++ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD27_1	vout_u24ev057#2	clk_u24ev057#1	vdd_u24ev057#2
++ vdd_u24ev057	pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	clk_u24ev057	clk_u24ev057#3	5.653333	$mt1	$W=3e-07
++ $X=1.475 $Y=8.15
+Rf2	vin_u24ev057	vin_u24ev057#2	7.049833	$mt1	$W=3e-07
++ $X=4.4675 $Y=5.85
+Rf3	avC6	avC6#2	14.668500	$mt1	$W=4e-07
++ $X=8.5905 $Y=4.2
+Rf4	vout_u24ev057	vout_u24ev057#1	0.735691	$mt1
++ $W=3e-07	$X=13.365 $Y=7.5
+Rf5	vout_u24ev057#1	vout_u24ev057#2	8.995136	$mt1
++ $W=3e-07	$X=9.13 $Y=7.5
+Rf6	vout_u24ev057#1	vout_u24ev057#3	7.551337	$mt1
++ $W=4e-07	$X=11.68 $Y=5.875
+Rf7	gnd_u24ev057#1	gnd_u24ev057#2	0.896962	$mt1	$W=3e-07
++ $X=13.4405 $Y=0.15
+Rf8	gnd_u24ev057#2	gnd_u24ev057	0.822412	$mt1	$W=3e-07
++ $X=8.9005 $Y=0.15
+Rf9	gnd_u24ev057	gnd_u24ev057#3	0.462691	$mt1	$W=3e-07
++ $X=6.6 $Y=0.15
+Rf10	gnd_u24ev057#3	gnd_u24ev057#4	1.279358	$mt1	$W=3e-07
++ $X=2.65 $Y=0.15
+Rf11	gnd_u24ev057#2	gnd_u24ev057#5	2.456299	$mt1	$W=1.58e-06
++ $X=11.09 $Y=1.5875
+Rf12	gnd_u24ev057#3	gnd_u24ev057#6	0.483033	$mt1	$W=4e-07
++ $X=5.5 $Y=1.5875
+Rf13	gnd_u24ev057#6	gnd_u24ev057#7	7.194196	$mt1	$W=4e-07
++ $X=5.5 $Y=3.6375
+Rf14	gnd_u24ev057#6	gnd_u24ev057#8	2.407947	$mt1	$W=4e-07
++ $X=5.795 $Y=3.075
+Rf15	vdd_u24ev057	vdd_u24ev057#1	0.950588	$mt1	$W=3e-07
++ $X=5.5 $Y=14.5125
+Rf16	vdd_u24ev057#1	vdd_u24ev057#2	7.194196	$mt1	$W=4e-07
++ $X=5.5 $Y=11.7625
+Rf17	vdd_u24ev057#1	vdd_u24ev057#3	2.407947	$mt1	$W=4e-07
++ $X=5.795 $Y=12.325
+Rg1	clk_u24ev057#1	clk_u24ev057#2	118.462914	$poly	$W=1.8e-07
++ $X=6.09 $Y=9.6205
+Rg2	clk_u24ev057#2	clk_u24ev057#3	117.996323	$poly	$W=1.8e-07
++ $X=4.65 $Y=8.15
+Rg3	clk_u24ev057#2	clk_u24ev057#4	155.962921	$poly	$W=1.8e-07
++ $X=6.09 $Y=6.23
+Rg4	vin_u24ev057#1	vin_u24ev057#2	137.338318	$poly	$W=1.8e-07
++ $X=10.8255 $Y=5.855
+*
+*       CAPACITOR CARDS
+*
+*
+C1	clk_u24ev057	gnd_u24ev057	1.77026e-16	$X=3.476 $Y=5.024
+C2	vdd_u24ev057	gnd_u24ev057	1.45452e-15	$X=8.0905 $Y=2.076
+C3	vin_u24ev057	gnd_u24ev057	4.61412e-16	$X=5.8745 $Y=2.0865
+C4	vout_u24ev057	gnd_u24ev057	1.95206e-16	$X=11.5095 $Y=4.446
+C5	avC6	gnd_u24ev057	2.52428e-16	$X=8.5615 $Y=1.565
+C6	clk_u24ev057#1	gnd_u24ev057	2.14668e-16	$X=6.674 $Y=6.9595
+C7	vin_u24ev057#1	gnd_u24ev057	2.47124e-16	$X=9.7955 $Y=3.01
+C8	clk_u24ev057#4	gnd_u24ev057	2.57745e-16	$X=6.75 $Y=3.046
+C9	vin_u24ev057#2	gnd_u24ev057	7.65406e-16	$X=7.896 $Y=1.5635
+C10	clk_u24ev057#3	gnd_u24ev057	4.49151e-16	$X=5.999 $Y=3.1325
+C11	vout_u24ev057#3	gnd_u24ev057	2.39174e-16
++ $X=9.192 $Y=1.771
+C12	vdd_u24ev057#3	gnd_u24ev057	3.78088e-17	$X=7.266 $Y=3.9815
+C13	avC6#2	gnd_u24ev057	2.46067e-16	$X=7.525 $Y=1.565
+C14	vout_u24ev057#2	gnd_u24ev057	5.38231e-16
++ $X=7.4575 $Y=2.8525
+C15	vdd_u24ev057#2	gnd_u24ev057	7.79582e-17	$X=6.6675 $Y=5.506
+C16	vout_u24ev057#1	gnd_u24ev057	6.91408e-16
++ $X=8.638 $Y=1.6445
+C17	vdd_u24ev057#1	gnd_u24ev057	2.07809e-16	$X=6.9 $Y=5.054
+C18	clk_u24ev057#2	gnd_u24ev057	4.73326e-16	$X=7.007 $Y=3.6265
+*
+*
+.ENDS inv
+*

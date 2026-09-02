@@ -1,8 +1,8 @@
 vuiLVSdebugRunInfo = list( nil
-   'layoutLibrary "lab4_dyna_inv"
-   'layoutCell "inv"
+   'layoutLibrary "lab4_v2_dyna_nand"
+   'layoutCell "dyna_nand"
    'layoutView "layout"
-   'schematicLibrary "lab4_dyna_inv"
-   'schematicCell "inv"
+   'schematicLibrary "lab4_v2_dyna_nand"
+   'schematicCell "dyna_nand"
    'schematicView "schematic"
 )

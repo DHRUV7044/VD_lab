@@ -1,21 +1,21 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on vlsilab-client43.eced.svnit.ac.in at Tue Sep  1 14:14:37 2026
+run on vlsilab-client43.eced.svnit.ac.in at Wed Sep  2 18:33:23 2026
 
-Schematic                      | Layout                       | Status
--------------------------------------------------------------------------------
-inv schematic lab4_dyna_inv    | inv layout lab4_dyna_inv     | matched     
+Schematic                            | Layout                            | Status
+-----------------------------------------------------------------------------------
+dyna_nand schematic lab4_v2_dyna_nand| dyna_nand layout lab4_v2_dyna_nand| matched
 
 Schematic and Layout Match
 
 Schematic:
-  Library:lab4_dyna_inv
-  Cell   :inv
+  Library:lab4_v2_dyna_nand
+  Cell   :dyna_nand
   View   :schematic
 
 Layout:
-  Library:lab4_dyna_inv
-  Cell   :inv
+  Library:lab4_v2_dyna_nand
+  Cell   :dyna_nand
   View   :layout
 
 
