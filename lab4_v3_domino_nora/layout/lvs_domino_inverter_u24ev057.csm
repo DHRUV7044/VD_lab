@@ -1,0 +1,6 @@
+Schematic                                   | Layout                                   | Status
+-------------------------------------------------------------------------------------------------
+static_inverter schematic lab2_v2_static_inv| static_inverter layout lab2_v2_static_inv| matched
+domino_inv schematic lab3_domino            | domino_inv layout lab3_domino            | matched
+
+Schematic and Layout Match

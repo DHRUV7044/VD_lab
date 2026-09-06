@@ -1,0 +1,4 @@
+"pmos(MOS)" "pmos(MOS)"
+"nmos(MOS)" "nmos(MOS)"
+"static_inverter layout lab2_v2_static_inv" "static_inverter schematic lab2_v2_static_inv" "nmos(MOS)" "pmos(MOS)"
+Devices filtered from layout

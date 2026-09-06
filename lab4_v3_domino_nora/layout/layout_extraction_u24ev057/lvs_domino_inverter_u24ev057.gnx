@@ -1,0 +1,29 @@
+# 4
+pmos(MOS): pmos(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+nmos(MOS): nmos(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 5
+static_inverter schematic lab2_v2_static_inv: static_inverter layout lab2_v2_static_inv
+= vdd vdd I
+= gnd gnd I
+= vin vin I
+= vout vout O
+= gnd avT811_1
+# 8
+domino_inv schematic lab3_domino: domino_inv layout lab3_domino
+= net1 vout
+= net2 vin
+= net3 avC6
+= vdd vdd I
+= gnd gnd I
+= clk clk I
+= vin_57 vin_57 I
+= vout_57 vout_57 O

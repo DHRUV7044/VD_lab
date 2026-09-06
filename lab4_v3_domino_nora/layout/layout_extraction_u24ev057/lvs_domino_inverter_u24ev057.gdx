@@ -1,0 +1,15 @@
+# 0
+pmos(MOS): pmos(MOS)
+# 0
+nmos(MOS): nmos(MOS)
+# 2
+static_inverter schematic lab2_v2_static_inv: static_inverter layout lab2_v2_static_inv
+D PM0 avD27_1
+D NM0 avD21_1
+# 5
+domino_inv schematic lab3_domino: domino_inv layout lab3_domino
+D PM0 avD27_1
+D NM1 avD21_2
+D NM0 avD21_1
+I I1 I1 static_inverter static_inverter
+I I0 I0 static_inverter static_inverter

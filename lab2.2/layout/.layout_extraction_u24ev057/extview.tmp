@@ -1,0 +1,86 @@
+*
+*
+*
+*                       LINUX           Thu Sep  3 14:50:13 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT static_inverter vdd gnd vin vout
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	vout#2	vin#4	gnd#2	gnd#3	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
++ simW=4e-07 fw=4e-07
+MavD27_1	vout#3	vin#1	vdd#2	vdd	pmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
++ simW=4e-07 fw=4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	vin	vin#3	5.886667	$mt1	$W=3e-07	$X=1.975 $Y=5
+Rf2	vout	vout#1	0.939426	$mt1	$W=3e-07	$X=7.865 $Y=5
+Rf3	vout#1	vout#2	7.313249	$mt1	$W=4e-07
++ $X=5.68 $Y=4.125
+Rf4	vout#1	vout#3	7.383249	$mt1	$W=4e-07
++ $X=5.68 $Y=6.075
+Rf5	vdd	vdd#1	0.417756	$mt1	$W=3e-07
++ $X=4.5 $Y=9.2625
+Rf6	vdd#1	vdd#2	7.194196	$mt1	$W=4e-07
++ $X=4.5 $Y=7.7625
+Rf7	vdd#1	vdd#3	2.407947	$mt1	$W=4e-07
++ $X=4.795 $Y=8.325
+Rf8	gnd	gnd#1	0.487756	$mt1	$W=3e-07
++ $X=4.5 $Y=0.9375
+Rf9	gnd#1	gnd#2	7.194196	$mt1	$W=4e-07
++ $X=4.5 $Y=2.6375
+Rf10	gnd#1	gnd#3	2.407947	$mt1	$W=4e-07
++ $X=4.795 $Y=2.075
+Rg1	vin#1	vin#2	83.046249	$poly	$W=1.8e-07
++ $X=5.09 $Y=6.0455
+Rg2	vin#2	vin#3	34.662991	$poly	$W=1.8e-07	$X=4.65 $Y=5
+Rg3	vin#2	vin#4	66.379593	$poly	$W=1.8e-07
++ $X=5.09 $Y=4.155
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	9.90661e-16	$X=4.4995 $Y=5.1065
+C2	vin	gnd	2.13127e-16	$X=1.527 $Y=4.3015
+C3	vout	gnd	2.28463e-16	$X=8.203 $Y=4.2545
+C4	vin#1	gnd	1.66608e-16	$X=5.0395 $Y=6.3365
+C5	vin#4	gnd	1.42201e-16	$X=5.045 $Y=3.2035
+C6	vin#3	gnd	3.02235e-16	$X=3.715 $Y=3.831
+C7	vdd#3	gnd	3.4089e-17	$X=4.9875 $Y=5.8435
+C8	vout#2	gnd	1.34374e-16	$X=5.426 $Y=2.755
+C9	vout#3	gnd	1.5823e-16	$X=5.4085 $Y=5.4755
+C10	vdd#2	gnd	7.87735e-17	$X=4.499 $Y=6.019
+C11	vout#1	gnd	4.08502e-16	$X=5.329 $Y=3.724
+C12	vdd#1	gnd	8.71922e-17	$X=4.4995 $Y=7.195
+C13	vin#2	gnd	2.14891e-16	$X=5.0245 $Y=4.5895
+*
+*
+.ENDS static_inverter
+*

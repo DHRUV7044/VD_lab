@@ -13,7 +13,7 @@
 (envOpts advTBRUnconfigItemList) nil
 (envOpts advTBRUpdateInstList) ""
 (envOpts advTBRv2001ConfigName) ""
-(envOpts analysisOrder) ("tran")
+(envOpts analysisOrder) ("tran" "dc")
 (envOpts assemblerPBSRSnapShotSelect) ""
 (envOpts assemblerSRSnapSelectList) nil
 (envOpts assemblerSRSnapTclList) ""

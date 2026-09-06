@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'static_inverter layout lab2_v2_static_inv':
+  info: Assign pin label "gnd" at (2.5000, 0.1500) to layer `M1term'.
+  info: Assign pin label "vin" at (0.1500, 5.0000) to layer `M1term'.
+  info: Assign pin label "vout" at (4.8500, 5.0000) to layer `M1term'.
+  info: Assign pin label "vdd" at (2.5000, 9.8500) to layer `M1term'.
+
+***** End of Label Report *****
+
