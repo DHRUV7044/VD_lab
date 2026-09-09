@@ -1,4 +1,7 @@
 "pmos(MOS)" "pmos(MOS)"
 "nmos(MOS)" "nmos(MOS)"
-"inv layout lab4_dyna_inv" "inv schematic lab4_dyna_inv" "nmos(MOS)" "pmos(MOS)"
+"D_latch_tx_gate layout lab5_D_FF" "D_latch_tx_gate schematic lab5_D_FF"
+"cmos_tx_gate layout lab5_D_FF" "cmos_tx_gate schematic lab5_D_FF" "nmos(MOS)" "pmos(MOS)"
+"cmos_inv_static layout lab5_D_FF" "cmos_inv_static schematic lab5_D_FF" "nmos(MOS)" "pmos(MOS)"
+"D_FF_tx_gate layout lab5_D_FF" "D_FF_tx_gate schematic lab5_D_FF"
 Devices filtered from layout

@@ -10,8 +10,8 @@
 ;----------------------------------------------------------------------------
 
 avParameters(
-  ?inputLayout ( "df2" "lab4_dyna_inv" )
-  ?cellName "inv"
+  ?inputLayout ( "df2" "lab5_D_FF" )
+  ?cellName "D_FF_tx_gate"
   ?viewName "layout"
   ?runName "drc_u24ev057"
   ?workingDirectory "./VD_lab/layout_run"
