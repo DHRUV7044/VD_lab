@@ -1,0 +1,5 @@
+Parameter , Value , Unit
+Technology , 180 , nm
+$v_{dd}$ , 1.8 , V
+PMOS Width , 400 , nm
+NMOS Width , 400 , nm
