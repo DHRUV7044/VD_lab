@@ -1,0 +1,90 @@
+{
+    "output_filename": "lab2_static_nand.pdf",
+    "title_font_size": 14,
+    "margin_mm": 5,
+    "image_gap_mm": 8,
+    "section": {
+        "number": 6,
+        "name": "IMAGE"
+    },
+    "pages": [
+        {
+            "id": 10,
+            "title": "dc pre layout vs post layout",
+            "image": "dc_diff.png",
+            "rotation": 90
+        },
+        {
+            "id": 9,
+            "title": "dc post layout",
+            "image": "dc_post_layout.png",
+            "rotation": 90
+        },
+        {
+            "id": 8,
+            "title": "dc pre layout",
+            "image": "dc_pre_layout.png",
+            "rotation": 90
+        },
+        {
+            "id": 5,
+            "title": "quantus_run",
+            "image": "rc_extracted.png",
+            "rotation": 90
+        },
+        {
+            "id": 3,
+            "title": "drc",
+            "image": "static_nand_drc.png",
+            "rotation": 90
+        },
+        {
+            "id": 2,
+            "title": "layout",
+            "image": "static_nand_layout.png",
+            "rotation": 90
+        },
+        {
+            "id": 4,
+            "title": "lvs",
+            "image": "static_nand_lvs.png",
+            "rotation": 990
+        },
+        {
+            "id": 1,
+            "title": "schematic",
+            "image": "static_nand_sche.png",
+            "rotation": 90
+        },
+        {
+            "id": 6,
+            "title": "symbol",
+            "image": "static_nand_symbol.png",
+            "rotation": 90
+        },
+        {
+            "id": 7,
+            "title": "tets bench",
+            "image": "static_nand_tb.png",
+            "rotation": 90
+        },
+        {
+            "id": 13,
+            "title": "tran pre layout vs post layout",
+            "image": "tran_diff.png",
+            "rotation": 90
+        },
+        {
+            "id": 12,
+            "title": "tran post layout",
+            "image": "tran_post_layout.png",
+            "rotation": 90
+        },
+        {
+            "id": 11,
+            "title": "tran pre layout",
+            "image": "tran_pre_layout.png",
+            "rotation": 90
+        }
+    ]
+}
