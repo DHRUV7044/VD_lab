@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      u24ev057
+HostName                       vlsilab-client43.eced.svnit.ac.in
+ProcessIdentifier              292434
+ProcessCreationTime_UTC        1789023509
+ProcessCreationTime_Readable   Thu Sep 10 12:28:29 2026 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/u24ev057/VD_lab/lab5/library/lab5_D_FF/D_FF_TSPC/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Sep 10 12:28:41 2026 IST

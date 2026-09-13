@@ -1,24 +1,21 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on vlsilab-client44.eced.svnit.ac.in at Tue Sep  8 23:04:49 2026
+run on server3.eced.svnit.ac.in at Thu Sep 10 21:46:51 2026
 
-Schematic                          | Layout                          | Status
+Schematic                       | Layout                       | Status
 -------------------------------------------------------------------------------
-cmos_inv_static schematic lab5_D_FF| cmos_inv_static layout lab5_D_FF| matched
-cmos_tx_gate schematic lab5_D_FF   | cmos_tx_gate layout lab5_D_FF   | matched
-D_latch_tx_gate schematic lab5_D_FF| D_latch_tx_gate layout lab5_D_FF| matched
-D_FF_tx_gate schematic lab5_D_FF   | D_FF_tx_gate layout lab5_D_FF   | matched
+D_FF_TSPC schematic lab5_D_FF   | D_FF_TSPC layout lab5_D_FF   | matched    
 
 Schematic and Layout Match
 
 Schematic:
   Library:lab5_D_FF
-  Cell   :D_FF_tx_gate
+  Cell   :D_FF_TSPC
   View   :schematic
 
 Layout:
   Library:lab5_D_FF
-  Cell   :D_FF_tx_gate
+  Cell   :D_FF_TSPC
   View   :layout
 
 

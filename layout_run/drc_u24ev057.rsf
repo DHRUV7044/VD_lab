@@ -11,7 +11,7 @@
 
 avParameters(
   ?inputLayout ( "df2" "lab5_D_FF" )
-  ?cellName "D_FF_tx_gate"
+  ?cellName "D_FF_TSPC"
   ?viewName "layout"
   ?runName "drc_u24ev057"
   ?workingDirectory "./VD_lab/layout_run"

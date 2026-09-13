@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("cell_inverter" "elmore_5_point_tb" "config" "ams")
+descriptionText = "None"

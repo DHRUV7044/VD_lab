@@ -20,12 +20,12 @@ filter_res \
 	 -min_res 0.001
 input_db -type assura \
 	 -design_cell_name "domino_inv layout lab3_domino" \
-	 -directory_name "/home/u24ev057/VD_lab/lab4_v3_domino_nora/layout" \
+	 -directory_name "/home/u24ev057/VD_lab/layout_run" \
 	 -format "DFII" \
 	 -library_definitions_file "/home/u24ev057/cds.lib" \
-	 -run_name "lvs_domino_inverter_u24ev057"
+	 -run_name "lvs_u24ev057"
 log_file \
-	 -file_name "/home/u24ev057/VD_lab/lab4_v3_domino_nora/layout/qrc.layout_extraction_u24ev057.log"
+	 -file_name "/home/u24ev057/VD_lab/layout_run/qrc.rc_extraction_u24ev057.log"
 output_db -type extracted_view \
 	 -cap_component "pcapacitor" \
 	 -cap_property_name "c" \
@@ -39,8 +39,8 @@ output_db -type extracted_view \
 	 -res_property_name "r" \
 	 -view_name "av_extracted"
 output_setup \
-	 -directory_name "/home/u24ev057/VD_lab/lab4_v3_domino_nora/layout" \
-	 -temporary_directory_name "layout_extraction_u24ev057"
+	 -directory_name "/home/u24ev057/VD_lab/layout_run" \
+	 -temporary_directory_name "rc_extraction_u24ev057"
 process_technology \
 	 -technology_corner \
 		"default" \
