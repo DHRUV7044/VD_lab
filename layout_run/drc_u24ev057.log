@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:28 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Thu Sep 10 21:45:57 2026
+run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Sep 15 00:41:54 2026
 
 
 Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/aveng /home/u24ev057/VD_lab/layout_run/drc_u24ev057.rsf -restart -cdslib /home/u24ev057/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Thu Sep 10 21:45:57 2026
+run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Sep 15 00:41:54 2026
 
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
@@ -29,7 +29,7 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
  RSF           : /home/u24ev057/VD_lab/layout_run/drc_u24ev057.rsf
  Library Name  : lab5_D_FF
  CDSLIB Path   : "/home/u24ev057/cds.lib"
- Cell Name     : D_FF_TSPC
+ Cell Name     : D_FF_C2MOS
  View Name     : layout
  Rules File    : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/drc.rul
  Options       : -restart -cdslib /home/u24ev057/cds.lib 
@@ -37,33 +37,33 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
  Operating Mode: Legacy Mode is Off
 
 Checking out license for Assura_DRC
-2026/09/10 21:45:57 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/10 21:45:57 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/09/15 00:41:54 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 00:41:54 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 *WARNING* Failed to obtain license for Assura_DRC
 No Assura license available.
 Checking out license for Phys_Ver_Sys_DRC_XL
 Restarting with VDB Build 2 
 
 Building the VDB part 2 in background mode.
+2026/09/15 00:42:08 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 00:42:08 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 Executing: bulk = cellBoundary(root)
-2026/09/10 21:46:00 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/10 21:46:00 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 Building the VDB part 3 in background mode.
-2026/09/10 21:46:00 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/10 21:46:00 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/09/15 00:42:08 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 00:42:08 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 
 Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.07  elap: 3  pf: 0  in: 0  out: 40  virt: 160M  phys: 835M
+cpu: 0.06  elap: 15  pf: 0  in: 6496  out: 40  virt: 160M  phys: 821M
 
 Running the Task Processor, 1 cells, 1379 steps...
 
-Top Cell is 'D_FF_TSPC layout lab5_D_FF'
+Top Cell is 'D_FF_C2MOS layout lab5_D_FF'
 
 Executing: Metal1 = geomOr(Metal1_d Metal1_f)
 
@@ -912,17 +912,17 @@ Executing: L18376 = geomAndNot(L30836 L93119)
 	   errorLayer(L18376 "13A3: N+SD to PW tap spacing must be <= 10.0 um")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.08  elap: 0  pf: 0  in: 0  out: 304  virt: 187M  phys: 932M
+cpu: 0.06  elap: 0  pf: 0  in: 0  out: 312  virt: 189M  phys: 909M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.05  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1037M
+cpu: 0.04  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1004M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6424  virt: 238M  phys: 1056M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6424  virt: 238M  phys: 1018M
 
 
 *****  aveng terminated normally  *****
@@ -940,12 +940,14 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Thu Sep 10 21:46:01 2026
+run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Sep 15 00:42:10 2026
 
 
    Creating Error Database 'drc_u24ev057'...
 
    Reading VDB ...
+2026/09/15 00:42:10 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 00:42:10 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 --------------------------------------------------------------------------------
 Rule      Message                                    FlatCount     RealCount
 --------------------------------------------------------------------------------
@@ -1034,8 +1036,6 @@ Rule      Message                                    FlatCount     RealCount
 (   83)  acute angle on layer IND2dummy                      0            0
 (   84)  acute angle on layer IND3dummy                      0            0
 (   85)  acute angle on layer INDdummy                       0            0
-2026/09/10 21:46:01 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/10 21:46:01 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 (   86)  acute angle on layer JVAR1dummy                     0            0
 (   87)  acute angle on layer JVAR2dummy                     0            0
 (   88)  acute angle on layer JVAR3dummy                     0            0
@@ -1220,7 +1220,7 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
 Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Thu Sep 10 21:46:02 2026
+Run ended: Tue Sep 15 00:42:11 2026
 
 *****  Assura terminated normally  *****
 

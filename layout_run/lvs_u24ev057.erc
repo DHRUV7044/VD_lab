@@ -1,12 +1,19 @@
 
 ***** Begin Label Report *****
 
- Label in cell 'D_FF_TSPC layout lab5_D_FF':
-  info: Assign pin label "d_57" at (0.1500, 6.6000) to layer `M1term'.
-  info: Assign pin label "gnd" at (12.5000, 0.1500) to layer `M1term'.
-  info: Assign pin label "clk_57" at (0.1500, 18.7000) to layer `M1term'.
-  info: Assign pin label "vdd" at (12.5000, 24.8500) to layer `M1term'.
-  info: Assign pin label "q_57" at (24.8500, 12.5000) to layer `M1term'.
+ Label in cell 'cmos_inv_static layout lab5_D_FF':
+  info: Assign pin label "gnd_u24ev057" at (2.5000, 0.1500) to layer `M1term'.
+  info: Assign pin label "vin_u24ev057" at (0.1500, 5.0000) to layer `M1term'.
+  info: Assign pin label "vout_u24ev057" at (4.8500, 5.0000) to layer `M1term'.
+  info: Assign pin label "vdd_u24ev057" at (2.5000, 9.8500) to layer `M1term'.
+
+ Label in cell 'D_FF_C2MOS layout lab5_D_FF':
+  info: Assign pin label "clk_u24ev057" at (0.1500, 5.0000) to layer `M1term'.
+  info: Assign pin label "gnd_u24ev057" at (10.0000, 0.1500) to layer `M1term'.
+  info: Assign pin label "d_u24ev057" at (0.1500, 15.0000) to layer `M1term'.
+  info: Assign pin label "q_u24ev057" at (19.8500, 6.0000) to layer `M1term'.
+  info: Assign pin label "vdd_u24ev057" at (10.0000, 19.8500) to layer `M1term'.
+  info: Assign pin label "clkb_u24ev057" at (19.8500, 13.0000) to layer `M1term'.
 
 ***** End of Label Report *****
 

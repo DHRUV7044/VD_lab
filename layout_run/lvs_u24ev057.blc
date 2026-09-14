@@ -1,4 +1,5 @@
 "pmos(MOS)" "pmos(MOS)"
 "nmos(MOS)" "nmos(MOS)"
-"D_FF_TSPC layout lab5_D_FF" "D_FF_TSPC schematic lab5_D_FF" "nmos(MOS)" "pmos(MOS)"
+"cmos_inv_static layout lab5_D_FF" "cmos_inv_static schematic lab5_D_FF" "nmos(MOS)" "pmos(MOS)"
+"D_FF_C2MOS layout lab5_D_FF" "D_FF_C2MOS schematic lab5_D_FF" "nmos(MOS)" "pmos(MOS)"
 Devices filtered from layout

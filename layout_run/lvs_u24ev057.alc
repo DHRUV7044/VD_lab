@@ -1,2 +1,3 @@
-!<alc> v1 26
-0    7    0 D_FF_TSPC layout lab5_D_FF
+!<alc> v1 32
+0    3    0 cmos_inv_static layout lab5_D_FF
+0    9    0 D_FF_C2MOS layout lab5_D_FF
