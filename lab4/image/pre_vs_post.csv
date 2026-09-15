@@ -1,4 +1,4 @@
-Parameter , Pre layout , Post layout , Unit , Error(wiht respect to pre layout)(%)
+Parameter , Pre layout , Post layout , Unit , Error(with respect to pre layout)(%)
 $V_{th}$ , 715.711 , 715.7106 , mV , $perr(re2  re3)
 $V_{OH}$ , 1.8 , 1.8 , V , $perr(re2  re3) 
 $V_{OL}$ , 0 , 0 , V , $perr(re2  re3)
