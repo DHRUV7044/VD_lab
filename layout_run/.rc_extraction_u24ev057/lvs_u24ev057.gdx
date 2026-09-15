@@ -4,21 +4,16 @@ pmos(MOS): pmos(MOS)
 nmos(MOS): nmos(MOS)
 # 2
 cmos_inv_static schematic lab5_D_FF: cmos_inv_static layout lab5_D_FF
-D PM0 avD27_1
 D NM0 avD21_1
-# 2
-cmos_tx_gate schematic lab5_D_FF: cmos_tx_gate layout lab5_D_FF
 D PM0 avD27_1
-D NM0 avD21_1
-# 5
-D_latch_tx_gate schematic lab5_D_FF: D_latch_tx_gate layout lab5_D_FF
-I I5 I5 cmos_tx_gate cmos_tx_gate
-I I4 I4 cmos_tx_gate cmos_tx_gate
-I I8 I8 cmos_inv_static cmos_inv_static
-I I7 I7 cmos_inv_static cmos_inv_static
-I I6 I6 cmos_inv_static cmos_inv_static
-# 3
-D_FF_tx_gate schematic lab5_D_FF: D_FF_tx_gate layout lab5_D_FF
-I I2 I2 cmos_inv_static cmos_inv_static
-I I1 I1 D_latch_tx_gate D_latch_tx_gate
-I I0 I0 D_latch_tx_gate D_latch_tx_gate
+# 9
+D_FF_C2MOS schematic lab5_D_FF: D_FF_C2MOS layout lab5_D_FF
+D NM2 avD21_4
+D NM1 avD21_1
+D NM0 avD21_2
+D NM3 avD21_3
+D PM3 avD27_1
+D PM2 avD27_2
+D PM1 avD27_3
+D PM0 avD27_4
+I I0 I0 cmos_inv_static cmos_inv_static

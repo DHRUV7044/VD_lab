@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:28 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Sep 15 00:43:04 2026
+run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Tue Sep 15 16:11:29 2026
 
 
 Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/aveng /home/u24ev057/VD_lab/layout_run/lvs_u24ev057.rsf -exec1 -LVS -cdslib /home/u24ev057/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Sep 15 00:43:04 2026
+run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Sep 15 16:11:29 2026
 
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
@@ -29,22 +29,22 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
  RSF           : /home/u24ev057/VD_lab/layout_run/lvs_u24ev057.rsf
  Library Name  : lab5_D_FF
  CDSLIB Path   : "/home/u24ev057/cds.lib"
- Cell Name     : D_FF_C2MOS
+ Cell Name     : D_FF_TSPC
  View Name     : layout
  Rules File    : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/extract.rul
  Options       : -exec1 -LVS -cdslib /home/u24ev057/cds.lib 
  Work Directory: /home/u24ev057/VD_lab/layout_run
  Operating Mode: Legacy Mode is Off
 
-2026/09/15 00:43:04 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/15 00:43:04 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 Starting dfIIToVdb...
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.61s.
+2026/09/15 16:11:29 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 16:11:29 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.79s.
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Sep 15 00:43:06 2026
+run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Sep 15 16:11:33 2026
 
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
@@ -56,10 +56,6 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
-*WARNING* The directory: '/home/u24ev057/VD_lab/lab4_v3_domino_nora/library/nora' does not exist
-	but was defined in libFile '/home/u24ev057/cds.lib' for Lib 'nora'.
-*WARNING* The directory: '/home/u24ev057/VD_lab/lab4_v3_domino_nora/library/nora' does not exist
-	but was defined in libFile '/home/u24ev057/cds.lib' for Lib 'nora'.
 Loading gpdk180/libInit.il ...
 	Loading gpdk180/loadCxt.ile ... done!
 	Loading context 'gpdk180' from library 'gpdk180' ... done!
@@ -83,8 +79,8 @@ Compiling rules...
 
 WARNING LVS Run detected.
 Non-legacy mode has been disabled for this LVS run
-2026/09/15 00:43:07 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/15 00:43:07 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/09/15 16:11:33 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 16:11:33 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 Checking out license for Assura_LVS
 *WARNING* Failed to obtain license for Assura_LVS
 No Assura license available.
@@ -97,13 +93,13 @@ Reading the design data...
 Finished dfIIToVdb.
 
 Building the VDB part 2 in background mode.
-2026/09/15 00:43:10 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/15 00:43:10 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 Building tables for LVS Preprocessing in background mode.
 
 
 Starting /tools/cadence/ASSURA41/tools.lnx86/assura/bin/vdbToCells /home/u24ev057/VD_lab/layout_run lvs_u24ev057
+2026/09/15 16:11:38 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 16:11:38 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/vdbToCells
 
@@ -114,7 +110,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on vlsilab-client43.eced.svnit.ac.in at Tue Sep 15 00:43:12 2026
+run on server3.eced.svnit.ac.in at Tue Sep 15 16:11:41 2026
   
 *************************************************************** 
   
@@ -137,12 +133,11 @@ run on vlsilab-client43.eced.svnit.ac.in at Tue Sep 15 00:43:12 2026
  
 Reading schematic network
  running dfIIToVldb -cdslib /home/u24ev057/cds.lib /home/u24ev057/VD_lab/layout_run/lvs_u24ev057.vlr /home/u24ev057/VD_lab/layout_run/lvs_u24ev057.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 10.97s.
-WARNING License '111' took more than 5.00 seconds (actual time was 10.97 seconds) to check out.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.48s.
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:35 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue Sep 15 00:43:24 2026
+run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue Sep 15 16:11:45 2026
 
   
 *************************************************************** 
@@ -167,22 +162,18 @@ run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx8
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
 Top Cell Library: "lab5_D_FF"
-Top Cell Name: "D_FF_C2MOS"
+Top Cell Name: "D_FF_TSPC"
 Top Cell View: "schematic"
 Output Data Base Name: "/home/u24ev057/VD_lab/layout_run/lvs_u24ev057.sdb"
 Simulator Name: "auLvs"
-Failed to obtain license for "Assura_LVS". 
-Checking out license for Phys_Ver_Sys_LVS_XL
 ERROR (LMF-02005): License call failed for feature Assura_LVS, version 4.100 and quantity 1. The license server search path is defined as 5280@14.139.1.126:1717@14.139.1.126. The FLEXnet error message is as follows,
     FLEXnet ERROR(-5, 0, 0): No such feature exists.
 
 Run 'lic_error LMF-02005' for more information.
+Failed to obtain license for "Assura_LVS". 
+Checking out license for Phys_Ver_Sys_LVS_XL
 View List: "auLvs schematic symbol"
 Stop List: "auLvs"
-*WARNING* The directory: '/home/u24ev057/VD_lab/lab4_v3_domino_nora/library/nora' does not exist
-	but was defined in libFile '/home/u24ev057/cds.lib' for Lib 'nora'.
-*WARNING* The directory: '/home/u24ev057/VD_lab/lab4_v3_domino_nora/library/nora' does not exist
-	but was defined in libFile '/home/u24ev057/cds.lib' for Lib 'nora'.
 Loading gpdk180/libInit.il ...
 	Loading gpdk180/loadCxt.ile ... done!
 	Loading context 'gpdk180' from library 'gpdk180' ... done!
@@ -211,22 +202,22 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.42m  mem=109.69mb
+cpu=0.00m  wall=0.15m  mem=87.00mb
 
 Finished /tools/cadence/ASSURA41/tools.lnx86/assura/bin/nvn
 
 Executing: bulk = cellBoundary(root)
 
 Building the VDB part 3 in background mode.
-2026/09/15 00:43:36 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/15 00:43:36 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/09/15 16:11:48 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 16:11:48 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.05  elap: 33  pf: 0  in: 32  out: 144  virt: 98M  phys: 546M
+cpu: 0.06  elap: 19  pf: 0  in: 0  out: 144  virt: 98M  phys: 616M
 
-Running the Task Processor, 2 cells, 1610 steps...
+Running the Task Processor, 1 cells, 1610 steps...
 
-Top Cell is 'D_FF_C2MOS layout lab5_D_FF'
+Top Cell is 'D_FF_TSPC layout lab5_D_FF'
 
 Executing: CapMetal = geomOr(CapMetal CapMetal_pin)
 
@@ -763,8 +754,7 @@ Executing: extractBJT("npn" NPN (Nburied "C") (Pwell "B") (NSDterm "E") (cellVie
 Executing: attachParameter(area "area" NPN)
 
 Executing: extractMOS("nmos" NMOS (POLYterm "G") (NSDterm "S" "D") (PSUB "B") (cellView ...
-         1 'nmos' created in cell 'cmos_inv_static layout lab5_D_FF'.
-         4 'nmos' created in cell 'D_FF_C2MOS layout lab5_D_FF'.
+         6 'nmos' created in cell 'D_FF_TSPC layout lab5_D_FF'.
 
 Executing: attachParameter(w "w" NMOS)
 
@@ -849,8 +839,7 @@ Executing: attachParameter(sdarea ("as" "S") ("ad" "D") ISONMOSRF shared)
 Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") ISONMOSRF shared)
 
 Executing: extractMOS("pmos" PMOS (POLYterm "G") (PSDterm "S" "D") (NWELLterm "B") (cell...
-         1 'pmos' created in cell 'cmos_inv_static layout lab5_D_FF'.
-         4 'pmos' created in cell 'D_FF_C2MOS layout lab5_D_FF'.
+         6 'pmos' created in cell 'D_FF_TSPC layout lab5_D_FF'.
 
 Executing: attachParameter(w "w" PMOS)
 
@@ -909,12 +898,12 @@ Executing: extractDIODE("xjvar_nf36" JVARW40 (JVARanode "ANODE") (NWELLterm "CAT
 Executing: attachParameter(w "w" JVARW40)
 
 Finished running rules. Task processor time in main process:
-cpu: 0.10  elap: 0  pf: 0  in: 0  out: 392  virt: 140M  phys: 677M
+cpu: 0.15  elap: 0  pf: 0  in: 0  out: 392  virt: 140M  phys: 743M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6440  virt: 145M  phys: 690M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6440  virt: 145M  phys: 760M
 
 
 *****  aveng terminated normally  *****
@@ -932,14 +921,12 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Sep 15 00:43:38 2026
+run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Tue Sep 15 16:11:49 2026
 
 
    Creating Error Database 'lvs_u24ev057'...
 
    Reading VDB ...
-2026/09/15 00:43:38 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/15 00:43:38 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 --------------------------------------------------------------------------------
 Rule      Message                                    FlatCount     RealCount
 --------------------------------------------------------------------------------
@@ -1040,6 +1027,8 @@ Rule      Message                                    FlatCount     RealCount
 (  119)  unstable device for M3res_RES_9                     0            0
 (  121)  unstable device for M2res_RES_8                     0            0
 (  123)  unstable device for M1res_RES_7                     0            0
+2026/09/15 16:11:49 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 16:11:49 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 (  125)  unstable device for NWELLRES_RES_6                  0            0
 (  127)  unstable device for PSDRES_RES_5                    0            0
 (  129)  unstable device for ISONSDRES_RES_4                 0            0
@@ -1069,7 +1058,7 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
 Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avcallproc
 
 Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/avnx /home/u24ev057/VD_lab/layout_run/lvs_u24ev057.rsf -exec1 -LVS -cdslib /home/u24ev057/cds.lib
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.30s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.90s.
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
 
@@ -1082,20 +1071,20 @@ Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: avnx_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client43.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Tue Sep 15 00:43:44 2026
+run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Tue Sep 15 16:12:05 2026
 
 avnx started...
-2026/09/15 00:43:44 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/15 00:43:44 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
-cpu: 0.05  elap: 0  pf: 0  in: 0  out: 16  virt: 565M  phys: 897M
+2026/09/15 16:12:05 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/15 16:12:05 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+cpu: 0.05  elap: 0  pf: 0  in: 0  out: 24  virt: 541M  phys: 940M
 
-Run time =  3.00 seconds
-CPU time =  0.06 seconds
+Run time = 13.00 seconds
+CPU time =  0.08 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.01  elap: 1  pf: 0  in: 0  out: 12944  virt: 497M  phys: 898M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 12928  virt: 473M  phys: 941M
 ***** avnx terminated normally ***** 
 
 
@@ -1106,7 +1095,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on vlsilab-client43.eced.svnit.ac.in at Tue Sep 15 00:43:57 2026
+run on server3.eced.svnit.ac.in at Tue Sep 15 16:12:08 2026
   
 *************************************************************** 
   
@@ -1134,10 +1123,9 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-Comparing cmos_inv_static schematic lab5_D_FF vs cmos_inv_static layout lab5_D_FF
-Top cell  D_FF_C2MOS schematic lab5_D_FF vs D_FF_C2MOS layout lab5_D_FF
+Top cell  D_FF_TSPC schematic lab5_D_FF vs D_FF_TSPC layout lab5_D_FF
 Schematic and Layout Match
-cpu=0.00m  wall=0.20m  mem=109.76mb
+cpu=0.00m  wall=0.05m  mem=87.13mb
 
 Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/nvn
 
@@ -1150,8 +1138,7 @@ Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/vldbToRpa lvs_u24ev057.
 Finished /tools/cadence/ASSURA41//tools.lnx86/assura/bin/vldbToRpa
 
 Starting /tools/cadence/ASSURA41//tools.lnx86/assura/bin/ercChk /home/u24ev057/VD_lab/layout_run/lvs_u24ev057.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 10.77s.
-WARNING License '111' took more than 5.00 seconds (actual time was 10.77 seconds) to check out.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.87s.
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
 
@@ -1162,10 +1149,6 @@ Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techR
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
 
 Loading tech rule set file : /tools/cadence/FOUNDRY/analog/180nm/pv/assura/techRuleSets
-*WARNING* The directory: '/home/u24ev057/VD_lab/lab4_v3_domino_nora/library/nora' does not exist
-	but was defined in libFile '/home/u24ev057/cds.lib' for Lib 'nora'.
-*WARNING* The directory: '/home/u24ev057/VD_lab/lab4_v3_domino_nora/library/nora' does not exist
-	but was defined in libFile '/home/u24ev057/cds.lib' for Lib 'nora'.
 Loading gpdk180/libInit.il ...
 	Loading gpdk180/loadCxt.ile ... done!
 	Loading context 'gpdk180' from library 'gpdk180' ... done!
@@ -1202,7 +1185,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Tue Sep 15 00:44:10 2026
+Run ended: Tue Sep 15 16:12:13 2026
 
 *****  Assura terminated normally  *****
 

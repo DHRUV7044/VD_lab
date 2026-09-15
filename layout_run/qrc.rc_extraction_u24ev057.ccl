@@ -4,7 +4,7 @@
 
 capacitance \
 	 -decoupling_factor 1.0 \
-	 -ground_net "gnd_u24ev057"
+	 -ground_net "gnd"
 extract \
 	 -selection "all" \
 	 -type "rc_decoupled"
@@ -19,7 +19,7 @@ filter_res \
 	 -merge_parallel_res false \
 	 -min_res 0.001
 input_db -type assura \
-	 -design_cell_name "D_FF_C2MOS layout lab5_D_FF" \
+	 -design_cell_name "D_FF_TSPC layout lab5_D_FF" \
 	 -run_name "lvs_u24ev057" \
 	 -directory_name "/home/u24ev057/VD_lab/layout_run" \
 	 -format "DFII" \
