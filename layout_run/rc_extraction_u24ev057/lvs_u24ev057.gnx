@@ -10,23 +10,17 @@ nmos(MOS): nmos(MOS)
 = G G B
 = S S B
 = B B B
-# 5
-cmos_inv_static schematic lab5_D_FF: cmos_inv_static layout lab5_D_FF
-= gnd_u24ev057 gnd_u24ev057 I
-= vdd_u24ev057 vdd_u24ev057 I
-= vin_u24ev057 vin_u24ev057 I
-= vout_u24ev057 vout_u24ev057 O
-= gnd_u24ev057 avT811_1
-# 11
-D_FF_C2MOS schematic lab5_D_FF: D_FF_C2MOS layout lab5_D_FF
-= net4 avC8
+# 12
+D_FF_TSPC schematic lab5_D_FF: D_FF_TSPC layout lab5_D_FF
 = net1 avC7
-= net3 avC9
-= net6 avC10
-= net5 avC11
-= clk_u24ev057 clk_u24ev057 I
-= d_u24ev057 d_u24ev057 I
-= gnd_u24ev057 gnd_u24ev057 I
-= vdd_u24ev057 vdd_u24ev057 I
-= q_u24ev057 q_u24ev057 O
-= clkb_u24ev057 clkb_u24ev057 X
+= net7 avC8
+= net5 avC9
+= net3 avC6
+= net8 avC10
+= net6 avC11
+= net4 avC12
+= vdd vdd I
+= gnd gnd I
+= clk_57 clk_57 I
+= d_57 d_57 I
+= q_57 q_57 O

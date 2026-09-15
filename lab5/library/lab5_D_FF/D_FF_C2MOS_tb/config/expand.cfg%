@@ -1,4 +1,4 @@
-//Revision 27
+//Revision 30
 //NOTE
 // Default template for spectre
 // Note:
@@ -13,6 +13,8 @@ liblist myLib;
 viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf;
 stoplist spectre;
 
+
+cell lab5_D_FF.D_FF_C2MOS binding :av_extracted;
 
 
 endconfig

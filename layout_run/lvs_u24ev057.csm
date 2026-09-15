@@ -1,6 +1,5 @@
-Schematic                          | Layout                          | Status
+Schematic                       | Layout                       | Status
 -------------------------------------------------------------------------------
-cmos_inv_static schematic lab5_D_FF| cmos_inv_static layout lab5_D_FF| matched
-D_FF_C2MOS schematic lab5_D_FF     | D_FF_C2MOS layout lab5_D_FF     | matched
+D_FF_TSPC schematic lab5_D_FF   | D_FF_TSPC layout lab5_D_FF   | matched    
 
 Schematic and Layout Match
