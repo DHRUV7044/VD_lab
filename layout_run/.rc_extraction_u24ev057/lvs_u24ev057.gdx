@@ -2,18 +2,17 @@
 pmos(MOS): pmos(MOS)
 # 0
 nmos(MOS): nmos(MOS)
-# 2
-cmos_inv_static schematic lab5_D_FF: cmos_inv_static layout lab5_D_FF
+# 12
+D_FF_TSPC schematic lab5_D_FF: D_FF_TSPC layout lab5_D_FF
+D NM2 avD21_6
+D NM5 avD21_5
+D NM4 avD21_3
+D NM3 avD21_4
+D NM1 avD21_2
 D NM0 avD21_1
-D PM0 avD27_1
-# 9
-D_FF_C2MOS schematic lab5_D_FF: D_FF_C2MOS layout lab5_D_FF
-D NM2 avD21_4
-D NM1 avD21_1
-D NM0 avD21_2
-D NM3 avD21_3
-D PM3 avD27_1
-D PM2 avD27_2
-D PM1 avD27_3
-D PM0 avD27_4
-I I0 I0 cmos_inv_static cmos_inv_static
+D PM4 avD27_6
+D PM3 avD27_5
+D PM2 avD27_3
+D PM1 avD27_1
+D PM0 avD27_2
+D PM5 avD27_4

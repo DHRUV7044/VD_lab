@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Sep 15 16:11:00 2026
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Sep 16 12:55:06 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -42,7 +42,7 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap 2421.5M virt      21 pf
+reading DFII data. . . .      0 cpu      0 elap 2507.1M virt    4012 pf
 duplicate inst removal .      0 cpu      0 elap  159.7M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  159.7M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  159.7M virt       0 pf
@@ -65,7 +65,7 @@ duplicate cell removal .      0 cpu      0 elap  162.1M virt       0 pf
 create background layer.      0 cpu      0 elap  162.1M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  162.1M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap 2421.5M virt      21 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 2507.1M virt    4012 pf
 
 
 ************************************************************************
@@ -5768,9 +5768,9 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2421.5M virt      21 pf
 Total cells checked = 1
 Total rules checked = 1379
 
-Run time =  3.00 seconds
-CPU time =  0.23 seconds
-VM HWM   =  2422 Mbytes
+Run time = 10.00 seconds
+CPU time =  0.16 seconds
+VM HWM   =  2507 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

@@ -1,16 +1,15 @@
 sub PSUB
+mt2 mt2
 mt3 mt3
 mt4 mt4
 mt5 mt5
 mt6 mt6
 diff np_rNSDterm p_rNSDterm np_rPSDterm p_rPSDterm
-M2term np_rM2term p_rM2term
 M1term np_rM1term p_rM1term
 POLYterm np_rPOLYterm p_rPOLYterm
 PSDterm np_rPSDterm p_rPSDterm
 NSDterm np_rNSDterm p_rNSDterm
 PSUB PSUB
-Via1 np_rVia1 p_rVia1
 POLYcont np_rPOLYcont p_rPOLYcont
 PSDcont PSDcont
 NSDcont NSDcont

@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on server3.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Tue Sep 15 16:11:29 2026
+run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Sep 16 12:50:12 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -1692,8 +1692,8 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap  467.2M virt       0 pf
-LVS preprocessing. . . .      1 cpu     10 elap   98.3M virt       0 pf
+reading DFII data. . . .      0 cpu      0 elap  489.9M virt       0 pf
+LVS preprocessing. . . .      0 cpu     10 elap   98.3M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap   98.3M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap   98.3M virt       0 pf
 small cell flattening. .      0 cpu      0 elap   98.3M virt       0 pf
@@ -1716,7 +1716,7 @@ duplicate inst removal .      0 cpu      0 elap  100.8M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  100.8M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  100.8M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      1 cpu     10 elap  467.2M virt       0 pf
+TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
 
 ************************************************************************
@@ -2648,7 +2648,7 @@ TOTALS (secs). . . . . .      1 cpu     10 elap  467.2M virt       0 pf
 
  ;# 232
     L26152 = geomAndNot( POLYterm Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 8
 
  ;# 233
     L2255 = geomAnd( L26152 NPLUS ) 
@@ -6129,7 +6129,7 @@ TOTALS (secs). . . . . .      1 cpu     10 elap  467.2M virt       0 pf
 
  ;# 1084
     dataReduction( T?1393 ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
 
  ;# 1085
     extractBJT( "pnp" T?1238 Pwell( "C" ) NWELLterm( "B" ) PSDterm( "E" ) flagMalformed  cellView("pnp ivpcell gpdk180"))
@@ -6197,7 +6197,7 @@ TOTALS (secs). . . . . .      1 cpu     10 elap  467.2M virt       0 pf
 
  ;# 1101
     dataReduction( T?1396 ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
 
  ;# 1102
     T?1397 = _geomPushDown( Pwell T?1241 and ) 
@@ -8243,9 +8243,9 @@ TOTALS (secs). . . . . .      1 cpu     10 elap  467.2M virt       0 pf
 Total cells checked = 1
 Total rules checked = 1610
 
-Run time = 19.00 seconds
-CPU time =  1.27 seconds
-VM HWM   =   467 Mbytes
+Run time = 22.00 seconds
+CPU time =  0.17 seconds
+VM HWM   =   490 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes
