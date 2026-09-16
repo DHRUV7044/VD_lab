@@ -1,0 +1,12 @@
+Parameter , Value , Unit
+$v_{dd}$ , 5 , V
+R1 , 10 , Ω
+R2 , 12 , Ω
+R3 , 14 , Ω
+R4 , 16 , Ω
+R5 , 18 , Ω
+C1 , 12 , pF
+C2 , 14 , pF
+C3 , 16 , pF
+C4 , 18 , pF
+C5 , 10 , pF

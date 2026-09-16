@@ -1,0 +1,13 @@
+parameter , value of inverter , value of 2 input nand , unit
+vth , 718.473 , 731.301 , mV
+voh , 1.8 , 1.8 , V
+vol , 0 , 0 , V
+vih , 836.611 , 836.613 , mV
+vil , 685.147 , 685.527 , mV
+nmh , ce3*1000 - ce5 , ce3*1000 - ce5 , mV
+nml , ce6 - ce4*1000 , ce6 - ce4*1000 , mV
+tphl , 31.2133 - 31.125 , 31.1098 - 31.0025 , V
+tplh , 0 , 0 , V
+tp , ce9 , ce9 , v
+tr , 33.2219 - 33.1463 , 32.5935 - 32.5176 , V
+tf , 31.2306 - 31.1991, 31.1271 - 31.0957 , V

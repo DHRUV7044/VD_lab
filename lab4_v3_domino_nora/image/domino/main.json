@@ -2,7 +2,7 @@
     "jobs": [
         {
             "input": "record.json",
-            "output": "output/vd_lab3.pdf"
+            "output": "output/vd_lab4.pdf"
         }
     ]
 }

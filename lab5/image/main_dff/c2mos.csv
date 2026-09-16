@@ -1,2 +1,5 @@
-Parameter , Pre layout , Post layout , Unit , Error(with respect to pre layout)(%)
-$t_{setup}$ ,0 , 0 , 0 , 0
+parameter  , pre layout               , post layout              , unit, error
+$t_{setup}$, (10.0025 - 9.961437)*1000, (10.0025 - 9.961437)*1000, ns  , sperr(re2 re3)
+$t_{c-q}$  , (10.09786 - 10.0025)*1000, (10.15533 - 10.0025)*1000, ns  , sperr(re2 re3)
+$t_{min}$  , ce2 + ce3                , ce2 + ce3                , ps  , sperr(re2 re3)
+$f_{max}$  , 1/ce4 * 1000             , 1/ce4 * 1000             , GHz , sperr(re2 re3)

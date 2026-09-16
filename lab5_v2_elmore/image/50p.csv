@@ -1,0 +1,6 @@
+Point, Elmore RC, Calculated Delay(0.7*RC), Simulated Delay   , Error         , Unit
+P1   ,       700, 0.7*700                 , (20.22058-20)*1000, sperr(re3 re4), ps
+P2   ,      1396, 0.7*1396                , (20.44122-20)*1000, sperr(re3 re4), ps
+P3   ,      2012, 0.7*2012                , (20.8914-20)*1000 , sperr(re3 re4), ps
+P4   ,      2460, 0.7*2460                , (21.21364-20)*1000, sperr(re3 re4), ps
+P5   ,      2640, 0.7*2640                , (21.09099-20)*1000, sperr(re3 re4), ps

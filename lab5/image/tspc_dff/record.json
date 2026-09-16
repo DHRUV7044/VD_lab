@@ -1,0 +1,231 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "20/08/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "tspc_drc.png",
+            "title": "Tspc Drc",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "tspc_layout.png",
+            "title": "Tspc Layout",
+            "rotation": 270
+        },
+        {
+            "id": 3,
+            "path": "tspc_lvs.png",
+            "title": "Tspc Lvs",
+            "rotation": 270
+        },
+        {
+            "id": 4,
+            "path": "tspc_quantus.png",
+            "title": "Tspc Quantus",
+            "rotation": 270
+        },
+        {
+            "id": 5,
+            "path": "tspc_schematic.png",
+            "title": "Tspc Schematic"
+        },
+        {
+            "id": 6,
+            "path": "tspc_symbol.png",
+            "title": "Tspc Symbol"
+        },
+        {
+            "id": 7,
+            "path": "tspc_tb.png",
+            "title": "Tspc Tb"
+        },
+        {
+            "id": 8,
+            "path": "tspc_tran_post_layout.png",
+            "title": "Tspc Tran Pre Layout",
+            "rotation": 270
+        },
+        {
+            "id": 9,
+            "path": "tspc_tran_pre_layout.png",
+            "title": "Tspc Tran Post Layout",
+            "rotation": 270
+        },
+        {
+            "id": 10,
+            "path": "tspc_tran_pre_vs_post.png",
+            "title": "Tspc Tran Pre Vs Post",
+            "rotation": 270
+        }
+    ],
+    "experiments": [
+        {
+            "number": 3,
+            "type" : "Assignment",
+            "title": "CMOS D flip flop design and analysis",
+            "date": "27/08/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": "To design and verify a dynamic D flip-flop using True Single-Phase Clock (TSPC) logic in Cadence Virtuoso and to calculate the setup time, clock-to-Q delay, and maximum operating frequency for 1–1 and 0–0 overlapping conditions."
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "A True Single-Phase Clock (TSPC) D flip-flop is a dynamic flip-flop that uses a single-phase clock signal for its operation. It consists of cascaded dynamic CMOS stages that alternately perform precharge and evaluation according to the clock level.",
+                        "During the precharge phase, the internal dynamic nodes are charged or discharged to their required logic levels. During the evaluation phase, the input data is evaluated and propagated through the dynamic stages to produce the corresponding output Q. Since only one clock signal is required, TSPC logic reduces clocking complexity and can provide high-speed operation.",
+                        "The setup time ($t_{setup}$) is the minimum time for which the input D must remain stable before the active clock edge for correct data capture. The clock-to-Q delay ($t_{C-Q}$) is the time interval between the active clock edge and the corresponding transition at the output Q.",
+                        "For reliable operation, the minimum clock period is given by $T_{min}=t_{setup}+t_{C-Q}$. Hence, the maximum operating frequency is $f_{max}=1/T_{min}$. These timing parameters are determined for both 1–1 and 0–0 overlapping conditions using transient simulation in Cadence Virtuoso.",
+                        "The TSPC D flip-flop is simulated using 180 nm CMOS technology, and the obtained waveforms are used to calculate the setup time, clock-to-Q delay, minimum clock period, and maximum operating frequency."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Result comparison (pre layout vs post layout) of Transmission Gate based dff",
+                            "csv": "tspc.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 5,
+                    "title": "CALCULATION for transmission gate based d flip flop",
+                    "new_page": false,
+                    "text": [
+                        "$t_{setup(pre)}=(27.0005-26.8925)*1000=108ps$",
+                        "$t_{setup(post)}=(27.0005-26.8295)*1000=171ps$",
+                        "$t_{C-Q(pre)}=(27.3384-27.0005)*1000=337.9ps$",
+                        "$t_{C-Q(post)}=(27.7190-27.0005)*1000=718.5ps$",
+                        "$T_{min(pre)}=t_{setup(pre)}+t_{C-Q(pre)}=108+337.9=445.9ps$",
+                        "$T_{min(post)}=t_{setup(post)}+t_{C-Q(post)}=171+718.5=889.5ps$",
+                        "$f_{max(pre)}=1/T_{min(pre)}*1000=2.243GHz$",
+                        "$f_{max(post)}=1/T_{min(post)}*1000=1.124GHz$"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1 - schematic , symbol and test bench",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            5
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            6,
+                                            7
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2 - layout",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3 - drc",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4 - lvs",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5 - rc extraction",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 6 - pre layout",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    8
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 7 - post layout",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    9
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 8 - pre vs post",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    10
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "RESULT",
+                    "text": [
+                        "The TSPC dynamic D flip-flop was successfully designed and verified. The setup time increased from 108 ps to 171 ps and the clock-to-Q delay increased from 337.9 ps to 718.5 ps after layout, reducing the maximum operating frequency from 2.243 GHz to 1.124 GHz."
+                    ]
+                }
+            ]
+        }
+    ]
+}
