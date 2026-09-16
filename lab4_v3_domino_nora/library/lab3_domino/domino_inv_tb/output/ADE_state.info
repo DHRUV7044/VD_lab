@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("lab3_domino" "domino_inv_tb" "config" "ams")
+descriptionText = "None\n\n\n"
