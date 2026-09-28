@@ -1,0 +1,159 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "schematic.png",
+            "title": "Schematic",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "symbol.png",
+            "title": "Symbol",
+            "rotation": 270
+        },
+        {
+            "id": 3,
+            "path": "tb.png",
+            "title": "Tb",
+            "rotation": 270
+        },
+        {
+            "id": 4,
+            "path": "tran.png",
+            "title": "Tran",
+            "rotation": 270
+        }
+    ],
+    "experiments": [
+        {
+            "number": 5,
+            "title": "CMOS D flip flop design and analysis",
+            "date": "10/09/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": "To perform and verify Elmore delay analysis for a given RC lumped model and determine the delay at different nodes for different points of interest."
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "The Elmore delay is a first-order approximation used to estimate the propagation delay of an RC network. For an RC ladder, the delay at a particular node depends on the resistance along the path to that node and the capacitances downstream of each resistance.",
+                        "The Elmore delay at a node is calculated using $t_E=\\sum_{i=1}^{k}R_iC_{downstream,i}$, where $R_i$ is the resistance in the path to the node and $C_{downstream,i}$ is the total capacitance connected downstream of that resistance.",
+                        "The given circuit consists of five resistors and five capacitors forming an RC lumped network, with five points of interest P1 to P5. The transient response is simulated in Cadence Virtuoso, and the time taken by each point to reach 10%, 50%, and 90% of its final voltage is measured.",
+                        "The simulated delay values are compared with the corresponding Elmore delay calculated for each point to verify the accuracy of the Elmore delay approximation."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Result comparison between simulation and theoretical values at 50% of $V_{DD}$",
+                            "csv": "50p.csv"
+                        },
+                        {
+                            "title": "Result comparison between simulation and theoretical values at 10% of $V_{DD}$",
+                            "csv": "10p.csv"
+                        },
+                        {
+                            "title": "Result comparison between simulation and theoretical values at 90% of $V_{DD}$",
+                            "csv": "90p.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 5,
+                    "title": "CALCULATION for transmission gate based d flip flop",
+                    "new_page": true,
+                    "text": [
+                        "$C_{total}=C_1+C_2+C_3+C_4+C_5=12+14+16+18+10=70pF$",
+                        "$t_{E,P1}=R_1(C_1+C_2+C_3+C_4+C_5)$",
+                        "$=10(12+14+16+18+10)=10(70)=700ps$",
+                        "$t_{E,P2}=R_1(C_1+C_2+C_3+C_4+C_5)+R_2(C_2+C_3+C_4+C_5)$",
+                        "$=10(70)+12(58)=700+696=1396ps$",
+                        "$t_{E,P3}=R_1(C_1+C_2+C_3+C_4+C_5)+R_2(C_2+C_3+C_4+C_5)+R_3(C_3+C_4+C_5)$",
+                        "$=10(70)+12(58)+14(44)=700+696+616=2012ps$",
+                        "$t_{E,P4}=R_1(C_1+C_2+C_3+C_4+C_5)+R_2(C_2+C_3+C_4+C_5)+R_3(C_3+C_4+C_5)+R_4(C_4+C_5)$",
+                        "$=10(70)+12(58)+14(44)+16(28)=700+696+616+448=2460ps$",
+                        "$t_{E,P5}=R_1(C_1+C_2+C_3+C_4+C_5)+R_2(C_2+C_3+C_4+C_5)+R_3(C_3+C_4+C_5)+R_4(C_4+C_5)+R_5C_5$",
+                        "$=10(70)+12(58)+14(44)+16(28)+18(10)$",
+                        "$=700+696+616+448+180=2640ps$"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4 ",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    4
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "RESULT",
+                    "text": [
+                        "The Elmore delay analysis of the given five-stage RC lumped network was successfully performed and verified. The theoretical delays at 10%, 50%, and 90% of $V_{DD}$ were compared with the corresponding simulated delays at points P1 to P5, demonstrating the variation of propagation delay along the RC network."
+                    ]
+                }
+            ]
+        }
+    ]
+}

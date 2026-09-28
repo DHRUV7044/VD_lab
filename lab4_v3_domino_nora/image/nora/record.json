@@ -1,0 +1,232 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "inv_dc.png",
+            "title": "Inv Dc",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "inv_schematic.png",
+            "title": "Inv Schematic"
+        },
+        {
+            "id": 3,
+            "path": "inv_symbol.png",
+            "title": "Inv Symbol"
+        },
+        {
+            "id": 4,
+            "path": "inv_tb.png",
+            "title": "Inv Tb"
+        },
+        {
+            "id": 5,
+            "path": "inv_tran.png",
+            "title": "Inv Tran",
+            "rotation": 270
+        },
+        {
+            "id": 6,
+            "path": "nand_dc.png",
+            "title": "Nand Dc",
+            "rotation": 270
+        },
+        {
+            "id": 7,
+            "path": "nand_schematic.png",
+            "title": "Nand Schematic"
+        },
+        {
+            "id": 8,
+            "path": "nand_symbol.png",
+            "title": "Nand Symbol"
+        },
+        {
+            "id": 9,
+            "path": "nand_tb.png",
+            "title": "Nand Tb"
+        },
+        {
+            "id": 10,
+            "path": "nand_tran.png",
+            "title": "Nand Tran",
+            "rotation": 270
+        }
+    ],
+    "experiments": [
+        {
+            "number": 4,
+            "type": "assignment",
+            "title": "CMOS D flip flop design and analysis",
+            "date": "03/09/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "To design and verify the following logic gates using NORA logic and calculate their performance parameters such as threshold voltage, noise margin, propagation delay, rise time, and fall time:",
+                        "1) Inverter, 2) 2-input NAND Gate."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "NORA (No Race) logic is a dynamic CMOS logic technique used to implement high-speed logic circuits while avoiding race conditions. It consists of alternating N-type and P-type dynamic logic blocks, with static inverters placed between them.",
+                        "The operation of NORA logic is divided into two phases: precharge and evaluation. During the precharge phase, the dynamic nodes are charged or discharged to their predefined logic levels. During the evaluation phase, the dynamic logic networks evaluate the input signals and generate the required logic output.",
+                        "A NORA inverter is implemented using a dynamic logic stage followed by a static inverter. The circuit performs the inversion of the input signal during the evaluation phase while maintaining the required dynamic operation.",
+                        "A 2-input NAND gate is implemented using a dynamic evaluation network corresponding to the NAND logic function. The input transistors are arranged according to the required Boolean operation, and a static inverter is used at the output to obtain the desired logic level.",
+                        "The performance of the designed NORA logic circuits is evaluated using threshold voltage, noise margin, propagation delay, rise time, and fall time. These parameters are obtained from the simulated voltage transfer characteristics and transient response using Cadence Virtuoso."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Performance parameters of Dynamic CMOS Domino Inverter",
+                            "csv": "nora.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 5,
+                    "title": "CALCULATION for transmission gate based d flip flop",
+                    "new_page": false,
+                    "text": [
+                        "For the NORA Inverter:",
+                        "$V_{TH}=720.63mV$",
+                        "$NM_H=V_{OH}-V_{IH}=1800-836.611=963.389mV$",
+                        "$NM_L=V_{IL}-V_{OL}=685.21-0=685.21mV$",
+                        "$t_{PHL}=23.1036-23.0025=0.1011ns=101.1ps$",
+                        "$t_{PLH}=0ns$",
+                        "$t_r=25.0887-25.0175=0.0712ns=71.2ps$",
+                        "$t_f=23.1233-23.0851=0.0382ns=38.2ps$",
+                        "For the NORA 2-input NAND Gate:",
+                        "$V_{TH}=723.375mV$",
+                        "$NM_H=V_{OH}-V_{IH}=1800-836.611=963.389mV$",
+                        "$NM_L=V_{IL}-V_{OL}=685.26-0=685.26mV$",
+                        "$t_{PHL}=30.1244-30=0.1244ns=124.4ps$",
+                        "$t_{PLH}=0ns$",
+                        "$t_r=32.5864-32.515=0.0714ns=71.4ps$",
+                        "$t_f=30.1441-30.1058=0.0383ns=38.3ps$"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3,
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            7
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            8,
+                                            9
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    6
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    10
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "RESULT",
+                    "text": [
+                        "The NORA Inverter and 2-input NAND Gate were successfully designed and verified. The threshold voltage, noise margins, propagation delay, rise time, and fall time were calculated from the simulated results, confirming the operation and performance of the designed NORA logic circuits."
+                    ]
+                }
+            ]
+        }
+    ]
+}

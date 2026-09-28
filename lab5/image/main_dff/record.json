@@ -1,0 +1,508 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "20/08/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "c2mos_dff_drc.png",
+            "title": "C2mos Dff Drc",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "c2mos_dff_layout.png",
+            "title": "C2mos Dff Layout",
+            "rotation": 270
+        },
+        {
+            "id": 3,
+            "path": "c2mos_dff_lvs.png",
+            "title": "C2mos Dff Lvs",
+            "rotation": 270
+        },
+        {
+            "id": 4,
+            "path": "c2mos_dff_output_waveform.png",
+            "title": "C2mos Dff Output Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 5,
+            "path": "c2mos_dff_quantus.png",
+            "title": "C2mos Dff Quantus",
+            "rotation": 270
+        },
+        {
+            "id": 6,
+            "path": "c2mos_dff_schematic.png",
+            "title": "C2mos Dff Schematic",
+            "rotation": 0
+        },
+        {
+            "id": 7,
+            "path": "c2mos_dff_symbol.png",
+            "title": "C2mos Dff Symbol"
+        },
+        {
+            "id": 8,
+            "path": "c2mos_dff_tran_pre_layout.png",
+            "title": "C2mos Dff Tran Pre Layout",
+            "rotation": 270
+        },
+        {
+            "id": 9,
+            "path": "c2mos_tran_post_layout.png",
+            "title": "C2mos Tran Post Layout",
+            "rotation": 270
+        },
+        {
+            "id": 10,
+            "path": "c2mos_tran_pre_vs_post.png",
+            "title": "C2mos Tran Pre Vs Post",
+            "rotation": 270
+        },
+        {
+            "id": 11,
+            "path": "inv_layout.png",
+            "title": "Inv Layout",
+            "rotation": 0
+        },
+        {
+            "id": 12,
+            "path": "inv_schematic.png",
+            "title": "Inv Schematic"
+        },
+        {
+            "id": 13,
+            "path": "inv_symbol.png",
+            "title": "Inv Symbol"
+        },
+        {
+            "id": 14,
+            "path": "tx_dff_drc.png",
+            "title": "Tx Dff Drc",
+            "rotation": 270
+        },
+        {
+            "id": 15,
+            "path": "tx_dff_layout.png",
+            "title": "Tx Dff Layout",
+            "rotation": 270
+        },
+        {
+            "id": 16,
+            "path": "tx_dff_lvs.png",
+            "title": "Tx Dff Lvs",
+            "rotation": 270
+        },
+        {
+            "id": 17,
+            "path": "tx_dff_quantus.png",
+            "title": "Tx Dff Quantus",
+            "rotation": 270
+        },
+        {
+            "id": 18,
+            "path": "tx_dff_schematic.png",
+            "title": "Tx Dff Schematic",
+            "rotation": 0
+        },
+        {
+            "id": 19,
+            "path": "tx_dff_symbol.png",
+            "title": "Tx Dff Symbol"
+        },
+        {
+            "id": 20,
+            "path": "tx_dlatch_layout.png",
+            "title": "Tx Dlatch Layout"
+        },
+        {
+            "id": 21,
+            "path": "tx_dlatch_schematic.png",
+            "title": "Tx Dlatch Schematic"
+        },
+        {
+            "id": 22,
+            "path": "tx_dlatch_symbol.png",
+            "title": "Tx Dlatch Symbol"
+        },
+        {
+            "id": 23,
+            "path": "tx_gate_layout.png",
+            "title": "Tx Gate Layout"
+        },
+        {
+            "id": 24,
+            "path": "tx_gate_schematic.png",
+            "title": "Tx Gate Schematic"
+        },
+        {
+            "id": 25,
+            "path": "tx_gate_symbol.png",
+            "title": "Tx Gate Symbol"
+        },
+        {
+            "id": 26,
+            "path": "tx_tran_post_layout.png",
+            "title": "Tx Tran Post Layout",
+            "rotation": 270
+        },
+        {
+            "id": 27,
+            "path": "tx_tran_pre_vs_post.png",
+            "title": "Tx Tran Pre Vs Post",
+            "rotation": 270
+        },
+        {
+            "id": 28,
+            "path": "tx_tran_pre_layout.png",
+            "title": "Tx Tran Pre Layout",
+            "rotation": 270
+        },
+        {
+            "id": 29,
+            "path": "c2mos_dff_tb.png",
+            "title": "C2mos Dff Tb"
+        },
+        {
+            "id": 30,
+            "path": "tx_dff_tb.png",
+            "title": "Tx Dff Tb"
+        }
+    ],
+    "experiments": [
+        {
+            "number": 3,
+            "title": "CMOS D flip flop design and analysis",
+            "date": "27/08/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": "To design and verify dynamic D flip-flops in Cadence Virtuoso using a master-slave configuration with (1) using transmission-gate (2) using C²MOS and to calculate the setup time, clock-to-Q delay, and maximum operating frequency for 1–1 and 0–0 overlapping conditions."
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "A dynamic D flip-flop stores the input data and transfers it to the output according to the clock transition. In a master-slave configuration, two storage stages operate using complementary clock phases. The master stage captures the input data, while the slave stage transfers the stored data to the output, providing edge-triggered operation.",
+                        "In the transmission-gate-based implementation, a D latch is first designed using a CMOS transmission gate. Two such latches are then connected in a master-slave configuration with complementary clock signals to form the D flip-flop. In the C²MOS-based implementation, the master-slave D flip-flop is directly designed using clock-controlled CMOS stages.",
+                        "The setup time ($t_{setup}$) is the minimum time for which the input D must remain stable before the active clock edge for correct data capture. The clock-to-Q delay ($t_{C-Q}$) is the time interval between the active clock edge and the corresponding transition at the output Q.",
+                        "For reliable operation, the minimum clock period is given by $T_{min}=t_{setup}+t_{C-Q}$. Hence, the maximum operating frequency is $f_{max}=1/T_{min}$. These timing parameters are determined for both 1–1 and 0–0 overlapping conditions using transient simulation in Cadence Virtuoso.",
+                        "The designed D flip-flops are simulated using 180 nm CMOS technology, and the obtained waveforms are used to calculate the setup time, clock-to-Q delay, minimum clock period, and maximum operating frequency."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Result comparison (pre layout vs post layout) of Transmission Gate based dff",
+                            "csv": "tx.csv"
+                        },
+                        {
+                            "title": "Result comparison (pre layout vs post layout) of C2MOS based dff",
+                            "csv": "c2mos.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 5,
+                    "title": "CALCULATION for transmission gate based d flip flop",
+                    "new_page": false,
+                    "text": [
+                        "$t_{setup(pre)}=(80.0015-79.95976)*1000=41.74ps$",
+                        "$t_{setup(post)}=(80.0015-79.92831)*1000=73.19ps$",
+                        "$t_{C-Q(pre)}=(80.41886-80.0015)*1000=417.36ps$",
+                        "$t_{C-Q(post)}=(80.86858-80.0015)*1000=867.08ps$",
+                        "$T_{min(pre)}=t_{setup(pre)}+t_{C-Q(pre)}=41.74+417.36=459.10ps$",
+                        "$T_{min(post)}=t_{setup(post)}+t_{C-Q(post)}=73.19+867.08=940.27ps$",
+                        "$f_{max(pre)}=1/T_{min(pre)}=1/459.10=2.178GHz$",
+                        "$f_{max(post)}=1/T_{min(post)}=1/940.27=1.063GHz$"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 6,
+                    "title": "CALCULATION for c2mos based d flip flop",
+                    "new_page": false,
+                    "text": [
+                        "$t_{setup(pre)}=(10.0025-9.961437)*1000=41.063ps$",
+                        "$t_{setup(post)}=(10.0025-9.961437)*1000=41.063ps$",
+                        "$t_{C-Q(pre)}=(10.09786-10.0025)*1000=95.36ps$",
+                        "$t_{C-Q(post)}=(10.15533-10.0025)*1000=152.83ps$",
+                        "$T_{min(pre)}=t_{setup(pre)}+t_{C-Q(pre)}=41.063+95.36=136.423ps$",
+                        "$T_{min(post)}=t_{setup(post)}+t_{C-Q(post)}=41.063+152.83=193.893ps$",
+                        "$f_{max(pre)}=1/T_{min(pre)}=1/136.423=7.330GHz$",
+                        "$f_{max(post)}=1/T_{min(post)}=1/193.893=5.157GHz$"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 7,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1 - inverter",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            12,
+                                            13
+                                        ]
+                                    },
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            11
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2 - transmission gate",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            24,
+                                            25
+                                        ]
+                                    },
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            23
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3 - transmission gate based d latch",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            21,
+                                            22
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            20
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4 - transmission gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            18
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            19,
+                                            30
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5 - layout of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    15
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5 - layout of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    14
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 7 - lvs run of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    16
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 7 - lvs run of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    17
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 9 - pre layout simulation of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    28
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 9 - pre layout simulation of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    26
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 11 - pre vs post of transmission gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    27
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 12 - c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            6
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            7,
+                                            29
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 13 - layout of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 14 - drc run of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 15 - lvs run of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 16 - quantus run of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 17 - pre layout simulation of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    8
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 18 - post layout simulation of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    9
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 19 - pre vs post of c2mos gate based d flip flop",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    10
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 8,
+                    "title": "RESULT",
+                    "text": [
+                        "The transmission-gate-based and C²MOS-based dynamic D flip-flops were successfully designed and verified. The pre-layout maximum frequencies were 2.178 GHz and 7.330 GHz, respectively, which reduced to 1.063 GHz and 5.157 GHz after considering layout parasitics."
+                    ]
+                }
+            ]
+        }
+    ]
+}

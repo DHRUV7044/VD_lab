@@ -1,0 +1,8 @@
+{
+    "jobs": [
+        {
+            "input": "record.json",
+            "output": "output/vd_lab3_assignment.pdf"
+        }
+    ]
+}

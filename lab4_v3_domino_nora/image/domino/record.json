@@ -1,0 +1,230 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "inv_dc.png",
+            "title": "Inv Dc",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "inv_schematic.png",
+            "title": "Inv Schematic"
+        },
+        {
+            "id": 3,
+            "path": "inv_symbol.png",
+            "title": "Inv Symbol"
+        },
+        {
+            "id": 4,
+            "path": "inv_tb.png",
+            "title": "Inv Tb"
+        },
+        {
+            "id": 5,
+            "path": "inv_tran.png",
+            "title": "Inv Tran",
+            "rotation": 270
+        },
+        {
+            "id": 6,
+            "path": "nand_dc.png",
+            "title": "Nand Dc",
+            "rotation": 270
+        },
+        {
+            "id": 7,
+            "path": "nand_schematic.png",
+            "title": "Nand Schematic"
+        },
+        {
+            "id": 8,
+            "path": "nand_symbol.png",
+            "title": "Nand Symbol"
+        },
+        {
+            "id": 9,
+            "path": "nand_tb.png",
+            "title": "Nand Tb"
+        },
+        {
+            "id": 10,
+            "path": "nand_tran.png",
+            "title": "Nand Tran",
+            "rotation": 270
+        }
+    ],
+    "experiments": [
+        {
+            "number": 4,
+            "title": "CMOS D flip flop design and analysis",
+            "date": "03/09/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "To design and verify the following logic gates using domino logic and calculate their performance parameters such as threshold voltage, noise margin, propagation delay, rise time, and fall time: 1) Dynamic CMOS Domino Inverter, 2) 2-input NAND Gate."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "Domino logic is a dynamic CMOS logic family that uses a precharge phase and an evaluation phase to perform logic operations. It consists of a PMOS precharge transistor, an NMOS evaluation network, and a static CMOS inverter at the output. During the precharge phase, the dynamic node is charged to $V_{DD}$, and during the evaluation phase, the NMOS network conditionally discharges the dynamic node according to the input logic.",
+                        "A dynamic CMOS domino inverter consists of an NMOS transistor in the evaluation path controlled by the input signal, followed by a static CMOS inverter. When the input is low, the dynamic node remains charged and the output is low. When the input is high during evaluation, the dynamic node discharges and the output becomes high, producing the required inversion.",
+                        "A 2-input NAND gate is implemented using an NMOS evaluation network with two NMOS transistors connected in parallel. During evaluation, the dynamic node discharges when either input is high, and the following static inverter produces the NAND logic function at the output.",
+                        "The performance of the designed circuits is evaluated using their voltage transfer characteristics and transient response. The threshold voltage and noise margin are obtained from the voltage transfer characteristics, while propagation delay, rise time, and fall time are determined from the transient response.",
+                        "The circuits are designed and verified using Cadence Virtuoso, and the obtained performance parameters are analyzed to evaluate the operation of the domino logic circuits."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Performance parameters of Dynamic CMOS Domino Inverter",
+                            "csv": "domino.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 5,
+                    "title": "CALCULATION for transmission gate based d flip flop",
+                    "new_page": false,
+                    "text": [
+                        "For the Dynamic CMOS Domino Inverter:",
+                        "$V_{TH}=718.473mV$",
+                        "$NM_H=V_{OH}-V_{IH}=1800-836.611=963.389mV$",
+                        "$NM_L=V_{IL}-V_{OL}=685.147-0=685.147mV$",
+                        "$t_{PHL}=31.2133-31.125=0.0883ns=88.3ps$",
+                        "$t_{PLH}=0ns$",
+                        "$t_r=33.2219-33.1463=0.0756ns=75.6ps$",
+                        "$t_f=31.2306-31.1991=0.0315ns=31.5ps$",
+                        "For the 2-input NAND Gate:",
+                        "$V_{TH}=731.301mV$",
+                        "$NM_H=V_{OH}-V_{IH}=1800-836.613=963.387mV$",
+                        "$NM_L=V_{IL}-V_{OL}=685.527-0=685.527mV$",
+                        "$t_{PHL}=31.1098-31.0025=0.1073ns=107.3ps$",
+                        "$t_{PLH}=0ns$",
+                        "$t_r=32.5935-32.5176=0.0759ns=75.9ps$",
+                        "$t_f=31.1271-31.0957=0.0314ns=31.4ps$"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3,
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "column",
+                                        "elements": [
+                                            7
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            8,
+                                            9
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    6
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    10
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "RESULT",
+                    "text": [
+                        "The Dynamic CMOS Domino Inverter and 2-input NAND Gate were successfully designed and verified. The threshold voltage, noise margins, propagation delay, rise time, and fall time were calculated from the simulated results, confirming the operation and performance of the designed domino logic circuits."
+                    ]
+                }
+            ]
+        }
+    ]
+}
