@@ -10,8 +10,8 @@
 ;----------------------------------------------------------------------------
 
 avParameters(
-  ?inputLayout ( "df2" "lab5_D_FF" )
-  ?cellName "D_FF_TSPC"
+  ?inputLayout ( "df2" "lab3_domino" )
+  ?cellName "domino_nand"
   ?viewName "layout"
   ?runName "drc_u24ev057"
   ?workingDirectory "./VD_lab/layout_run"
