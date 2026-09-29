@@ -44,8 +44,7 @@
     ],
     "experiments": [
         {
-            "number": 2,
-            "type": "assignment",
+            "number": 6,
             "title": "analysis of same sizing vs progressive sizing method on delay",
             "date": "17/09/2026",
             "sections": [
