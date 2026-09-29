@@ -1,0 +1,7 @@
+parameter , value , unit
+vdd , 1.8 , V
+technology , 180 , nm
+pmos width for same sizing , 3.2 , um
+pmos width for progressive sizing , 3.2 , um
+nmos width for same sizing , 3.2 , um
+nmos smallest base width for progressive sizing , 0.4 , um

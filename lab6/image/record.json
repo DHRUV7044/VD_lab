@@ -1,0 +1,339 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "20/08/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "same_size_nand2_cir.png",
+            "title": "Same Size Nand2 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "same_size_nand2_waveform.png",
+            "title": "Same Size Nand2 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 3,
+            "path": "same_size_nand3_cir.png",
+            "title": "Same Size Nand3 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 4,
+            "path": "same_size_nand3_waveform.png",
+            "title": "Same Size Nand3 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 5,
+            "path": "same_size_nand4_cir.png",
+            "title": "Same Size Nand4 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 6,
+            "path": "same_size_nand4_waveform.png",
+            "title": "Same Size Nand4 Waveform",
+            "rotation": 270
+        }
+    ],
+    "experiments": [
+        {
+            "number": 2,
+            "type": "assignment",
+            "title": "analysis of same sizing vs progressive sizing method on delay",
+            "date": "17/09/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": "To design and simulate static CMOS NAND gates with 2, 3, 4, 5, 6, 7, and 8 inputs using uniform transistor sizing and progressive transistor sizing, and compare their performance in terms of propagation delay"
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "Static CMOS NAND gates implement the logic function $Y = \\overline{A_1 A_2 \\cdots A_n}$ using a complementary pull-up network (PUN) and pull-down network (PDN). The PUN consists of $n$ PMOS transistors connected in parallel, while the PDN consists of $n$ NMOS transistors connected in series.",
+                        "In the same-sizing approach, all NMOS transistors have a fixed width $W_{n0}$, and all PMOS transistors have a fixed width $W_{p0}$. These widths remain constant for NAND gates with 2, 3, 4, 5, 6, 7, and 8 inputs. As the number of inputs increases, the number of series-connected NMOS transistors increases, resulting in higher effective pull-down resistance and potentially greater propagation delay.",
+                        "In the progressive-sizing approach, the widths of transistors in the NMOS series stack are increased progressively according to their positions to compensate for the increased pull-down resistance. Appropriate transistor sizing can reduce the effective discharge resistance and improve switching speed. However, excessive sizing increases parasitic capacitance and input loading, which may increase propagation delay. Therefore, the sizing progression must be selected and evaluated through simulation.",
+                        "The primary objective of this experiment is to minimize propagation delay for static CMOS NAND gates with 2 to 8 inputs. The propagation delay is evaluated using $t_p=(t_{pHL}+t_{pLH})/2$, where $t_{pHL}$ represents the high-to-low output propagation delay and $t_{pLH}$ represents the low-to-high output propagation delay. Both delays are measured between the corresponding 50% voltage crossings of the input and output waveforms.",
+                        "The same-sizing and progressive-sizing implementations are designed and simulated using 180 nm CMOS technology in Cadence Virtuoso. Transient simulations are performed under identical supply voltage, input slew, output load, temperature, and process conditions to ensure a fair comparison of propagation delay across all input configurations.",
+                        "The measured propagation delays of the two sizing approaches are compared for 2-input, 3-input, 4-input, 5-input, 6-input, 7-input, and 8-input NAND gates. The comparison determines how transistor sizing affects switching speed as fan-in increases and identifies the sizing approach that achieves lower propagation delay under the specified simulation conditions."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "new_page": true,
+                    "title": "Table of parameter",
+                    "tables": [
+                        {
+                            "title": "Parameters",
+                            "csv": "param.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 5,
+                    "title": "Propagation Delay Analysis",
+                    "tables": [
+                        {
+                            "side_by_side": true,
+                            "tables": [
+                                {
+                                    "title": "High-to-Low Delay ($t_{PHL}$)",
+                                    "csv": "tphl.csv"
+                                },
+                                {
+                                    "title": "Low-to-High Delay ($t_{PLH}$)",
+                                    "csv": "tplh.csv"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Average Propagation Delay ($t_P$)",
+                            "csv": "tp.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 6,
+                    "title": "CALCULATION",
+                    "new_page": false,
+                    "text": [
+                        "$N_{MH}=V_{OH}-V_{IH}=1.8-0.836654=0.963346V\\approx0.9633V$",
+                        "$N_{ML}=V_{IL}-V_{OL}=0.555495-0=0.555495V$",
+                        "$N_{MH(post)}=V_{OH}-V_{IH}=1.8-0.8369212=0.9630788V\\approx0.9631V$",
+                        "$N_{ML(post)}=V_{IL}-V_{OL}=0.5554912-0=0.5554912V$",
+                        "$t_{HL(pre)}=(37.0219-37.0075)*1000=14.4ps$",
+                        "$t_{HL(post)}=(37.0302-37.0075)*1000=22.7ps$",
+                        "$t_{LH(pre)}=0ps$",
+                        "$t_{LH(post)}=0ps$",
+                        "$t_{p(pre)}=37.0219ps$",
+                        "$t_{p(post)}=37.0302ps$",
+                        "$t_{r(pre)}=(20.0648-20.0185)*1000=46.3ps$",
+                        "$t_{r(post)}=(20.1034-20.0234)*1000=80.0ps$",
+                        "$t_{f(pre)}=(37.0376-37.0137)*1000=23.9ps$",
+                        "$t_{f(post)}=(37.056-37.0154)*1000=40.6ps$",
+                        "$Error_{V_{th}}=(0.0004/715.711)*100=0.0001%$",
+                        "$Error_{V_{IH}}=(0.2672/836.654)*100=0.0319%$",
+                        "$Error_{V_{IL}}=(0.0038/555.495)*100=0.0007%$",
+                        "$Error_{N_{MH}}=(0.0002/0.9633)*100=0.0208%$",
+                        "$Error_{N_{ML}}=(0.0000038/0.555495)*100=0.0007%$",
+                        "$Error_{t_p}=(0.0083/37.0219)*100=0.0224%$"
+                    ]
+                },
+                {
+                    "type": "graph",
+                    "number": 7,
+                    "new_page": true,
+                    "title": "Fan-In vs. Same Sizing",
+                    "x_label": "Fan-In",
+                    "height": 100,
+                    "width": 165,
+                    "y_label": "Delay (Same Sizing)",
+                    "legend": true,
+                    "series": [
+                        {
+                            "csv": "tphl.csv",
+                            "x": "fan in",
+                            "y": "same sizing",
+                            "label": "$t_{PHL}$ (Same Sizing)",
+                            "color": "#1f77b4"
+                        },
+                        {
+                            "csv": "tplh.csv",
+                            "x": "fan in",
+                            "y": "same sizing",
+                            "label": "$t_{PLH}$ (Same Sizing)",
+                            "color": "#ff7f0e"
+                        },
+                        {
+                            "csv": "tp.csv",
+                            "x": "fan in",
+                            "y": "same sizing",
+                            "label": "$t_{P}$ (Same Sizing)",
+                            "color": "#2ca02c"
+                        }
+                    ]
+                },
+                {
+                    "type": "graph",
+                    "number": 8,
+                    "title": "Fan-In vs. Progressive Sizing",
+                    "x_label": "Fan-In",
+                    "height": 100,
+                    "width": 165,
+                    "y_label": "Delay (Progressive Sizing)",
+                    "legend": true,
+                    "series": [
+                        {
+                            "csv": "tphl.csv",
+                            "x": "fan in",
+                            "y": "progressive sizing",
+                            "label": "$t_{PHL}$ (Progressive Sizing)",
+                            "color": "#1f77b4"
+                        },
+                        {
+                            "csv": "tplh.csv",
+                            "x": "fan in",
+                            "y": "progressive sizing",
+                            "label": "$t_{PLH}$ (Progressive Sizing)",
+                            "color": "#ff7f0e"
+                        },
+                        {
+                            "csv": "tp.csv",
+                            "x": "fan in",
+                            "y": "progressive sizing",
+                            "label": "$t_{P}$ (Progressive Sizing)",
+                            "color": "#2ca02c"
+                        }
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 9,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": false,
+                    "subsections": [
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3,
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 10,
+                    "title": "RESULT",
+                    "text": [
+                        "Static CMOS NAND gates with 2 to 8 inputs were designed and simulated using same sizing and progressive sizing in 180 nm CMOS technology, and their propagation delays were compared to evaluate the effect of transistor sizing on switching speed."
+                    ]
+                }
+            ]
+        }
+    ]
+}

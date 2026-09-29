@@ -1,0 +1,8 @@
+fan in , same sizing , progressive sizing , error
+2 , 30 , 40 , $sperr(re2  re3)
+3 , 40 , 50 , $sperr(re2  re3)
+4 , 50 , 60 , $sperr(re2  re3)
+5 , 60 , 70 , $sperr(re2  re3)
+6 , 70 , 80 , $sperr(re2  re3)
+7 , 80 , 90 , $sperr(re2  re3)
+8 , 90 , 100 , $sperr(re2  re3)
