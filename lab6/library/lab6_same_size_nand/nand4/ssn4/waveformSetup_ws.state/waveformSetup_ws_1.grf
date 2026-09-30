@@ -2,7 +2,7 @@
 <!--StateFileType saveLoadState-->
 <topLevel>
     <SimpleProp Name="stateFileVersion" Value="@(#)$CDS: virtuoso version 6.1.8-64b 11/15/2022 19:45 (cpgbld01) $" Type="string" />
-    <SimpleProp Name="currentContext" Value="/home/u24ev057/simulation/nand4/spectre/schematic/psf" Type="stringValue" />
+    <SimpleProp Name="currentContext" Value="/home/u24ev057/simulation/nand2/spectre/schematic/psf" Type="stringValue" />
     <IndexedProp Name="resultsDirMappingList">
         <SimpleProp Name="__resDirStr_0" Value="/home/u24ev057/simulation/nand4/spectre/schematic/psf" Type="stringValue" />
     </IndexedProp>
@@ -225,7 +225,7 @@
                                         <Object Class="wsRectTrace">
                                             <SimpleProp Name="savedObjectId" Value="rectTrace[*.1.1]" Type="stringValue" />
                                             <SimpleProp Name="assignDepAxis" Value="" Type="stringValue" />
-                                            <SimpleProp Name="autoCalculateBaseAndToplineValues" Value="0.000199758756196, 1.79993915495" Type="baselineToplineValue" />
+                                            <SimpleProp Name="autoCalculateBaseAndToplineValues" Value="0.000196254216614, 1.79994234112" Type="baselineToplineValue" />
                                             <SimpleProp Name="autoCalculationStatus" Value="wsVaxEvaluationResultsAvailable" Type="vaxEvaluationStatusValue" />
                                             <SimpleProp Name="axisNumber" Value="-1" Type="intValue" />
                                             <SimpleProp Name="background" Value="#ff0000" Type="colorValue" />
@@ -253,7 +253,7 @@
                                             <SimpleProp Name="visible" Value="1" Type="boolValue" />
                                             <SimpleProp Name="viva.trace.RvsI" Value="0" Type="boolValue" />
                                             <SimpleProp Name="viva.trace.autoReferenceLines" Value="1" Type="boolValue" />
-                                            <SimpleProp Name="viva.trace.baseAndToplineReferenceHint" Value="0.000199758756196, 1.79993915495" Type="baselineToplineValue" />
+                                            <SimpleProp Name="viva.trace.baseAndToplineReferenceHint" Value="0.000196254216614, 1.79994234112" Type="baselineToplineValue" />
                                             <SimpleProp Name="viva.trace.baselineReference" Value="0" Type="doubleValue" />
                                             <SimpleProp Name="viva.trace.complexDisplayList" Value="Magnitude" Type="complexDisplayTypeListValue" />
                                             <SimpleProp Name="viva.trace.dToAHiVoltage" Value="5" Type="doubleValue" />
@@ -311,7 +311,7 @@
                                             <SimpleProp Name="type" Value="point" Type="stringValue" />
                                             <SimpleProp Name="vaxMeasurementType" Value="vaxUnknownMeasurementType" Type="stringValue" />
                                             <SimpleProp Name="visible" Value="1" Type="boolValue" />
-                                            <SimpleProp Name="viva.marker.snapInterceptDataValue" Value="895.027624309mV" Type="stringValue" />
+                                            <SimpleProp Name="viva.marker.snapInterceptDataValue" Value="900.0mV" Type="stringValue" />
                                             <SimpleProp Name="viva.pointMarker.circDefaultLabel" Value="" Type="stringValue" />
                                             <SimpleProp Name="viva.pointMarker.defaultLabel" Value="%M: %X %Y" Type="stringValue" />
                                             <SimpleProp Name="viva.pointMarker.drawCrossHairs" Value="Off" Type="drawCrossHairModeValue" />
@@ -334,9 +334,9 @@
                                             <SimpleProp Name="viva.refPointMarker.snapPoint" Value="Data Point" Type="markerSnapPointValue" />
                                             <SimpleProp Name="viva.refPointMarker.snapPointDataValue" Value="0" Type="stringValue" />
                                             <SimpleProp Name="xlocation" Value="5.00000000299993e-09" Type="doubleValue" />
-                                            <SimpleProp Name="ylocation" Value="0.895027624309392" Type="doubleValue" />
+                                            <SimpleProp Name="ylocation" Value="0.9" Type="doubleValue" />
                                             <SimpleProp Name="dataPosition_x" Value="5.00000000300E-09" Type="doubleValue" />
-                                            <SimpleProp Name="dataPosition_y" Value="0.895027624309" Type="doubleValue" />
+                                            <SimpleProp Name="dataPosition_y" Value="0.900000000000" Type="doubleValue" />
                                             <SimpleProp Name="refPointKind" Value="MiscRefPointMarker" Type="stringValue" />
                                             <SimpleProp Name="labelOffset_x" Value="44.00" Type="doubleValue" />
                                             <SimpleProp Name="labelOffset_y" Value="-16.00" Type="doubleValue" />
@@ -349,7 +349,7 @@
                                             <SimpleProp Name="expression" Value="" Type="stringValue" />
                                             <SimpleProp Name="indepunit" Value="s" Type="stringValue" />
                                             <SimpleProp Name="markerGroupId" Value="" Type="stringValue" />
-                                            <SimpleProp Name="markerPositionMode" Value="byXYMode" Type="markerPositionModeValue" />
+                                            <SimpleProp Name="markerPositionMode" Value="byYMode" Type="markerPositionModeValue" />
                                             <SimpleProp Name="sweepIndex" Value="-1" Type="intValue" />
                                             <SimpleProp Name="sweepValue" Value="0" Type="doubleValue" />
                                             <SimpleProp Name="tableLabel" Value="" Type="stringValue" />
@@ -359,7 +359,7 @@
                                             <SimpleProp Name="type" Value="point" Type="stringValue" />
                                             <SimpleProp Name="vaxMeasurementType" Value="vaxUnknownMeasurementType" Type="stringValue" />
                                             <SimpleProp Name="visible" Value="1" Type="boolValue" />
-                                            <SimpleProp Name="viva.marker.snapInterceptDataValue" Value="1.08000075672V" Type="stringValue" />
+                                            <SimpleProp Name="viva.marker.snapInterceptDataValue" Value="900.0mV" Type="stringValue" />
                                             <SimpleProp Name="viva.pointMarker.circDefaultLabel" Value="" Type="stringValue" />
                                             <SimpleProp Name="viva.pointMarker.defaultLabel" Value="%M: %X %Y" Type="stringValue" />
                                             <SimpleProp Name="viva.pointMarker.drawCrossHairs" Value="Off" Type="drawCrossHairModeValue" />
@@ -369,7 +369,7 @@
                                             <SimpleProp Name="viva.pointMarker.sigDigitsMode" Value="Auto" Type="markerSigDigitsModeValue" />
                                             <SimpleProp Name="viva.pointMarker.significantDigits" Value="4" Type="intValue" />
                                             <SimpleProp Name="viva.pointMarker.snapPoint" Value="Data Point" Type="markerSnapPointValue" />
-                                            <SimpleProp Name="viva.pointMarker.snapPointDataValue" Value="10.0000000016ns" Type="stringValue" />
+                                            <SimpleProp Name="viva.pointMarker.snapPointDataValue" Value="10.0000000015ns" Type="stringValue" />
                                             <SimpleProp Name="viva.refPointMarker.circDefaultLabel" Value="%F (%Z)" Type="stringValue" />
                                             <SimpleProp Name="viva.refPointMarker.defaultLabel" Value="%X %Y" Type="stringValue" />
                                             <SimpleProp Name="viva.refPointMarker.drawCrossHairs" Value="Dynamic" Type="drawCrossHairModeValue" />
@@ -381,10 +381,10 @@
                                             <SimpleProp Name="viva.refPointMarker.significantDigits" Value="4" Type="intValue" />
                                             <SimpleProp Name="viva.refPointMarker.snapPoint" Value="Data Point" Type="markerSnapPointValue" />
                                             <SimpleProp Name="viva.refPointMarker.snapPointDataValue" Value="0" Type="stringValue" />
-                                            <SimpleProp Name="xlocation" Value="1.00000000016e-08" Type="doubleValue" />
-                                            <SimpleProp Name="ylocation" Value="1.08000075671823" Type="doubleValue" />
-                                            <SimpleProp Name="dataPosition_x" Value="1.00000000016E-08" Type="doubleValue" />
-                                            <SimpleProp Name="dataPosition_y" Value="1.08000075672" Type="doubleValue" />
+                                            <SimpleProp Name="xlocation" Value="1.00000000015e-08" Type="doubleValue" />
+                                            <SimpleProp Name="ylocation" Value="0.9" Type="doubleValue" />
+                                            <SimpleProp Name="dataPosition_x" Value="1.00000000015E-08" Type="doubleValue" />
+                                            <SimpleProp Name="dataPosition_y" Value="0.900000000000" Type="doubleValue" />
                                             <SimpleProp Name="refPointKind" Value="MiscRefPointMarker" Type="stringValue" />
                                             <SimpleProp Name="labelOffset_x" Value="-248.0" Type="doubleValue" />
                                             <SimpleProp Name="labelOffset_y" Value="-21.00" Type="doubleValue" />
@@ -457,7 +457,7 @@
                                         <Object Class="wsRectTrace">
                                             <SimpleProp Name="savedObjectId" Value="rectTrace[*.1.2]" Type="stringValue" />
                                             <SimpleProp Name="assignDepAxis" Value="" Type="stringValue" />
-                                            <SimpleProp Name="autoCalculateBaseAndToplineValues" Value="0.000191648528291, 1.97094104980" Type="baselineToplineValue" />
+                                            <SimpleProp Name="autoCalculateBaseAndToplineValues" Value="0.000555913482996, 1.98988837201" Type="baselineToplineValue" />
                                             <SimpleProp Name="autoCalculationStatus" Value="wsVaxEvaluationResultsAvailable" Type="vaxEvaluationStatusValue" />
                                             <SimpleProp Name="axisNumber" Value="-1" Type="intValue" />
                                             <SimpleProp Name="background" Value="#ff0000" Type="colorValue" />
@@ -485,7 +485,7 @@
                                             <SimpleProp Name="visible" Value="1" Type="boolValue" />
                                             <SimpleProp Name="viva.trace.RvsI" Value="0" Type="boolValue" />
                                             <SimpleProp Name="viva.trace.autoReferenceLines" Value="1" Type="boolValue" />
-                                            <SimpleProp Name="viva.trace.baseAndToplineReferenceHint" Value="0.000191648528291, 1.97094104980" Type="baselineToplineValue" />
+                                            <SimpleProp Name="viva.trace.baseAndToplineReferenceHint" Value="0.000555913482996, 1.98988837201" Type="baselineToplineValue" />
                                             <SimpleProp Name="viva.trace.baselineReference" Value="0" Type="doubleValue" />
                                             <SimpleProp Name="viva.trace.complexDisplayList" Value="Magnitude" Type="complexDisplayTypeListValue" />
                                             <SimpleProp Name="viva.trace.dToAHiVoltage" Value="5" Type="doubleValue" />
@@ -647,7 +647,7 @@
                                 <SimpleProp Name="visible" Value="1" Type="boolValue" />
                                 <SimpleProp Name="viva.marker.snapInterceptDataValue" Value="0.0" Type="stringValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.defaultLabel" Value="[tplh = %W]" Type="stringValue" />
-                                <SimpleProp Name="viva.multiDeltaMarker.deltaMeasure" Value="X Only" Type="deltaMeasureModeValue" />
+                                <SimpleProp Name="viva.multiDeltaMarker.deltaMeasure" Value="Y Only" Type="deltaMeasureModeValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.font" Value="Open Sans,22,-1,5,63,1,0,0,0,0,Semibold Italic" Type="fontValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.foreground" Value="#000000" Type="colorValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.notation" Value="Suffix" Type="outputFormValue" />
@@ -668,10 +668,10 @@
                                 <IndexedProp Name="labelOffsets">
                                     <ObjectProp Name="Offset">
                                         <Object Class="offsetData">
-                                            <SimpleProp Name="vx" Value="0.000000E+0" Type="doublevalue" />
-                                            <SimpleProp Name="vy" Value="1.400000E+1" Type="doublevalue" />
+                                            <SimpleProp Name="vx" Value="-4.420000E+2" Type="doublevalue" />
+                                            <SimpleProp Name="vy" Value="-2.100000E+1" Type="doublevalue" />
                                             <SimpleProp Name="vfixed" Value="1" Type="boolValue" />
-                                            <SimpleProp Name="hx" Value="-2.185000E+2" Type="doublevalue" />
+                                            <SimpleProp Name="hx" Value="0.000000E+0" Type="doublevalue" />
                                             <SimpleProp Name="hy" Value="1.400000E+1" Type="doublevalue" />
                                             <SimpleProp Name="hfixed" Value="1" Type="boolValue" />
                                         </Object>
@@ -699,7 +699,7 @@
                                 <SimpleProp Name="visible" Value="1" Type="boolValue" />
                                 <SimpleProp Name="viva.marker.snapInterceptDataValue" Value="0.0" Type="stringValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.defaultLabel" Value="[tphl = %W] " Type="stringValue" />
-                                <SimpleProp Name="viva.multiDeltaMarker.deltaMeasure" Value="X Only" Type="deltaMeasureModeValue" />
+                                <SimpleProp Name="viva.multiDeltaMarker.deltaMeasure" Value="Y Only" Type="deltaMeasureModeValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.font" Value="Open Sans,22,-1,5,63,1,0,0,0,0,Semibold Italic" Type="fontValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.foreground" Value="#000000" Type="colorValue" />
                                 <SimpleProp Name="viva.multiDeltaMarker.notation" Value="Suffix" Type="outputFormValue" />
@@ -720,11 +720,11 @@
                                 <IndexedProp Name="labelOffsets">
                                     <ObjectProp Name="Offset">
                                         <Object Class="offsetData">
-                                            <SimpleProp Name="vx" Value="0.000000E+0" Type="doublevalue" />
-                                            <SimpleProp Name="vy" Value="1.400000E+1" Type="doublevalue" />
+                                            <SimpleProp Name="vx" Value="-4.420000E+2" Type="doublevalue" />
+                                            <SimpleProp Name="vy" Value="-2.100000E+1" Type="doublevalue" />
                                             <SimpleProp Name="vfixed" Value="1" Type="boolValue" />
-                                            <SimpleProp Name="hx" Value="-2.124690E+2" Type="doublevalue" />
-                                            <SimpleProp Name="hy" Value="7.400000E+1" Type="doublevalue" />
+                                            <SimpleProp Name="hx" Value="0.000000E+0" Type="doublevalue" />
+                                            <SimpleProp Name="hy" Value="1.400000E+1" Type="doublevalue" />
                                             <SimpleProp Name="hfixed" Value="1" Type="boolValue" />
                                         </Object>
                                     </ObjectProp>
