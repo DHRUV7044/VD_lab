@@ -1,8 +1,8 @@
-fan in , same sizing , progressive sizing , error
-2,3,4, $sperr(re2  re3)
-3,4,5, $sperr(re2  re3)
-4,5,6, $sperr(re2  re3)
-5,87.42478,7, $sperr(re2  re3)
-6,7,8, $sperr(re2  re3)
-7,8,9, $sperr(re2  re3)
-8,9,10, $sperr(re2  re3)
+fan in , same sizing , progressive sizing , unit ,error
+2,20.84677,70.52739, ps, $sperr(re2  re3)
+3,38.43458,108.2363, ps, $sperr(re2  re3)
+4,60.61631,149.5547, ps, $sperr(re2  re3)
+5,87.42478,193.9394, ps, $sperr(re2  re3)
+6,118.6557,241.207, ps, $sperr(re2  re3)
+7,154.2434,291.008, ps, $sperr(re2  re3)
+8,194.3179,343.2999, ps, $sperr(re2  re3)

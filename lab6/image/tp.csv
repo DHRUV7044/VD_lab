@@ -1,8 +1,11 @@
-fan in , same sizing , progressive sizing , error
-2 , 300 , 400 , $sperr(re2  re3)
-3 , 400 , 500 , $sperr(re2  re3)
-4 , 500 , 600 , $sperr(re2  re3)
-5 , 600 , 700 , $sperr(re2  re3)
-6 , 700 , 800 , $sperr(re2  re3)
-7 , 800 , 900 , $sperr(re2  re3)
-8 , 900 , 1000 , $sperr(re2  re3)
+#source hl = tphl.csv
+#source lh = tplh.csv
+
+fan in , same sizing , progressive sizing , unit ,error
+2 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)
+3 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)
+4 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)
+5 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)
+6 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)
+7 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)
+8 , (hl:re2 + lh:re2)/2 , (hl:re3 + lh:re3)/2 , ps , $sperr(re2  re3)

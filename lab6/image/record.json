@@ -7,38 +7,170 @@
     "images": [
         {
             "id": 1,
+            "path": "progressive_size_nand2_cir.png",
+            "title": "Progressive Size Nand2 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 2,
+            "path": "progressive_size_nand2_waveform.png",
+            "title": "Progressive Size Nand2 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 3,
+            "path": "progressive_size_nand3_cir.png",
+            "title": "Progressive Size Nand3 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 4,
+            "path": "progressive_size_nand3_waveform.png",
+            "title": "Progressive Size Nand3 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 5,
+            "path": "progressive_size_nand4_cir.png",
+            "title": "Progressive Size Nand4 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 6,
+            "path": "progressive_size_nand4_waveform.png",
+            "title": "Progressive Size Nand4 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 7,
+            "path": "progressive_size_nand5_cir.png",
+            "title": "Progressive Size Nand5 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 8,
+            "path": "progressive_size_nand5_waveform.png",
+            "title": "Progressive Size Nand5 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 9,
+            "path": "progressive_size_nand6_cir.png",
+            "title": "Progressive Size Nand6 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 10,
+            "path": "progressive_size_nand6_waveform.png",
+            "title": "Progressive Size Nand6 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 11,
+            "path": "progressive_size_nand7_cir.png",
+            "title": "Progressive Size Nand7 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 12,
+            "path": "progressive_size_nand7_waveform.png",
+            "title": "Progressive Size Nand7 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 13,
+            "path": "progressive_size_nand8_cir.png",
+            "title": "Progressive Size Nand8 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 14,
+            "path": "progressive_size_nand8_waveform.png",
+            "title": "Progressive Size Nand8 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 15,
             "path": "same_size_nand2_cir.png",
             "title": "Same Size Nand2 Cir",
             "rotation": 270
         },
         {
-            "id": 2,
+            "id": 16,
             "path": "same_size_nand2_waveform.png",
             "title": "Same Size Nand2 Waveform",
             "rotation": 270
         },
         {
-            "id": 3,
+            "id": 17,
             "path": "same_size_nand3_cir.png",
             "title": "Same Size Nand3 Cir",
             "rotation": 270
         },
         {
-            "id": 4,
+            "id": 18,
             "path": "same_size_nand3_waveform.png",
             "title": "Same Size Nand3 Waveform",
             "rotation": 270
         },
         {
-            "id": 5,
+            "id": 19,
             "path": "same_size_nand4_cir.png",
             "title": "Same Size Nand4 Cir",
             "rotation": 270
         },
         {
-            "id": 6,
+            "id": 20,
             "path": "same_size_nand4_waveform.png",
             "title": "Same Size Nand4 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 21,
+            "path": "same_size_nand5_cir.png",
+            "title": "Same Size Nand5 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 22,
+            "path": "same_size_nand5_waveform.png",
+            "title": "Same Size Nand5 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 23,
+            "path": "same_size_nand6_cir.png",
+            "title": "Same Size Nand6 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 24,
+            "path": "same_size_nand6_waveform.png",
+            "title": "Same Size Nand6 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 25,
+            "path": "same_size_nand7_cir.png",
+            "title": "Same Size Nand7 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 26,
+            "path": "same_size_nand7_waveform.png",
+            "title": "Same Size Nand7 Waveform",
+            "rotation": 270
+        },
+        {
+            "id": 27,
+            "path": "same_size_nand8_cir.png",
+            "title": "Same Size Nand8 Cir",
+            "rotation": 270
+        },
+        {
+            "id": 28,
+            "path": "same_size_nand8_waveform.png",
+            "title": "Same Size Nand8 Waveform",
             "rotation": 270
         }
     ],
@@ -91,17 +223,12 @@
                     "title": "Propagation Delay Analysis",
                     "tables": [
                         {
-                            "side_by_side": true,
-                            "tables": [
-                                {
-                                    "title": "High-to-Low Delay ($t_{PHL}$)",
-                                    "csv": "tphl.csv"
-                                },
-                                {
-                                    "title": "Low-to-High Delay ($t_{PLH}$)",
-                                    "csv": "tplh.csv"
-                                }
-                            ]
+                            "title": "High-to-Low Delay ($t_{PHL}$)",
+                            "csv": "tphl.csv"
+                        },
+                        {
+                            "title": "Low-to-High Delay ($t_{PLH}$)",
+                            "csv": "tplh.csv"
                         },
                         {
                             "title": "Average Propagation Delay ($t_P$)",
@@ -110,39 +237,12 @@
                     ]
                 },
                 {
-                    "type": "text",
-                    "number": 6,
-                    "title": "CALCULATION",
-                    "new_page": false,
-                    "text": [
-                        "$N_{MH}=V_{OH}-V_{IH}=1.8-0.836654=0.963346V\\approx0.9633V$",
-                        "$N_{ML}=V_{IL}-V_{OL}=0.555495-0=0.555495V$",
-                        "$N_{MH(post)}=V_{OH}-V_{IH}=1.8-0.8369212=0.9630788V\\approx0.9631V$",
-                        "$N_{ML(post)}=V_{IL}-V_{OL}=0.5554912-0=0.5554912V$",
-                        "$t_{HL(pre)}=(37.0219-37.0075)*1000=14.4ps$",
-                        "$t_{HL(post)}=(37.0302-37.0075)*1000=22.7ps$",
-                        "$t_{LH(pre)}=0ps$",
-                        "$t_{LH(post)}=0ps$",
-                        "$t_{p(pre)}=37.0219ps$",
-                        "$t_{p(post)}=37.0302ps$",
-                        "$t_{r(pre)}=(20.0648-20.0185)*1000=46.3ps$",
-                        "$t_{r(post)}=(20.1034-20.0234)*1000=80.0ps$",
-                        "$t_{f(pre)}=(37.0376-37.0137)*1000=23.9ps$",
-                        "$t_{f(post)}=(37.056-37.0154)*1000=40.6ps$",
-                        "$Error_{V_{th}}=(0.0004/715.711)*100=0.0001%$",
-                        "$Error_{V_{IH}}=(0.2672/836.654)*100=0.0319%$",
-                        "$Error_{V_{IL}}=(0.0038/555.495)*100=0.0007%$",
-                        "$Error_{N_{MH}}=(0.0002/0.9633)*100=0.0208%$",
-                        "$Error_{N_{ML}}=(0.0000038/0.555495)*100=0.0007%$",
-                        "$Error_{t_p}=(0.0083/37.0219)*100=0.0224%$"
-                    ]
-                },
-                {
                     "type": "graph",
-                    "number": 7,
+                    "number": 6,
                     "new_page": true,
-                    "title": "Fan-In vs. Same Sizing",
+                    "title": "Fan-In vs. Delay (Same Sizing)",
                     "x_label": "Fan-In",
+                    "show_values": true,
                     "height": 100,
                     "width": 165,
                     "y_label": "Delay (Same Sizing)",
@@ -173,9 +273,10 @@
                 },
                 {
                     "type": "graph",
-                    "number": 8,
-                    "title": "Fan-In vs. Progressive Sizing",
+                    "number": 7,
+                    "title": "Fan-In vs.Delay (Progressive Sizing)",
                     "x_label": "Fan-In",
+                    "show_values": true,
                     "height": 100,
                     "width": 165,
                     "y_label": "Delay (Progressive Sizing)",
@@ -206,7 +307,7 @@
                 },
                 {
                     "type": "image",
-                    "number": 9,
+                    "number": 8,
                     "title": "Circuit Diagrams & Waveforms",
                     "new_page": false,
                     "subsections": [
@@ -217,8 +318,92 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            1,
-                                            2
+                                            15,
+                                            16
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            17,
+                                            18
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            19,
+                                            20
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            21,
+                                            22
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            23,
+                                            24
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            25,
+                                            26
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            27,
+                                            28
                                         ]
                                     }
                                 ]
@@ -259,8 +444,8 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            1,
-                                            2
+                                            5,
+                                            6
                                         ]
                                     }
                                 ]
@@ -273,8 +458,8 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            1,
-                                            2
+                                            7,
+                                            8
                                         ]
                                     }
                                 ]
@@ -287,8 +472,8 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            1,
-                                            2
+                                            9,
+                                            10
                                         ]
                                     }
                                 ]
@@ -301,8 +486,8 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            1,
-                                            2
+                                            11,
+                                            12
                                         ]
                                     }
                                 ]
@@ -315,8 +500,8 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            1,
-                                            2
+                                            13,
+                                            14
                                         ]
                                     }
                                 ]
@@ -326,10 +511,10 @@
                 },
                 {
                     "type": "text",
-                    "number": 10,
+                    "number": 9,
                     "title": "RESULT",
                     "text": [
-                        "Static CMOS NAND gates with 2 to 8 inputs were designed and simulated using same sizing and progressive sizing in 180 nm CMOS technology, and their propagation delays were compared to evaluate the effect of transistor sizing on switching speed."
+                        "Static CMOS NAND gates with 2 to 8 inputs were designed and simulated in 180 nm CMOS technology. Same sizing used 3.2 µm for all transistors, while progressive sizing kept PMOS widths at 3.2 µm and increased NMOS widths in 0.4 µm increments from the output toward ground. The propagation delays of both approaches were compared."
                     ]
                 }
             ]
