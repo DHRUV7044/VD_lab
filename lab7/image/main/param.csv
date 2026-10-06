@@ -1,0 +1,11 @@
+given parameter , value , unit
+technology , 180 , nm
+$V_{dd}$ , 1.8 , V
+$V_{tn}$ , 0.45 , V
+|$V_{tp}$| , 0.45 , V
+minimum width of nmos , 400 , nm
+minimum width of pmos , 800 , nm
+kn' , 70 , uA/$V^2$
+kp' , 20 , uA/$V^2$
+$R_{int}$ , 68 , k$\Omega$
+$C_{int}$ , 60 , fF

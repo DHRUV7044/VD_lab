@@ -1,0 +1,204 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "20/08/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "inv_with_repeater_cir.png",
+            "title": "Schematic of inverter with inv/buf insertion (with repeaters)"
+        },
+        {
+            "id": 2,
+            "path": "inv_with_repeater_waveform.png",
+            "title": "Transient waveform of inverter with inv/buf insertion (with repeaters)",
+            "text": "$t_{PHL}=1.23534\\text{ ns},\\quad t_{PLH}=1.17325\\text{ ns},\\quad t_p=1.2043\\text{ ns}$",
+            "rotation": 270
+        },
+        {
+            "id": 3,
+            "path": "inv_without_repeater_cir.png",
+            "title": "Schematic of inverter without inv/buf insertion (without repeaters)"
+        },
+        {
+            "id": 4,
+            "path": "inv_without_repeater_waveform.png",
+            "title": "Transient waveform of inverter without inv/buf insertion (without repeaters)",
+            "text": "$t_{PHL}=3.119\\text{ ns},\\quad t_{PLH}=2.882\\text{ ns},\\quad t_p=3.0005\\text{ ns}$",
+            "rotation": 270
+        },
+        {
+            "id": 5,
+            "path": "min_inv_cir.png",
+            "title": "Schematic of minimum size inverter"
+        },
+        {
+            "id": 6,
+            "path": "min_inv_symbol.png",
+            "title": "Symbol of minimum size inverter"
+        },
+        {
+            "id": 7,
+            "path": "min_inv_without_load_waveform.png",
+            "title": "Transient waveform of minimum size inverter without load",
+            "rotation": 270
+        }
+    ],
+    "experiments": [
+        {
+            "number": 7,
+            "title": "CMOS Inverter Design & Analysis",
+            "date": "01/10/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "To design an CMOS inverter repeater using minimum channel length and minimum width in 180nm technology and determine",
+                        "1] $R_{out}$ , (output resistance of the inverter)",
+                        "2] $C_{out}$ , (output capacitance of the inverter)",
+                        "3] intrinsic delay $t_{p}$ , (intrinsic delay of the inverter)",
+                        "4] $R_n$ , $R_p$ (resistance of NMOS and PMOS)",
+                        "5] k (number of stage of repeaters)",
+                        "to calculate propagation delay without inverter/buffer insertion and with inverter/buffer insertion and to compare the results."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "A long interconnect has significant resistance $R_{int}$ and capacitance $C_{int}$, which increase the propagation delay of the CMOS inverter driving it.",
+                        "A repeater is an intermediate CMOS inverter inserted in the interconnect to divide it into smaller sections. This reduces the wire delay by allowing each inverter to drive a smaller portion of the interconnect.",
+                        "The interconnect is modeled as a distributed RC network, with its delay approximated as $t_{wire}=0.4R_{int}C_{int}$, while the inverter and other components are represented using a lumped RC model with delay $t_{inv}=0.7R_oC_o$.",
+                        "Without repeater insertion, the complete interconnect is driven by a single inverter, resulting in a large RC propagation delay. With $k$ repeater stages, the interconnect is divided into $k$ sections and the total delay is obtained by summing the wire and inverter delays.",
+                        "Increasing the number of repeaters reduces the wire delay but adds inverter delay. Therefore, an optimum number of stages $k$ exists that minimizes the total propagation delay.",
+                        "The delays with and without repeater insertion are calculated and compared to determine the improvement obtained by using CMOS repeaters."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "new_page": true,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Derived and observed intrinsic parameters",
+                            "csv": "param_derived.csv"
+                        },
+                        {
+                            "title": "Result",
+                            "csv": "result.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "calculation",
+                    "number": 5,
+                    "title": "CALCULATION",
+                    "new_page": false,
+                    "variables": {
+                        "k_n": 70,
+                        "k_p": 20,
+                        "R_int": 68,
+                        "C_int": 60,
+                        "V_dd": 1.8,
+                        "V_tn": 0.45,
+                        "V_tp": 0.45,
+                        "W": 400,
+                        "L": 180,
+                        "t_phl": 9.8587,
+                        "t_plh": 27.33919,
+                        "t_phl_no_rep": 3.119,
+                        "t_plh_no_rep": 2.882,
+                        "t_phl_rep": 1.23534,
+                        "t_plh_rep": 1.17325
+                    },
+                    "items": [
+                        "R_n = 1000/(k_n*(W/L)*(V_dd-V_tn)) | unit: kΩ | round: 3",
+                        "R_p = 1000/(k_p*(W/L)*(V_dd-V_tp)) | unit: kΩ | round: 2",
+                        "R_{out} = (R_n + R_p)/2 | unit: kΩ | round: 3",
+                        "C_{out1} = t_{phl}/(0.69*R_n) | unit: fF | round: 3",
+                        "C_{out2} = t_{plh}/(0.69*R_p) | unit: fF | round: 4",
+                        "C_{out} = max(C_{out1}, C_{out2}) | unit: fF",
+                        "t_p = (t_{phl} + t_{plh})/2 | unit: ps | round: 4",
+                        "k = sqrt((R_int*C_int*0.4)/(R_{out}*C_{out}*0.7)) | round_down: 0",
+                        "t_{HL(no_rep)} = t_phl_no_rep | unit: ns | round: 3",
+                        "t_{LH(no_rep)} = t_plh_no_rep | unit: ns | round: 3",
+                        "t_{p(no_rep)} = (t_phl_no_rep + t_plh_no_rep)/2 | unit: ns | round: 4",
+                        "t_{HL(rep)} = t_phl_rep | unit: ns | round: 5",
+                        "t_{LH(rep)} = t_plh_rep | unit: ns | round: 5",
+                        "t_{p(rep)} = (t_phl_rep + t_plh_rep)/2 | unit: ns | round: 4"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    5,
+                                    6
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    7
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    3,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4",
+                            "layout": {
+                                "type": "row",
+                                "elements": [
+                                    4,
+                                    2
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "RESULT",
+                    "text": [
+                        "The CMOS inverter repeater was successfully designed and simulated in 180 nm technology. Repeater insertion reduced the average propagation delay from approximately 3.00 ns to 1.20 ns, showing that repeaters significantly improve the speed of circuits driving large interconnects"
+                    ]
+                }
+            ]
+        }
+    ]
+}
