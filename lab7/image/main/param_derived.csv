@@ -1,0 +1,11 @@
+derived and observed parameter , value , unit
+$t_{phl}$ , 9.8587 ,s
+$t_{plh}$ , 27.33919 , ps
+$t_{p}$ , 0.86 , ns
+$R_{n}$ , 4.762 , k$\Omega$
+$R_{p}$ , 16.67 , k$\Omega$
+$R_{out}$ , (ce5  + ce6)/2 , k$\Omega$
+$C_{n}$ , ce2/(0.69*ce5) , fF
+$C_{p}$ , ce3/(0.69*ce6) , fF
+$C_{out}$ , ce8 , fF
+k , 8 , unitless    
