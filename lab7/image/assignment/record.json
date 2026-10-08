@@ -1,0 +1,265 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "20/08/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "cascaded_inv_repeater_cir.png",
+            "title": "Cascaded driver circuit"
+        },
+        {
+            "id": 2,
+            "path": "min_inv_cir.png",
+            "title": "Minimum inverter circuit"
+        },
+        {
+            "id": 3,
+            "path": "min_inv_load_cir.png",
+            "title": "Minimum inverter with load circuit"
+        },
+        {
+            "id": 4,
+            "path": "min_inv_load_waveform.png",
+            "title": "Minimum inverter with load waveform",
+            "text": "$t_{PHL}=2.882\\text{ ns},\\quad t_{PLH}=3.119\\text{ ns},\\quad t_p=3.0005\\text{ ns}$"
+        },
+        {
+            "id": 5,
+            "path": "min_inv_symbol.png",
+            "title": "Minimum inverter symbol"
+        },
+        {
+            "id": 6,
+            "path": "min_inv_waveform.png",
+            "title": "Minimum inverter waveform",
+            "text": "$t_{PHL}=9.8587\\text{ ps},\\quad t_{PLH}=27.33919\\text{ ps},\\quad t_p=18.598945\\text{ ps}$",
+            "rotation": 270
+        },
+        {
+            "id": 7,
+            "path": "opt_inv_repeater_cir.png",
+            "title": "Optimal size repeater circuit"
+        },
+        {
+            "id": 8,
+            "path": "opt_inv_repeater_waveform.png",
+            "title": "Optimal size repeater waveform",
+            "text": "$t_{PHL}=1.01343\\text{ ns},\\quad t_{PLH}=1.07319\\text{ ns},\\quad t_p=1.04331\\text{ ns}$"
+        },
+        {
+            "id": 9,
+            "path": "sized_inv_cir.png",
+            "title": "Sized Inverter circuit"
+        },
+        {
+            "id": 10,
+            "path": "sized_inv_symbol.png",
+            "title": "Sized Inverter Symbol"
+        },
+        {
+            "id": 11,
+            "path": "cascaded_inv_repeater_waveform.png",
+            "title": "Cascaded driver Waveform",
+            "text": "$t_{PHL}=2.93671\\text{ ns},\\quad t_{PLH}=3.18355\\text{ ns},\\quad t_p=3.06013\\text{ ns}$"
+        }
+    ],
+    "experiments": [
+        {
+            "number": 7,
+            "type": "assignment",
+            "title": "CMOS Inverter Design & Analysis",
+            "date": "01/10/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "To design a CMOS inverter repeater using minimum channel length and minimum width in 180nm technology and determine",
+                        "1] $R_{out}$ , (output resistance of the inverter)",
+                        "2] $C_{out}$ , (output capacitance of the inverter)",
+                        "3] intrinsic delay $t_{p}$ , (intrinsic delay of the inverter)",
+                        "4] $R_n$ , $R_p$ (resistance of NMOS and PMOS)",
+                        "5] k (optimum number of repeater stages)",
+                        "6] optimal repeater size for minimum propagation delay",
+                        "7] propagation delay of the cascaded driver",
+                        "to calculate and compare the propagation delay without repeater insertion, with optimally sized repeater insertion, and using a cascaded driver."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "1. Unbuffered Interconnect Delay: A long interconnect exhibits distributed resistance $R_{int}$ and capacitance $C_{int}$, causing delay to scale quadratically with wire length. Driven by a minimum-sized inverter ($R_{out}, C_{out}$), the total unbuffered delay is given by $T_{50\\%} = 0.7 R_{out}(C_{int} + C_{out}) + R_{int}(0.4 C_{int} + 0.7 C_{out})$.",
+                        "2. Optimal Repeater Insertion: Inserting intermediate inverters divides the line into $k$ shorter segments, converting quadratic delay growth into a linear relationship. For $k$ segments and sizing factor $h$, the total delay is $T_{50\\%} = k\\left[0.7\\frac{R_{out}}{h}\\left(\\frac{C_{int}}{k} + h C_{out}\\right) + \\frac{R_{int}}{k}\\left(0.4\\frac{C_{int}}{k} + 0.7 h C_{out}\\right)\\right]$. Minimizing with respect to $k$ and $h$ yields $k = \\sqrt{\\frac{0.4 R_{int} C_{int}}{0.7 R_{out} C_{out}}}$ and $h = \\sqrt{\\frac{R_{out} C_{int}}{R_{int} C_{out}}}$.",
+                        "3. Cascaded Driver: A tapered chain of $n$ progressively sized inverters (scaling factor $f = e \\approx 2.7182$) drives the interconnect from the source without intermediate repeaters. The optimal number of stages is $k_{casc} = \\ln\\left(\\frac{C_{int} + C_L}{C_{out}}\\right)$ and the total delay is $T_{50\\%} = 0.7(n-1)f R_{out} C_{out} + \\left(\\frac{0.7 R_{out}}{f^{n-1}} + 0.4 R_{int}\\right)C_{int} + \\left(\\frac{0.7 R_{out}}{f^{n-1}} + 0.7 R_{int}\\right)C_L$."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "new_page": true,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Derived and observed intrinsic parameters",
+                            "csv": "param_derived.csv"
+                        },
+                        {
+                            "title": "Result",
+                            "csv": "result.csv"
+                        },
+                        {
+                            "title": "comparison of theoretical and practical values",
+                            "csv": "the_vs_prac.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "calculation",
+                    "number": 5,
+                    "title": "CALCULATION",
+                    "new_page": false,
+                    "variables": {
+                        "k_n": 70,
+                        "k_p": 20,
+                        "R_int": 68,
+                        "C_int": 60,
+                        "V_dd": 1.8,
+                        "V_tn": 0.45,
+                        "V_tp": 0.45,
+                        "W": 400,
+                        "L": 180,
+                        "t_phl": 9.8587,
+                        "t_plh": 27.33919,
+                        "f": 2.7182,
+                        "h": 1.775,
+                        "C_L": 0,
+                        "t_phl_no_rep": 2.882,
+                        "t_plh_no_rep": 3.119,
+                        "t_phl_opt": 1.01343,
+                        "t_plh_opt": 1.07319,
+                        "t_phl_casc": 2.93671,
+                        "t_plh_casc": 3.18355
+                    },
+                    "items": [
+                        "R_n = 1000/(k_n*(W/L)*(V_dd-V_tn)) | unit: kΩ | round: 3",
+                        "R_p = 1000/(k_p*(W/L)*(V_dd-V_tp)) | unit: kΩ | round: 2",
+                        "R_{out} = (R_n + R_p)/2 | unit: kΩ | round: 3",
+                        "C_{out1} = t_phl/(0.69*R_n) | unit: fF | round: 3",
+                        "C_{out2} = t_plh/(0.69*R_p) | unit: fF | round: 4",
+                        "C_{out} = max(C_{out1}, C_{out2}) | unit: fF | round: 3",
+                        "t_{p(min)} = (t_phl + t_plh)/2 | unit: ps | round: 4",
+                        "k = sqrt((R_int*C_int*0.4)/(R_{out}*C_{out}*0.7)) | round_down: 0",
+                        "h = sqrt((R_{out}*C_int)/(R_int*C_{out})) | round: 3",
+                        "k_{casc} = ln((C_int + C_L)/C_{out}) | round: 0",
+                        "T_{p(no_rep)(theoratical)} = (0.7*R_{out}*(C_int+C_{out}) + R_int*(0.4*C_int+0.7*C_{out}))/1000 | unit: ns | round: 4",
+                        "T_{p(opt)(theoratical)} = (k*(0.7*(R_{out}/h)*(C_int/k + h*C_{out}) + (R_int/k)*(0.4*C_int/k + 0.7*h*C_{out})))/1000 | unit: ns | round: 4",
+                        "T_{p(casc)(theoratical)} = (0.7*(k_{casc}-1)*f*R_{out}*C_{out} + (0.7*R_{out}/(f^(k_{casc}-1)) + 0.4*R_int)*C_int + (0.7*R_{out}/(f^(k_{casc}-1)) + 0.7*R_int)*C_L)/1000 | unit: ns | round: 4",
+                        "t_{HL(no_rep)} = t_phl_no_rep | unit: ns | round: 3",
+                        "t_{LH(no_rep)} = t_plh_no_rep | unit: ns | round: 3",
+                        "t_{p(no_rep)} = (t_phl_no_rep + t_plh_no_rep)/2 | unit: ns | round: 4",
+                        "t_{HL(opt)} = t_phl_opt | unit: ns | round: 5",
+                        "t_{LH(opt)} = t_plh_opt | unit: ns | round: 5",
+                        "t_{p(opt)} = (t_phl_opt + t_plh_opt)/2 | unit: ns | round: 5",
+                        "t_{HL(casc)} = t_phl_casc | unit: ns | round: 5",
+                        "t_{LH(casc)} = t_plh_casc | unit: ns | round: 5",
+                        "t_{p(casc)} = (t_phl_casc + t_plh_casc)/2 | unit: ns | round: 5"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            2,
+                                            5
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            6
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    9,
+                                    10
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    3,
+                                    4
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    7,
+                                    8
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 5",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    1,
+                                    11
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "CONCLUSION",
+                    "text": [
+                        "1. Optimal repeater insertion ($k = 8$, $h = 1.775$) achieves a theoretical propagation delay of $0.8911\\text{ ns}$ (a 60.35% reduction from unbuffered line theoretical delay of $2.2473\\text{ ns}$).",
+                        "2. A cascaded driver ($k_{casc} = 3$) yielded $3.0601\\text{ ns}$ (theoretical $1.8152\\text{ ns}$), proving that distributed repeaters are far superior to lumped drivers for long distributed $RC$ interconnects."
+                    ]
+                }
+            ]
+        }
+    ]
+}

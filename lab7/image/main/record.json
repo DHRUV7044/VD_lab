@@ -14,7 +14,7 @@
             "id": 2,
             "path": "inv_with_repeater_waveform.png",
             "title": "Transient waveform of inverter with inv/buf insertion (with repeaters)",
-            "text": "$t_{PHL}=1.23534\\text{ ns},\\quad t_{PLH}=1.17325\\text{ ns},\\quad t_p=1.2043\\text{ ns}$",
+            "text": "$t_{PHL}=1.17325\\text{ ns},\\quad t_{PLH}=1.23534\\text{ ns},\\quad t_p=1.2043\\text{ ns}$",
             "rotation": 270
         },
         {
@@ -26,7 +26,7 @@
             "id": 4,
             "path": "inv_without_repeater_waveform.png",
             "title": "Transient waveform of inverter without inv/buf insertion (without repeaters)",
-            "text": "$t_{PHL}=3.119\\text{ ns},\\quad t_{PLH}=2.882\\text{ ns},\\quad t_p=3.0005\\text{ ns}$",
+            "text": "$t_{PHL}=2.882\\text{ ns},\\quad t_{PLH}=3.119\\text{ ns},\\quad t_p=3.0005\\text{ ns}$",
             "rotation": 270
         },
         {
@@ -77,12 +77,9 @@
                     "number": 3,
                     "title": "THEORY",
                     "text": [
-                        "A long interconnect has significant resistance $R_{int}$ and capacitance $C_{int}$, which increase the propagation delay of the CMOS inverter driving it.",
-                        "A repeater is an intermediate CMOS inverter inserted in the interconnect to divide it into smaller sections. This reduces the wire delay by allowing each inverter to drive a smaller portion of the interconnect.",
-                        "The interconnect is modeled as a distributed RC network, with its delay approximated as $t_{wire}=0.4R_{int}C_{int}$, while the inverter and other components are represented using a lumped RC model with delay $t_{inv}=0.7R_oC_o$.",
-                        "Without repeater insertion, the complete interconnect is driven by a single inverter, resulting in a large RC propagation delay. With $k$ repeater stages, the interconnect is divided into $k$ sections and the total delay is obtained by summing the wire and inverter delays.",
-                        "Increasing the number of repeaters reduces the wire delay but adds inverter delay. Therefore, an optimum number of stages $k$ exists that minimizes the total propagation delay.",
-                        "The delays with and without repeater insertion are calculated and compared to determine the improvement obtained by using CMOS repeaters."
+                        "1. Unbuffered Interconnect Delay: A long interconnect exhibits distributed resistance $R_{int}$ and capacitance $C_{int}$, causing propagation delay to scale quadratically with wire length. Driven by a minimum-sized inverter ($R_{out}, C_{out}$), the total unbuffered delay is given by $T_{50\\%} = 0.7 R_{out}(C_{int} + C_{out}) + R_{int}(0.4 C_{int} + 0.7 C_{out})$.",
+                        "2. Minimum-Sized Repeater Insertion: Inserting intermediate minimum-sized inverters divides the line into $k$ shorter sections, converting quadratic delay growth into a linear relationship. The total propagation delay for $k$ minimum-sized repeater stages is given by $T_{50\\%} = k\\left[0.7 R_{out}\\left(\\frac{C_{int}}{k} + C_{out}\\right) + \\frac{R_{int}}{k}\\left(0.4\\frac{C_{int}}{k} + 0.7 C_{out}\\right)\\right]$.",
+                        "3. Optimum Number of Stages: Minimizing the total propagation delay with respect to $k$ yields the optimum number of repeater stages: $k = \\sqrt{\\frac{0.4 R_{int} C_{int}}{0.7 R_{out} C_{out}}}$."
                     ]
                 },
                 {
@@ -102,6 +99,10 @@
                         {
                             "title": "Result",
                             "csv": "result.csv"
+                        },
+                        {
+                            "title": "comparison of theoretical and practical values",
+                            "csv": "the_vs_prac.csv"
                         }
                     ]
                 },
@@ -122,20 +123,22 @@
                         "L": 180,
                         "t_phl": 9.8587,
                         "t_plh": 27.33919,
-                        "t_phl_no_rep": 3.119,
-                        "t_plh_no_rep": 2.882,
-                        "t_phl_rep": 1.23534,
-                        "t_plh_rep": 1.17325
+                        "t_phl_no_rep": 2.882,
+                        "t_plh_no_rep": 3.119,
+                        "t_phl_rep": 1.17325,
+                        "t_plh_rep": 1.23534
                     },
                     "items": [
                         "R_n = 1000/(k_n*(W/L)*(V_dd-V_tn)) | unit: kΩ | round: 3",
                         "R_p = 1000/(k_p*(W/L)*(V_dd-V_tp)) | unit: kΩ | round: 2",
                         "R_{out} = (R_n + R_p)/2 | unit: kΩ | round: 3",
-                        "C_{out1} = t_{phl}/(0.69*R_n) | unit: fF | round: 3",
-                        "C_{out2} = t_{plh}/(0.69*R_p) | unit: fF | round: 4",
-                        "C_{out} = max(C_{out1}, C_{out2}) | unit: fF",
-                        "t_p = (t_{phl} + t_{plh})/2 | unit: ps | round: 4",
+                        "C_{out1} = t_phl/(0.69*R_n) | unit: fF | round: 3",
+                        "C_{out2} = t_plh/(0.69*R_p) | unit: fF | round: 4",
+                        "C_{out} = max(C_{out1}, C_{out2}) | unit: fF | round: 3",
+                        "t_{p(min)} = (t_phl + t_plh)/2 | unit: ps | round: 4",
                         "k = sqrt((R_int*C_int*0.4)/(R_{out}*C_{out}*0.7)) | round_down: 0",
+                        "T_{p(no_rep)(theoratical)} = (0.7*R_{out}*(C_int+C_{out}) + R_int*(0.4*C_int+0.7*C_{out}))/1000 | unit: ns | round: 4",
+                        "T_{p(rep)(theoratical)} = (k*(0.7*R_{out}*(C_int/k + C_{out}) + (R_int/k)*(0.4*C_int/k + 0.7*C_{out})))/1000 | unit: ns | round: 4",
                         "t_{HL(no_rep)} = t_phl_no_rep | unit: ns | round: 3",
                         "t_{LH(no_rep)} = t_plh_no_rep | unit: ns | round: 3",
                         "t_{p(no_rep)} = (t_phl_no_rep + t_plh_no_rep)/2 | unit: ns | round: 4",
@@ -146,6 +149,7 @@
                 },
                 {
                     "type": "image",
+                    "number": 6,
                     "title": "Circuit Diagrams & Waveforms",
                     "new_page": true,
                     "subsections": [
@@ -193,9 +197,10 @@
                 {
                     "type": "text",
                     "number": 7,
-                    "title": "RESULT",
+                    "title": "CONCLUSION",
                     "text": [
-                        "The CMOS inverter repeater was successfully designed and simulated in 180 nm technology. Repeater insertion reduced the average propagation delay from approximately 3.00 ns to 1.20 ns, showing that repeaters significantly improve the speed of circuits driving large interconnects"
+                        "1. An unbuffered interconnect and minimum-sized CMOS inverter repeaters were designed and simulated in 180 nm technology ($V_{DD} = 1.8\\text{ V}$, $R_{int} = 68\\text{ k}\\Omega$, $C_{int} = 60\\text{ fF}$).",
+                        "2. Minimum-sized repeater insertion ($k = 8$) reduced propagation delay from $3.0005\\text{ ns}$ down to $1.2043\\text{ ns}$ (59.86% reduction), in good agreement with the theoretical delay of $0.9768\\text{ ns}$."
                     ]
                 }
             ]

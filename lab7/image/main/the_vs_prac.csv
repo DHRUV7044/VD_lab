@@ -1,0 +1,5 @@
+#source tp = result.csv
+
+parameter , theoretical value ($T_p$) , practical value ($t_p$) , unit , signed error
+without inv/buf insertion , 2.2473 , tp:c2e4 , ns , $sperr(re2  re3)
+with inv/buf insertion , 0.9768 , tp:c3e4 , ns , $sperr(re2  re3)

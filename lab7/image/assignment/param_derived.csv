@@ -1,0 +1,14 @@
+derived and observed parameter , value , unit
+$t_{phl}$ , 9.8587 , ps
+$t_{plh}$ , 27.33919 , ps
+$t_{p}$ , (ce2 + ce3)/2 , ps
+$R_{n}$ , 4.762 , k$\Omega$
+$R_{p}$ , 16.67 , k$\Omega$
+$R_{out}$ , (ce5 + ce6)/2 , k$\Omega$
+$C_{n}$ , ce2/(0.69*ce5) , fF
+$C_{p}$ , ce3/(0.69*ce6) , fF
+$C_{out}$ , ce8 , fF
+$k$ (optimal size repeater) , 8 , unitless
+$h$ (optimal size repeater) , 1.775 , unitless
+$k_{casc}$ (cascaded driver) , 3 , unitless
+$f$ (cascaded driver) , 2.7182 , unitless

@@ -1,0 +1,4 @@
+parameter , without inv/buf insertion , optimal size repeaters , cascaded driver ,  unit , difference ( for optimal size repeaters) , difference ( for cascaded driver)
+$t_{phl}$ , 2.882 , 1.01343 , 2.93671 , ns , $sperr(re2  re3) , $sperr(re2 re4)
+$t_{plh}$ , 3.119 , 1.07319 , 3.18355 , ns , $sperr(re2  re3) , $sperr(re2 re4)
+$t_{p}$ , (ce2 + ce3)/2 , (ce2 + ce3)/2 , (ce2 + ce3)/2 , ns , $sperr(re2  re3) , $sperr(re2 re4)

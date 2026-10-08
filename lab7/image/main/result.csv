@@ -1,4 +1,4 @@
 parameter , without inv/buf insertion , with inv/buf insertion , unit , error
-$t_{phl}$ , 2.882 , 1.17325 , ps , $sperr(re2  re3)
-$t_{plh}$ , 3.119 , 1.23534 , ps , $sperr(re2  re3)
-$t_{p}$ , (ce2 + ce3)/2 , (ce2 + ce3)/2 , ps , $sperr(re2  re3)
+$t_{phl}$ , 2.882 , 1.17325 , ns , $sperr(re2  re3)
+$t_{plh}$ , 3.119 , 1.23534 , ns , $sperr(re2  re3)
+$t_{p}$ , (ce2 + ce3)/2 , (ce2 + ce3)/2 , ns , $sperr(re2  re3)
