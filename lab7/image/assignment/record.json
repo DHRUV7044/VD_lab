@@ -47,7 +47,7 @@
             "id": 8,
             "path": "opt_inv_repeater_waveform.png",
             "title": "Optimal size repeater waveform",
-            "text": "$t_{PHL}=1.01343\\text{ ns},\\quad t_{PLH}=1.07319\\text{ ns},\\quad t_p=1.04331\\text{ ns}$"
+            "text": "$t_{PHL}=1.00584\\text{ ns},\\quad t_{PLH}=1.06398\\text{ ns},\\quad t_p=1.03491\\text{ ns}$"
         },
         {
             "id": 9,
@@ -63,7 +63,7 @@
             "id": 11,
             "path": "cascaded_inv_repeater_waveform.png",
             "title": "Cascaded driver Waveform",
-            "text": "$t_{PHL}=2.93671\\text{ ns},\\quad t_{PLH}=3.18355\\text{ ns},\\quad t_p=3.06013\\text{ ns}$"
+            "text": "$t_{PHL}=2.98678\\text{ ns},\\quad t_{PLH}=3.20549\\text{ ns},\\quad t_p=3.09614\\text{ ns}$"
         }
     ],
     "experiments": [
@@ -151,10 +151,10 @@
                         "C_L": 0,
                         "t_phl_no_rep": 2.882,
                         "t_plh_no_rep": 3.119,
-                        "t_phl_opt": 1.01343,
-                        "t_plh_opt": 1.07319,
-                        "t_phl_casc": 2.93671,
-                        "t_plh_casc": 3.18355
+                        "t_phl_opt": 1.00584,
+                        "t_plh_opt": 1.06398,
+                        "t_phl_casc": 2.98678,
+                        "t_plh_casc": 3.20549
                     },
                     "items": [
                         "R_n = 1000/(k_n*(W/L)*(V_dd-V_tn)) | unit: kΩ | round: 3",
@@ -255,8 +255,8 @@
                     "number": 7,
                     "title": "CONCLUSION",
                     "text": [
-                        "1. Optimal repeater insertion ($k = 8$, $h = 1.775$) achieves a theoretical propagation delay of $0.8911\\text{ ns}$ (a 60.35% reduction from unbuffered line theoretical delay of $2.2473\\text{ ns}$).",
-                        "2. A cascaded driver ($k_{casc} = 3$) yielded $3.0601\\text{ ns}$ (theoretical $1.8152\\text{ ns}$), proving that distributed repeaters are far superior to lumped drivers for long distributed $RC$ interconnects."
+                        "1. Optimal repeater insertion ($k = 8$, $h = 1.775$) reduced simulated delay from $3.0005\\text{ ns}$ to $1.0349\\text{ ns}$ (65.51% reduction), comparing well with the theoretical delay of $0.8911\\text{ ns}$.",
+                        "2. Cascaded driver ($k_{casc} = 3$) yielded $3.0961\\text{ ns}$ (theoretical $1.8152\\text{ ns}$), proving that distributed repeaters are far superior to lumped drivers for long distributed $RC$ interconnects."
                     ]
                 }
             ]
