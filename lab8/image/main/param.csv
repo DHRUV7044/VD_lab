@@ -1,0 +1,7 @@
+given parameter , value , unit
+technology , 180 , nm
+$V_{dd}$ , 1.8 , V
+channel length ($L$) , 180 , nm
+minimum NMOS width ($W_n$) , 400 , nm
+symmetric PMOS width ($W_p$) , 800 , nm
+desired oscillator frequency ($f_{des}$) , 2.22 , GHz

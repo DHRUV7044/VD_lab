@@ -1,0 +1,297 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "20/08/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "symmetric_inv_cir.png",
+            "title": "Symmetric inverter schematic ($W_p=800\\text{nm}, W_n=400\\text{nm}$)"
+        },
+        {
+            "id": 2,
+            "path": "symmetric_inv_symbol.png",
+            "title": "Symmetric inverter symbol"
+        },
+        {
+            "id": 3,
+            "path": "symmetric_inv_tb.png",
+            "title": "Unloaded symmetric CMOS inverter testbench"
+        },
+        {
+            "id": 4,
+            "path": "symmetric_inv_waveform.png",
+            "title": "Unloaded symmetric inverter waveform (FO0)",
+            "text": "$t_{PHL}=12.6322\\text{ ps},\\quad t_{PLH}=16.6138\\text{ ps},\\quad t_p=14.6230\\text{ ps}$"
+        },
+        {
+            "id": 5,
+            "path": "fo1_cir.png",
+            "title": "CMOS inverter with Fan-Out of 1 (FO1) schematic"
+        },
+        {
+            "id": 6,
+            "path": "fo1_waveform.png",
+            "title": "CMOS inverter with FO1 transient waveform",
+            "text": "$t_{PHL}=18.9750\\text{ ps},\\quad t_{PLH}=27.3618\\text{ ps},\\quad t_p=23.1684\\text{ ps}$"
+        },
+        {
+            "id": 7,
+            "path": "fo2_cir.png",
+            "title": "CMOS inverter with Fan-Out of 2 (FO2) schematic"
+        },
+        {
+            "id": 8,
+            "path": "fo2_waveform.png",
+            "title": "CMOS inverter with FO2 transient waveform",
+            "text": "$t_{PHL}=25.4262\\text{ ps},\\quad t_{PLH}=38.7649\\text{ ps},\\quad t_p=32.0956\\text{ ps}$"
+        },
+        {
+            "id": 9,
+            "path": "fo3_cir.png",
+            "title": "CMOS inverter with Fan-Out of 3 (FO3) schematic"
+        },
+        {
+            "id": 10,
+            "path": "fo3_waveform.png",
+            "title": "CMOS inverter with FO3 transient waveform",
+            "text": "$t_{PHL}=31.9120\\text{ ps},\\quad t_{PLH}=50.6160\\text{ ps},\\quad t_p=41.2640\\text{ ps}$"
+        },
+        {
+            "id": 11,
+            "path": "fo4_cir.png",
+            "title": "CMOS inverter with Fan-Out of 4 (FO4) schematic"
+        },
+        {
+            "id": 12,
+            "path": "fo4_waveform.png",
+            "title": "CMOS inverter with FO4 transient waveform",
+            "text": "$t_{PHL}=38.4404\\text{ ps},\\quad t_{PLH}=62.7786\\text{ ps},\\quad t_p=50.6095\\text{ ps}$"
+        },
+        {
+            "id": 13,
+            "path": "fo5_cir.png",
+            "title": "CMOS inverter with Fan-Out of 5 (FO5) schematic"
+        },
+        {
+            "id": 14,
+            "path": "fo5_waveform.png",
+            "title": "CMOS inverter with FO5 transient waveform",
+            "text": "$t_{PHL}=46.1987\\text{ ps},\\quad t_{PLH}=71.0818\\text{ ps},\\quad t_p=58.6403\\text{ ps}$"
+        },
+        {
+            "id": 15,
+            "path": "ring_osc_cir.png",
+            "title": "7-stage Ring Oscillator schematic"
+        },
+        {
+            "id": 16,
+            "path": "ring_osc_waveform.png",
+            "title": "7-stage Ring Oscillator waveform",
+            "text": "$T=445.94\\text{ ps},\\quad f_{obs}=2.2425\\text{ GHz},\\quad N=7\\text{ stages}$"
+        }
+    ],
+    "experiments": [
+        {
+            "number": 8,
+            "type": "main",
+            "title": "Logical Effort & Ring Oscillator Delay Characterization",
+            "date": "08/10/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "To design a CMOS inverter with 4 fan-out and a CMOS ring oscillator using minimum channel length and width in 180nm technology and:",
+                        "1] To calculate the propagation delay of CMOS inverter with FO4 and compare it with theoretically calculated delay using logical effort, and compare it with inverter having no load (FO0), FO1, FO2, FO3, and FO5.",
+                        "2] To find the number of stages $N$ when frequency is $2.22\\text{ GHz}$, design and implement it, and compare the observed value of frequency with the desired frequency."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "1. Method of Logical Effort: Logical effort provides a normalized framework to estimate the delay of CMOS logic gates. The delay of a logic gate is modeled as the sum of effort delay (stage effort) and parasitic delay: $d = g \\cdot h + p$. Here, $g$ is the logical effort representing the gate's topological complexity, $h = C_{out} / C_{in}$ is the electrical effort (fan-out), and $p$ is the intrinsic parasitic delay. For a reference CMOS inverter, $g = 1$ and $p = 1$. The normalized delay $d$ is converted to absolute time by scaling with the base inverter delay $t_{inv}$, such that $t_{p,\\text{theor}} = d \\cdot t_{inv}$.",
+                        "2. Delay Dependence on Fan-Out: When an inverter drives identical load inverters, each additional load increases the electrical effort $h$. Since the logical effort and parasitic delay remain fixed, the gate delay increases linearly with the fan-out load. Benchmarking delays from an unloaded state ($h = 0$, FO0) through standard loads like FO4 allows characterization of the drive capability and intrinsic parasitic overhead.",
+                        "3. CMOS Ring Oscillator Operation: A ring oscillator comprises an odd number $N$ of inverting stages cascaded in a closed loop. Because each stage drives a single identical succeeding stage, the effective load corresponds to a fan-out of 1 (FO1). The closed-loop oscillation period is given by $T = 2 \\cdot N \\cdot t_p$, where $t_p$ is the per-stage propagation delay. The required stage count for a target oscillation frequency $f$ is therefore governed by $N = \\frac{1}{2 \\cdot f \\cdot t_p}$."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "new_page": true,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Inverter Delay vs. Fan-Out Characterization",
+                            "csv": "inverter_delay.csv"
+                        },
+                        {
+                            "title": "7-Stage Ring Oscillator Performance",
+                            "csv": "ring_oscillator.csv"
+                        },
+                        {
+                            "title": "Comparison of Theoretical and Practical Values",
+                            "csv": "the_vs_prac.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "calculation",
+                    "number": 5,
+                    "title": "CALCULATION",
+                    "new_page": false,
+                    "variables": {
+                        "W_p": 800,
+                        "W_n": 400,
+                        "t_inv": 14.623,
+                        "g": 1,
+                        "p": 1,
+                        "f_des": 2.22,
+                        "t_{FO1}": 29.246,
+                        "T_obs": 445.9386,
+                        "N_stage": 7
+                    },
+                    "items": [
+                        "ratio = W_p / W_n | round: 0",
+                        "d_FO0 = g * 0 + p | round: 0",
+                        "T_{p(FO0)(theoratical)} = d_FO0 * t_inv | unit: ps | round: 4",
+                        "d_FO1 = g * 1 + p | round: 0",
+                        "T_{p(FO1)(theoratical)} = d_FO1 * t_inv | unit: ps | round: 4",
+                        "d_FO2 = g * 2 + p | round: 0",
+                        "T_{p(FO2)(theoratical)} = d_FO2 * t_inv | unit: ps | round: 4",
+                        "d_FO3 = g * 3 + p | round: 0",
+                        "T_{p(FO3)(theoratical)} = d_FO3 * t_inv | unit: ps | round: 4",
+                        "d_FO4 = g * 4 + p | round: 0",
+                        "T_{p(FO4)(theoratical)} = d_FO4 * t_inv | unit: ps | round: 4",
+                        "d_FO5 = g * 5 + p | round: 0",
+                        "T_{p(FO5)(theoratical)} = d_FO5 * t_inv | unit: ps | round: 4",
+                        "N = 1000 / (2 * f_des * t_{FO1}) | round: 2",
+                        "N_{stage} = 7",
+                        "f_{prac} = 1000 / T_obs | unit: GHz | round: 4",
+                        "Error = (f_prac - f_des) / f_des * 100 | unit: % | round: 2"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1: Symmetric Inverter & Unloaded Waveform (FO0)",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3,
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2: Inverter Delay with FO1 & FO2",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            5,
+                                            6
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            7,
+                                            8
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3: Inverter Delay with FO3 & FO4",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            9,
+                                            10
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            11,
+                                            12
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 4: FO5 & 7-Stage Ring Oscillator",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            13,
+                                            14
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            15,
+                                            16
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "CONCLUSION",
+                    "text": [
+                        "1. Inverter propagation delay scaled linearly with fan-out from FO0 ($14.62\\text{ ps}$) to FO5 ($58.64\\text{ ps}$), successfully validating the logical effort delay model.",
+                        "2. A 7-stage ring oscillator designed for $2.22\\text{ GHz}$ produced an oscillation frequency of $2.2425\\text{ GHz}$ ($T = 445.94\\text{ ps}$), closely matching the objective with $+1.01\\%$ error."
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+given parameter , value , unit
+technology , 180 , nm
+$V_{dd}$ , 1.8 , V
+channel length ($L$) , 180 , nm
+input capacitance ($C_{in}$) , 8 , units
+load capacitance ($C_L$) , 45 , fF
+reference inverter delay ($t_{inv}$) , 14.6230 , ps
+optimal stage effort ($\hat{f}$) , 5 , -

@@ -1,0 +1,219 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "08/10/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "nand2_cir.png",
+            "title": "2-input NAND (NAND2) schematic ($W_p=1.6\\mu\\text{m}, W_n=1.6\\mu\\text{m}$)"
+        },
+        {
+            "id": 2,
+            "path": "nand2_symbol.png",
+            "title": "2-input NAND (NAND2) symbol"
+        },
+        {
+            "id": 3,
+            "path": "nand3_cir.png",
+            "title": "3-input NAND (NAND3) schematic ($W_p=800\\text{ nm}, W_n=1.2\\mu\\text{m}$)"
+        },
+        {
+            "id": 4,
+            "path": "nand3_symbol.png",
+            "title": "3-input NAND (NAND3) symbol"
+        },
+        {
+            "id": 5,
+            "path": "nor2_cir.png",
+            "title": "2-input NOR (NOR2) schematic ($W_p=4.8\\mu\\text{m}, W_n=1.2\\mu\\text{m}$)"
+        },
+        {
+            "id": 6,
+            "path": "nor2_symbol.png",
+            "title": "2-input NOR (NOR2) symbol"
+        },
+        {
+            "id": 7,
+            "path": "logic_block_cir.png",
+            "title": "Logic block testbench circuit ($x=10, y=15, C_L=45\\text{ fF}$)"
+        },
+        {
+            "id": 8,
+            "path": "logic_block_waveform.png",
+            "title": "Logic block transient response waveform",
+            "text": "$t_{pLH}=311.857\\text{ ps},\\quad t_{pHL}=373.492\\text{ ps},\\quad t_p=342.6745\\text{ ps}$"
+        }
+    ],
+    "experiments": [
+        {
+            "number": 8,
+            "type": "assignment",
+            "title": "Logical Effort Path Sizing & Delay Characterization",
+            "date": "08/10/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "For the given combinational logic circuit:",
+                        "1] To determine the optimal gate sizes $x$ and $y$ using the method of Logical Effort ($x = 10$, $y = 15$).",
+                        "2] To design and simulate the sized logic circuit in 180nm CMOS technology, calculate propagation delay from transient simulation, determine the theoretical delay using logical effort, and compare them."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "1. Path Logical Effort and Branching: In multistage combinational networks, the total path effort $F$ characterizes the total workload and is defined as the product of path logical effort $G = \\prod g_i$, path branching effort $B = \\prod b_i$, and path electrical effort $H = C_{out} / C_{in}$. Logical effort $g$ accounts for the topological complexity of each gate relative to a standard inverter, while branching effort $b$ accounts for capacitive loading on off-path fan-out branches.",
+                        "2. Optimal Stage Effort and Transistor Sizing: Minimum path delay is achieved when each of the $N$ stages bears identical stage effort $\\hat{f} = F^{1/N}$. Using this optimal effort, intermediate gate sizes are uniquely determined from input to output using the stage effort relation $\\hat{f} = g_i \\cdot h_i = g_i \\cdot \\frac{C_{out,i}}{C_{in,i}}$. Transistor channel widths for each gate are then scaled proportionally to match the calculated input capacitance.",
+                        "3. Path Delay Formulation: The minimum normalized path delay consists of the sum of stage effort delays and parasitic delays: $D = N \\cdot \\hat{f} + P$, where $P = \\sum p_i$ is the total path parasitic delay. The absolute theoretical propagation delay is evaluated by multiplying the normalized delay by the unit inverter delay, $T_{p,\\text{theor}} = D \\cdot t_{inv}$."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "new_page": true,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "Logical Effort Stage Sizing & Parameters",
+                            "csv": "logical_effort_sizing.csv"
+                        },
+                        {
+                            "title": "Comparison of Theoretical and Practical Propagation Delay",
+                            "csv": "delay_comparison.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "calculation",
+                    "number": 5,
+                    "title": "CALCULATION",
+                    "new_page": false,
+                    "variables": {
+                        "g_1": 1.333333,
+                        "g_2": 1.666667,
+                        "g_3": 1.666667,
+                        "b_1": 3,
+                        "b_2": 2,
+                        "b_3": 1,
+                        "C_in": 8,
+                        "C_L": 45,
+                        "f_hat": 5,
+                        "p_1": 2,
+                        "p_2": 3,
+                        "p_3": 2,
+                        "t_inv": 14.623,
+                        "t_pLH": 311.857,
+                        "t_pHL": 373.492,
+                        "T_theor": 321.706,
+                        "T_prac": 342.6745
+                    },
+                    "items": [
+                        "G = g_1 * g_2 * g_3 | round: 4",
+                        "B = b_1 * b_2 * b_3 | round: 0",
+                        "H = C_L / C_in | round: 3",
+                        "F = G * B * H | round: 0",
+                        "f_{hat} = 5",
+                        "x = (f_hat * C_in) / (g_1 * b_1) | round: 0",
+                        "y = (f_hat * x) / (g_2 * b_2) | round: 0",
+                        "P = p_1 + p_2 + p_3 | round: 0",
+                        "D = 3 * f_hat + P | round: 0",
+                        "T_{theor} = D * t_inv | unit: ps | round: 4",
+                        "T_{prac} = (t_pLH + t_pHL) / 2 | unit: ps | round: 4",
+                        "Error = (T_prac - T_theor) / T_theor * 100 | unit: % | round: 2"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1: NAND2 and NAND3 Schematics & Symbols",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3,
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2: NOR2 Schematic, Symbol & Logic Block Circuit",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            5,
+                                            6
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            7
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3: Logic Block Transient Response Waveform",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            8
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "CONCLUSION",
+                    "text": [
+                        "1. Optimal gate sizes $x = 10$ (NAND3) and $y = 15$ (NOR2) were determined using logical effort for an optimal stage effort of $\\hat{f} = 5$.",
+                        "2. Simulated propagation delay ($342.67\\text{ ps}$) agreed closely with the theoretical delay ($321.71\\text{ ps}$) with $+6.52\\%$ error."
+                    ]
+                }
+            ]
+        }
+    ]
+}

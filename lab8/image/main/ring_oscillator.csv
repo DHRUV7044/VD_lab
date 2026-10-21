@@ -1,0 +1,6 @@
+parameter , value , unit
+desired frequency ($f_{des}$) , 2.22 , GHz
+calculated number of stages ($N$) , 7 , stages
+observed time period ($T$) , 445.9386 , ps
+observed frequency ($f_{obs}$) , 1000/ce4 , GHz
+frequency signed error , $sperr(ce2  ce5) , %

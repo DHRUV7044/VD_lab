@@ -1,0 +1,4 @@
+parameter , theoretical value , practical value , unit , signed error
+$t_{pLH}$ , - , 311.8570 , ps , -
+$t_{pHL}$ , - , 373.4920 , ps , -
+propagation delay ($t_p$) , 321.7060 , (311.8570 + 373.4920)/2 , ps , $sperr(re2  re3)

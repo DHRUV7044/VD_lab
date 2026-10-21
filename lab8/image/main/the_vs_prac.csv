@@ -1,0 +1,11 @@
+#source inv = inverter_delay.csv
+#source osc = ring_oscillator.csv
+
+parameter , theoretical value , practical value , unit , signed error
+FO0 propagation delay ($t_p$) , 14.6230 , inv:c4e2 , ps , $sperr(re2  re3)
+FO1 propagation delay ($t_p$) , 29.2460 , inv:c4e3 , ps , $sperr(re2  re3)
+FO2 propagation delay ($t_p$) , 43.8690 , inv:c4e4 , ps , $sperr(re2  re3)
+FO3 propagation delay ($t_p$) , 58.4920 , inv:c4e5 , ps , $sperr(re2  re3)
+FO4 propagation delay ($t_p$) , 73.1150 , inv:c4e6 , ps , $sperr(re2  re3)
+FO5 propagation delay ($t_p$) , 87.7380 , inv:c4e7 , ps , $sperr(re2  re3)
+oscillator frequency ($f$) , 2.2200 , osc:c2e5 , GHz , $sperr(re2  re3)
