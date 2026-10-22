@@ -1,0 +1,9 @@
+Parameter , Value , Unit
+Technology , 180 , nm
+Supply Voltage ($V_{DD}$) , 1.8 , V
+Channel Length ($L$) , 180 , nm
+Access Transistor Width ($W_a$) , 800 , nm
+Driver NMOS Width ($W_n$) , 9.6 , $\mu\text{m}$
+Pull-up PMOS Width ($W_p$) , 400 , nm
+Bitline Capacitance ($C_{BL}$) , 100 , fF
+Simulation Stop Time , 40 , ns

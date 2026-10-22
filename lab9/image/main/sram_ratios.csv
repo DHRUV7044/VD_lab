@@ -1,0 +1,3 @@
+Metric , Formula , Value , Stability Criterion , Status
+Cell Ratio ($CR$) , $W_n / W_a$ , 12.00 , $CR \geq 1.2$ , Satisfied (High Read Stability)
+Pull-up Ratio ($PR$) , $W_p / W_a$ , 0.50 , $PR \leq 0.6$ , Satisfied (Reliable Writeability)

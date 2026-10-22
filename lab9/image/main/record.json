@@ -1,0 +1,159 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "21/10/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "6t_sram_cir.png",
+            "title": "6T SRAM cell schematic ($W_n=9.6\\,\\mu\\text{m}, W_p=0.4\\,\\mu\\text{m}, W_a=0.8\\,\\mu\\text{m}$)"
+        },
+        {
+            "id": 2,
+            "path": "6t_sram_symbol.png",
+            "title": "6T SRAM cell symbol ($WL, BL, \\overline{BL}, Q, \\overline{Q}$)"
+        },
+        {
+            "id": 3,
+            "path": "6t_sram_tb.png",
+            "title": "6T SRAM cell testbench schematic with write drivers and bitline loads"
+        },
+        {
+            "id": 4,
+            "path": "6t_sram_sim_info.png",
+            "title": "ADE L simulation state & design variable setup"
+        },
+        {
+            "id": 5,
+            "path": "6t_sram_waveform.png",
+            "title": "Transient waveforms demonstrating Write '1', Retention, Write '0', and Read '0' operations",
+            "text": "Signals: $WL$ (Wordline), $BL, \\overline{BL}$ (Bitlines), $Q, \\overline{Q}$ (Stored state), $SWS, \\overline{SWS}$ (Write driver control)"
+        }
+    ],
+    "experiments": [
+        {
+            "number": 9,
+            "type": "main",
+            "title": "Design, Sizing & Transient Simulation of 6T SRAM Cell",
+            "date": "21/10/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "To design and simulate a 6T SRAM cell using 180nm CMOS technology, determine the Cell Ratio (CR) and Pull-up Ratio (PR), and analyze the read and write operations through transient simulation."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "1. 6T SRAM Cell Architecture: A standard six-transistor static random access memory (6T SRAM) cell consists of two cross-coupled CMOS inverters forming a bistable latch that retains a single binary bit at complementary nodes ($Q$ and $\\overline{Q}$). Two NMOS access transistors connect the internal storage nodes to complementary bitlines ($BL$ and $\\overline{BL}$) under the control of a common Wordline ($WL$). The cross-coupled topology provides static data retention through positive regenerative feedback as long as the power supply is maintained.",
+                        "2. Read Operation and Cell Ratio ($CR$): Prior to read access, complementary bitlines are precharged to $V_{DD}$. When the Wordline is asserted high, both access transistors turn on. For a cell storing logic '0' ($Q = 0\\text{ V}$), charge flows from the precharged bitline $BL$ through the access transistor and the driver (pull-down) NMOS to ground, developing a sensing differential $\\Delta V_{BL}$. This creates a resistive voltage divider between the access transistor and the driver transistor. To guarantee read stability and avoid destructive read upsets, the voltage bump at node $Q$ must remain strictly below the threshold voltage of the opposing driver NMOS ($V_{th,n}$). This requirement dictates that the driver transistor must be significantly stronger than the access transistor, defined by the Cell Ratio: $CR = \\frac{(W/L)_{\\text{driver}}}{(W/L)_{\\text{access}}} = \\frac{W_n / L_n}{W_a / L_a} \\geq 1.2$.",
+                        "3. Write Operation and Pull-up Ratio ($PR$): During a write operation, the bitlines are driven by external write buffers to complementary logic states representing the input data, and $WL$ is pulsed high. To successfully write a logic '0' into a node holding '1', the access transistor must overpower the pull-up PMOS transistor and pull the internal node voltage below the inverter switching threshold, triggering regenerative latch switching. To guarantee writeability, the pull-up PMOS must be weaker than the access NMOS, defined by the Pull-up Ratio: $PR = \\frac{(W/L)_{\\text{pullup}}}{(W/L)_{\\text{access}}} = \\frac{W_p / L_p}{W_a / L_a} \\leq 0.6$.",
+                        "4. Data Retention (Hold Mode): In standby mode, the Wordline is held at logic low ($WL = 0\\text{ V}$), turning off the access transistors and isolating the storage latch from the bitline capacitances. The positive feedback continuously maintains the latched complementary voltages with only minute static leakage currents."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 4,
+                    "new_page": true,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design & Simulation Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "SRAM Sizing Ratios & Stability Criteria",
+                            "csv": "sram_ratios.csv"
+                        },
+                        {
+                            "title": "SRAM Operation & Transient Timing Analysis",
+                            "csv": "operation_summary.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "calculation",
+                    "number": 5,
+                    "title": "CALCULATION",
+                    "new_page": false,
+                    "variables": {
+                        "W_n": 9.6,
+                        "W_a": 0.8,
+                        "W_p": 0.4
+                    },
+                    "items": [
+                        "CR = W_n / W_a | round: 2",
+                        "PR = W_p / W_a | round: 2"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": true,
+                    "subsections": [
+                        {
+                            "title": "Page 1: 6T SRAM Cell Schematics & Testbench Setup",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3,
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2: Transient Simulation Waveforms (Read & Write Operations)",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            5
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "CONCLUSION",
+                    "new_page": false,
+                    "text": [
+                        "1. The 6T SRAM cell was successfully designed and simulated in 180nm CMOS technology, achieving a Cell Ratio ($CR = 12.00$) and Pull-up Ratio ($PR = 0.50$) that satisfy the read-stability and writeability criteria.",
+                        "2. Transient simulations verified robust functionality across all states: successfully demonstrating Write '1', data retention, Write '0', and non-destructive differential Read '0' without read disturbance."
+                    ]
+                }
+            ]
+        }
+    ]
+}

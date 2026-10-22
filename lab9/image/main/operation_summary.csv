@@ -1,0 +1,6 @@
+Time Interval , Operation Mode , $WL$ , $BL$ , $\overline{BL}$ , $SWS$ , Node $Q$ , Node $\overline{Q}$ , Observation
+0.0 to 2.7 ns , Retention (Hold) , 1.8 V , 0.0 V , 1.8 V , 1.8 V , 0.0 V , 1.8 V , Initial state '0' maintained stably
+2.7 to 6.7 ns , Write '1' Operation , 1.8 V , 1.8 V , 0.0 V , 1.8 V , 0.0 V to 1.8 V , 1.8 V to 0.0 V , Q flips to '1' at t = 4.0 ns
+6.7 to 8.0 ns , Precharge & Hold , 0.0 V , Precharge , Precharge , 1.8 V , 1.8 V , 0.0 V , Internal data '1' held securely
+8.0 to 11.5 ns , Write '0' Operation , 1.8 V , 0.0 V , 1.8 V , 1.8 V , 1.8 V to 0.0 V , 0.0 V to 1.8 V , Q flips back to '0' at t = 8.0 ns
+11.5 to 16.0 ns , Read '0' Operation , 1.8 V , Discharging , 1.8 V , 0.0 V , 0.0 V , 1.8 V , BL discharges; no read upset occurs
