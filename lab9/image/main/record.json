@@ -8,7 +8,7 @@
         {
             "id": 1,
             "path": "6t_sram_cir.png",
-            "title": "6T SRAM cell schematic ($W_n=9.6\\,\\mu\\text{m}, W_p=0.4\\,\\mu\\text{m}, W_a=0.8\\,\\mu\\text{m}$)"
+            "title": "6T SRAM cell schematic ($W_n=1.6\\,\\mu\\text{m}, W_p=0.4\\,\\mu\\text{m}, W_a=0.8\\,\\mu\\text{m}$)"
         },
         {
             "id": 2,
@@ -18,18 +18,14 @@
         {
             "id": 3,
             "path": "6t_sram_tb.png",
-            "title": "6T SRAM cell testbench schematic with write drivers and bitline loads"
+            "title": "6T SRAM cell testbench schematic ($C_{BL}=50\\text{ fF}, V_{DD}=1.8\\text{ V}$)"
         },
         {
             "id": 4,
-            "path": "6t_sram_sim_info.png",
-            "title": "ADE L simulation state & design variable setup"
-        },
-        {
-            "id": 5,
             "path": "6t_sram_waveform.png",
-            "title": "Transient waveforms demonstrating Write '1', Retention, Write '0', and Read '0' operations",
-            "text": "Signals: $WL$ (Wordline), $BL, \\overline{BL}$ (Bitlines), $Q, \\overline{Q}$ (Stored state), $SWS, \\overline{SWS}$ (Write driver control)"
+            "title": "Transient waveforms of Write '1', Hold, Write '0', Precharge ($BL=\\overline{BL}=1.8\\text{ V}$), and Read '0'",
+            "text": "Signals: $WL$ (Wordline), $BL, \\overline{BL}$ (Bitlines), $Q, \\overline{Q}$ (Stored state), $SWS, \\overline{SWS}$ (Write driver control)",
+            "rotation": 270
         }
     ],
     "experiments": [
@@ -75,7 +71,7 @@
                             "csv": "param.csv"
                         },
                         {
-                            "title": "SRAM Sizing Ratios & Stability Criteria",
+                            "title": "SRAM Sizing Ratios",
                             "csv": "sram_ratios.csv"
                         },
                         {
@@ -90,7 +86,7 @@
                     "title": "CALCULATION",
                     "new_page": false,
                     "variables": {
-                        "W_n": 9.6,
+                        "W_n": 1.6,
                         "W_a": 0.8,
                         "W_p": 0.4
                     },
@@ -120,8 +116,7 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            3,
-                                            4
+                                            3
                                         ]
                                     }
                                 ]
@@ -135,7 +130,7 @@
                                     {
                                         "type": "row",
                                         "elements": [
-                                            5
+                                            4
                                         ]
                                     }
                                 ]
@@ -149,8 +144,8 @@
                     "title": "CONCLUSION",
                     "new_page": false,
                     "text": [
-                        "1. The 6T SRAM cell was successfully designed and simulated in 180nm CMOS technology, achieving a Cell Ratio ($CR = 12.00$) and Pull-up Ratio ($PR = 0.50$) that satisfy the read-stability and writeability criteria.",
-                        "2. Transient simulations verified robust functionality across all states: successfully demonstrating Write '1', data retention, Write '0', and non-destructive differential Read '0' without read disturbance."
+                        "1. The 6T SRAM cell was successfully designed and simulated in 180nm CMOS technology, achieving a Cell Ratio ($CR = 2.00$) for stable read ($CR \\geq 1.2$) and a Pull-up Ratio ($PR = 0.50$) for stable write ($PR \\leq 0.6$).",
+                        "2. Transient simulations verified robust functionality across all states: successfully demonstrating Write '1', data retention, Write '0', precharge when both bitlines are $1.8\\text{ V}$, and non-destructive differential Read '0' where $BL$ discharges to $0\\text{ V}$ without read disturbance."
                     ]
                 }
             ]
