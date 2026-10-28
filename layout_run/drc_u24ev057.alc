@@ -1,2 +1,2 @@
-!<alc> v1 30
-0    7    0 domino_nand layout lab3_domino
+!<alc> v1 40
+0    3    0 static_nand2 layout lab10_decoder_static

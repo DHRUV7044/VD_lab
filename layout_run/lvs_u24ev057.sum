@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:29 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
 
-run on vlsilab-client44.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Sep 16 12:50:12 2026
+run on vlsilab-client38.eced.svnit.ac.in from /tools/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Wed Oct 28 19:38:48 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -20,8 +20,8 @@ Echoing run specific file...
     ;----------------------------------------------------------------------------
     
     avParameters(
-      ?inputLayout ( "df2" "lab5_D_FF" )
-      ?cellName "D_FF_TSPC"
+      ?inputLayout ( "df2" "lab10_decoder_static" )
+      ?cellName "static_nor2"
       ?viewName "layout"
       ?runName "lvs_u24ev057"
       ?workingDirectory "./VD_lab/layout_run"
@@ -1692,8 +1692,8 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap  489.9M virt       0 pf
-LVS preprocessing. . . .      0 cpu     10 elap   98.3M virt       0 pf
+reading DFII data. . . .      0 cpu      0 elap  489.8M virt       0 pf
+LVS preprocessing. . . .      0 cpu     20 elap   98.3M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap   98.3M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap   98.3M virt       0 pf
 small cell flattening. .      0 cpu      0 elap   98.3M virt       0 pf
@@ -1716,7 +1716,7 @@ duplicate inst removal .      0 cpu      0 elap  100.8M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  100.8M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  100.8M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
+TOTALS (secs). . . . . .      0 cpu     20 elap  489.8M virt       0 pf
 
 
 ************************************************************************
@@ -1768,7 +1768,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 12
     Metal1_d = geomOr( Metal1_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 13
     Metal1_f = geomOr( Metal1_f ) 
@@ -1776,7 +1776,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 14
     Metal1 = geomOr( Metal1_d Metal1_f ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 15
     Metal2_d = geomOr( Metal2_d ) 
@@ -1840,11 +1840,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 30
     Metal1_pin = geomOr( Metal1_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 33
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 15
 
  ;# 31
     Metal1 = geomOr( Metal1 Metal1_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 32
     Metal2_pin = geomOr( Metal2_pin ) 
@@ -1908,7 +1908,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 47
     Nimp = geomOr( Nimp ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 3
 
  ;# 48
     Nimp_pin = geomOr( Nimp_pin ) 
@@ -1916,27 +1916,27 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 49
     Nimp = geomOr( Nimp Nimp_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 3
 
  ;# 50
     Nwell = geomOr( Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 51
     Nwell_pin = geomOr( Nwell_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 52
     Nwell = geomOr( Nwell Nwell_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 53
  ;  region( Nwell )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 54
     Pimp = geomOr( Pimp ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 3
 
  ;# 55
     Pimp_pin = geomOr( Pimp_pin ) 
@@ -1944,23 +1944,23 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 56
     Pimp = geomOr( Pimp Pimp_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 3
 
  ;# 57
     Poly = geomOr( Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 2
 
  ;# 58
     Poly_pin = geomOr( Poly_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 24
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
 
  ;# 59
     Poly = geomOr( Poly Poly_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 2
 
  ;# 60
  ;  region( Poly )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 2
 
  ;# 61
     Pwell = geomOr( Pwell ) 
@@ -2048,7 +2048,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 82
     M1term = geomAndNot( Metal1 M1dummy ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 83
     dataReduction( M1term ) 
@@ -2056,7 +2056,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 84
  ;  region( M1term )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 85
     M2dummy = geomOr( M2dummy ) 
@@ -2180,23 +2180,23 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 115
     Oxide = geomOr( Oxide ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 6
 
  ;# 116
     NPLUS = geomAnd( Nimp Oxide ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 3
 
  ;# 117
     NSD = geomAndNot( NPLUS Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 118
     Cont = geomOr( Cont ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 55
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 20
 
  ;# 119
     NSDcont = geomAnd( Cont NPLUS ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 6
 
  ;# 120
     dataReduction( NSDcont ) 
@@ -2208,7 +2208,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 122
     NSDterm = geomAndNot( NSD Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 123
     dataReduction( NSDterm ) 
@@ -2216,7 +2216,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 124
  ;  region( NSDterm )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 125
     NSDcont = groupVias(  via(NSDcont) conn1(M1term) conn2(NSDterm) )
@@ -2228,7 +2228,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 127
  ;  region( NSDcont )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 6
 
  ;# 128
     ResWdum = geomOr( ResWdum ) 
@@ -2244,7 +2244,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 131
     NWELLterm = geomAndNot( Nwell ResWdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 132
     dataReduction( NWELLterm ) 
@@ -2252,7 +2252,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 133
  ;  region( NWELLterm )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 134
     NBVIA = geomAnd( NWELLterm Nburied ) 
@@ -2268,7 +2268,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 137
     NWVIA = geomAnd( NSDterm NWELLterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 1
 
  ;# 138
     dataReduction( NWVIA ) 
@@ -2276,11 +2276,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 139
  ;  region( NWVIA )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 140
     POLYcont = geomAnd( Cont Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 141
     dataReduction( POLYcont ) 
@@ -2288,15 +2288,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 142
     POLYterm = geomAndNot( Poly Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 2
 
  ;# 143
     dataReduction( POLYterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
 
  ;# 144
  ;  region( POLYterm )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 145
     POLYcont = groupVias(  via(POLYcont) conn1(M1term) conn2(POLYterm) )
@@ -2308,19 +2308,19 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 147
  ;  region( POLYcont )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 148
     PPLUS = geomAnd( Oxide Pimp ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 3
 
  ;# 149
     PSD = geomAndNot( PPLUS Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 5
 
  ;# 150
     PSDcont = geomAnd( Cont PPLUS ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 12
 
  ;# 151
     dataReduction( PSDcont ) 
@@ -2328,7 +2328,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 152
     PSDterm = geomAndNot( PSD Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 5
 
  ;# 153
     dataReduction( PSDterm ) 
@@ -2336,7 +2336,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 154
  ;  region( PSDterm )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 5
 
  ;# 155
     PSDcont = groupVias(  via(PSDcont) conn1(M1term) conn2(PSDterm) )
@@ -2348,7 +2348,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 157
  ;  region( PSDcont )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 12
 
  ;# 158
     Via2 = geomOr( Via2 ) 
@@ -2464,7 +2464,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 186
     L83619 = geomAndNot( NSDterm Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 4
 
  ;# 187
     DIOdummy = geomOr( DIOdummy ) 
@@ -2472,7 +2472,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 188
     NDIODE = geomAnd( DIOdummy L83619 ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 189
  ;  region( NDIODE )
@@ -2604,15 +2604,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 221
     L8539 = geomAnd( Nwell POLYterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 2
 
  ;# 222
     L93040 = geomAnd( L8539 PPLUS ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 2
 
  ;# 223
     PMOSCAP = geomAnd( Capdum L93040 ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 224
  ;  region( PMOSCAP )
@@ -2648,11 +2648,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 232
     L26152 = geomAndNot( POLYterm Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 233
     L2255 = geomAnd( L26152 NPLUS ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 2
 
  ;# 234
     L68673 = geomAnd( Capdum L2255 ) 
@@ -2680,15 +2680,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 240
     L56230 = geomAndNot( L93040 ThickOxide ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 241
     PMOS = geomAndNot( L56230 Capdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 242
  ;  region( PMOS )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 243
     PNPdummy = geomOr( PNPdummy ) 
@@ -2716,11 +2716,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 249
     L43094 = geomOr( Nburied Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 1
 
  ;# 250
     L15547 = geomOr( L43094 Pwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 1
 
  ;# 251
     bulk = geomOr( bulk ) 
@@ -2748,15 +2748,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 257
     L6892 = geomAnd( PSDterm PSUB ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 2
 
  ;# 258
     L56122 = geomAndNot( L6892 Nburied ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 259
     SUBVIA = geomAndNot( L56122 Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 260
     dataReduction( SUBVIA ) 
@@ -2764,19 +2764,19 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 261
  ;  region( SUBVIA )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 262
     L53692 = geomAndNot( L2255 ThickOxide ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 263
     L70081 = geomAndNot( L53692 Capdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 264
     ISONMOS = geomAnd( L70081 Nburied ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 265
  ;  region( ISONMOS )
@@ -2788,15 +2788,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 267
     dataReduction( T?244 ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 268
     L85630 = _geomPushDown( T?244 Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 269
     L90545 = geomAndNot( L85630 Nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 270
  ;  region( L90545 )
@@ -2812,7 +2812,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 273
     ISOPWELL = geomAndNot( L9133 Pwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 274
     dataReduction( ISOPWELL ) 
@@ -2836,11 +2836,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 279
     NMOS = geomAndNot( L70081 Nburied ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 280
  ;  region( NMOS )
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 281
     L68469 = geomAnd( L93040 ThickOxide ) 
@@ -2856,11 +2856,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 284
     PMOSHV = geomAndNot( L24157 RFdummy ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 285
  ;  region( PMOSHV )
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 286
     PMOSRF = geomAnd( L24157 RFdummy ) 
@@ -2868,7 +2868,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 287
  ;  region( PMOSRF )
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 288
     L28865 = geomAnd( L2255 ThickOxide ) 
@@ -2892,7 +2892,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 293
     ISONMOSRF = geomAnd( L93445 RFdummy ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 294
  ;  region( ISONMOSRF )
@@ -3140,27 +3140,27 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 355
  ;  via( POLYcont M1term )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 356
  ;  via( POLYcont POLYterm )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 357
  ;  via( PSDcont M1term )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 12
 
  ;# 358
  ;  via( PSDcont PSDterm )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 12
 
  ;# 359
  ;  via( NSDcont M1term )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
 
  ;# 360
  ;  via( NSDcont NSDterm )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 22
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
 
  ;# 361
  ;  label( 
@@ -3217,11 +3217,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 365
     T?284 = geomCat( NSDterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 366
  ;  region( T?284 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 367
     NWVIA_StampErrorFloat = geomOutside( NWVIA T?284  )
@@ -3256,11 +3256,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 374
     T?291 = geomCat( NWVIA ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 375
  ;  region( T?291 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 376
     NWELLterm_StampErrorFloat = geomOutside( NWELLterm T?291  )
@@ -3295,11 +3295,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 383
     T?298 = geomCat( PSDterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 384
  ;  region( T?298 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 14
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 5
 
  ;# 385
     JVARterm_StampErrorFloat = geomOutside( JVARterm T?298  )
@@ -3544,11 +3544,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 440
     T?347 = geomCat( SUBVIA ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 2
 
  ;# 441
  ;  region( T?347 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 2
 
  ;# 442
     PSUB_StampErrorFloat = geomOutside( PSUB T?347  )
@@ -3583,11 +3583,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 449
     T?354 = geomCat( NWELLterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 450
  ;  region( T?354 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 1
 
  ;# 451
     NBVIA_StampErrorFloat = geomOutside( NBVIA T?354  )
@@ -5761,59 +5761,59 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 992
     CALC_T?743 = calculateParameter( ATTACH_T?742 * 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 993
     attachParameter( CALC_T?743 "l" NMOSCAP )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 994
     T?1369 = geomAvoiding( ISONMOSCAP ISOPWELL ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 995
     T?1370 = geomAndNot( ISONMOSCAP T?1369 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 996
     T?1229 = _geomExtractMerge( T?1370 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 997
     unstable_device_for_ISONMOSCAP_MOS_16 = unstableDevices( "nmoscap" ISONMOSCAP_MOS_16 T?1229)
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 998
     dataReduction( T?1229 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 999
  ;  region( T?1229 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1000
     T?1371 = _geomPushDown( POLYterm T?1229 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1001
     T?1372 = geomMerge( T?1371 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1002
     dataReduction( T?1372 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1003
     T?1373 = _geomPushDown( NSDterm T?1229 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1004
     T?1374 = geomMerge( T?1373 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1005
     dataReduction( T?1374 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1006
     extractMOS( "nmoscap" T?1229 POLYterm( "G" ) NSDterm( "S" "D" ) ISOPWELL( "B" ) flagMalformed  cellView("nmoscap ivpcell gpdk180"))
@@ -5909,51 +5909,51 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1029
     CALC_T?770 = calculateParameter( ATTACH_T?769 * 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1030
     attachParameter( CALC_T?770 "l" ISONMOSCAP )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1031
     T?1232 = _geomExtractMerge( INDUCTOR ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1032
     unstable_device_for_INDUCTOR_Device_17 = unstableDevices( "ind" INDUCTOR_Device_17 T?1232)
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1033
     dataReduction( T?1232 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1034
  ;  region( T?1232 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1035
     T?1376 = _geomPushDown( INDterm1 T?1232 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1036
     T?1377 = geomMerge( T?1376 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1037
     dataReduction( T?1377 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1038
     T?1378 = _geomPushDown( INDterm2 T?1232 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1039
     T?1379 = geomMerge( T?1378 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1040
     dataReduction( T?1379 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1041
     extractDevice( "ind" T?1232 INDterm1( "PLUS" ) INDterm2( "MINUS" ) flagMalformed  cellView("ind ivpcell gpdk180"))
@@ -5961,83 +5961,83 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1042
     unstable_device_for_INDUCTOR_Device_17 = unstableDevices( "ind" INDUCTOR_Device_17 INDUCTOR_Device_17)
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1043
     dataReduction( INDUCTOR_Device_17 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1044
     dataReduction( INDUCTOR_Device_17_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1045
  ;  region( INDUCTOR_Device_17_shape )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1046
  ;  region( INDUCTOR_Device_17 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1047
     T?1234 = geomOr( T?1232 T?1375 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1048
     errorLayer( geomAndNot( T?1234 INDUCTOR_Device_17 ) "malformed device INDUCTOR" ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1049
     T?1235 = _geomExtractMerge( VPNP ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1050
     unstable_device_for_VPNP_BJT_18 = unstableDevices( "vpnp" VPNP_BJT_18 T?1235)
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1051
     dataReduction( T?1235 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1052
  ;  region( T?1235 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1053
     T?1381 = _geomPushDown( PSUB T?1235 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1054
     T?1382 = geomMerge( T?1381 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1055
     dataReduction( T?1382 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1056
     T?1383 = _geomPushDown( NWELLterm T?1235 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1057
     T?1384 = geomMerge( T?1383 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1058
     dataReduction( T?1384 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1059
     T?1385 = _geomPushDown( PSDterm T?1235 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1060
     T?1386 = geomMerge( T?1385 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1061
     dataReduction( T?1386 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1062
     extractBJT( "vpnp" T?1235 PSUB( "C" ) NWELLterm( "B" ) PSDterm( "E" ) flagMalformed  cellView("vpnp ivpcell gpdk180"))
@@ -6077,47 +6077,47 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1071
     attachParameter( ATTACH_T?786 "area" VPNP )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1072
     T?1238 = _geomExtractMerge( PNP ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1073
     unstable_device_for_PNP_BJT_19 = unstableDevices( "pnp" PNP_BJT_19 T?1238)
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1074
     dataReduction( T?1238 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1075
  ;  region( T?1238 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1076
     T?1388 = _geomPushDown( Pwell T?1238 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1077
     T?1389 = geomMerge( T?1388 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1078
     dataReduction( T?1389 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1079
     T?1390 = _geomPushDown( NWELLterm T?1238 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1080
     T?1391 = geomMerge( T?1390 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1081
     dataReduction( T?1391 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1082
     T?1392 = _geomPushDown( PSDterm T?1238 and ) 
@@ -6129,7 +6129,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1084
     dataReduction( T?1393 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1085
     extractBJT( "pnp" T?1238 Pwell( "C" ) NWELLterm( "B" ) PSDterm( "E" ) flagMalformed  cellView("pnp ivpcell gpdk180"))
@@ -6169,23 +6169,23 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1094
     attachParameter( ATTACH_T?796 "area" PNP )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1095
     T?1241 = _geomExtractMerge( NPN ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1096
     unstable_device_for_NPN_BJT_20 = unstableDevices( "npn" NPN_BJT_20 T?1241)
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1097
     dataReduction( T?1241 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1098
  ;  region( T?1241 )
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1099
     T?1395 = _geomPushDown( Nburied T?1241 and ) 
@@ -6197,7 +6197,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1101
     dataReduction( T?1396 ) 
-    cpu: 0.0   elapsed: 0   virtual: 125M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 0
 
  ;# 1102
     T?1397 = _geomPushDown( Pwell T?1241 and ) 
@@ -6269,11 +6269,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1119
     T?1402 = geomAndNot( NMOS T?1401 ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 1120
     T?1244 = _geomExtractMerge( T?1402 ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 1121
     unstable_device_for_NMOS_MOS_21 = unstableDevices( "nmos" NMOS_MOS_21 T?1244)
@@ -6285,7 +6285,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1123
  ;  region( T?1244 )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 2
 
  ;# 1124
     T?1403 = _geomPushDown( POLYterm T?1244 and ) 
@@ -6329,15 +6329,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1134
  ;  region( NMOS_MOS_21_shape )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1135
  ;  region( NMOS_MOS_21 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1136
     T?1246 = geomOr( T?1244 T?1401 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1137
     errorLayer( geomAndNot( T?1246 NMOS_MOS_21 ) "malformed device NMOS" ) 
@@ -6345,7 +6345,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1138
     EDGE_T?821 = drc( NMOS NSDterm sep == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1139
     dataReduction( EDGE_T?821 ) 
@@ -6353,11 +6353,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1140
     T?1503 = drcEdgePrep( EDGE_T?821 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1141
  ;  region( T?1503 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1142
     ATTACH_T?823  = measureParameter( length ( NMOS butting NSDterm ) 0.5 ) 
@@ -6381,15 +6381,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1147
     T?828 = geomAndNot( NMOS NSDterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1148
  ;  region( T?828 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1149
     EDGE_T?829  = geomGetEdge( T?828 outside NSDterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1150
     dataReduction( EDGE_T?829 ) 
@@ -6397,7 +6397,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1151
  ;  region( EDGE_T?829 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1152
     ATTACH_T?832  = measureParameter( length ( NMOS outside NSDterm ) 0.5 ) 
@@ -6413,11 +6413,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1155
     MPI_T?838 = geomButtOrOver( NSDterm NMOS ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1156
  ;  region( MPI_T?838 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1157
     ATTACH_T?839  = measureParameter( area ( MPI_T?838 ) ) 
@@ -7349,11 +7349,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1389
     T?1438 = geomAndNot( PMOS T?1437 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1390
     T?1262 = _geomExtractMerge( T?1438 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1391
     unstable_device_for_PMOS_MOS_27 = unstableDevices( "pmos" PMOS_MOS_27 T?1262)
@@ -7365,7 +7365,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1393
  ;  region( T?1262 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1394
     T?1439 = _geomPushDown( POLYterm T?1262 and ) 
@@ -7409,15 +7409,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1404
  ;  region( PMOS_MOS_27_shape )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1405
  ;  region( PMOS_MOS_27 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1406
     T?1264 = geomOr( T?1262 T?1437 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1407
     errorLayer( geomAndNot( T?1264 PMOS_MOS_27 ) "malformed device PMOS" ) 
@@ -7425,7 +7425,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1408
     EDGE_T?1043 = drc( PMOS PSDterm sep == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1409
     dataReduction( EDGE_T?1043 ) 
@@ -7433,11 +7433,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1410
     T?1509 = drcEdgePrep( EDGE_T?1043 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1411
  ;  region( T?1509 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1412
     ATTACH_T?1045  = measureParameter( length ( PMOS butting PSDterm ) 0.5 ) 
@@ -7461,15 +7461,15 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1417
     T?1050 = geomAndNot( PMOS PSDterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1418
  ;  region( T?1050 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 2
 
  ;# 1419
     EDGE_T?1051  = geomGetEdge( T?1050 outside PSDterm ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1420
     dataReduction( EDGE_T?1051 ) 
@@ -7477,7 +7477,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1421
  ;  region( EDGE_T?1051 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 12
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 4
 
  ;# 1422
     ATTACH_T?1054  = measureParameter( length ( PMOS outside PSDterm ) 0.5 ) 
@@ -7493,11 +7493,11 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 
  ;# 1425
     MPI_T?1060 = geomButtOrOver( PSDterm PMOS ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 3
 
  ;# 1426
  ;  region( MPI_T?1060 )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 3
 
  ;# 1427
     ATTACH_T?1061  = measureParameter( area ( MPI_T?1060 ) ) 
@@ -8243,7 +8243,7 @@ TOTALS (secs). . . . . .      0 cpu     10 elap  489.9M virt       0 pf
 Total cells checked = 1
 Total rules checked = 1610
 
-Run time = 22.00 seconds
+Run time = 29.00 seconds
 CPU time =  0.17 seconds
 VM HWM   =   490 Mbytes
 Disk HWM =     0 Mbytes

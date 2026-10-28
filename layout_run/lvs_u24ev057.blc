@@ -1,4 +1,4 @@
 "pmos(MOS)" "pmos(MOS)"
 "nmos(MOS)" "nmos(MOS)"
-"D_FF_TSPC layout lab5_D_FF" "D_FF_TSPC schematic lab5_D_FF" "nmos(MOS)" "pmos(MOS)"
+"static_nor2 layout lab10_decoder_static" "static_nor2 schematic lab10_decoder_static" "nmos(MOS)" "pmos(MOS)"
 Devices filtered from layout

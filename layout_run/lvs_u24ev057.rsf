@@ -10,8 +10,8 @@
 ;----------------------------------------------------------------------------
 
 avParameters(
-  ?inputLayout ( "df2" "lab5_D_FF" )
-  ?cellName "D_FF_TSPC"
+  ?inputLayout ( "df2" "lab10_decoder_static" )
+  ?cellName "static_nor2"
   ?viewName "layout"
   ?runName "lvs_u24ev057"
   ?workingDirectory "./VD_lab/layout_run"

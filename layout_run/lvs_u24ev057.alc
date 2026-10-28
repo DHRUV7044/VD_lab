@@ -1,2 +1,2 @@
-!<alc> v1 26
-0    7    0 D_FF_TSPC layout lab5_D_FF
+!<alc> v1 39
+0    4    0 static_nor2 layout lab10_decoder_static
