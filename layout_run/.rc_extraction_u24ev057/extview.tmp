@@ -1,7 +1,7 @@
 *
 *
 *
-*                       LINUX           Wed Oct 28 22:59:23 2026
+*                       LINUX           Thu Oct 29 14:23:45 2026
 *
 *
 *
@@ -19,7 +19,7 @@
 *
 
 *
-.SUBCKT static_nor3 vdd gnd vin1 vin2 vin3 vout
+.SUBCKT dyna_not vdd gnd clk vin vout
 *
 *
 *  caps2d version: 9
@@ -28,152 +28,82 @@
 *       TRANSISTOR CARDS
 *
 *
-MavD21_1	vout#4	vin1#4	gnd#11	gnd#14	nmos#20ivpcell#20gpdk180
-+ L=1.8e-07	W=4e-07
-+ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
-+ simW=4e-07 fw=4e-07
-MavD21_2	vout#7	vin2#4	gnd#9	gnd#13	nmos#20ivpcell#20gpdk180
-+ L=1.8e-07	W=4e-07
-+ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
-+ simW=4e-07 fw=4e-07
-MavD21_3	vout#6	vin3#4	gnd#7	gnd#12	nmos#20ivpcell#20gpdk180
-+ L=1.8e-07	W=4e-07
-+ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
-+ simW=4e-07 fw=4e-07
-MavD27_1	avC7#2	vin1#1	vdd#11	vdd	pmos#20ivpcell#20gpdk180
-+ L=1.8e-07	W=2.4e-06
-+ AD=1.44e-12	AS=1.44e-12	PD=6e-06	PS=6e-06
-+ simW=2.4e-06 fw=2.4e-06
-MavD27_2	avC8#2	vin2#1	avC7	vdd	pmos#20ivpcell#20gpdk180
-+ L=1.8e-07	W=2.4e-06
-+ AD=1.44e-12	AS=1.44e-12	PD=6e-06	PS=6e-06
-+ simW=2.4e-06 fw=2.4e-06
-MavD27_3	vout#5	vin3#1	avC8	vdd	pmos#20ivpcell#20gpdk180
-+ L=1.8e-07	W=2.4e-06
-+ AD=1.44e-12	AS=1.44e-12	PD=6e-06	PS=6e-06
-+ simW=2.4e-06 fw=2.4e-06
+MavD21_1	avC6#2	clk#4	gnd#10	gnd#7	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=4.8e-13	AS=4.8e-13	PD=2.8e-06	PS=2.8e-06
++ simW=8e-07 fw=8e-07
+MavD21_2	vout#3	vin#1	avC6	gnd#5	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=4.8e-13	AS=4.8e-13	PD=2.8e-06	PS=2.8e-06
++ simW=8e-07 fw=8e-07
+MavD27_1	vout#2	clk#1	vdd#3	vdd	pmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=4.8e-13	AS=4.8e-13	PD=2.8e-06	PS=2.8e-06
++ simW=8e-07 fw=8e-07
 *
 *
 *       RESISTOR AND CAP/DIODE CARDS
 *
-Rf1	vin1	vin1#2	5.625333	$mt1	$W=3e-07	$X=1.415 $Y=8.5
-Rf2	avC7	avC7#2	2.918364	$mt1	$W=2.2e-06
-+ $X=5.3405 $Y=11.2
-Rf3	vin2	vin2#2	6.675333	$mt1	$W=3e-07	$X=3.665 $Y=7.5
-Rf4	avC8	avC8#2	2.918364	$mt1	$W=2.2e-06
-+ $X=9.8405 $Y=11.2
-Rf5	vin3	vin3#2	7.725333	$mt1	$W=3e-07	$X=5.915 $Y=6.5
-Rf6	vout	vout#1	0.502358	$mt1	$W=3e-07
-+ $X=13.865 $Y=7.5
-Rf7	vout#1	vout#2	0.563687	$mt1	$W=4e-07
-+ $X=12.68 $Y=6.0425
-Rf8	vout#2	vout#3	0.787687	$mt1	$W=4e-07
-+ $X=10.43 $Y=4.535
-Rf9	vout#3	vout#4	7.987556	$mt1	$W=4e-07
-+ $X=5.93 $Y=4.535
-Rf10	vout#1	vout#5	2.271660	$mt1	$W=3e-07
-+ $X=12.405 $Y=7.5
-Rf11	vout#2	vout#6	7.140975	$mt1	$W=4e-07	$X=12.68 $Y=3.4
-Rf12	vout#3	vout#7	7.204988	$mt1	$W=4e-07
-+ $X=8.18 $Y=3.8675
-Rf13	vdd#1	vdd#2	0.666483	$mt1	$W=3e-07
-+ $X=13.8405 $Y=14.85
-Rf14	vdd#2	vdd	1.058599	$mt1	$W=3e-07
-+ $X=9.84 $Y=14.85
-Rf15	vdd	vdd#3	1.116025	$mt1	$W=3e-07
-+ $X=4.95 $Y=14.85
-Rf16	vdd#3	vdd#4	0.626025	$mt1	$W=3e-07
-+ $X=1.25 $Y=14.85
-Rf17	vdd#2	vdd#6	0.087530	$mt1	$W=1.18e-06
-+ $X=12.09 $Y=14.0425
-Rf18	vdd#6	vdd#5	7.000000	$mt1	$W=1.18e-06
-+ $X=12.09 $Y=13.225
-Rf19	vdd	vdd#8	0.096398	$mt1	$W=1.18e-06
-+ $X=7.59 $Y=14.0425
-Rf20	vdd#8	vdd#7	7.000000	$mt1	$W=1.18e-06
-+ $X=7.59 $Y=13.225
-Rf21	vdd#3	vdd#10	0.258213	$mt1	$W=4e-07
-+ $X=2.7 $Y=14.0625
-Rf22	vdd#10	vdd#11	1.754375	$mt1	$W=4e-07
-+ $X=2.7 $Y=12.6625
-Rf23	vdd#10	vdd#9	7.136500	$mt1	$W=4e-07
-+ $X=3.09 $Y=13.225
-Rf24	vdd#5	vdd#6	7.000000	$mt1	$W=1.18e-06
-+ $X=12.48 $Y=13.225
-Rf25	vdd#7	vdd#8	7.000000	$mt1	$W=1.18e-06
-+ $X=7.98 $Y=13.225
-Rf26	vdd#9	vdd#10	7.000000	$mt1	$W=4e-07
-+ $X=2.7 $Y=13.225
-Rf27	gnd#1	gnd#2	0.812575	$mt1	$W=3e-07
-+ $X=13.3505 $Y=0.15
-Rf28	gnd#2	gnd	0.929358	$mt1	$W=3e-07
-+ $X=9.4005 $Y=0.15
-Rf29	gnd	gnd#3	0.112691	$mt1	$W=3e-07	$X=7.35 $Y=0.15
-Rf30	gnd#3	gnd#4	1.042050	$mt1	$W=3e-07	$X=4.75 $Y=0.15
-Rf31	gnd#4	gnd#5	0.579358	$mt1	$W=3e-07	$X=1.15 $Y=0.15
-Rf32	gnd#2	gnd#6	0.308033	$mt1	$W=4e-07
-+ $X=11.5 $Y=1.0875
-Rf33	gnd#6	gnd#7	7.194196	$mt1	$W=4e-07
-+ $X=11.5 $Y=2.6375
-Rf34	gnd#3	gnd#8	0.308033	$mt1	$W=4e-07	$X=7 $Y=1.0875
-Rf35	gnd#8	gnd#9	7.194196	$mt1	$W=4e-07	$X=7 $Y=2.6375
-Rf36	gnd#4	gnd#10	0.308033	$mt1	$W=4e-07
-+ $X=2.5 $Y=1.0875
-Rf37	gnd#10	gnd#11	7.194196	$mt1	$W=4e-07
-+ $X=2.5 $Y=2.6375
-Rf38	gnd#6	gnd#12	2.407947	$mt1	$W=4e-07
-+ $X=11.795 $Y=2.075
-Rf39	gnd#8	gnd#13	2.407947	$mt1	$W=4e-07
-+ $X=7.295 $Y=2.075
-Rf40	gnd#10	gnd#14	2.407947	$mt1	$W=4e-07
-+ $X=2.795 $Y=2.075
-Rg1	vin1#1	vin1#2	61.340061	$poly	$W=1.8e-07
-+ $X=3.09 $Y=9.4005
-Rg3	vin1#2	vin1#4	211.340057	$poly	$W=1.8e-07	$X=3.09 $Y=5.8
-Rg4	vin2#1	vin2#2	103.006729	$poly	$W=1.8e-07
-+ $X=7.59 $Y=8.9005
-Rg6	vin2#2	vin2#4	169.673386	$poly	$W=1.8e-07	$X=7.59 $Y=5.3
-Rg7	vin3#1	vin3#2	144.673401	$poly	$W=1.8e-07
-+ $X=12.09 $Y=8.4005
-Rg9	vin3#2	vin3#4	128.006729	$poly	$W=1.8e-07	$X=12.09 $Y=4.8
+Rf1	clk	clk#2	5.625333	$mt1	$W=3e-07	$X=1.415 $Y=5.7
+Rf2	vin	vin#2	6.353333	$mt1	$W=3e-07	$X=2.975 $Y=5
+Rf3	avC6	avC6#2	14.375667	$mt1	$W=6e-07
++ $X=5.0905 $Y=3.4
+Rf4	gnd#1	gnd#2	0.666483	$mt1	$W=3e-07
++ $X=8.8405 $Y=0.15
+Rf5	gnd#2	gnd	0.475266	$mt1	$W=3e-07
++ $X=5.7505 $Y=0.15
+Rf6	gnd	gnd#3	0.433266	$mt1	$W=3e-07	$X=4.34 $Y=0.15
+Rf7	gnd#3	gnd#4	0.708600	$mt1	$W=3e-07	$X=1.25 $Y=0.15
+Rf8	gnd#2	gnd#6	0.111258	$mt1	$W=1.18e-06
++ $X=7.09 $Y=1.1575
+Rf9	gnd#6	gnd#5	7.000000	$mt1	$W=1.18e-06
++ $X=7.09 $Y=2.175
+Rf10	gnd#3	gnd#8	0.111258	$mt1	$W=1.18e-06
++ $X=3.09 $Y=1.1575
+Rf12	gnd#8	gnd#10	7.223961	$mt1	$W=4e-07
++ $X=2.7 $Y=2.7875
+Rf13	gnd#5	gnd#6	7.000000	$mt1	$W=1.18e-06
++ $X=7.48 $Y=2.175
+Rf14	gnd#7	gnd#8	7.000000	$mt1	$W=1.18e-06
++ $X=3.48 $Y=2.175
+Rf15	gnd#7	gnd#8	7.000000	$mt1	$W=1.18e-06	$X=2.7 $Y=2.175
+Rf16	vout	vout#1	0.524364	$mt1	$W=3e-07	$X=8.74 $Y=5
+Rf17	vout#1	vout#2	8.442261	$mt1	$W=3e-07	$X=7.48 $Y=6.2
+Rf18	vout#1	vout#3	7.355420	$mt1	$W=3e-07
++ $X=7.48 $Y=4.275
+Rf19	vdd	vdd#2	0.769093	$mt1	$W=3e-07
++ $X=3.5125 $Y=9.85
+Rf20	vdd#2	vdd#3	7.214375	$mt1	$W=4e-07
++ $X=2.7 $Y=8.0125
+Rf21	vdd#2	vdd#1	7.136500	$mt1	$W=4e-07
++ $X=3.09 $Y=8.625
+Rf22	vdd#1	vdd#2	7.000000	$mt1	$W=3e-07	$X=2.7 $Y=8.625
+Rg1	clk#1	clk#2	53.006725	$poly	$W=1.8e-07
++ $X=3.09 $Y=6.5005
+Rg3	clk#2	clk#4	78.006729	$poly	$W=1.8e-07	$X=3.09 $Y=4.6
+Rg4	vin#1	vin#2	55.200645	$poly	$W=1.8e-07
++ $X=7.09 $Y=4.5995
 *
 *       CAPACITOR CARDS
 *
 *
-C1	vdd	gnd	4.72288e-16	$X=8.2055 $Y=3.2435
-C2	vin1	gnd	1.99372e-16	$X=3.837 $Y=5.09
-C3	vin2	gnd	5.31015e-16	$X=6.0275 $Y=2.786
-C4	vin3	gnd	7.29087e-16	$X=6.98 $Y=1.7835
-C5	vout	gnd	1.4761e-16	$X=12.274 $Y=4.881
-C6	avC8	gnd	5.52258e-16	$X=8.6465 $Y=1.1815
-C7	avC7	gnd	5.62003e-16	$X=8.226 $Y=1.1815
-C8	vin3#1	gnd	3.12608e-16	$X=10.04 $Y=4.791
-C9	vin2#1	gnd	2.00481e-16	$X=7.998 $Y=5.237
-C10	vin1#1	gnd	1.98944e-16	$X=5.647 $Y=5.75
-C11	vin3#4	gnd	2.20044e-16	$X=10.673 $Y=2.3755
-C12	vin2#4	gnd	2.62073e-16	$X=7.929 $Y=2.3325
-C13	vin1#4	gnd	3.28773e-16	$X=5.6055 $Y=2.296
-C14	vout#6	gnd	5.27999e-17	$X=10.554 $Y=1.693
-C15	vdd#5	gnd	1.42321e-16	$X=9.239 $Y=3.227
-C16	vout#7	gnd	9.48336e-17	$X=8.289 $Y=1.5385
-C17	vdd#7	gnd	1.41667e-16	$X=8.192 $Y=3.227
-C18	vout#4	gnd	3.6548e-16	$X=7.1625 $Y=1.023
-C19	vdd#9	gnd	1.11235e-16	$X=7.348 $Y=2.6825
-C20	vout#5	gnd	3.47099e-16	$X=9.1715 $Y=2.257
-C21	avC8#2	gnd	5.49986e-16	$X=8.3765 $Y=1.181
-C22	avC7#2	gnd	5.39221e-16	$X=7.9565 $Y=1.181
-C23	vdd#11	gnd	3.014e-16	$X=7.2415 $Y=2.3735
-C24	vout#1	gnd	5.36458e-16	$X=9.657 $Y=2.11
-C25	vout#2	gnd	5.05626e-16	$X=9.4375 $Y=1.2775
-C26	vout#3	gnd	5.47685e-16	$X=8.3315 $Y=1.065
-C27	vdd#4	gnd	1.58097e-16	$X=3.561 $Y=9.2795
-C28	vdd#1	gnd	1.514e-16	$X=12.2365 $Y=9.54
-C29	vdd#2	gnd	4.00872e-16	$X=9.257 $Y=3.5625
-C30	vdd#3	gnd	3.63845e-16	$X=6.611 $Y=4.618
-C31	vin1#2	gnd	6.54573e-16	$X=6.636 $Y=2.5145
-C32	vin2#2	gnd	8.05405e-16	$X=7.9535 $Y=1.7605
-C33	vin3#2	gnd	1.11213e-15	$X=8.7485 $Y=1.3055
+C1	vdd	gnd	6.42153e-16	$X=5.35 $Y=1.881
+C2	clk	gnd	2.25592e-16	$X=2.879 $Y=2.92
+C3	vin	gnd	4.62056e-16	$X=3.9005 $Y=1.709
+C4	vout	gnd	1.46119e-16	$X=7.329 $Y=2.711
+C5	avC6	gnd	2.81166e-16	$X=5.3215 $Y=0.8405
+C6	clk#1	gnd	9.11288e-17	$X=3.8525 $Y=4.4805
+C7	vin#1	gnd	1.35931e-16	$X=6.2015 $Y=2.156
+C8	clk#4	gnd	1.24329e-16	$X=3.939 $Y=2.1555
+C9	vin#2	gnd	6.30987e-16	$X=5.103 $Y=1.0275
+C10	vout#3	gnd	1.55586e-16	$X=5.8275 $Y=1.2405
+C11	vdd#1	gnd	4.81456e-16	$X=4.887 $Y=0.832
+C12	avC6#2	gnd	2.74843e-16	$X=4.787 $Y=0.8405
+C13	vout#2	gnd	3.84683e-16	$X=4.887 $Y=1.6785
+C14	vdd#3	gnd	1.31916e-16	$X=4.2625 $Y=2.594
+C15	vout#1	gnd	4.97333e-16	$X=5.5675 $Y=1.3865
+C16	clk#2	gnd	4.77216e-16	$X=4.3715 $Y=1.6375
 *
 *
-.ENDS static_nor3
+.ENDS dyna_not
 *

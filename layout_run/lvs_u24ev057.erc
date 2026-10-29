@@ -1,13 +1,11 @@
 
 ***** Begin Label Report *****
 
- Label in cell 'static_nand3 layout lab10_decoder_static':
-  info: Assign pin label "vin3" at (0.1500, 5.0000) to layer `M1term'.
-  info: Assign pin label "vin2" at (0.1500, 6.0000) to layer `M1term'.
-  info: Assign pin label "gnd" at (6.0000, 0.1500) to layer `M1term'.
-  info: Assign pin label "vin1" at (0.1500, 7.0000) to layer `M1term'.
-  info: Assign pin label "vdd" at (6.0000, 11.8500) to layer `M1term'.
-  info: Assign pin label "vout" at (11.8500, 6.0000) to layer `M1term'.
+ Label in cell 'static_inv layout lab10_decoder_dyna':
+  info: Assign pin label "gnd" at (2.5000, 0.1500) to layer `M1term'.
+  info: Assign pin label "vin" at (0.1500, 5.0000) to layer `M1term'.
+  info: Assign pin label "vout" at (4.8500, 5.0000) to layer `M1term'.
+  info: Assign pin label "vdd" at (2.5000, 9.8500) to layer `M1term'.
 
 ***** End of Label Report *****
 

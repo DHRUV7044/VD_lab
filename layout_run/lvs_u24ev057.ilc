@@ -1,4 +1,3 @@
 gpdk180 nmos layout 217
 gpdk180 pmos layout 227
-gpdk180 pmos layout 227
-lab10_decoder_static static_nand3 layout 6889
+lab10_decoder_dyna static_inv layout 1410
