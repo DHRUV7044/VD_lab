@@ -1,2 +1,2 @@
-!<alc> v1 39
-0    4    0 static_nor2 layout lab10_decoder_static
+!<alc> v1 40
+0    4    0 static_nand3 layout lab10_decoder_static

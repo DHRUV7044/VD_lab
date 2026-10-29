@@ -1,9 +1,9 @@
 set -e
 set -x
 
-rex -dp_comm_string 1,vlsilab-client38.eced.svnit.ac.in,39333 -V -m -pd -I# -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod -mp mprexatlCWf7 np_rM1term::mt1_cut - rPSDcont,1,t rPOLYcont,1,T rNSDcont,1,t - L1T0,1,I
+rex -dp_comm_string 1,server3.eced.svnit.ac.in,39907 -V -m -pd -I# -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod -mp mprexaCNp9ib np_rM1term::mt1_cut - rPSDcont,1,t rPOLYcont,1,T rNSDcont,1,t - L1T0,1,I
 
-rex -dp_comm_string 2,vlsilab-client38.eced.svnit.ac.in,39333 -V -m -pd -I# -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod -mp mprexav16twM np_rPOLYterm::poly_cut - PMOS_MOS_27_mgvia,1,z NMOS_MOS_21_mgvia,1,z rPOLYcont,1,x
+rex -dp_comm_string 2,server3.eced.svnit.ac.in,39907 -V -m -pd -I# -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod -mp mprexaRPxCXb np_rPOLYterm::poly_cut - PMOS_MOS_27_mgvia,1,z NMOS_MOS_21_mgvia,1,z rPOLYcont,1,x
 
-rexmerge -V -N NET -n mprexav16twM,mprexatlCWf7 -b np_rPOLYterm::Rnp_rPOLYterm.dev2,np_rM1term::Rnp_rM1term.dev2 -l ,L1T0 np_rPOLYterm.res,np_rM1term.res
+rexmerge -V -N NET -n mprexaRPxCXb,mprexaCNp9ib -b np_rPOLYterm::Rnp_rPOLYterm.dev2,np_rM1term::Rnp_rM1term.dev2 -l ,L1T0 np_rPOLYterm.res,np_rM1term.res
 

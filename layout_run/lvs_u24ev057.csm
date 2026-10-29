@@ -1,5 +1,5 @@
-Schematic                                 | Layout                                 | Status
----------------------------------------------------------------------------------------------
-static_nor2 schematic lab10_decoder_static| static_nor2 layout lab10_decoder_static| matched
+Schematic                                  | Layout                                  | Status
+-----------------------------------------------------------------------------------------------
+static_nand3 schematic lab10_decoder_static| static_nand3 layout lab10_decoder_static| matched
 
 Schematic and Layout Match

@@ -19,7 +19,7 @@ filter_res \
 	 -merge_parallel_res false \
 	 -min_res 0.001
 input_db -type assura \
-	 -design_cell_name "static_nor2 layout lab10_decoder_static" \
+	 -design_cell_name "static_nand3 layout lab10_decoder_static" \
 	 -run_name "lvs_u24ev057" \
 	 -directory_name "/home/u24ev057/VD_lab/layout_run" \
 	 -format "DFII" \
