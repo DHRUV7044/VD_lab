@@ -1,5 +1,5 @@
 #!/bin/ksh
-# This script was generated Thu Oct 29 22:26:05 2026 by:
+# This script was generated Sat Oct 31 23:30:11 2026 by:
 #
 # Program: /tools/cadence/QUANTUS212/tools/extraction/bin/64bit//RCXspice
 # Version: 21.2.2-p045
@@ -195,6 +195,11 @@ cat global.net > power_list
 # Ensure vias do not extend beyond routing
 #==========================================================#
 
+geom -V Via5 M6term M5term - Via5,111,i,2
+geom -V Via4 M5term M4term - Via4,111,i,2
+geom -V Via3 M4term M3term - Via3,111,i,2
+geom -V Via2NoCapInd M3term M2term - Via2NoCapInd,111,i,2
+geom -V Via1 M2term M1term - Via1,111,i,2
 geom -V POLYcont M1term POLYterm - POLYcont,111,i,2
 geom -V PSDcont M1term PSDterm - PSDcont,111,i,2
 geom -V NSDcont M1term NSDterm - NSDcont,111,i,2
@@ -211,7 +216,8 @@ flatnet -V -li -h '/' h_NET NET
 netprint -V -N1 power_list:power_list_nums NET
 flattenTransistorData NMOS_MOS_21 meters
 flattenTransistorData PMOS_MOS_27 meters
-flattenLayers -m M1term POLYterm PSDterm NSDterm PSUB POLYcont PSDcont \
+flattenLayers -m M6term M5term M4term M3term M2term M1term POLYterm PSDterm \
+	NSDterm PSUB Via5 Via4 Via3 Via2NoCapInd Via1 POLYcont PSDcont \
 	NSDcont NWELLterm_NWVIA_ovia NWELLterm NWVIA SUBVIA NMOS_MOS_21_orig \
 	PMOS_MOS_27_orig
 endFlattenInputs
@@ -244,6 +250,11 @@ cp power_list_nums2 power_list_nums
 #==========================================================#
 
 selectNetsByNumber power_list_nums M1term p_rM1term np_rM1term
+selectNetsByNumber power_list_nums M2term p_rM2term np_rM2term
+selectNetsByNumber power_list_nums M3term p_rM3term np_rM3term
+selectNetsByNumber power_list_nums M4term p_rM4term np_rM4term
+selectNetsByNumber power_list_nums M5term p_rM5term np_rM5term
+selectNetsByNumber power_list_nums M6term p_rM6term np_rM6term
 selectNetsByNumber power_list_nums NSDterm p_rNSDterm np_rNSDterm
 selectNetsByNumber power_list_nums NWELLterm p_rNWELLterm np_rNWELLterm
 selectNetsByNumber power_list_nums POLYterm p_rPOLYterm np_rPOLYterm
@@ -252,6 +263,11 @@ selectNetsByNumber power_list_nums NWVIA p_rNWVIA np_rNWVIA
 selectNetsByNumber power_list_nums SUBVIA p_rSUBVIA np_rSUBVIA
 selectNetsByNumber power_list_nums PSUB p_rPSUB np_rPSUB
 selectNetsByNumber power_list_nums POLYcont p_rPOLYcont np_rPOLYcont
+selectNetsByNumber power_list_nums Via1 p_rVia1 np_rVia1
+selectNetsByNumber power_list_nums Via2NoCapInd p_rVia2NoCapInd np_rVia2NoCapInd
+selectNetsByNumber power_list_nums Via3 p_rVia3 np_rVia3
+selectNetsByNumber power_list_nums Via4 p_rVia4 np_rVia4
+selectNetsByNumber power_list_nums Via5 p_rVia5 np_rVia5
 mv power_list_nums_orig power_list_nums
 
 #==========================================================#
@@ -262,6 +278,21 @@ mv power_list_nums_orig power_list_nums
 mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
 	np_rPOLYcont rPOLYcont - np_rM1term np_rPOLYterm
 cp rPOLYcont rPOLYcont_orig
+mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
+	np_rVia1 rVia1 - np_rM2term np_rM1term
+cp rVia1 rVia1_orig
+mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
+	np_rVia2NoCapInd rVia2NoCapInd - np_rM3term np_rM2term
+cp rVia2NoCapInd rVia2NoCapInd_orig
+mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
+	np_rVia3 rVia3 - np_rM4term np_rM3term
+cp rVia3 rVia3_orig
+mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
+	np_rVia4 rVia4 - np_rM5term np_rM4term
+cp rVia4 rVia4_orig
+mergevia -V -tech /tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -cnt \
+	np_rVia5 rVia5 - np_rM6term np_rM5term
+cp rVia5 rVia5_orig
 
 #==========================================================#
 # Create resistive interconnect MOSFET terminals
@@ -276,7 +307,8 @@ createNRMosfetGateTerminal PMOS_MOS_27 np_rPOLYterm PMOS_MOS_27_mgvia
 
 connect -V -relocate NET np_rPSDterm:np_rPSDterm.conn \
 	np_rNSDterm:np_rNSDterm.conn np_rNWELLterm:np_rNWELLterm.conn \
-	rPOLYcont NMOS_MOS_21_mgvia PMOS_MOS_27_mgvia - -
+	rPOLYcont rVia1 rVia2NoCapInd rVia3 rVia4 rVia5 NMOS_MOS_21_mgvia \
+	PMOS_MOS_27_mgvia - -
 
 #==========================================================#
 # Assign net numbers to resistor vias
@@ -320,6 +352,11 @@ geom -V tmp_NWELLterm,tmp1_NWELLterm - np_rNWELLterm,1,i,1
 flatlabel -V  -tc -F -l flatlabel.info Metal1_pintext L1T0
 # 1 np_rPOLYterm
 # 2 np_rM1term
+# 3 np_rM2term
+# 4 np_rM3term
+# 5 np_rM4term
+# 6 np_rM5term
+# 7 np_rM6term
 
 #==========================================================#
 # Parasitic R extraction with default precision
@@ -328,9 +365,11 @@ flatlabel -V  -tc -F -l flatlabel.info Metal1_pintext L1T0
 rex -V -m -pd -I'#' -tech \
 	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -map \
 	p2elayermapfile -N NET -e2 -Ply np_rPOLYterm -rP res.mod \
-	np_rPOLYterm::poly_cut np_rM1term::mt1_cut - rNSDcont,2,t \
-	rPOLYcont,1,2,t rPSDcont,2,t NMOS_MOS_21_mgvia,1,z \
-	PMOS_MOS_27_mgvia,1,z - L1T0,2,I
+	np_rPOLYterm::poly_cut np_rM1term::mt1_cut np_rM2term::mt2_cut \
+	np_rM3term::mt3_cut np_rM4term::mt4_cut np_rM5term::mt5_cut \
+	np_rM6term::mt6_cut - rNSDcont,2,t rPOLYcont,1,2,t rPSDcont,2,t \
+	rVia1,2,3,t rVia2NoCapInd,3,4,t rVia3,4,5,t rVia4,5,6,t rVia5,6,7,t \
+	NMOS_MOS_21_mgvia,1,z PMOS_MOS_27_mgvia,1,z - L1T0,2,I
 
 #==========================================================#
 # Form resistive via layers
@@ -338,6 +377,16 @@ rex -V -m -pd -I'#' -tech \
 
 stamp -V -i2 np_rM1term rPOLYcont np_rPOLYcont
 geom -V np_rPOLYcont,p_rPOLYcont - rPOLYcont,1,i,1
+stamp -V -i2 np_rM2term rVia1 np_rVia1
+geom -V np_rVia1,p_rVia1 - rVia1,1,i,1
+stamp -V -i2 np_rM3term rVia2NoCapInd np_rVia2NoCapInd
+geom -V np_rVia2NoCapInd,p_rVia2NoCapInd - rVia2NoCapInd,1,i,1
+stamp -V -i2 np_rM4term rVia3 np_rVia3
+geom -V np_rVia3,p_rVia3 - rVia3,1,i,1
+stamp -V -i2 np_rM5term rVia4 np_rVia4
+geom -V np_rVia4,p_rVia4 - rVia4,1,i,1
+stamp -V -i2 np_rM6term rVia5 np_rVia5
+geom -V np_rVia5,p_rVia5 - rVia5,1,i,1
 stamp -V -B -i np_rM1term NSDcont
 /bin/cp -f NSDcont rNSDcont
 stamp -V -B -i np_rM1term PSDcont
@@ -394,6 +443,21 @@ geom -V p_rPOLYterm,np_rPOLYterm - poly,1,i,1
 #4 
  geom -V -i p_rM1term,np_rM1term - so_mt1,1,n
 geom -V p_rM1term,np_rM1term - mt1,1,i,1
+#4 
+ geom -V -i p_rM2term,np_rM2term - so_mt2,1,n
+geom -V p_rM2term,np_rM2term - mt2,1,i,1
+#4 
+ geom -V -i p_rM3term,np_rM3term - so_mt3,1,n
+geom -V p_rM3term,np_rM3term - mt3,1,i,1
+#4 
+ geom -V -i p_rM4term,np_rM4term - so_mt4,1,n
+geom -V p_rM4term,np_rM4term - mt4,1,i,1
+#4 
+ geom -V -i p_rM5term,np_rM5term - so_mt5,1,n
+geom -V p_rM5term,np_rM5term - mt5,1,i,1
+#4 
+ geom -V -i p_rM6term,np_rM6term - so_mt6,1,n
+geom -V p_rM6term,np_rM6term - mt6,1,i,1
 
 #==========================================================#
 # Form capacitance layers for non-resistive process layers
@@ -402,11 +466,6 @@ geom -V p_rM1term,np_rM1term - mt1,1,i,1
 grow -V .001 PSDterm mask
 geom -V NSDterm mask - NSDterm,10,i,1
 geom -V PSDterm,NSDterm - diff,1,i,1
-createEmptyLayer mt6
-createEmptyLayer mt5
-createEmptyLayer mt4
-createEmptyLayer mt3
-createEmptyLayer mt2
 
 #==========================================================#
 # Form substrate
@@ -433,6 +492,12 @@ geom NMOS_MOS_21,PMOS_MOS_27 - qrcgate,1,i,1
 #==========================================================#
 
 cat <<ENDCAT> sip.cmd
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly,allGate,diff -n 3 -i 0,3.001 \
+	-b diff,sub -t mt1,mt2,mt3,mt4,mt5,mt6 -j 0.18 -Maxw 2.7 -p poly,key \
+	0,3 - poly.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly -n 6 -i 0,6.001 -b \
+	poly,diff,sub -t mt2,mt3,mt4,mt5,mt6 -j 0.3 -Maxw 4.5 -p mt1,key 0,6 \
+	- mt1.sip
 sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly,mt1 -n 6 -i 0,6.001 -b \
 	mt1,poly,diff,sub -t mt3,mt4,mt5,mt6 -j 0.3 -Maxw 4.5 -p mt2,key 0,6 \
 	- mt2.sip
@@ -448,34 +513,31 @@ sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt3,mt4 -n 7.5 -i 0,7.501 -b \
 sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt4,mt5 -n 15 -i 0,15.001 -b \
 	mt5,mt4,mt3,mt2,mt1,poly,diff,sub -j 0.44 -Maxw 5.28 -p mt6,key 0,15 \
 	- mt6.sip
-sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly,allGate,diff -n 3 -i 0,3.001 \
-	-b diff,sub -t mt1,mt2,mt3,mt4,mt5,mt6 -j 0.18 -Maxw 2.7 -p poly,key \
-	0,3 - poly.sip
-sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly -n 6 -i 0,6.001 -b \
-	poly,diff,sub -t mt2,mt3,mt4,mt5,mt6 -j 0.3 -Maxw 4.5 -p mt1,key 0,6 \
-	- mt1.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b mt4,mt3,mt2,mt1,poly,diff,sub \
-	-Maxw 5.28 -p mt5,key,mt6,key 0,15,0 - mt5_mt6.sip
+	-Maxw 5.28 -p mt5:mt5_cut,key,mt6:mt6_cut,key 0,15,0 - mt5_mt6.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt6 -b \
-	mt3,mt2,mt1,poly,diff,sub -Maxw 5.28 -p mt4,key,mt6,key 0,15,0 - \
-	mt4_mt6.sip
+	mt3,mt2,mt1,poly,diff,sub -k mt5:0.75 -Maxw 5.28 -p \
+	mt4:mt4_cut,key,mt6:mt6_cut,key 0,15,0 - mt4_mt6.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt3,mt2,mt1,poly,diff,sub -t mt6 \
-	-Maxw 4.5 -p mt4,key,mt5,key 0,7.5,0 - mt4_mt5.sip
+	-Maxw 4.5 -p mt4:mt4_cut,key,mt5:mt5_cut,key 0,7.5,0 - mt4_mt5.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt5 -b mt2,mt1,poly,diff,sub \
-	-t mt6 -Maxw 4.5 -p mt3,key,mt5,key 0,7.5,0 - mt3_mt5.sip
+	-t mt6 -k mt4:0.6 -Maxw 4.5 -p mt3:mt3_cut,key,mt5:mt5_cut,key \
+	0,7.5,0 - mt3_mt5.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt2,mt1,poly,diff,sub -t mt5,mt6 \
-	-Maxw 4.5 -p mt3,key,mt4,key 0,6,0 - mt3_mt4.sip
+	-Maxw 4.5 -p mt3:mt3_cut,key,mt4:mt4_cut,key 0,6,0 - mt3_mt4.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt4 -b mt1,poly,diff,sub -t \
-	mt5,mt6 -Maxw 4.5 -p mt2,key,mt4,key 0,6,0 - mt2_mt4.sip
+	mt5,mt6 -k mt3:0.6 -Maxw 4.5 -p mt2:mt2_cut,key,mt4:mt4_cut,key 0,6,0 \
+	- mt2_mt4.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt1,poly,diff,sub -t mt4,mt5,mt6 \
-	-Maxw 4.5 -p mt2,key,mt3,key 0,6,0 - mt2_mt3.sip
+	-Maxw 4.5 -p mt2:mt2_cut,key,mt3:mt3_cut,key 0,6,0 - mt2_mt3.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt3 -b poly,diff,sub -t \
-	mt4,mt5,mt6 -Maxw 4.5 -p mt1:mt1_cut,key,mt3,key 0,6,0 - mt1_mt3.sip
+	mt4,mt5,mt6 -k mt2:0.6 -Maxw 4.5 -p mt1:mt1_cut,key,mt3:mt3_cut,key \
+	0,6,0 - mt1_mt3.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly,diff,sub -t mt3,mt4,mt5,mt6 \
-	-Maxw 4.5 -p mt1:mt1_cut,key,mt2,key 0,6,0 - mt1_mt2.sip
+	-Maxw 4.5 -p mt1:mt1_cut,key,mt2:mt2_cut,key 0,6,0 - mt1_mt2.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt2 -b diff,sub -t \
-	mt3,mt4,mt5,mt6 -k mt1:0.6 -Maxw 4.5 -p poly:poly_cut,key,mt2,key \
-	0,6,0 - poly_mt2.sip
+	mt3,mt4,mt5,mt6 -k mt1:0.6 -Maxw 4.5 -p \
+	poly:poly_cut,key,mt2:mt2_cut,key 0,6,0 - poly_mt2.sip
 sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R mt1,poly -b diff,sub -t \
 	mt2,mt3,mt4,mt5,mt6 -Maxw 4.5 -p poly:poly_cut,key,mt1:mt1_cut,key \
 	0,6,0 - poly_mt1.sip
@@ -494,7 +556,8 @@ emerge -V NMOS_MOS_21 PMOS_MOS_27 allGate
 pax16 -V -lee_off -gnd ${CAP_GROUND} -ignore_cf_table -scf sip.cmd -cgnd \
 	${CAP_GROUND},1.0 -rcxlvs rcxtolvsmapfile -M_perim_off -c \
 	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/cap_coeff.dat -f \
-	sub diff poly:poly_cut mt1:mt1_cut mt2 mt3 mt4 mt5 mt6 allGate - \
+	sub diff poly:poly_cut mt1:mt1_cut mt2:mt2_cut mt3:mt3_cut \
+	mt4:mt4_cut mt5:mt5_cut mt6:mt6_cut allGate - \
 	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF/paxfile_coeff - \
 	- NET - capfile
 
@@ -509,11 +572,12 @@ pax16 -V -lee_off -gnd ${CAP_GROUND} -ignore_cf_table -scf sip.cmd -cgnd \
 
 xreduce -V -mergecap -n NET -tech \
 	/tools/cadence/FOUNDRY/analog/180nm/pv/assura/rcx_RF -d1 -e \
-	mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sub,np_rPSDterm,np_rNSDterm,np_rPSUB,rPOLYcont \
+	mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sub,np_rPSDterm,np_rNSDterm,np_rPSUB,rPOLYcont,rVia1,rVia2NoCapInd,rVia3,rVia4,rVia5 \
 	-decoupled -sr -minR 0.001 -rPvia \
-	rPOLYcont.res,rPSDcont.res,rNSDcont.res -rP \
-	np_rPOLYterm.res,np_rM1term.res,mwires.res -cap capfile L1T0 \
-	NMOS_MOS_21.transr PMOS_MOS_27.transr
+	rVia5.res,rVia4.res,rVia3.res,rVia2NoCapInd.res,rVia1.res,rPOLYcont.res,rPSDcont.res,rNSDcont.res \
+	-rP \
+	np_rPOLYterm.res,np_rM1term.res,np_rM2term.res,np_rM3term.res,np_rM4term.res,np_rM5term.res,np_rM6term.res,mwires.res \
+	-cap capfile L1T0 NMOS_MOS_21.transr PMOS_MOS_27.transr
 
 #==========================================================#
 # Generate HSPICE file
@@ -521,21 +585,35 @@ xreduce -V -mergecap -n NET -tech \
 
 advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -cgnd ${CAP_GROUND},1.0 -sc \
 	caps2dversion -mx capfile mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sub -rPmw \
-	res.mod np_rM1term.res,Rnp_rM1term.dev2 \
-	np_rPOLYterm.res,Rnp_rPOLYterm.dev2 rPOLYcont.res,RrPOLYcont.dev2 \
-	rPSDcont.res,RrPSDcont.dev2 rNSDcont.res,RrNSDcont.dev2 -rPmw \
-	mwires.mod mwires.res,mwires.dev2 -ta lvsmos.mod,NMOS_MOS_21.net \
-	NMOS_MOS_21.transr -ta lvsmos.mod,PMOS_MOS_27.net PMOS_MOS_27.transr \
-	- NET - \
+	res.mod np_rM6term.res,Rnp_rM6term.dev2 \
+	np_rM5term.res,Rnp_rM5term.dev2 np_rM4term.res,Rnp_rM4term.dev2 \
+	np_rM3term.res,Rnp_rM3term.dev2 np_rM2term.res,Rnp_rM2term.dev2 \
+	np_rM1term.res,Rnp_rM1term.dev2 np_rPOLYterm.res,Rnp_rPOLYterm.dev2 \
+	rVia5.res,RrVia5.dev2 rVia4.res,RrVia4.dev2 rVia3.res,RrVia3.dev2 \
+	rVia2NoCapInd.res,RrVia2NoCapInd.dev2 rVia1.res,RrVia1.dev2 \
+	rPOLYcont.res,RrPOLYcont.dev2 rPSDcont.res,RrPSDcont.dev2 \
+	rNSDcont.res,RrNSDcont.dev2 -rPmw mwires.mod mwires.res,mwires.dev2 \
+	-ta lvsmos.mod,NMOS_MOS_21.net NMOS_MOS_21.transr -ta \
+	lvsmos.mod,PMOS_MOS_27.net PMOS_MOS_27.transr - NET - \
 	/home/u24ev057/VD_lab/layout_run/rc_extraction_u24ev057/extview.tmp
 
 #==========================================================#
 # Create _save_layers file for Assura extracted view
 #==========================================================#
 
+geom mt6 np_rM6term - np_rM6term,11,i,1
+geom mt5 np_rM5term - np_rM5term,11,i,1
+geom mt4 np_rM4term - np_rM4term,11,i,1
+geom mt3 np_rM3term - np_rM3term,11,i,1
+geom mt2 np_rM2term - np_rM2term,11,i,1
 geom mt1 np_rM1term - np_rM1term,11,i,1
 geom poly np_rPOLYterm - np_rPOLYterm,11,i,1
 stamp -i2 np_rM1term rPOLYcont np_rPOLYcont
+stamp -i2 np_rM2term rVia1 np_rVia1
+stamp -i2 np_rM3term rVia2NoCapInd np_rVia2NoCapInd
+stamp -i2 np_rM4term rVia3 np_rVia3
+stamp -i2 np_rM5term rVia4 np_rVia4
+stamp -i2 np_rM6term rVia5 np_rVia5
 ereduce  rNSDcont rNSDcont.reduce
 stamp -i  np_rM1term rNSDcont.reduce
 stamp -i  rNSDcont.reduce rNSDcont
@@ -548,17 +626,22 @@ stamp -i  rPSDcont PSDcont
 /bin/rm -f rPSDcont.reduce
 cat <<ENDCAT> _save_layers
 sub PSUB
-mt2 mt2
-mt3 mt3
-mt4 mt4
-mt5 mt5
-mt6 mt6
 diff np_rNSDterm p_rNSDterm np_rPSDterm p_rPSDterm
+M6term np_rM6term p_rM6term
+M5term np_rM5term p_rM5term
+M4term np_rM4term p_rM4term
+M3term np_rM3term p_rM3term
+M2term np_rM2term p_rM2term
 M1term np_rM1term p_rM1term
 POLYterm np_rPOLYterm p_rPOLYterm
 PSDterm np_rPSDterm p_rPSDterm
 NSDterm np_rNSDterm p_rNSDterm
 PSUB PSUB
+Via5 np_rVia5 p_rVia5
+Via4 np_rVia4 p_rVia4
+Via3 np_rVia3 p_rVia3
+Via2NoCapInd np_rVia2NoCapInd p_rVia2NoCapInd
+Via1 np_rVia1 p_rVia1
 POLYcont np_rPOLYcont p_rPOLYcont
 PSDcont PSDcont
 NSDcont NSDcont

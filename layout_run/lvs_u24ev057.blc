@@ -1,4 +1,6 @@
+"static_nor3 layout lab10_decoder_static" "static_nor3 schematic lab10_decoder_static" "nmos(MOS)" "pmos(MOS)"
+"static_nor2 layout lab10_decoder_static" "static_nor2 schematic lab10_decoder_static" "nmos(MOS)" "pmos(MOS)"
 "pmos(MOS)" "pmos(MOS)"
 "nmos(MOS)" "nmos(MOS)"
-"static_inv layout lab10_decoder_dyna" "static_inv schematic lab10_decoder_dyna" "nmos(MOS)" "pmos(MOS)"
+"static_nor_decoder_3x8 layout lab10_decoder_static" "static_nor_decoder_3x8 schematic lab10_decoder_static"
 Devices filtered from layout

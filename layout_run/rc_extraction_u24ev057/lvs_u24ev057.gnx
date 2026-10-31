@@ -10,9 +10,44 @@ nmos(MOS): nmos(MOS)
 = G G B
 = S S B
 = B B B
-# 4
-static_inv schematic lab10_decoder_dyna: static_inv layout lab10_decoder_dyna
+# 11
+static_nor3 schematic lab10_decoder_static: static_nor3 layout lab10_decoder_static
+= net1 avC7
+= net2 avC8
 = vdd vdd I
 = gnd gnd I
-= vin vin I
+= vin1 vin1 I
+= vin2 vin2 I
+= vin3 vin3 I
 = vout vout O
+= gnd avT811_3
+= gnd avT811_2
+= gnd avT811_1
+# 8
+static_nor2 schematic lab10_decoder_static: static_nor2 layout lab10_decoder_static
+= net1 avC6
+= vdd vdd I
+= gnd gnd I
+= vin1 vin1 I
+= vin2 vin2 I
+= vout vout O
+= gnd avT811_2
+= gnd avT811_1
+# 16
+static_nor_decoder_3x8 schematic lab10_decoder_static: static_nor_decoder_3x8 layout lab10_decoder_static
+= net1 avC14
+= net2 avC15
+= net3 avC16
+= vdd vdd I
+= gnd gnd I
+= vin1 vin1 I
+= vin2 vin2 I
+= vin3 vin3 I
+= d0 d0 O
+= d1 d1 O
+= d2 d2 O
+= d3 d3 O
+= d4 d4 O
+= d5 d5 O
+= d6 d6 O
+= d7 d7 O

@@ -11,10 +11,10 @@ nmos(MOS): nmos(MOS)
 = S S B
 = B B B
 # 6
-dyna_not schematic lab10_decoder_dyna: dyna_not layout lab10_decoder_dyna
-= net4 avC6
+static_nor2 schematic lab10_decoder_static: static_nor2 layout lab10_decoder_static
+= net1 avC6
 = vdd vdd I
 = gnd gnd I
-= clk clk I
-= vin vin I
+= vin1 vin1 I
+= vin2 vin2 I
 = vout vout O

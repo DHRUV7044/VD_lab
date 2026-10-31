@@ -2,7 +2,30 @@
 pmos(MOS): pmos(MOS)
 # 0
 nmos(MOS): nmos(MOS)
-# 2
-static_inv schematic lab10_decoder_dyna: static_inv layout lab10_decoder_dyna
-D NM0 avD21_1
+# 6
+static_nor3 schematic lab10_decoder_static: static_nor3 layout lab10_decoder_static
+D NM2 avD21_3
+D NM1 avD21_1
+D NM0 avD21_2
+D PM2 avD27_3
+D PM1 avD27_1
+D PM0 avD27_2
+# 4
+static_nor2 schematic lab10_decoder_static: static_nor2 layout lab10_decoder_static
+D NM1 avD21_1
+D NM0 avD21_2
+D PM1 avD27_2
 D PM0 avD27_1
+# 11
+static_nor_decoder_3x8 schematic lab10_decoder_static: static_nor_decoder_3x8 layout lab10_decoder_static
+I I2 I2 static_nor2 static_nor2
+I I1 I1 static_nor2 static_nor2
+I I0 I0 static_nor2 static_nor2
+I I10 I10 static_nor3 static_nor3
+I I9 I9 static_nor3 static_nor3
+I I8 I8 static_nor3 static_nor3
+I I7 I7 static_nor3 static_nor3
+I I6 I6 static_nor3 static_nor3
+I I5 I5 static_nor3 static_nor3
+I I4 I4 static_nor3 static_nor3
+I I3 I3 static_nor3 static_nor3
