@@ -11,7 +11,7 @@
 
 avParameters(
   ?inputLayout ( "df2" "lab10_decoder_dyna" )
-  ?cellName "dyna_nand_decoder_3x8"
+  ?cellName "dyna_nor_decoder_3x8"
   ?viewName "layout"
   ?runName "drc_u24ev057"
   ?workingDirectory "./VD_lab/layout_run"

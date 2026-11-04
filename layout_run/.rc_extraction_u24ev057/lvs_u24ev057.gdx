@@ -1,8 +1,0 @@
-# 0
-pmos(MOS): pmos(MOS)
-# 0
-nmos(MOS): nmos(MOS)
-# 2
-static_inv schematic lab10_decoder_dyna: static_inv layout lab10_decoder_dyna
-D NM0 avD21_1
-D PM0 avD27_1

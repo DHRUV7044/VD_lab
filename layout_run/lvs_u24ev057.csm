@@ -1,6 +1,8 @@
-Schematic                                         | Layout                                         | Status
--------------------------------------------------------------------------------------------------------------
-static_inv schematic lab10_decoder_dyna           | static_inv layout lab10_decoder_dyna           | matched
-dyna_nand_decoder_3x8 schematic lab10_decoder_dyna| dyna_nand_decoder_3x8 layout lab10_decoder_dyna| matched
+Schematic                                        | Layout                                        | Status
+-----------------------------------------------------------------------------------------------------------
+static_inv schematic lab10_decoder_dyna          | static_inv layout lab10_decoder_dyna          | matched
+dyna_nor_decoder_3x8 schematic lab10_decoder_dyna| dyna_nor_decoder_3x8 layout lab10_decoder_dyna| errors  *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell with errors
+   1 cell matched

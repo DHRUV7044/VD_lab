@@ -1,22 +1,24 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on vlsilab-client44.eced.svnit.ac.in at Wed Nov  4 12:21:52 2026
+run on vlsilab-client44.eced.svnit.ac.in at Thu Nov  5 00:18:24 2026
 
-Schematic                                         | Layout                                         | Status
--------------------------------------------------------------------------------------------------------------
-static_inv schematic lab10_decoder_dyna           | static_inv layout lab10_decoder_dyna           | matched
-dyna_nand_decoder_3x8 schematic lab10_decoder_dyna| dyna_nand_decoder_3x8 layout lab10_decoder_dyna| matched
+Schematic                                        | Layout                                        | Status
+-----------------------------------------------------------------------------------------------------------
+static_inv schematic lab10_decoder_dyna          | static_inv layout lab10_decoder_dyna          | matched
+dyna_nor_decoder_3x8 schematic lab10_decoder_dyna| dyna_nor_decoder_3x8 layout lab10_decoder_dyna| errors  *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell with errors
+   1 cell matched
 
 Schematic:
   Library:lab10_decoder_dyna
-  Cell   :dyna_nand_decoder_3x8
+  Cell   :dyna_nor_decoder_3x8
   View   :schematic
 
 Layout:
   Library:lab10_decoder_dyna
-  Cell   :dyna_nand_decoder_3x8
+  Cell   :dyna_nor_decoder_3x8
   View   :layout
 
 
@@ -29,8 +31,8 @@ Extraction  Information
 
 Mismatch  Information
 --------------------
-     0 cells have 0 Net mismatches
-     0 cells have 0 Device mismatches
-     0 cells have 0 Pin mismatches
+     1 cells have 17 Net mismatches
+     1 cells have 34 Device mismatches
+     1 cells have 1 Pin mismatches
      0 cells have 0 Parameter mismatches
 

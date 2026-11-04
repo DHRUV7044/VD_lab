@@ -7,21 +7,21 @@
   info: Assign pin label "vout" at (2.2500, 2.7000) to layer `M1term'.
   info: Assign pin label "vdd" at (1.2000, 6.0000) to layer `M1term'.
 
- Label in cell 'dyna_nand_decoder_3x8 layout lab10_decoder_dyna':
-  info: Assign pin label "vin3" at (0.1500, 3.0000) to layer `M1term'.
-  info: Assign pin label "vin2" at (0.1500, 3.6950) to layer `M1term'.
-  info: Assign pin label "vin1" at (0.1500, 4.3950) to layer `M1term'.
-  info: Assign pin label "clk" at (0.1500, 5.1900) to layer `M1term'.
-  info: Assign pin label "gnd" at (34.8000, 0.1500) to layer `M1term'.
-  info: Assign pin label "vdd" at (34.8000, 11.8500) to layer `M1term'.
-  info: Assign pin label "d7" at (69.4500, 0.7500) to layer `M1term'.
-  info: Assign pin label "d6" at (69.4500, 1.3500) to layer `M1term'.
-  info: Assign pin label "d5" at (69.4500, 1.9500) to layer `M1term'.
-  info: Assign pin label "d4" at (69.4500, 2.5500) to layer `M1term'.
-  info: Assign pin label "d3" at (69.4500, 3.1500) to layer `M1term'.
-  info: Assign pin label "d2" at (69.4500, 3.7500) to layer `M1term'.
-  info: Assign pin label "d1" at (69.4500, 4.3500) to layer `M1term'.
-  info: Assign pin label "d0" at (69.4500, 4.9500) to layer `M1term'.
+ Label in cell 'dyna_nor_decoder_3x8 layout lab10_decoder_dyna':
+  info: Assign pin label "vin3" at (0.1500, 0.8000) to layer `M1term'.
+  info: Assign pin label "vin2" at (0.1500, 1.5000) to layer `M1term'.
+  info: Assign pin label "vin1" at (0.1500, 2.7000) to layer `M1term'.
+  info: Assign pin label "clk" at (0.1500, 3.4000) to layer `M1term'.
+  info: Assign pin label "gnd" at (150.0000, 0.1500) to layer `M1term'.
+  info: Assign pin label "vdd" at (150.0000, 24.8500) to layer `M1term'.
+  info: Assign pin label "d7" at (299.8500, 1.5650) to layer `M1term'.
+  info: Assign pin label "d6" at (299.8500, 4.6900) to layer `M1term'.
+  info: Assign pin label "d5" at (299.8500, 7.8150) to layer `M1term'.
+  info: Assign pin label "d4" at (299.8500, 10.9400) to layer `M1term'.
+  info: Assign pin label "d3" at (299.8500, 14.0650) to layer `M1term'.
+  info: Assign pin label "d2" at (299.8500, 17.1900) to layer `M1term'.
+  info: Assign pin label "d1" at (299.8500, 20.3150) to layer `M1term'.
+  info: Assign pin label "d0" at (299.8500, 23.4400) to layer `M1term'.
 
 ***** End of Label Report *****
 
