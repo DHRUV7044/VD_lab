@@ -1,23 +1,22 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
 sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
-run on server3.eced.svnit.ac.in at Sat Oct 31 23:29:03 2026
+run on vlsilab-client44.eced.svnit.ac.in at Wed Nov  4 12:21:52 2026
 
-Schematic                                            | Layout                                            | Status
--------------------------------------------------------------------------------------------------------------------
-static_nor3 schematic lab10_decoder_static           | static_nor3 layout lab10_decoder_static           | matched
-static_nor2 schematic lab10_decoder_static           | static_nor2 layout lab10_decoder_static           | matched
-static_nor_decoder_3x8 schematic lab10_decoder_static| static_nor_decoder_3x8 layout lab10_decoder_static| matched
+Schematic                                         | Layout                                         | Status
+-------------------------------------------------------------------------------------------------------------
+static_inv schematic lab10_decoder_dyna           | static_inv layout lab10_decoder_dyna           | matched
+dyna_nand_decoder_3x8 schematic lab10_decoder_dyna| dyna_nand_decoder_3x8 layout lab10_decoder_dyna| matched
 
 Schematic and Layout Match
 
 Schematic:
-  Library:lab10_decoder_static
-  Cell   :static_nor_decoder_3x8
+  Library:lab10_decoder_dyna
+  Cell   :dyna_nand_decoder_3x8
   View   :schematic
 
 Layout:
-  Library:lab10_decoder_static
-  Cell   :static_nor_decoder_3x8
+  Library:lab10_decoder_dyna
+  Cell   :dyna_nand_decoder_3x8
   View   :layout
 
 

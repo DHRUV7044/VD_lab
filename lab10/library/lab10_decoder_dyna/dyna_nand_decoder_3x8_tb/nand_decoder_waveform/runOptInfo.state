@@ -1,20 +1,20 @@
-pbsrEnableButton nil
-saveStartTime ""
-snapShotNameTimeUnit "us"
-restartFlag (nil)
-runOpts "Batch (normal)"
-snapshotPrefix ""
-snapshot ""
-snapshotSaveMode "Time points"
-saveAllSnapShots nil
-snapShotBaseName "mySnapShot"
-runElabOnly (t nil)
 strobeTime ""
 saveTimeInterval ""
+runElabOnly (t nil)
+saveAllSnapShots nil
+snapShotBaseName "mySnapShot"
 compileVAAsVAMS (nil)
 cleanSnapShot (nil)
-saveTimes ""
+runOpts "Batch (normal)"
 maxNumSnapShots 4
 saveStopTime ""
 runSimOnly (t)
+saveTimes ""
 runCompOnly (t nil)
+pbsrEnableButton nil
+snapShotNameTimeUnit "us"
+restartFlag (nil)
+saveStartTime ""
+snapshotPrefix ""
+snapshot ""
+snapshotSaveMode "Time points"

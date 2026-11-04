@@ -10,8 +10,8 @@
 ;----------------------------------------------------------------------------
 
 avParameters(
-  ?inputLayout ( "df2" "lab10_decoder_static" )
-  ?cellName "static_nor_decoder_3x8"
+  ?inputLayout ( "df2" "lab10_decoder_dyna" )
+  ?cellName "dyna_nand_decoder_3x8"
   ?viewName "layout"
   ?runName "lvs_u24ev057"
   ?workingDirectory "./VD_lab/layout_run"
