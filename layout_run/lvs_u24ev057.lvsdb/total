@@ -1,5 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 device net parameter pin rewire total
-1  5 (( ( S "dyna_nor_decoder_3x8 layout lab10_decoder_dyna" )( L "dyna_nor_decoder_3x8 schematic lab10_decoder_dyna" ) )(( 1 73 18 )( 4 2 0 )( 0 16 16 )( 3 0 9 )))

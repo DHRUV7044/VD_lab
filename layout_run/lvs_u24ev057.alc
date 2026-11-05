@@ -1,3 +1,2 @@
-!<alc> v1 46
-0   12    0 static_inv layout lab10_decoder_dyna
-0   13    0 dyna_nor_decoder_3x8 layout lab10_decoder_dyna
+!<alc> v1 40
+0    7    0 static_nand3 layout lab10_decoder_static

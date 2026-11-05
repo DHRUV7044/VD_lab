@@ -1,7 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 terminal shorts opens
-1 0 ( "vdd" "I25" "avC4_1" "avC4_3" "vdd")
-1 0 ( "vdd" "I26" "avC4_1" "avC4_2" "vdd")
-1 2 ((L "avC62")(L "avC71")(L "avC69")(L "avC72")(L "avC70"))

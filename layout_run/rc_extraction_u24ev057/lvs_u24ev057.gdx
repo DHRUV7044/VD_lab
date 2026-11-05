@@ -2,60 +2,11 @@
 pmos(MOS): pmos(MOS)
 # 0
 nmos(MOS): nmos(MOS)
-# 2
-static_inv schematic lab10_decoder_dyna: static_inv layout lab10_decoder_dyna
-D NM0 avD21_1
-D PM0 avD27_1
-# 51
-dyna_nand_decoder_3x8 schematic lab10_decoder_dyna: dyna_nand_decoder_3x8 layout lab10_decoder_dyna
-S NM69 avD21_8
-S NM67 avD21_7
-S NM65 avD21_6
-S NM64 avD21_5
-D NM61 avD21_1
-D NM60 avD21_2
-D NM58 avD21_3
-D NM57 avD21_4
-S NM55 avD21_16
-S NM52 avD21_15
-S NM51 avD21_14
-S NM50 avD21_13
-D NM47 avD21_9
-D NM45 avD21_10
-D NM44 avD21_11
-D NM43 avD21_12
-S NM41 avD21_24
-S NM39 avD21_23
-S NM36 avD21_21
-S NM35 avD21_22
-D NM33 avD21_17
-D NM32 avD21_18
-D NM29 avD21_20
-D NM28 avD21_19
-S NM13 avD21_32
-S NM10 avD21_31
-S NM8 avD21_29
-S NM7 avD21_30
-D NM5 avD21_25
-D NM3 avD21_26
-D NM70 avD21_28
-D NM0 avD21_27
-D PM9 avD27_8
-S PM8 avD27_7
-D PM7 avD27_6
-S PM6 avD27_5
-D PM5 avD27_4
-S PM4 avD27_3
-D PM1 avD27_2
-S PM0 avD27_1
-I I19 I19 static_inv static_inv
-I I20 I20 static_inv static_inv
-I I16 I16 static_inv static_inv
-I I18 I18 static_inv static_inv
-I I21 I21 static_inv static_inv
-I I15 I15 static_inv static_inv
-I I17 I17 static_inv static_inv
-I I14 I14 static_inv static_inv
-I I26 I26 static_inv static_inv
-I I25 I25 static_inv static_inv
-I I27 I27 static_inv static_inv
+# 6
+static_nand3 schematic lab10_decoder_static: static_nand3 layout lab10_decoder_static
+D NM2 avD21_1
+D NM1 avD21_3
+D NM0 avD21_2
+D PM2 avD27_3
+D PM1 avD27_1
+S PM0 avD27_2

@@ -10,61 +10,13 @@ nmos(MOS): nmos(MOS)
 = G G B
 = S S B
 = B B B
-# 5
-static_inv schematic lab10_decoder_dyna: static_inv layout lab10_decoder_dyna
+# 8
+static_nand3 schematic lab10_decoder_static: static_nand3 layout lab10_decoder_static
+= net4 avC7
+= net3 avC8
 = vdd vdd I
 = gnd gnd I
-= vin vin I
-= vout vout O
-= gnd avT811_1
-# 49
-dyna_nand_decoder_3x8 schematic lab10_decoder_dyna: dyna_nand_decoder_3x8 layout lab10_decoder_dyna
-= net31 avC23
-= net24 avC24
-= net28 avC25
-= net14 avC15
-= net16 avC16
-= net26 avC17
-= net30 avC18
-= net1 avC19
-= net3 avC20
-= net8 avC21
-= net34 avC22
-= net11 avC44
-= net10 avC45
-= net17 avC46
-= net20 avC47
-= net13 avC48
-= net35 avC49
-= net33 avC38
-= net32 avC39
-= net12 avC40
-= net15 avC41
-= net5 avC42
-= net6 avC43
-= net25 avC32
-= net23 avC33
-= net7 avC34
-= net9 avC35
-= net27 avC36
-= net29 avC37
-= net21 avC26
-= net19 avC27
-= net2 avC28
-= net4 avC29
-= net18 avC30
-= net22 avC31
-= vdd vdd I
-= gnd gnd I
-= clk clk I
 = vin1 vin1 I
 = vin2 vin2 I
 = vin3 vin3 I
-= d0 d0 O
-= d1 d1 O
-= d2 d2 O
-= d3 d3 O
-= d4 d4 O
-= d5 d5 O
-= d6 d6 O
-= d7 d7 O
+= vout vout O

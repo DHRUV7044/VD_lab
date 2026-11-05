@@ -1,0 +1,116 @@
+*
+*
+*
+*                       LINUX           Thu Nov  5 11:15:02 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT static_nand2 vdd gnd vin1 vin2 vout
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	vout#3	vin1#3	avC6	gnd#3	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=4.8e-13	AS=1.2e-13	PD=2.8e-06	PS=1.1e-06
++ simW=8e-07 fw=8e-07
+MavD21_2	avC6	vin2#4	gnd#6	gnd#3	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=1.2e-13	AS=4.8e-13	PD=1.1e-06	PS=2.8e-06
++ simW=8e-07 fw=8e-07
+MavD27_1	vout#2	vin2#1	vdd#6	vdd	pmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=2.4e-13	AS=4.8e-13	PD=1.4e-06	PS=2.8e-06
++ simW=8e-07 fw=8e-07
+MavD27_2	vdd#5	vin1#1	vout#2	vdd	pmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=8e-07
++ AD=4.8e-13	AS=2.4e-13	PD=2.8e-06	PS=1.4e-06
++ simW=8e-07 fw=8e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	vin2	vin2#2	5.182000	$mt1	$W=3e-07
++ $X=0.465 $Y=2.57
+Rf2	vin1	vin1#2	5.392000	$mt1	$W=3e-07
++ $X=0.915 $Y=3.295
+Rf3	vout	vout#1	0.068991	$mt1	$W=3e-07
++ $X=2.885 $Y=3.15
+Rf4	vout#1	vout#2	7.485052	$mt1	$W=3e-07
++ $X=2.065 $Y=3.895
+Rf5	vout#1	vout#3	7.300341	$mt1	$W=3.6e-07	$X=2.58 $Y=2.51
+Rf6	vdd#1	vdd#3	0.204971	$mt1	$W=3e-07
++ $X=2.8605 $Y=6.57
+Rf7	vdd#3	vdd	0.041300	$mt1	$W=1e-06
++ $X=1.7955 $Y=6.22
+Rf8	vdd	vdd#4	0.034300	$mt1	$W=1e-06
++ $X=1.415 $Y=6.22
+Rf9	vdd#3	vdd#5	7.198706	$mt1	$W=4e-07
++ $X=2.36 $Y=5.3075
+Rf10	vdd#4	vdd#6	7.193375	$mt1	$W=4e-07
++ $X=0.8 $Y=5.3075
+Rf11	vdd#4	vdd#7	0.212088	$mt1	$W=3e-07	$X=0.3 $Y=6.57
+Rf12	vdd#2	vdd#3	7.000000	$mt1	$W=3e-07	$X=2.17 $Y=5.92
+Rf13	vdd#2	vdd#4	3.500000	$mt1	$W=1e-06	$X=1.09 $Y=5.92
+Rf14	gnd#1	gnd	0.368550	$mt1	$W=3e-07
++ $X=2.7105 $Y=0.15
+Rf15	gnd	gnd#2	0.368667	$mt1	$W=3e-07	$X=0.3 $Y=0.15
+Rf16	gnd	gnd#4	0.014548	$mt1	$W=1.66e-06
++ $X=1.43 $Y=0.3175
+Rf18	gnd#4	gnd#6	7.199009	$mt1	$W=4e-07
++ $X=0.8 $Y=1.1075
+Rf19	gnd#3	gnd#4	7.000000	$mt1	$W=1.66e-06
++ $X=1.895 $Y=0.495
+Rf20	gnd#3	gnd#4	7.000000	$mt1	$W=1.66e-06
++ $X=0.965 $Y=0.495
+Rg1	vin2#1	vin2#2	68.631729	$poly	$W=1.8e-07
++ $X=1.19 $Y=3.608
+Rg3	vin2#2	vin2#4	19.673395	$poly	$W=1.8e-07	$X=1.19 $Y=2.22
+Rg4	vin1#1	vin1#2	37.440689	$poly	$W=1.8e-07
++ $X=1.97 $Y=3.9205
+Rg5	vin1#2	vin1#3	40.637142	$poly	$W=1.8e-07
++ $X=1.67 $Y=2.5325
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	4.20796e-17	$X=1.5455 $Y=4.1805
+C2	vin1	gnd	1.67467e-16	$X=0.717 $Y=2.454
+C3	vin2	gnd	9.07538e-17	$X=0.419 $Y=2.1915
+C4	vout	gnd	5.27481e-17	$X=2.864 $Y=2.853
+C5	vin1#1	gnd	1.21491e-16	$X=1.835 $Y=3.5025
+C6	vin2#1	gnd	1.49634e-16	$X=1.2585 $Y=3.2125
+C7	vin1#3	gnd	1.20618e-16	$X=1.6085 $Y=1.4
+C8	vin2#4	gnd	8.66196e-17	$X=1.2395 $Y=1.3505
+C9	vin1#2	gnd	4.94587e-16	$X=1.5225 $Y=1.6225
+C10	vdd#2	gnd	2.57276e-16	$X=1.451 $Y=0.997
+C11	vout#3	gnd	2.15686e-16	$X=1.731 $Y=0.7775
+C12	vdd#5	gnd	1.72327e-16	$X=1.8665 $Y=2.327
+C13	vout#2	gnd	3.66321e-16	$X=1.4925 $Y=2.0005
+C14	vdd#6	gnd	1.38805e-16	$X=1.133 $Y=2.327
+C15	vout#1	gnd	3.15126e-16	$X=2.024 $Y=1.752
+C16	vdd#7	gnd	6.09138e-17	$X=0.2865 $Y=5.881
+C17	vdd#1	gnd	6.25051e-17	$X=2.841 $Y=5.884
+C18	vin2#2	gnd	4.02895e-16	$X=1.2575 $Y=1.4565
+*
+*
+.ENDS static_nand2
+*

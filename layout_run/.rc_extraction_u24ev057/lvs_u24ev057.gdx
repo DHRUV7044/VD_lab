@@ -1,0 +1,10 @@
+# 0
+pmos(MOS): pmos(MOS)
+# 0
+nmos(MOS): nmos(MOS)
+# 4
+static_nand2 schematic lab10_decoder_static: static_nand2 layout lab10_decoder_static
+D NM1 avD21_1
+D NM0 avD21_2
+S PM1 avD27_2
+D PM0 avD27_1

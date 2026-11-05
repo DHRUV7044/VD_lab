@@ -1,8 +1,3 @@
-6 7
-np_rPOLYterm np_rM1term np_rM2term np_rM3term np_rM4term np_rM5term np_rM6term
+1 2
+np_rPOLYterm np_rM1term
 rPOLYcont,X 1 2
-rVia1,X 2 3
-rVia2NoCapInd,X 3 4
-rVia3,X 4 5
-rVia4,X 5 6
-rVia5,X 6 7
