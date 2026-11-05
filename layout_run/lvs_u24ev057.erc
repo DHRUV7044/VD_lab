@@ -9,5 +9,27 @@
   info: Assign pin label "vout" at (3.7900, 4.0000) to layer `M1term'.
   info: Assign pin label "vdd" at (1.9700, 7.8000) to layer `M1term'.
 
+ Label in cell 'static_nand2 layout lab10_decoder_static':
+  info: Assign pin label "gnd" at (1.5800, 0.1500) to layer `M1term'.
+  info: Assign pin label "vin2" at (0.1500, 2.5700) to layer `M1term'.
+  info: Assign pin label "vin1" at (0.1500, 3.2950) to layer `M1term'.
+  info: Assign pin label "vout" at (3.0100, 3.1500) to layer `M1term'.
+  info: Assign pin label "vdd" at (1.5800, 6.5700) to layer `M1term'.
+
+ Label in cell 'static_nand_decoder_3x8 layout lab10_decoder_static':
+  info: Assign pin label "vin3" at (0.1500, 0.8000) to layer `M1term'.
+  info: Assign pin label "vin2" at (0.1500, 1.5000) to layer `M1term'.
+  info: Assign pin label "vin1" at (0.1500, 2.2000) to layer `M1term'.
+  info: Assign pin label "gnd" at (39.5000, 0.1500) to layer `M1term'.
+  info: Assign pin label "vdd" at (39.5000, 7.8000) to layer `M1term'.
+  info: Assign pin label "d7" at (78.8500, 0.7500) to layer `M1term'.
+  info: Assign pin label "d6" at (78.8500, 1.3500) to layer `M1term'.
+  info: Assign pin label "d5" at (78.8500, 2.0000) to layer `M1term'.
+  info: Assign pin label "d4" at (78.8500, 2.7000) to layer `M1term'.
+  info: Assign pin label "d3" at (78.8500, 4.8500) to layer `M1term'.
+  info: Assign pin label "d2" at (78.8500, 5.4500) to layer `M1term'.
+  info: Assign pin label "d1" at (78.8500, 6.3050) to layer `M1term'.
+  info: Assign pin label "d0" at (78.8500, 6.9050) to layer `M1term'.
+
 ***** End of Label Report *****
 
