@@ -1,8 +1,8 @@
 vuiLVSdebugRunInfo = list( nil
    'layoutLibrary "lab10_decoder_static"
-   'layoutCell "static_nand_decoder_3x8"
+   'layoutCell "static_nor2"
    'layoutView "layout"
    'schematicLibrary "lab10_decoder_static"
-   'schematicCell "static_nand_decoder_3x8"
+   'schematicCell "static_nor2"
    'schematicView "schematic"
 )

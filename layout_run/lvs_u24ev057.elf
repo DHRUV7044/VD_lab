@@ -1,11 +1,7 @@
 PSDcont
-Via2NoCapInd
 NSDcont
 POLYcont
 Via1
-Via3
-Via4
-Via5
 PMOS_MOS_27
 PMOS_MOS_27_shape
 T?1033
@@ -23,10 +19,6 @@ POLYterm
 NWVIA
 NWELLterm
 NSDterm
-M6term
-M5term
-M4term
-M3term
 M2term
 M1term
 Metal1_pintext
