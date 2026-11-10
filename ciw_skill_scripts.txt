@@ -1,0 +1,8 @@
+
+// copy paste and run this command when you want to remove ghost/phantom object whcih causes the instance box it bigger then pr boundary 
+//use this when instance box is bigger in other circuit where it is used then pr boundary of it's layout
+
+cv = geGetEditCellView()
+foreach(item cv~>steiners
+	dbDeleteObject(item)
+)

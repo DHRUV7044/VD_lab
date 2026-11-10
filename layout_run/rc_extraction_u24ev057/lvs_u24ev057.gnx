@@ -10,17 +10,11 @@ nmos(MOS): nmos(MOS)
 = G G B
 = S S B
 = B B B
-# 12
-D_FF_TSPC schematic lab5_D_FF: D_FF_TSPC layout lab5_D_FF
-= net1 avC7
-= net7 avC8
-= net5 avC9
-= net3 avC6
-= net8 avC10
-= net6 avC11
-= net4 avC12
+# 6
+static_nor2 schematic lab10_decoder_static: static_nor2 layout lab10_decoder_static
+= net1 avC6
 = vdd vdd I
 = gnd gnd I
-= clk_57 clk_57 I
-= d_57 d_57 I
-= q_57 q_57 O
+= vin1 vin1 I
+= vin2 vin2 I
+= vout vout O

@@ -2,17 +2,38 @@
 pmos(MOS): pmos(MOS)
 # 0
 nmos(MOS): nmos(MOS)
-# 12
-D_FF_TSPC schematic lab5_D_FF: D_FF_TSPC layout lab5_D_FF
-D NM2 avD21_6
-D NM5 avD21_5
-D NM4 avD21_3
-D NM3 avD21_4
-D NM1 avD21_2
-D NM0 avD21_1
-D PM4 avD27_6
-D PM3 avD27_5
+# 6
+static_nand3 schematic lab10_decoder_static: static_nand3 layout lab10_decoder_static
+D NM2 avD21_1
+D NM1 avD21_3
+D NM0 avD21_2
 D PM2 avD27_3
 D PM1 avD27_1
-D PM0 avD27_2
-D PM5 avD27_4
+S PM0 avD27_2
+# 4
+static_nand2 schematic lab10_decoder_static: static_nand2 layout lab10_decoder_static
+D NM1 avD21_1
+D NM0 avD21_2
+S PM1 avD27_2
+D PM0 avD27_1
+# 19
+static_nand_decoder_3x8 schematic lab10_decoder_static: static_nand_decoder_3x8 layout lab10_decoder_static
+I I29 I29 static_nand2 static_nand2
+I I28 I28 static_nand2 static_nand2
+I I27 I27 static_nand2 static_nand2
+I I26 I26 static_nand2 static_nand2
+I I25 I25 static_nand2 static_nand2
+I I24 I24 static_nand2 static_nand2
+I I23 I23 static_nand2 static_nand2
+I I22 I22 static_nand2 static_nand2
+I I13 I13 static_nand2 static_nand2
+I I11 I11 static_nand2 static_nand2
+I I12 I12 static_nand2 static_nand2
+I I21 I21 static_nand3 static_nand3
+I I20 I20 static_nand3 static_nand3
+I I19 I19 static_nand3 static_nand3
+I I18 I18 static_nand3 static_nand3
+I I17 I17 static_nand3 static_nand3
+I I16 I16 static_nand3 static_nand3
+I I15 I15 static_nand3 static_nand3
+I I14 I14 static_nand3 static_nand3

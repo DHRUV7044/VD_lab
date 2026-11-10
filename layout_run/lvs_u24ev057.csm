@@ -1,5 +1,5 @@
-Schematic                       | Layout                       | Status
--------------------------------------------------------------------------------
-D_FF_TSPC schematic lab5_D_FF   | D_FF_TSPC layout lab5_D_FF   | matched    
+Schematic                                 | Layout                                 | Status
+---------------------------------------------------------------------------------------------
+static_nor2 schematic lab10_decoder_static| static_nor2 layout lab10_decoder_static| matched
 
 Schematic and Layout Match
