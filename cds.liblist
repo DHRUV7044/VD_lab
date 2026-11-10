@@ -1,1 +1,53 @@
-#maintain list of library in this file
+# Maintain list of libraries in this file
+# Set CDS_WORK_PATH variable for your system which contains path of parent folder of this project folder (e.g. /home/dhruv)
+
+# Basic Gates & Components
+DEFINE basic_gates                 $CDS_WORK_PATH/VD_lab/basic_circuits/library/basic_gates
+
+# Lab 1
+DEFINE lab1_inverter_sim           $CDS_WORK_PATH/VD_lab/lab1/library/lab1_inverter_sim
+
+# Lab 2 & 2.2 & 20
+DEFINE lab2_inveter_layout_rc      $CDS_WORK_PATH/VD_lab/lab2/library/lab2_inveter_layout_rc
+DEFINE lab2_v2_static_inv          $CDS_WORK_PATH/VD_lab/lab2.2/library/lab2_v2_static_inv
+DEFINE inverter_layout_rc          $CDS_WORK_PATH/VD_lab/lab20/library/inverter_layout_rc
+
+# Lab 3
+DEFINE lab3_static_nand            $CDS_WORK_PATH/VD_lab/lab3/library/lab3_static_nand
+
+# Lab 4 (Dynamic Inverter, Dynamic NAND, Domino & NORA)
+DEFINE lab4_dyna_inv               $CDS_WORK_PATH/VD_lab/lab4/library/lab4_dyna_inv
+DEFINE lab4_v2_dyna_nand           $CDS_WORK_PATH/VD_lab/lab4_v2/library/lab4_v2_dyna_nand
+DEFINE lab3_domino                 $CDS_WORK_PATH/VD_lab/lab4_v3_domino_nora/library/lab3_domino
+DEFINE lab4_nora                   $CDS_WORK_PATH/VD_lab/lab4_v3_domino_nora/library/lab4_nora
+
+# Lab 5 (Flip-Flops & Elmore Delay)
+DEFINE lab5_D_FF                   $CDS_WORK_PATH/VD_lab/lab5/library/lab5_D_FF
+DEFINE lab5_elmore_delay           $CDS_WORK_PATH/VD_lab/lab5_v2_elmore/library/lab5_elmore_delay
+
+# Lab 6 (Progressive & Same Size NAND)
+DEFINE lab6_same_size_nand         $CDS_WORK_PATH/VD_lab/lab6/library/lab6_same_size_nand
+DEFINE lab6_progressive_size_nand  $CDS_WORK_PATH/VD_lab/lab6/library/lab6_progressive_size_nand
+
+# Lab 7 (Repeaters)
+DEFINE lab7_min_repeater           $CDS_WORK_PATH/VD_lab/lab7/library/lab7_min_repeater
+DEFINE lab7_optimal_repeater       $CDS_WORK_PATH/VD_lab/lab7/library/lab7_optimal_repeater
+DEFINE lab7_cascaded_repeater      $CDS_WORK_PATH/VD_lab/lab7/library/lab7_cascaded_repeater
+
+# Lab 8 (Logical Effort & Ring Oscillator)
+DEFINE lab8_logical_effort         $CDS_WORK_PATH/VD_lab/lab8/library/lab8_logical_effort
+DEFINE lab8_ring_osc               $CDS_WORK_PATH/VD_lab/lab8/library/lab8_ring_osc
+DEFINE lab8_logical_effort_copy    $CDS_WORK_PATH/VD_lab/lab8_logical_effort_copy
+
+# Lab 9 (SRAM)
+DEFINE lab9_sram                   $CDS_WORK_PATH/VD_lab/lab9/library/lab9_sram
+
+# Lab 10 (Decoders)
+DEFINE lab10_decoder_static        $CDS_WORK_PATH/VD_lab/lab10/library/lab10_decoder_static
+DEFINE lab10_decoder_dyna          $CDS_WORK_PATH/VD_lab/lab10/library/lab10_decoder_dyna
+
+# Lab 11 (Adders)
+DEFINE lab11_adders                $CDS_WORK_PATH/VD_lab/lab11/library/lab11_adders
+
+# Temporary / Scratch
+DEFINE test_1                      $CDS_WORK_PATH/VD_lab/labtemp/library/test_1
