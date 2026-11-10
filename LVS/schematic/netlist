@@ -1,0 +1,28 @@
+t 0 vin1 input
+t 1 vin2 input
+t 2 vdd input
+t 3 gnd input
+t 4 vout output
+t 6 vin3 input
+n 0 /vin1
+n 1 /vin2
+n 2 /vdd
+n 3 /gnd
+n 4 /vout
+n 5 /net1
+n 6 /vin3
+n 7 /net2
+; nmos Instance /NM2 = auLvs device M0
+d nmos D G S B (p D S)
+i 0 nmos 4 6 3 3 " m 1.0 l 180e-9 w 400e-9 "
+; nmos Instance /NM1 = auLvs device M1
+i 1 nmos 4 0 3 3 " m 1.0 l 180e-9 w 400e-9 "
+; nmos Instance /NM0 = auLvs device M2
+i 2 nmos 4 1 3 3 " m 1.0 l 180e-9 w 400e-9 "
+; pmos Instance /PM2 = auLvs device M3
+d pmos D G S B (p D S)
+i 3 pmos 4 6 7 2 " m 1.0 l 180e-9 w 2.4e-6 "
+; pmos Instance /PM1 = auLvs device M4
+i 4 pmos 5 0 2 2 " m 1.0 l 180e-9 w 2.4e-6 "
+; pmos Instance /PM0 = auLvs device M5
+i 5 pmos 7 1 5 2 " m 1.0 l 180e-9 w 2.4e-6 "

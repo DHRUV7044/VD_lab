@@ -1,0 +1,96 @@
+@(#)$CDS: LVS version 6.1.8-64b 10/01/2018 19:50 (ip-172-18-22-57) $
+
+Command line: /home/dhruv/cadence/cadence_self_installed/IC618/tools.lnx86/dfII/bin/64bit/LVS -dir /home/dhruv/VD_lab/LVS -l -s -x/home/dhruv/VD_lab/LVS/xref.out -f -t /home/dhruv/VD_lab/LVS/layout /home/dhruv/VD_lab/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Creating cross reference file /home/dhruv/VD_lab/LVS/xref.out.
+Fixed device checking is enabled.
+Using terminal names as correspondence points.
+
+ GENERIC PDK LVS Rules
+
+    Net-list summary for /home/dhruv/VD_lab/LVS/layout/netlist
+       count
+        8               nets
+        6               terminals
+        3               pmos
+        3               nmos
+
+    Net-list summary for /home/dhruv/VD_lab/LVS/schematic/netlist
+       count
+        8               nets
+        6               terminals
+        3               pmos
+        3               nmos
+
+
+    Terminal correspondence points
+    N3        N3        gnd
+    N2        N2        vdd
+    N0        N0        vin1
+    N1        N1        vin2
+    N6        N6        vin3
+    N4        N4        vout
+
+Devices in the rules but not in the netlist:
+        nmoshv pmoshv nmosrf pmosrf nplusres pplusres polyres polyhres
+        nwellres nmoscap pmoscap mimcap vpnp npn pnp ind ndio pdio xjvar_w40
+        xjvar_nf36
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  6       6      
+        total                   6       6      
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  8       8      
+        total                   8       8      
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   6       6      
+
+
+Probe files from /home/dhruv/VD_lab/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/dhruv/VD_lab/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
