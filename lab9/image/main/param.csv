@@ -6,4 +6,3 @@ Access Transistor Width ($W_a$) , 800 , nm
 Driver NMOS Width ($W_n$) , 1.6 , $\mu\text{m}$
 Pull-up PMOS Width ($W_p$) , 400 , nm
 Bitline Capacitance ($C_{BL}$) , 50 , fF
-Simulation Stop Time , 40 , ns

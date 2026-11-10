@@ -1,0 +1,5 @@
+Parameter , Symbol , Value , Unit , Description
+Noise Margin Low , $SNM_0$ , 568.93 , mV , Max square side in logic '0' lobe
+Noise Margin High , $SNM_1$ , 577.924 , mV , Max square side in logic '1' lobe
+Static Noise Margin , $SNM$ , 568.93 , mV , Minimum square side across lobes
+Normalized SNM , $SNM / V_{DD}$ , 31.61 , % , Relative to 1.8 V supply

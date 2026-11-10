@@ -1,0 +1,209 @@
+{
+    "template": "vd",
+    "document": {
+        "title": "ENGINEERING LAB RECORD",
+        "date": "21/10/2026"
+    },
+    "images": [
+        {
+            "id": 1,
+            "path": "6t_sram_cir.png",
+            "title": "6T SRAM cell schematic ($W_n=1.6\\,\\mu\\text{m}, W_p=0.4\\,\\mu\\text{m}, W_a=0.8\\,\\mu\\text{m}$)"
+        },
+        {
+            "id": 2,
+            "path": "6t_sram_symbol.png",
+            "title": "6T SRAM cell symbol ($WL, BL, \\overline{BL}, Q, \\overline{Q}$)"
+        },
+        {
+            "id": 3,
+            "path": "6t_sram_tb.png",
+            "title": "6T SRAM cell transient testbench schematic ($C_{BL}=50\\text{ fF}, V_{DD}=1.8\\text{ V}$)"
+        },
+        {
+            "id": 4,
+            "path": "6t_sram_waveform.png",
+            "title": "Transient waveforms of Write '1', Hold, Write '0', Precharge ($BL=\\overline{BL}=1.8\\text{ V}$), and Read '0'",
+            "text": "Signals: $WL$ (Wordline), $BL, \\overline{BL}$ (Bitlines), $Q, \\overline{Q}$ (Stored state), $SWS, \\overline{SWS}$ (Write driver control)",
+            "rotation": 270
+        },
+        {
+            "id": 5,
+            "path": "6t_sram_tb_butterfly_1.png",
+            "title": "Butterfly testbench 1 ($V_{DC}$ sweep on $QB$, monitoring node $Q$)"
+        },
+        {
+            "id": 6,
+            "path": "6t_sram_tb_butterfly_2.png",
+            "title": "Butterfly testbench 2 ($V_{DC}$ sweep on $Q$, monitoring node $QB$)"
+        },
+        {
+            "id": 7,
+            "path": "6t_sram_butterfly.png",
+            "title": "Static Noise Margin butterfly curve with maximum nested square measurement ($SNM = 568.93\\text{ mV}$)"
+        }
+    ],
+    "experiments": [
+        {
+            "number": 9,
+            "type": "assignment",
+            "title": "Design, Sizing & Static Noise Margin (SNM) Analysis of 6T SRAM Cell",
+            "date": "21/10/2026",
+            "sections": [
+                {
+                    "type": "text",
+                    "number": 1,
+                    "title": "AIM",
+                    "text": [
+                        "1. To calculate the Cell Ratio (CR) and Pull-up Ratio (PR) of a 6T SRAM cell and verify stable Read and Write operations through transient simulation in 180nm CMOS technology.",
+                        "2. To obtain the butterfly curve (superimposed VTCs) and determine the Static Noise Margin (SNM) of the 6T SRAM cell using DC sweep analysis."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 2,
+                    "title": "TOOL",
+                    "text": "Cadence Virtuoso"
+                },
+                {
+                    "type": "text",
+                    "number": 3,
+                    "title": "THEORY",
+                    "text": [
+                        "1. 6T SRAM Cell Architecture: A standard six-transistor static random access memory (6T SRAM) cell comprises a bistable cross-coupled CMOS inverter latch holding complementary data states at nodes $Q$ and $\\overline{Q}$, alongside two NMOS access transistors controlled by a common Wordline ($WL$). The cross-coupled configuration provides positive regenerative feedback for static data retention.",
+                        "2. Sizing Ratios for Read and Write Stability: During read access, complementary bitlines are precharged to $V_{DD}$ and $WL$ is asserted. To prevent destructive read upsets at node '0', the driver NMOS must be stronger than the access NMOS, establishing the Cell Ratio ($CR = \\frac{(W/L)_{\\text{driver}}}{(W/L)_{\\text{access}}} \\geq 1.2$). During write access, external write drivers pull one bitline low; to successfully overwrite a node holding '1', the access NMOS must overpower the pull-up PMOS, establishing the Pull-up Ratio ($PR = \\frac{(W/L)_{\\text{pullup}}}{(W/L)_{\\text{access}}} \\leq 0.6$).",
+                        "3. Static Noise Margin (SNM) Concept: The Static Noise Margin represents the maximum DC noise voltage that can be tolerated at the internal storage nodes without flipping the retained logic state. In standby/hold mode, the cell stability is quantified by superimposing the Voltage Transfer Characteristic (VTC) of the first inverter with the inverse VTC of the second inverter, forming the characteristic butterfly curve. The SNM is defined geometrically as the length of the side of the largest square that can be embedded inside the smaller lobe of the butterfly curve: $SNM = \\min(SNM_0, SNM_1)$."
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 4,
+                    "title": "CALCULATION",
+                    "new_page": true,
+                    "text": [
+                        "Given Process Parameters (180nm CMOS): $V_{DD} = 1.8\\text{ V}$, $k_n = 70\\,\\mu\\text{A}/\\text{V}^2$, $k_p = 20\\,\\mu\\text{A}/\\text{V}^2$, $\\frac{k_n}{k_p} = \\frac{70}{20} = 3.5$, $V_{tn} = |V_{tp}| = 0.45\\text{ V}$.",
+                        "1. Cell Ratio ($CR$) Derivation (Read Stability Condition): During Read access ($BL = V_{DD}$, $WL = V_{DD}$), access NMOS $M_3$ operates in saturation and driver NMOS $M_1$ operates in the linear region. Equating drain currents ($I_{D3} = I_{D1}$):",
+                        "$\\left(\\frac{W_3}{L_3}\\right) \\frac{k_n}{2} (V_{DD} - V_1 - V_{tn})^2 = \\left(\\frac{W_1}{L_1}\\right) \\frac{k_n}{2} \\left[2(V_{DD} - V_{tn})V_1 - V_1^2\\right]$",
+                        "Cancelling common factor $\\frac{k_n}{2}$ and rearranging for the aspect ratio:",
+                        "$\\frac{W_3 / L_3}{W_1 / L_1} = \\frac{2(V_{DD} - V_{tn})V_1 - V_1^2}{(V_{DD} - V_1 - V_{tn})^2}$",
+                        "To guarantee read stability and prevent destructive read upsets, node voltage must satisfy $V_1 < V_{tn} = 0.45\\text{ V}$. Selecting a safe design point of $V_1 = 0.3\\text{ V}$:",
+                        "Numerator: $2(1.8 - 0.45)(0.3) - (0.3)^2 = 2(1.35)(0.3) - 0.09 = 0.81 - 0.09 = 0.72$",
+                        "Denominator: $(1.8 - 0.3 - 0.45)^2 = (1.05)^2 = 1.1025$",
+                        "$\\frac{W_3 / L_3}{W_1 / L_1} = \\frac{0.72}{1.1025} \\Rightarrow \\frac{W_1 / L_1}{W_3 / L_3} = \\frac{1.1025}{0.72} \\approx 1.5$",
+                        "Read stability criteria: $CR \\geq \\frac{W_1 / L_1}{W_3 / L_3} \\geq 1.5 \\Rightarrow \\mathbf{CR = 2}$. With access width $W_a = 800\\text{ nm}$, driver NMOS width is $W_n = CR \\times W_a = 2 \\times 800\\text{ nm} = \\mathbf{1.6\\,\\mu\\text{m}}$.",
+                        "2. Pull-up Ratio ($PR$) Derivation (Writeability Condition): During Write '0' ($BL = 0\\text{ V}$, $WL = V_{DD}$), pull-up PMOS $M_5$ operates in saturation and access NMOS $M_3$ operates in the linear region. At trip voltage ($V_{\\text{node}} = V_{tn}$), equating drain currents ($I_{D5} = I_{D3}$):",
+                        "$\\left(\\frac{W_5}{L_5}\\right) \\frac{k_p}{2} (0 - V_{DD} - V_{tp})^2 = \\left(\\frac{W_3}{L_3}\\right) \\frac{k_n}{2} \\left[2(V_{DD} - V_{tn})V_{tn} - V_{tn}^2\\right]$",
+                        "Rearranging for the aspect ratio:",
+                        "$\\frac{W_5 / L_5}{W_3 / L_3} = \\left(\\frac{k_n}{k_p}\\right) \\frac{2(V_{DD} - V_{tn})V_{tn} - V_{tn}^2}{(-V_{DD} - V_{tp})^2}$",
+                        "Substituting given values ($k_n / k_p = 3.5$, $V_{DD} = 1.8\\text{ V}$, $V_{tn} = 0.45\\text{ V}$):",
+                        "Numerator: $2(1.8 - 0.45)(0.45) - (0.45)^2 = 2(1.35)(0.45) - 0.2025 = 1.0125$",
+                        "Denominator: $(-1.8 - 0.45)^2 = (-2.25)^2 = 5.0625$",
+                        "$\\frac{W_5 / L_5}{W_3 / L_3} = 3.5 \\times \\frac{1.0125}{5.0625} = 3.5 \\times 0.20 = 0.70$",
+                        "Writeability criteria: $PR \\leq \\frac{W_5 / L_5}{W_3 / L_3} \\leq 0.7 \\Rightarrow \\mathbf{PR = 0.5}$. With access width $W_a = 800\\text{ nm}$, pull-up PMOS width is $W_p = PR \\times W_a = 0.5 \\times 800\\text{ nm} = \\mathbf{400\\text{ nm}} = \\mathbf{0.4\\,\\mu\\text{m}}$.",
+                        "3. Static Noise Margin ($SNM$) Determination: From DC butterfly curve analysis, the side lengths of the maximum embedded squares in both lobes are measured as $SNM_0 = 568.93\\,\\text{mV}$ and $SNM_1 = 577.924\\,\\text{mV}$.",
+                        "$SNM = \\min(SNM_0, SNM_1) = \\min(568.93\\,\\text{mV}, 577.924\\,\\text{mV}) = \\mathbf{568.93\\,\\text{mV}}$",
+                        "$\\text{Normalized\\ SNM} = \\frac{SNM}{V_{DD}} \\times 100\\% = \\frac{568.93\\,\\text{mV}}{1800\\,\\text{mV}} \\times 100\\% = \\mathbf{31.61\\%}$"
+                    ]
+                },
+                {
+                    "type": "table",
+                    "number": 5,
+                    "new_page": true,
+                    "title": "Tables",
+                    "tables": [
+                        {
+                            "title": "Design & Simulation Parameters",
+                            "csv": "param.csv"
+                        },
+                        {
+                            "title": "SRAM Sizing Ratios",
+                            "csv": "sram_ratios.csv"
+                        },
+                        {
+                            "title": "Static Noise Margin (SNM) Parameters",
+                            "csv": "snm_summary.csv"
+                        },
+                        {
+                            "title": "SRAM Transient Operation Timing Analysis",
+                            "csv": "operation_summary.csv"
+                        }
+                    ]
+                },
+                {
+                    "type": "image",
+                    "number": 6,
+                    "title": "Circuit Diagrams & Waveforms",
+                    "new_page": false,
+                    "subsections": [
+                        {
+                            "title": "Page 1: 6T SRAM Cell Schematics & Transient Testbench",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            1,
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            3
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 2: Transient Simulation Waveforms (Read & Write Operations)",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            4
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Page 3: Butterfly Curve Testbenches & Static Noise Margin (SNM)",
+                            "layout": {
+                                "type": "column",
+                                "elements": [
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            5,
+                                            6
+                                        ]
+                                    },
+                                    {
+                                        "type": "row",
+                                        "elements": [
+                                            7
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "number": 7,
+                    "title": "CONCLUSION",
+                    "new_page": false,
+                    "text": [
+                        "1. The 6T SRAM cell was sized with $CR = 2.00$ (Stable Read) and $PR = 0.50$ (Stable Write), successfully verified through transient read, write, and precharge operations.",
+                        "2. DC butterfly curve analysis yielded $SNM = 568.93\\,\\text{mV}$ (31.61% of $V_{DD}$), confirming high static noise immunity."
+                    ]
+                }
+            ]
+        }
+    ]
+}

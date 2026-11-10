@@ -1,0 +1,3 @@
+Metric , Formula , Value , Status
+Cell Ratio ($CR$) , $W_n / W_a$ , 2.00 , Stable Read
+Pull-up Ratio ($PR$) , $W_p / W_a$ , 0.50 , Stable Write
