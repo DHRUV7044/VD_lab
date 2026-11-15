@@ -1,0 +1,61 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-52) $
+          : sub-version  IC6.1.8-64b.83 
+Started at: 12-Nov-2026  00:52:03
+User Name : dhruv
+Host Name : dhruv-ubuntu
+Directory : /home/dhruv/VD_lab
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /home/dhruv/cadence/pdk/gpdk180/libs.oa22/gpdk180/gpdk180.layermap
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 lab10_decoder_static
+strmFile                                /home/dhruv/VD_lab/lab10/gds_files/static_nand_decoder_3x8.gds
+topCell                                 static_nand_decoder_3x8
+view                                    layout
+logFile                                 /home/dhruv/VD_lab/gds_log/strmOut.log
+techLib                                 gpdk180
+layerMap                                /home/dhruv/cadence/pdk/gpdk180/libs.oa22/gpdk180/gpdk180.layermap
+case                                    Preserve
+convertDot                              node
+flattenPcells
+flattenVias
+
+INFO (XSTRM-274): To improve performance of flattening Pcell instances the preserving Pcell pins is not done during StreamOut. This is because preserving Pcell pins is not required as the value 'geometry' or 'ignore' is specified for the Convert Pin To option.
+INFO (XSTRM-223): 1. Translating cellView lab10_decoder_static/static_nand3/layout as STRUCTURE static_nand3.
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 2. Translating cellView lab10_decoder_static/static_nand2/layout as STRUCTURE static_nand2.
+INFO (XSTRM-223): 3. Translating cellView lab10_decoder_static/static_nand_decoder_3x8/layout as STRUCTURE static_nand_decoder_3x8.
+
+Summary of Objects Translated:
+	Scalar Instances:                       19
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             601
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           0
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               233
+	Text:                                   0
+	TextDisplay:                            0
+	Cells:                                  3
+
+Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 9732KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.

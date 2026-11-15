@@ -1,1 +1,2 @@
 SOFTINCLUDE $MAIN_CDS_LIB_PATH/cds.lib
+DEFINE avTech /home/dhruv/cadence/cadence_self_installed/ASSURA41/tools/assura/etc/avtech/avTech
