@@ -5,12 +5,10 @@ VcdInfoFile ""
 VectorFile nil
 allDefinitionFiles nil
 allDspfFiles nil
-allEVcdFiles nil
 allIncludedPaths nil
 allPspiceFiles nil
 allSpefFiles nil
 allStimulusFiles nil
-allVcdFiles nil
 allVectorFiles nil
 definitionFiles nil
 dspfFile nil

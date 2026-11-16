@@ -11,16 +11,10 @@
 (envOpts emLayerMap) ""
 (envOpts emOnlyICTFile) ""
 (envOpts emTechFile) ""
-(envOpts emirDSPF) nil
 (envOpts emirEnable) nil
-(envOpts emirEnable_spgs) nil
 (envOpts emirEnable_static) nil
 (envOpts emirLCVDisable) nil
 (envOpts emirSumList) nil
-(envOpts emirSumList_Dynamic) nil
-(envOpts emirSumList_MacroModel) nil
-(envOpts emirSumList_SPGS) nil
-(envOpts emirSumList_Static) nil
 (envOpts enableArclength) nil
 (envOpts enableDiagnose) nil
 (envOpts enableNewMultiHarmCut) nil
@@ -28,21 +22,17 @@
 (envOpts enablePhaseNoiseBW) t
 (envOpts extra_port) "false"
 (envOpts firstRun) t
-(envOpts lastEmAnaType) ""
 (envOpts licQueueSleep) ""
 (envOpts licQueueTimeOut) "900"
 (envOpts liclog) nil
 (envOpts lsusp) nil
 (envOpts macroModelEnable) nil
 (envOpts macroModelList) nil
-(envOpts mapFirstSubnodeForNet) nil
 (envOpts other_opts) ""
 (envOpts paramRangeCheckFile) ""
 (envOpts pllPlugin) ""
 (envOpts pllWizardinfo) ""
-(envOpts poloNameMapDBDir) ""
 (envOpts port_order) "sch"
-(envOpts preserveSubcktTermNamesByOrder) nil
 (envOpts printComments) (nil nil)
 (envOpts restart) ""
 (envOpts rptOptionToggle) ""
@@ -53,7 +43,7 @@
 (envOpts stimulusFile) nil
 (envOpts stopViewList) ("spectre")
 (envOpts switchViewList) ("spectre" "cmos_sch" "cmos.sch" "schematic" "veriloga")
-(envOpts termDirectionMismatch) "default"
-(envOpts termMismatch) "default"
+(envOpts termDirectionMismatch) "ignore"
+(envOpts termMismatch) "ignore"
 (envOpts userCmdLineOption) ""
 (envOpts vcoType) ""
