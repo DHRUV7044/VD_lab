@@ -1,2 +1,15 @@
 vivado_log/
 push.sh
+
+# AI / Agent auto-generated files & directories
+.planning/
+.clinerules
+.coderabbit.yaml
+PRD.md
+progress.txt
+
+# Cadence locks and runtime logs (if unwanted in version control)
+*.cdslck*
+libManager.log*
+pvsUI_ipvs.log
+

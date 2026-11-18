@@ -1,0 +1,10 @@
+let((libs)
+  foreach(lib ddGetLibList()
+    foreach(c lib~>cells
+      when(rexMatchp("xor" c~>name)
+        printf("Found XOR in lib: %s, cell: %s\n" lib~>name c~>name)
+      )
+    )
+  )
+  exit()
+)

@@ -3,7 +3,7 @@
 
 # Basic Gates & Components
 DEFINE basic_gates                 $CDS_WORK_PATH/VD_lab/basic_circuits/library/basic_gates
-DEFINE standard_logic_components   $CDS_WORK_PATH/VD_lab/standard_logic_components
+DEFINE standard_logic_components   $CDS_WORK_PATH/VD_lab/basic_circuits/library/standard_logic_components
 
 # Lab 1
 DEFINE lab1_inverter_sim           $CDS_WORK_PATH/VD_lab/lab1/library/lab1_inverter_sim
