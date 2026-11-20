@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("exam_tspc" "TSPC_logic_tb" "config" "ams")
+descriptionText = "None"
